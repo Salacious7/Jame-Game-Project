@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/UIBuilderData/USS/ActionStateButtonUSS.uss?fileID=7433441132597879392&amp;guid=fdf910cd72e95474aa8b78d752a0cc8a&amp;type=3#ActionStateButtonUSS" />
+    <ui:VisualElement style="flex-grow: 1; flex-direction: column; align-items: auto; justify-content: flex-start; position: relative; bottom: auto; flex-shrink: 1; align-self: auto;">
+        <ui:VisualElement name="TopContainer" style="flex-grow: 0; align-self: stretch; flex-wrap: nowrap; flex-direction: row; flex-shrink: 1; align-items: center; justify-content: center; position: relative; height: auto; width: auto; flex-basis: 70px; right: auto;">
+            <ui:Button text="Fight" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Red" class="button actionStateButton" style="background-color: rgb(255, 154, 154); -unity-font: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=6d2a039f2755de3498fe7aff27275924&amp;type=3#NotInter-Regular&apos;);" />
+            <ui:Button text="Items" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Blue" class="button actionStateButton" style="background-color: rgb(138, 191, 255); -unity-font: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=6d2a039f2755de3498fe7aff27275924&amp;type=3#NotInter-Regular&apos;);" />
+            <ui:Button text="Special Power" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Yellow" class="button actionStateButton" style="background-color: rgb(255, 249, 148);" />
+            <ui:Button text="Defend" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Green" class="button actionStateButton" style="background-color: rgb(173, 255, 146);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
