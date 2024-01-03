@@ -29,6 +29,7 @@ public class SwanUI : MonoBehaviour
     private List<Button> actionStateBtnList = new List<Button>();
     private int currentActionStateBtnIndex;
 
+
     private void Awake()
     {
         swan = GetComponent<Swan>();
@@ -82,7 +83,7 @@ public class SwanUI : MonoBehaviour
 
     public void ActionStateUI()
     {
-        ActionContainer.active = !ActionContainer.active;
+        ActionContainer.SetActive(!ActionContainer.activeSelf);
 
         // stateUI.visible = !stateUI.visible;
     }
