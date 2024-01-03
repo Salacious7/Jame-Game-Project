@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/BaseUIUSS.uss?fileID=7433441132597879392&amp;guid=5735d77af9afb2d48a42f6a39b1b9216&amp;type=3#BaseUIUSS" />
+    <ui:VisualElement name="Container" style="flex-grow: 0;">
+        <ui:Label tabindex="-1" text="Test Title" parse-escape-sequences="true" display-tooltip-when-elided="true" class="header" />
+    </ui:VisualElement>
+</ui:UXML>
