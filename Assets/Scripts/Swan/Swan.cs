@@ -1,19 +1,29 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
+public class SwanData
+{
+    public float health;
+    public float defense;
+}
+
 public class Swan : MonoBehaviour, IActionState
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private SwanData swanData;
+    [SerializeField] private Controller controller;
+    private SwanUI swanUI;
+
+    private void Awake()
     {
-        
+        swanUI = GetComponent<SwanUI>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Start()
     {
-        
+        controller.Swan = this;
     }
 
     public void Defend()
@@ -23,7 +33,7 @@ public class Swan : MonoBehaviour, IActionState
 
     public void Fight()
     {
-        throw new System.NotImplementedException();
+        swanUI.ActionStateUI();
     }
 
     public void SpecialPower()
