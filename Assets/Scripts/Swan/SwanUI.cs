@@ -22,6 +22,9 @@ public class SwanUI : MonoBehaviour
     public GameObject HeavyActionInputStateContainer;
     public UnityEngine.UI.Slider heavyDataSlider;
 
+    //
+    public GameObject ItemsUI;
+
     public VisualElement stateUI { get; private set; }
     public VisualElement fightInputStateUI { get; private set; }
     public VisualElement fightInputStateContainerUI { get; private set; }
@@ -86,6 +89,11 @@ public class SwanUI : MonoBehaviour
         ActionContainer.SetActive(!ActionContainer.activeSelf);
 
         // stateUI.visible = !stateUI.visible;
+    }
+
+    public void ShowItemUI()
+    {
+        ItemsUI.SetActive(!ItemsUI.activeSelf);
     }
 
     public void DefendStateUI()
