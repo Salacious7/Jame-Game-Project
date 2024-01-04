@@ -7,23 +7,27 @@ using UnityEngine;
 public class SwanData
 {
     public float health;
-    public float defense;
+    public float damage;
+    public float mana;
+    public float passive;
+
+    public List<NegativeStatus> negativeStatuses = new List<NegativeStatus>();
 }
 
 public class Swan : MonoBehaviour, IActionState
 {
     [SerializeField] private SwanData swanData;
-    [SerializeField] private Controller controller;
     private SwanUI swanUI;
 
     private void Awake()
     {
         swanUI = GetComponent<SwanUI>();
-    }
 
-    public void Start()
-    {
-        controller.Swan = this;
+        BreadCrumbs.onEntityHeal += HealSwan;
+        ShinyFeather.onIncreaseDamage += ItemDamage;
+        ClearBlueCrystal.onEntityMana += ItemMana;
+        CaffeinatedDrink.onEntityPassive += ItemPassive;
+        Milk.onEntityRemoveNegativeStatus += ItemRemoveNegativeStatus;
     }
 
     public void Defend()
@@ -43,6 +47,44 @@ public class Swan : MonoBehaviour, IActionState
 
     public void UseItem()
     {
-        throw new System.NotImplementedException();
+        swanUI.ShowItemUI();
+    }
+
+    public void HealSwan(BreadCrumbs breadCrumbs)
+    {
+        swanData.health += breadCrumbs.IncreaseHealth();
+
+        Debug.Log("Your health increased!");
+    }
+
+    public void ItemDamage(ShinyFeather shinyFeather)
+    {
+        swanData.damage += shinyFeather.IncreaseDamage();
+
+        Debug.Log("Your damage increased!");
+    }
+
+    public void ItemMana(ClearBlueCrystal clearBlueCrystal)
+    {
+        swanData.mana += clearBlueCrystal.IncreaseMana();
+
+        Debug.Log("Your mana increased!");
+    }
+
+    public void ItemPassive(CaffeinatedDrink caffeinatedDrink)
+    {
+        swanData.passive += caffeinatedDrink.IncreasePassive();
+
+        Debug.Log("Your passive increased!");
+    }
+
+    public void ItemRemoveNegativeStatus()
+    {
+        if (swanData.negativeStatuses.Count == 0)
+            return;
+
+        swanData.negativeStatuses.Clear();
+
+        Debug.Log("Your negtive status has been cleared!");
     }
 }
