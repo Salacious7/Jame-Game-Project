@@ -8,11 +8,15 @@ public class SwanUI : MonoBehaviour, OnEventHandler
     private Swan swan;
     private SwanState swanState;
 
+    [Header("StatsUI")]
+    public Slider healthBarSlider;
+    public Slider specialPowerBarSlider;
 
     [Header("ActionStateUI")]
     public GameObject ActionStateContainer;
     public GameObject BasicActionInputStateContainer;
     public GameObject HeavyActionInputStateContainer;
+    public GameObject HeavyArrowsActionInput;
     public UnityEngine.UI.Slider heavyDataSlider;
     [SerializeField] private List<Button> actionStateBtnList = new List<Button>();
 
@@ -28,9 +32,34 @@ public class SwanUI : MonoBehaviour, OnEventHandler
     [Header("DefendUI")]
     public GameObject DefendObjUI;
 
+    [Header("Special Powers")]
+    public Button SwanLeapBtn;
+    public Button GroundPummelBtn;
+
     private void Awake()
     {
         swan = GetComponent<Swan>();
+    }
+
+    private void Update()
+    {
+        if(swan.swanData.mana > 10f)
+        {
+            SwanLeapBtn.interactable = true;
+        }
+        else
+        {
+            SwanLeapBtn.interactable = false;
+        }
+
+        if(swan.swanData.mana > 20f)
+        {
+            GroundPummelBtn.interactable = true;
+        }
+        else
+        {
+            GroundPummelBtn.interactable = false;
+        }
     }
 
     public void OnClickBasicButton()
@@ -155,7 +184,7 @@ public class SwanUI : MonoBehaviour, OnEventHandler
         throw new System.NotImplementedException();
     }
 
-    public void OnFailed()
+    public void OnFailed(int amount)
     {
         throw new System.NotImplementedException();
     }

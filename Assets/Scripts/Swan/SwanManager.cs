@@ -36,6 +36,11 @@ public class SwanManager : MonoBehaviour
                 selectedBread = true;
             }
 
+            if(Input.GetKeyDown(KeyCode.Z))
+            {
+                StopCoroutine("SelectBread");
+            }
+
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 selectedCharacterIndex--;

@@ -5,27 +5,21 @@ using UnityEngine;
 public class SwanState : MonoBehaviour, OnBreadHandler
 {
     [Header("Vertical State Display")]
-    private bool canRightMash;
-    private float sliderValueIncreased;
-    
+    private bool canRightMash, canLeftMash;
+    public float sliderValueIncreased;
+
+    [SerializeField] private float setDefenseTimer;
+    private float getDefenseTimer;
     [SerializeField] private float setHeavyMashTimer;
     private float getHeavyMashTimer;
 
-    private int leftRandomIndex;
-    private int rightRandomIndex;
-
-    private List<KeyCode> keyCodeArrows = new List<KeyCode>()
-    {
-        KeyCode.LeftArrow,
-        KeyCode.DownArrow,
-        KeyCode.UpArrow,
-        KeyCode.RightArrow
-    };
+    private KeyCode leftKeyCode, rightKeyCode;
 
     public enum FightType
     {
         BasicState,
-        HeavyState
+        HeavyState,
+        SpecialPowerState
     }
 
     FightType fightType;
@@ -34,22 +28,16 @@ public class SwanState : MonoBehaviour, OnBreadHandler
     private SwanUI swanUI;
     public SwanManager swanManager;
     private Swan swan;
+    private SwanPowers swanPowers;
 
     private void Awake()
     {
         swanUI = GetComponent<SwanUI>();
         swan = GetComponent<Swan>();
-        Shuffle<KeyCode>.StartShuffleList(keyCodeArrows);
-
-        leftRandomIndex = Random.Range(0, keyCodeArrows.Count);
-        rightRandomIndex = Random.Range(0, keyCodeArrows.Count);
-
-        while (rightRandomIndex == leftRandomIndex)
-        {
-            rightRandomIndex = Random.Range(0, keyCodeArrows.Count);
-        }
+        swanPowers = GetComponent<SwanPowers>();
 
         getHeavyMashTimer = setHeavyMashTimer;
+        getDefenseTimer = setDefenseTimer;
     }
 
     public void OnSuccess(Bread bread)
@@ -63,6 +51,10 @@ public class SwanState : MonoBehaviour, OnBreadHandler
             case FightType.HeavyState:
                 StartCoroutine(InitializeHeavyArrowKey(bread, swan));
                 swanUI.SpawnHeavyUIStateArrows();
+                break;
+            case FightType.SpecialPowerState:
+                swanUI.SpawnBasicUIStateArrows();
+                StartCoroutine(InitializeBasicArrowKey(bread, swanPowers));
                 break;
         }
     }
@@ -86,6 +78,11 @@ public class SwanState : MonoBehaviour, OnBreadHandler
                 swanManager.StartCoroutine(swanManager.SelectBread(this));
                 fightType = FightType.HeavyState;
                 break;
+            case Swan.FightType.SpecialPowerState:
+                Debug.Log("Basic attack pressed!");
+                swanManager.StartCoroutine(swanManager.SelectBread(this));
+                fightType = FightType.SpecialPowerState;
+                break;
             case Swan.FightType.DefendState:
                 Debug.Log("Defending attack!");
                 swanUI.SpawnBasicUIStateArrows();
@@ -94,7 +91,7 @@ public class SwanState : MonoBehaviour, OnBreadHandler
         }
     }
 
-    public bool HorizontalArrowDisplay()
+    public bool BasicArrowDisplay()
     {
         List<Transform> children = new List<Transform>();
 
@@ -119,16 +116,45 @@ public class SwanState : MonoBehaviour, OnBreadHandler
         return true;
     }
 
+    public bool HeavyArrowDisplay()
+    {
+        List<Transform> children = new List<Transform>();
+
+        foreach (Transform child in swanUI.HeavyArrowsActionInput.transform)
+        {
+            children.Add(child);
+        }
+
+        for (int i = 0; i < children.Count; i++)
+        {
+            int randomIndex = Random.Range(i, children.Count);
+            Transform temp = children[i];
+            children[i] = children[randomIndex];
+            children[randomIndex] = temp;
+        }
+
+        for (int i = 0; i < children.Count; i++)
+        {
+            children[i].SetSiblingIndex(i);
+        }
+
+        children[0].gameObject.SetActive(true);
+        children[1].gameObject.SetActive(true);
+
+        return true;
+    }
+
+
     public IEnumerator InitializeDefendBasicArrowKey(OnEventHandler state)
     {
-        yield return new WaitUntil(() => HorizontalArrowDisplay());
+        yield return new WaitUntil(() => BasicArrowDisplay());
 
         Debug.Log("Initialize Basic Arrow Key");
 
         bool condition = true;
         int index = 0;
 
-        while (index < swanUI.BasicActionInputStateContainer.transform.childCount && condition)
+        while (index < swanUI.BasicActionInputStateContainer.transform.childCount && condition && getDefenseTimer > 0)
         {
             yield return null;
 
@@ -138,11 +164,28 @@ public class SwanState : MonoBehaviour, OnBreadHandler
             PlayDefendBasicArrowKey(KeyCode.RightArrow, state, ref condition, ref index);
             PlayDefendBasicArrowKey(KeyCode.DownArrow, state, ref condition, ref index);
             PlayDefendBasicArrowKey(KeyCode.UpArrow, state, ref condition, ref index);
+
+            getDefenseTimer -= Time.deltaTime;
+        }
+
+        if(getDefenseTimer <= 0)
+        {
+            Debug.Log("You failed!");
+
+            condition = false;
+            swanUI.BasicActionInputStateContainer.SetActive(false);
+
+            state.OnFailed(0);
+            getDefenseTimer = setDefenseTimer;
+
+            yield break;
         }
 
         yield return new WaitUntil(() => index >= swanUI.BasicActionInputStateContainer.transform.childCount);
 
+        getDefenseTimer = setDefenseTimer;
         swanUI.BasicActionInputStateContainer.SetActive(false);
+        swan.damageIndex = index;
 
         Debug.Log("Initialize done!");
 
@@ -160,7 +203,7 @@ public class SwanState : MonoBehaviour, OnBreadHandler
                 condition = false;
                 swanUI.BasicActionInputStateContainer.SetActive(false);
 
-                state.OnFailed();
+                state.OnFailed(index);
 
                 return;
             }
@@ -171,7 +214,7 @@ public class SwanState : MonoBehaviour, OnBreadHandler
 
     public IEnumerator InitializeBasicArrowKey(Bread bread, OnBreadHandler state)
     {
-        yield return new WaitUntil(() => HorizontalArrowDisplay());
+        yield return new WaitUntil(() => BasicArrowDisplay());
 
         Debug.Log("Initialize Basic Arrow Key");
 
@@ -221,24 +264,26 @@ public class SwanState : MonoBehaviour, OnBreadHandler
 
     public IEnumerator InitializeHeavyArrowKey(Bread bread, OnBreadHandler state)
     {
-        swanUI.HeavyActionInputStateContainer.SetActive(true);
+        yield return new WaitUntil(() => HeavyArrowDisplay());
 
         while (getHeavyMashTimer >= 0 && sliderValueIncreased <= 100)
         {
             yield return null;
 
-            Debug.Log("Heavy attack pressed!");
+            GetKeyCode();
 
-            if (Input.GetKeyDown(keyCodeArrows[rightRandomIndex]) && canRightMash)
-            {
-                sliderValueIncreased += 10f;
-                canRightMash = false;
-            }
-
-            if (Input.GetKeyDown(keyCodeArrows[leftRandomIndex]) && !canRightMash)
+            if (Input.GetKeyDown(leftKeyCode) && !canRightMash)
             {
                 sliderValueIncreased += 10f;
                 canRightMash = true;
+                canLeftMash = false;
+            }
+
+            if (Input.GetKeyDown(rightKeyCode) && !canLeftMash)
+            {
+                sliderValueIncreased += 10f;
+                canRightMash = false;
+                canLeftMash = true;
             }
 
             getHeavyMashTimer -= Time.deltaTime;
@@ -252,6 +297,47 @@ public class SwanState : MonoBehaviour, OnBreadHandler
         swanUI.heavyDataSlider.value = 0f;
         getHeavyMashTimer = setHeavyMashTimer;
 
+        swanUI.HeavyArrowsActionInput.transform.GetChild(0).gameObject.SetActive(false);
+        swanUI.HeavyArrowsActionInput.transform.GetChild(1).gameObject.SetActive(false);
+
         state.OnSuccess(bread);
+    }
+
+    private void GetKeyCode()
+    {
+        if (swanUI.HeavyArrowsActionInput.transform.GetChild(0).gameObject.name == KeyCode.UpArrow.ToString())
+        {
+            leftKeyCode = KeyCode.UpArrow;
+        }
+        else if (swanUI.HeavyArrowsActionInput.transform.GetChild(0).gameObject.name == KeyCode.DownArrow.ToString())
+        {
+            leftKeyCode = KeyCode.DownArrow;
+        }
+        else if (swanUI.HeavyArrowsActionInput.transform.GetChild(0).gameObject.name == KeyCode.RightArrow.ToString())
+        {
+            leftKeyCode = KeyCode.RightArrow;
+        }
+        else if (swanUI.HeavyArrowsActionInput.transform.GetChild(0).gameObject.name == KeyCode.LeftArrow.ToString())
+        {
+            leftKeyCode = KeyCode.LeftArrow;
+        }
+
+        if (swanUI.HeavyArrowsActionInput.transform.GetChild(1).gameObject.name == KeyCode.UpArrow.ToString())
+        {
+            rightKeyCode = KeyCode.UpArrow;
+        }
+        else if (swanUI.HeavyArrowsActionInput.transform.GetChild(1).gameObject.name == KeyCode.DownArrow.ToString())
+        {
+            rightKeyCode = KeyCode.DownArrow;
+        }
+        else if (swanUI.HeavyArrowsActionInput.transform.GetChild(1).gameObject.name == KeyCode.RightArrow.ToString())
+        {
+            rightKeyCode = KeyCode.RightArrow;
+        }
+        else if (swanUI.HeavyArrowsActionInput.transform.GetChild(1).gameObject.name == KeyCode.LeftArrow.ToString())
+        {
+            rightKeyCode = KeyCode.LeftArrow;
+        }
+
     }
 }

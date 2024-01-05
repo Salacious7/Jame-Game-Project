@@ -7,10 +7,10 @@ using UnityEngine;
 public class SwanData
 {
     public float health;
-    public float damage;
+    public float damageBoost;
     public float mana;
-    public float passive;
-    public float defense;
+    public float passiveBoost;
+    public float defenseBoost;
     public float basicDamage;
     public float heavyDamage;
 
@@ -20,17 +20,21 @@ public class SwanData
 
 public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 {
-    [SerializeField] private SwanData swanData;
+    public SwanData swanData;
     [SerializeField] BreadManager breadManager;
     [SerializeField] private SwanManager swanManager;
     private SwanState swanState;
     private SwanUI swanUI;
+    private SwanItemChance swanItemChance;
 
+    public float damageIndex;
+    private bool hasHeavyDamaged;
 
     public enum FightType
     {
         BasicState,
         HeavyState,
+        SpecialPowerState,
         DefendState
     }
 
@@ -40,12 +44,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
     {
         swanState = GetComponent<SwanState>();
         swanUI = GetComponent<SwanUI>();
-
-        BreadCrumbs.onEntityHeal += HealSwan;
-        ShinyFeather.onIncreaseDamage += ItemDamage;
-        ClearBlueCrystal.onEntityMana += ItemMana;
-        CaffeinatedDrink.onEntityPassive += ItemPassive;
-        Milk.onEntityRemoveNegativeStatus += ItemRemoveNegativeStatus;
+        swanItemChance = GetComponent<SwanItemChance>();
     }
 
     public void Fight()
@@ -82,11 +81,20 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         swanUI.ActionStateNoAllAccessible();
     }
 
-    public void UseDefend()
+    public void UseDefendBtn()
     {
-        swanData.defense += 10f;
         swanUI.DefendObjUI.SetActive(false);
         swanUI.ActionStateNoAllAccessible();
+
+        StartCoroutine(UseDefend());
+    }
+
+    private IEnumerator UseDefend()
+    {
+        yield return new WaitForSeconds(1f);
+
+        swanData.defenseBoost += 10f;
+        breadManager.StartBreadsTurn();
     }
 
     public void OnSuccess(Bread bread)
@@ -95,10 +103,12 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         {
             case FightType.BasicState:
                 Debug.Log("Attacked using Basic Attack is Success!");
+                swanItemChance.GetBreadCrumbsChance();
                 StartCoroutine(BasicAttack(bread));
                 break;
             case FightType.HeavyState:
                 Debug.Log("Attacked using Heavy Attack is Success!");
+                swanItemChance.GetBreadCrumbsChance();
                 StartCoroutine(HeavyAttack(bread));
                 break;
         }
@@ -110,6 +120,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         {
             case FightType.DefendState:
                 Debug.Log("Defended attack!");
+                swanItemChance.GetShinyFeatherChance();
                 breadManager.EndTurn();
                 break;
         }
@@ -119,78 +130,92 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
     {
         yield return new WaitForSeconds(1f);
 
-        swanManager.breads[swanManager.selectedCharacterIndex].selectedArrow.SetActive(false);
-        breadManager.StartBreadsTurn();
+        switch (damageIndex)
+        {
+            case 0:
+                bread.ReduceBreadHealth(3f + swanData.damageBoost);
+                break;
+            case 1:
+                bread.ReduceBreadHealth(7f + swanData.damageBoost);
+                break;
+            case 2:
+                bread.ReduceBreadHealth(15f + swanData.damageBoost);
+                break;
+            case 3:
+                bread.ReduceBreadHealth(25f + swanData.damageBoost);
+                break;
+        }
+
+        yield return new WaitForSeconds(2f);
+
+        swanData.damageBoost = 0;
+        bread.selectedArrow.SetActive(false);
+        breadManager.StartCoroutine(breadManager.StartBreadsTurn());
     }
 
     public IEnumerator HeavyAttack(Bread bread)
     {
-        if (swanUI.heavyDataSlider.value < 25f)
+        if(!hasHeavyDamaged)
         {
-            Debug.Log("Current damage: " + 5f);
-        }
-        else if (swanUI.heavyDataSlider.value <= 50f)
-        {
-            Debug.Log("Current damage: " + 10f);
-        }
-        else if (swanUI.heavyDataSlider.value <= 75f)
-        {
-            Debug.Log("Current damage: " + 15f);
-        }
-        else if (swanUI.heavyDataSlider.value > 75f)
-        {
-            Debug.Log("Current damage: " + 20f);
+            if (swanState.sliderValueIncreased < 25f)
+            {
+                Debug.Log("Heavy Damage: 0f");
+                bread.ReduceBreadHealth(0f + swanData.damageBoost);
+            }
+            else if (swanState.sliderValueIncreased < 50f)
+            {
+                Debug.Log("Heavy Damage: 10f");
+                bread.ReduceBreadHealth(10f + swanData.damageBoost);
+            }
+            else if (swanState.sliderValueIncreased < 75f)
+            {
+                Debug.Log("Heavy Damage: 15f");
+                bread.ReduceBreadHealth(15f + swanData.damageBoost);
+            }
+            else if (swanState.sliderValueIncreased >= 75f)
+            {
+                Debug.Log("Heavy Damage: 20f");
+                bread.ReduceBreadHealth(20f + swanData.damageBoost);
+            }
+
+            hasHeavyDamaged = true;
         }
 
         yield return new WaitForSeconds(1f);
+
+        swanData.damageBoost = 0;
+        hasHeavyDamaged = false;
+        bread.selectedArrow.SetActive(false);
+        breadManager.StartCoroutine(breadManager.StartBreadsTurn());
     }
 
     public void OnFailed(int amount)
     {
         switch (fightType)
         {
-            case FightType.BasicState:
-                Debug.Log("Attacked using Basic Attack is Success!");
-                StartCoroutine(BasicFailedAttack(amount));
+            case FightType.DefendState:
+                Debug.Log("Defending State");
+                StartCoroutine(DamageFromEnemy(amount));
                 break;
         }
-    }
-
-    public IEnumerator BasicFailedAttack(int amount)
-    {
-        yield return new WaitForSeconds(1f);
-
-        switch(amount)
-        {
-            case 0:
-                Debug.Log("Damage only 1");
-                break;
-            case 1:
-                Debug.Log("Damage only 2");
-                break;
-            case 2:
-                Debug.Log("Damage only 3");
-                break;
-            case 3:
-                Debug.Log("Damage only 4");
-                break;
-        }    
-
     }
 
     #region Item
     public void HealSwan(BreadCrumbs breadCrumbs)
     {
         swanData.health += breadCrumbs.IncreaseHealth();
-        swanUI.ActionStateNoAllAccessible();
+        swanUI.healthBarSlider.value = swanData.health;
+        StartCoroutine(StartUseItem());
 
+        breadCrumbs.DoSomething();
         Debug.Log("Your health increased!");
     }
 
     public void ItemDamage(ShinyFeather shinyFeather)
     {
-        swanData.damage += shinyFeather.IncreaseDamage();
-        swanUI.ActionStateNoAllAccessible();
+        swanData.damageBoost += shinyFeather.IncreaseDamage();
+        StartCoroutine(StartUseItem());
+        shinyFeather.DoSomething();
 
         Debug.Log("Your damage increased!");
     }
@@ -198,33 +223,67 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
     public void ItemMana(ClearBlueCrystal clearBlueCrystal)
     {
         swanData.mana += clearBlueCrystal.IncreaseMana();
-        swanUI.ActionStateNoAllAccessible();
-
+        swanUI.specialPowerBarSlider.value = swanData.mana;
+        StartCoroutine(StartUseItem());
+        clearBlueCrystal.DoSomething();
         Debug.Log("Your mana increased!");
     }
 
     public void ItemPassive(CaffeinatedDrink caffeinatedDrink)
     {
-        swanData.passive += caffeinatedDrink.IncreasePassive();
-        swanUI.ActionStateNoAllAccessible();
-
+        swanData.passiveBoost += caffeinatedDrink.IncreasePassive();
+        StartCoroutine(StartUseItem());
+        caffeinatedDrink.DoSomething();
         Debug.Log("Your passive increased!");
     }
 
-    public void ItemRemoveNegativeStatus()
+    public void ItemRemoveNegativeStatus(Milk milk)
     {
+
         if (swanData.negativeStatus.Count <= 0)
             return;
 
-        swanUI.ActionStateNoAllAccessible();
+        StartCoroutine(StartUseItem());
+
         swanData.negativeStatus.Clear();
+        milk.DoSomething();
 
         Debug.Log("Your negtive status has been cleared!");
     }
 
-    public void OnFailed()
+    public IEnumerator DamageFromEnemy(int amount)
     {
-        throw new NotImplementedException();
+        yield return new WaitForSeconds(1f);
+
+        switch (amount)
+        {
+            case 0:
+                swanUI.healthBarSlider.value -= (swanData.defenseBoost > 0 ? 15f / swanData.defenseBoost : 15f);
+                break;
+            case 1:
+                swanUI.healthBarSlider.value -= (swanData.defenseBoost > 0 ? 12f / swanData.defenseBoost : 12f);
+                break;
+            case 2:
+                swanUI.healthBarSlider.value -= (swanData.defenseBoost > 0 ? 6f / swanData.defenseBoost : 6f);
+                break;
+            case 3:
+                swanUI.healthBarSlider.value -= 0f;
+                break;
+        }
+
+        yield return new WaitForSeconds(1f);
+
+        swanData.defenseBoost = 0;
+        breadManager.EndTurn();
     }
     #endregion
+
+    public IEnumerator StartUseItem()
+    {
+        swanUI.ActionStateNoAllAccessible();
+
+        yield return new WaitForSeconds(1f);
+
+        breadManager.StartCoroutine(breadManager.StartBreadsTurn());
+    }
 }

@@ -11,11 +11,12 @@ public class BreadManager : MonoBehaviour
     List<Bread> breadOrders;
     Bread currentBread;
     [SerializeField] private SwanUI swanUI;
+    [SerializeField] private UIManager uiManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        StartBreadsTurn();
+        StartCoroutine(StartBreadsTurn());
     }
 
     // Update is called once per frame
@@ -24,15 +25,26 @@ public class BreadManager : MonoBehaviour
         
     }
 
-    public void StartBreadsTurn()
+    public IEnumerator StartBreadsTurn()
     {
+        uiManager.panelCurrentTurnObj.SetActive(true);
+        uiManager.currentTextCurrentTurn.text = "Bread's turn to shine.";
+
+        yield return new WaitForSeconds(2f);
+
         swanUI.ActionStateContainer.SetActive(false);
+        uiManager.panelCurrentTurnObj.SetActive(false);
+        uiManager.currentTextCurrentTurn.text = "";
+
         Debug.Log("bread's turn starting");
         breadOrders = new List<Bread>(breads);
         breadOrders.RemoveAll(x => x.Dead);
 
         currentBread = breadOrders[Random.Range(0, breadOrders.Count)];
+        currentBread.selectedArrow.SetActive(true);
         Debug.Log(currentBread.name + " starting turn");
+
+
         currentBread.StartTurn();
     }
 
@@ -48,14 +60,23 @@ public class BreadManager : MonoBehaviour
         currentBread.EndTurn();
     }
 
-    void EndBreadsTurn()
+    public IEnumerator EndBreadsTurn()
     {
+        uiManager.panelCurrentTurnObj.SetActive(true);
+        uiManager.currentTextCurrentTurn.text = "Swan's turn to shine.";
+
+        yield return new WaitForSeconds(1.5f);
+
+        uiManager.panelCurrentTurnObj.SetActive(false);
+        uiManager.currentTextCurrentTurn.text = "";
+
         swanUI.ActionStateAllAccessible();
         Debug.Log("bread's turn end");
     }
 
     public void EndTurn()
     {
+        currentBread.selectedArrow.SetActive(false);
         breadOrders.Remove(currentBread);
 
         SetTransparency(1);
@@ -64,9 +85,10 @@ public class BreadManager : MonoBehaviour
         {
             currentBread = breadOrders[Random.Range(0, breadOrders.Count)];
             Debug.Log(currentBread.name + " starting turn");
+            currentBread.selectedArrow.SetActive(true);
             currentBread.StartTurn();
         }
         else
-            EndBreadsTurn();
+            StartCoroutine(EndBreadsTurn());
     }
 }
