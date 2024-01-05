@@ -41,9 +41,13 @@ public class SwanUI : MonoBehaviour
 
     public void SpawnBasicUIStateArrows()
     {
-        ActionContainer.SetActive(false);
-        SpecialPowerUIObj.SetActive(false);
         BasicActionInputStateContainer.SetActive(true);
+        ActionContainer.SetActive(false);
+
+        if(SpecialPowerUIObj == null)
+            return;
+
+        SpecialPowerUIObj.SetActive(false);
     }
 
     public void SpawnHeavyUIStateArrows()
