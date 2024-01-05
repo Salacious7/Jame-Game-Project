@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public abstract class Bread : MonoBehaviour, IActionState
 {
@@ -9,6 +9,10 @@ public abstract class Bread : MonoBehaviour, IActionState
     bool actionFinished;
     public bool Dead {get; private set;}
     public GameObject selectedArrow;
+    public Slider breadHealthBarSlider;
+    public Slider breadSpecialPowerBarSlider;
+
+    public float breadHealth;
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +51,12 @@ public abstract class Bread : MonoBehaviour, IActionState
     public void EndTurn()
     {
         actionFinished = true;
+    }
+
+    public void ReduceBreadHealth(float damage)
+    {
+        breadHealth -= damage;
+        breadHealthBarSlider.value = breadHealth;
     }
 
     IEnumerator TakeTurn()
