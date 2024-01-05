@@ -4,6 +4,9 @@ using UnityEngine;
 
 public abstract class Bread : MonoBehaviour, IActionState
 {
+    [SerializeField] BreadManager breadManager;
+    bool actionFinished;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,5 +34,47 @@ public abstract class Bread : MonoBehaviour, IActionState
     public void UseItem()
     {
         throw new System.NotImplementedException();
+    }
+
+    public void StartTurn()
+    {
+        StartCoroutine(nameof(TakeTurn));
+    }
+
+    public void EndTurn()
+    {
+        actionFinished = true;
+    }
+
+    IEnumerator TakeTurn()
+    {
+        actionFinished = false;
+        yield return new WaitForSeconds(breadManager.TakeActionDelay);
+
+        ChooseAction();
+        
+        while(!actionFinished)
+            yield return null;
+
+        yield return new WaitForSeconds(breadManager.TurnEndDelay);
+
+        breadManager.EndTurn(this);
+    }
+
+    void ChooseAction()
+    {
+        switch(Random.Range(0, 4))
+        {
+            case 0: Fight();
+                break;
+            case 1: SpecialPower();
+                break;
+            case 2: UseItem();
+                break;
+            case 3: Defend();
+                break;
+            
+            default: break;
+        }
     }
 }
