@@ -5,14 +5,16 @@ using UnityEngine;
 public class BreadManager : MonoBehaviour
 {
     [SerializeField] List<Bread> breads;
+    [SerializeField, Range(0, 1f)] public float unfocusedTransparency;
     [field: SerializeField] public float TakeActionDelay {get; set;}
     [field: SerializeField] public float TurnEndDelay {get; set;}
     List<Bread> breadOrders;
+    Bread currentBread;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartBreadsTurn();
     }
 
     // Update is called once per frame
@@ -23,23 +25,40 @@ public class BreadManager : MonoBehaviour
 
     public void StartBreadsTurn()
     {
+        Debug.Log("bread's turn starting");
         breadOrders = new List<Bread>(breads);
         breadOrders.RemoveAll(x => x.Dead);
 
-        breadOrders[Random.Range(0, breadOrders.Count)].StartTurn();
+        currentBread = breadOrders[Random.Range(0, breadOrders.Count)];
+        Debug.Log(currentBread.name + " starting turn");
+        currentBread.StartTurn();
+    }
+
+    public void SetTransparency(float value)
+    {
+        foreach(var b in breads)
+            if(b != currentBread && b.TryGetComponent(out SpriteRenderer renderer))
+                renderer.color = new Color(renderer.color.r, renderer.color.g, renderer.color.b, value);
     }
 
     void EndBreadsTurn()
     {
-
+        //switch over to swans turn
+        Debug.Log("bread's turn end");
     }
 
-    public void EndTurn(Bread bread)
+    public void EndTurn()
     {
-        breadOrders.Remove(bread);
+        breadOrders.Remove(currentBread);
+
+        SetTransparency(1);
 
         if(breadOrders.Count > 0)
-            breadOrders[Random.Range(0, breadOrders.Count)].StartTurn();
+        {
+            currentBread = breadOrders[Random.Range(0, breadOrders.Count)];
+            Debug.Log(currentBread.name + " starting turn");
+            currentBread.StartTurn();
+        }
         else
             EndBreadsTurn();
     }

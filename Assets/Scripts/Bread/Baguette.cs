@@ -6,7 +6,7 @@ public class Baguette : Bread
 {
     public override void SpecialPower()
     {
-        throw new System.NotImplementedException();
+        
     }
 
     // Start is called before the first frame update

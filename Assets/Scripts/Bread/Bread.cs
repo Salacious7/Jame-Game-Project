@@ -22,19 +22,19 @@ public abstract class Bread : MonoBehaviour, IActionState
 
     public void Defend()
     {
-        throw new System.NotImplementedException();
+        
     }
 
     public void Fight()
     {
-        throw new System.NotImplementedException();
+        
     }
 
     public abstract void SpecialPower();
 
     public void UseItem()
     {
-        throw new System.NotImplementedException();
+        
     }
 
     public void StartTurn()
@@ -50,16 +50,20 @@ public abstract class Bread : MonoBehaviour, IActionState
     IEnumerator TakeTurn()
     {
         actionFinished = false;
+        
         yield return new WaitForSeconds(breadManager.TakeActionDelay);
-
+        breadManager.SetTransparency(breadManager.unfocusedTransparency);
+        Debug.Log(name + " taking action");
         ChooseAction();
         
-        while(!actionFinished)
-            yield return null;
+        // while(!actionFinished)
+        //     yield return null;
 
         yield return new WaitForSeconds(breadManager.TurnEndDelay);
+        Debug.Log(name + " end turn");
+        breadManager.SetTransparency(1);
 
-        breadManager.EndTurn(this);
+        breadManager.EndTurn();
     }
 
     void ChooseAction()
