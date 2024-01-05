@@ -51,7 +51,7 @@ public class SwanPowers : MonoBehaviour, OnEventHandler
         }
     }
 
-    public void OnError()
+    public void OnFailed()
     {
         
     }
