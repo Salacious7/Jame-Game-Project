@@ -88,10 +88,38 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler
         {
             case FightType.BasicState:
                 Debug.Log("Attacked using Basic Attack is Success!");
+                BasicAttack();
                 break;
             case FightType.HeavyState:
                 Debug.Log("Attacked using Heavy Attack is Success!");
+                HeavyAttack();
                 break;
+        }
+    }
+
+    public void BasicAttack()
+    {
+
+    }
+
+    public void HeavyAttack()
+    {
+
+        if (swanUI.heavyDataSlider.value < 25f)
+        {
+            Debug.Log("Current damage: " + 5f);
+        }
+        else if (swanUI.heavyDataSlider.value <= 50f)
+        {
+            Debug.Log("Current damage: " + 10f);
+        }
+        else if (swanUI.heavyDataSlider.value <= 75f)
+        {
+            Debug.Log("Current damage: " + 15f);
+        }
+        else if (swanUI.heavyDataSlider.value > 75f)
+        {
+            Debug.Log("Current damage: " + 20f);
         }
     }
 
