@@ -7094,7 +7094,7 @@ MonoBehaviour:
     basicDamage: 0
     heavyDamage: 0
     negativeStatus: []
-  breadManager: {fileID: 0}
+  breadManager: {fileID: 1723480714}
 --- !u!114 &7889627638665617724
 MonoBehaviour:
   m_ObjectHideFlags: 0
