@@ -5,5 +5,5 @@ using UnityEngine;
 public interface OnEventHandler
 {
     public void OnSuccess();
-    public void OnError();
+    public void OnFailed();
 }

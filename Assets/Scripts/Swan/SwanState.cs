@@ -67,12 +67,12 @@ public class SwanState : MonoBehaviour, OnBreadHandler
         }
     }
 
-    public void OnError()
+    public void OnFailed(int amount)
     {
         Debug.Log("Failed");
     }
 
-    public void FightState(Swan.FightType fightStateType)
+    public void FightState(Swan.FightType fightStateType, OnEventHandler state)
     {
         switch (fightStateType)
         {
@@ -85,6 +85,11 @@ public class SwanState : MonoBehaviour, OnBreadHandler
                 Debug.Log("Heavy attack pressed!");
                 swanManager.StartCoroutine(swanManager.SelectBread(this));
                 fightType = FightType.HeavyState;
+                break;
+            case Swan.FightType.DefendState:
+                Debug.Log("Defending attack!");
+                swanUI.SpawnBasicUIStateArrows();
+                StartCoroutine(InitializeDefendBasicArrowKey(state));
                 break;
         }
     }
@@ -114,6 +119,56 @@ public class SwanState : MonoBehaviour, OnBreadHandler
         return true;
     }
 
+    public IEnumerator InitializeDefendBasicArrowKey(OnEventHandler state)
+    {
+        yield return new WaitUntil(() => HorizontalArrowDisplay());
+
+        Debug.Log("Initialize Basic Arrow Key");
+
+        bool condition = true;
+        int index = 0;
+
+        while (index < swanUI.BasicActionInputStateContainer.transform.childCount && condition)
+        {
+            yield return null;
+
+            Debug.Log(swanUI.BasicActionInputStateContainer.transform.GetChild(index).gameObject.name);
+
+            PlayDefendBasicArrowKey(KeyCode.LeftArrow, state, ref condition, ref index);
+            PlayDefendBasicArrowKey(KeyCode.RightArrow, state, ref condition, ref index);
+            PlayDefendBasicArrowKey(KeyCode.DownArrow, state, ref condition, ref index);
+            PlayDefendBasicArrowKey(KeyCode.UpArrow, state, ref condition, ref index);
+        }
+
+        yield return new WaitUntil(() => index >= swanUI.BasicActionInputStateContainer.transform.childCount);
+
+        swanUI.BasicActionInputStateContainer.SetActive(false);
+
+        Debug.Log("Initialize done!");
+
+        state.OnSuccess();
+    }
+
+    public void PlayDefendBasicArrowKey(KeyCode keyCode, OnEventHandler state, ref bool condition, ref int index)
+    {
+        if (Input.GetKeyDown(keyCode))
+        {
+            if (keyCode.ToString() != swanUI.BasicActionInputStateContainer.transform.GetChild(index).gameObject.name)
+            {
+                Debug.Log("You failed!");
+
+                condition = false;
+                swanUI.BasicActionInputStateContainer.SetActive(false);
+
+                state.OnFailed();
+
+                return;
+            }
+
+            index++;
+        }
+    }
+
     public IEnumerator InitializeBasicArrowKey(Bread bread, OnBreadHandler state)
     {
         yield return new WaitUntil(() => HorizontalArrowDisplay());
@@ -129,10 +184,10 @@ public class SwanState : MonoBehaviour, OnBreadHandler
 
             Debug.Log(swanUI.BasicActionInputStateContainer.transform.GetChild(index).gameObject.name);
 
-            PlayBasicArrowKey(KeyCode.LeftArrow, ref condition, ref index);
-            PlayBasicArrowKey(KeyCode.RightArrow, ref condition, ref index);
-            PlayBasicArrowKey(KeyCode.DownArrow, ref condition, ref index);
-            PlayBasicArrowKey(KeyCode.UpArrow, ref condition, ref index);
+            PlayBasicArrowKey(KeyCode.LeftArrow, state, ref condition, ref index);
+            PlayBasicArrowKey(KeyCode.RightArrow, state, ref condition, ref index);
+            PlayBasicArrowKey(KeyCode.DownArrow, state, ref condition, ref index);
+            PlayBasicArrowKey(KeyCode.UpArrow, state, ref condition, ref index);
         }
 
         yield return new WaitUntil(() => index >= swanUI.BasicActionInputStateContainer.transform.childCount);
@@ -144,7 +199,7 @@ public class SwanState : MonoBehaviour, OnBreadHandler
         state.OnSuccess(bread);
     }
 
-    public void PlayBasicArrowKey(KeyCode keyCode, ref bool condition, ref int index)
+    public void PlayBasicArrowKey(KeyCode keyCode, OnBreadHandler state, ref bool condition, ref int index)
     {
         if (Input.GetKeyDown(keyCode))
         {
@@ -153,7 +208,9 @@ public class SwanState : MonoBehaviour, OnBreadHandler
                 Debug.Log("You failed!");
 
                 condition = false;
-                swanUI.HeavyActionInputStateContainer.SetActive(false);
+                swanUI.BasicActionInputStateContainer.SetActive(false);
+
+                state.OnFailed(index);
 
                 return;
             }

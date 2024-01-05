@@ -5,5 +5,5 @@ using UnityEngine;
 public interface OnBreadHandler
 {
     void OnSuccess(Bread bread);
-    void OnError();
+    void OnFailed(int amount);
 }

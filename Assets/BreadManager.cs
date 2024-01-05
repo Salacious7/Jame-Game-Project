@@ -10,6 +10,7 @@ public class BreadManager : MonoBehaviour
     [field: SerializeField] public float TurnEndDelay {get; set;}
     List<Bread> breadOrders;
     Bread currentBread;
+    [SerializeField] private SwanUI swanUI;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class BreadManager : MonoBehaviour
 
     public void StartBreadsTurn()
     {
+        swanUI.ActionStateContainer.SetActive(false);
         Debug.Log("bread's turn starting");
         breadOrders = new List<Bread>(breads);
         breadOrders.RemoveAll(x => x.Dead);
@@ -41,9 +43,14 @@ public class BreadManager : MonoBehaviour
                 renderer.color = new Color(renderer.color.r, renderer.color.g, renderer.color.b, value);
     }
 
+    public void FinishAction()
+    {
+        currentBread.EndTurn();
+    }
+
     void EndBreadsTurn()
     {
-        //switch over to swans turn
+        swanUI.ActionStateAllAccessible();
         Debug.Log("bread's turn end");
     }
 

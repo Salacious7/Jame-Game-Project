@@ -28,13 +28,13 @@ public class SwanPowers : MonoBehaviour, OnEventHandler
 
     public void UseSwanLeap()
     {
-        swanState.FightState(Swan.FightType.BasicState);
+        swanState.FightState(Swan.FightType.BasicState, this);
         specialPowerType = SpecialPowerType.SwanLeap;
     }
 
     public void UseGroundPummel()
     {
-        swanState.FightState(Swan.FightType.BasicState);
+        swanState.FightState(Swan.FightType.BasicState, this);
         specialPowerType = SpecialPowerType.GroundPummel;
     }
 
@@ -51,7 +51,7 @@ public class SwanPowers : MonoBehaviour, OnEventHandler
         }
     }
 
-    public void OnError()
+    public void OnFailed()
     {
         
     }
