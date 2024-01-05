@@ -41,7 +41,7 @@ public class BreadManager : MonoBehaviour
         breadOrders.RemoveAll(x => x.Dead);
 
         currentBread = breadOrders[Random.Range(0, breadOrders.Count)];
-        currentBread.selectedArrow.SetActive(true);
+        // currentBread.selectedArrow.SetActive(true);
         Debug.Log(currentBread.name + " starting turn");
 
 
@@ -76,7 +76,7 @@ public class BreadManager : MonoBehaviour
 
     public void EndTurn()
     {
-        currentBread.selectedArrow.SetActive(false);
+        // currentBread.selectedArrow.SetActive(false);
         breadOrders.Remove(currentBread);
 
         SetTransparency(1);
@@ -85,7 +85,7 @@ public class BreadManager : MonoBehaviour
         {
             currentBread = breadOrders[Random.Range(0, breadOrders.Count)];
             Debug.Log(currentBread.name + " starting turn");
-            currentBread.selectedArrow.SetActive(true);
+            // currentBread.selectedArrow.SetActive(true);
             currentBread.StartTurn();
         }
         else

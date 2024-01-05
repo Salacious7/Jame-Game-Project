@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SwanState : MonoBehaviour, OnBreadHandler
 {
@@ -178,6 +179,11 @@ public class SwanState : MonoBehaviour, OnBreadHandler
             state.OnFailed(0);
             getDefenseTimer = setDefenseTimer;
 
+            foreach (Transform item in swanUI.BasicActionInputStateContainer.transform)
+            {
+                item.gameObject.SetActive(true);
+            }
+
             yield break;
         }
 
@@ -188,6 +194,11 @@ public class SwanState : MonoBehaviour, OnBreadHandler
         swan.damageIndex = index;
 
         Debug.Log("Initialize done!");
+
+        foreach (Transform item in swanUI.BasicActionInputStateContainer.transform)
+        {
+            item.gameObject.SetActive(true);
+        }
 
         state.OnSuccess();
     }
@@ -203,10 +214,18 @@ public class SwanState : MonoBehaviour, OnBreadHandler
                 condition = false;
                 swanUI.BasicActionInputStateContainer.SetActive(false);
 
+                foreach (Transform item in swanUI.BasicActionInputStateContainer.transform)
+                {
+                    item.gameObject.SetActive(true);
+                }
+
                 state.OnFailed(index);
 
                 return;
             }
+
+
+            swanUI.BasicActionInputStateContainer.transform.GetChild(index).gameObject.SetActive(false);
 
             index++;
         }
@@ -240,6 +259,12 @@ public class SwanState : MonoBehaviour, OnBreadHandler
         Debug.Log("Initialize done!");
 
         state.OnSuccess(bread);
+
+        foreach (Transform img in swanUI.BasicActionInputStateContainer.transform)
+        {
+            Image currentObj = img.GetComponent<Image>();
+            currentObj.color = Color.black;
+        }
     }
 
     public void PlayBasicArrowKey(KeyCode keyCode, OnBreadHandler state, ref bool condition, ref int index)
@@ -253,10 +278,17 @@ public class SwanState : MonoBehaviour, OnBreadHandler
                 condition = false;
                 swanUI.BasicActionInputStateContainer.SetActive(false);
 
+                foreach (Transform item in swanUI.BasicActionInputStateContainer.transform)
+                {
+                    item.gameObject.SetActive(true);
+                }
+
                 state.OnFailed(index);
 
                 return;
             }
+
+            swanUI.BasicActionInputStateContainer.transform.GetChild(index).gameObject.SetActive(false);
 
             index++;
         }
@@ -277,6 +309,9 @@ public class SwanState : MonoBehaviour, OnBreadHandler
                 sliderValueIncreased += 10f;
                 canRightMash = true;
                 canLeftMash = false;
+
+                swanUI.HeavyArrowsActionInput.transform.GetChild(0).GetComponent<Image>().color = Color.yellow;
+                swanUI.HeavyArrowsActionInput.transform.GetChild(1).GetComponent<Image>().color = Color.black;
             }
 
             if (Input.GetKeyDown(rightKeyCode) && !canLeftMash)
@@ -284,6 +319,9 @@ public class SwanState : MonoBehaviour, OnBreadHandler
                 sliderValueIncreased += 10f;
                 canRightMash = false;
                 canLeftMash = true;
+
+                swanUI.HeavyArrowsActionInput.transform.GetChild(0).GetComponent<Image>().color = Color.black;
+                swanUI.HeavyArrowsActionInput.transform.GetChild(1).GetComponent<Image>().color = Color.yellow;
             }
 
             getHeavyMashTimer -= Time.deltaTime;
