@@ -10,17 +10,31 @@ public class SwanData
     public float damage;
     public float mana;
     public float passive;
+    public float defense;
+    public float basicDamage;
+    public float heavyDamage;
 
-    public List<NegativeStatus> negativeStatuses = new List<NegativeStatus>();
+    [Header("Negative Status")]
+    public List<SpecialPower> negativeStatus = new List<SpecialPower>();
 }
 
-public class Swan : MonoBehaviour, IActionState
+public class Swan : MonoBehaviour, IActionState, OnEventHandler
 {
     [SerializeField] private SwanData swanData;
+    private SwanState swanState;
     private SwanUI swanUI;
+
+    public enum FightType
+    {
+        BasicState,
+        HeavyState
+    }
+
+    private FightType fightType;
 
     private void Awake()
     {
+        swanState = GetComponent<SwanState>();
         swanUI = GetComponent<SwanUI>();
 
         BreadCrumbs.onEntityHeal += HealSwan;
@@ -30,19 +44,9 @@ public class Swan : MonoBehaviour, IActionState
         Milk.onEntityRemoveNegativeStatus += ItemRemoveNegativeStatus;
     }
 
-    public void Defend()
-    {
-        throw new System.NotImplementedException();
-    }
-
     public void Fight()
     {
         swanUI.ActionStateUI();
-    }
-
-    public void SpecialPower()
-    {
-        throw new System.NotImplementedException();
     }
 
     public void UseItem()
@@ -50,6 +54,53 @@ public class Swan : MonoBehaviour, IActionState
         swanUI.ShowItemUI();
     }
 
+    public void SpecialPower()
+    {
+        swanUI.ShowSpecialPowerUI();
+    }
+
+    public void Defend()
+    {
+        swanUI.ShowDefendStateUI();
+    }
+
+    public void UseBasicAttack()
+    {
+        swanState.FightState(FightType.BasicState, this);
+        fightType = FightType.BasicState;
+    }
+
+    public void UseHeavyAttack()
+    {
+        swanState.FightState(FightType.HeavyState, this);
+        fightType = FightType.HeavyState;
+    }
+
+    public void UseDefend()
+    {
+        swanData.defense += 10f;
+        swanUI.DefendObjUI.SetActive(false);
+    }
+
+    public void OnSuccess()
+    {
+        switch (fightType)
+        {
+            case FightType.BasicState:
+                Debug.Log("Attacked using Basic Attack is Success!");
+                break;
+            case FightType.HeavyState:
+                Debug.Log("Attacked using Heavy Attack is Success!");
+                break;
+        }
+    }
+
+    public void OnError()
+    {
+  
+    }
+
+    #region Item
     public void HealSwan(BreadCrumbs breadCrumbs)
     {
         swanData.health += breadCrumbs.IncreaseHealth();
@@ -80,11 +131,12 @@ public class Swan : MonoBehaviour, IActionState
 
     public void ItemRemoveNegativeStatus()
     {
-        if (swanData.negativeStatuses.Count == 0)
+        if (swanData.negativeStatus.Count <= 0)
             return;
 
-        swanData.negativeStatuses.Clear();
+        swanData.negativeStatus.Clear();
 
         Debug.Log("Your negtive status has been cleared!");
     }
+    #endregion
 }

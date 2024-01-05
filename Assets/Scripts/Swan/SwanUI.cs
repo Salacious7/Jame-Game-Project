@@ -1,85 +1,53 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+
 
 public class SwanUI : MonoBehaviour
 {
     private Swan swan;
     private SwanState swanState;
 
-    [SerializeField] 
-    private UIDocument uIDocument;
-    private VisualElement root;
-
-    private Button fightBtn, itemsBtn,
-           sPowerBtn, defendBtn;
-
-    private Button basicAtkBtn, heavyAtkBtn;
-
+    [Header("ActionStateUI")]
     public GameObject ActionContainer;
     public GameObject BasicActionInputStateContainer;
     public GameObject HeavyActionInputStateContainer;
     public UnityEngine.UI.Slider heavyDataSlider;
 
-    //
-    public GameObject ItemsUI;
+    [Header("ItemsUI")]
+    public GameObject ItemsUIObj;
 
-    public VisualElement stateUI { get; private set; }
-    public VisualElement fightInputStateUI { get; private set; }
-    public VisualElement fightInputStateContainerUI { get; private set; }
+    [Header("SpecialPowerUI")]
+    public GameObject SpecialPowerUIObj;
 
-    private List<Button> actionStateBtnList = new List<Button>();
-    private int currentActionStateBtnIndex;
-
+    [Header("DefendUI")]
+    public GameObject DefendObjUI;
 
     private void Awake()
     {
         swan = GetComponent<Swan>();
         swanState = GetComponent<SwanState>();
-
-        // InitActionStateUI();
     }
 
-    private void InitActionStateUI()
+    public void OnClickBasicButton()
     {
-        root = uIDocument.rootVisualElement;
+        swanState.FightState(Swan.FightType.BasicState, swanState);
+    }
 
-        fightBtn = root.Q<Button>("FightBtn");
-        itemsBtn = root.Q<Button>("ItemsBtn");
-        sPowerBtn = root.Q<Button>("SPowerBtn");
-        defendBtn = root.Q<Button>("DefendBtn");
-
-        fightBtn.clicked += () => swan.Fight();
-        itemsBtn.clicked += () => swan.UseItem();
-        sPowerBtn.clicked += () => swan.SpecialPower();
-        defendBtn.clicked += () => swan.Defend();
-
-        stateUI = root.Q<VisualElement>("StateUI");
-        fightInputStateUI = root.Q<VisualElement>("FightInputState");
-        fightInputStateContainerUI = root.Q<VisualElement>("FightInputStateContainer");
-
-        basicAtkBtn = root.Q<Button>("BasicAttackBtn");
-        heavyAtkBtn = root.Q<Button>("HeavyAttackBtn");
-
-        basicAtkBtn.clicked += () => swanState.FightState("Basic");
-        heavyAtkBtn.clicked += () => swanState.FightState("Heavy");
+    public void OnClickHeavyButton()
+    {
+        swanState.FightState(Swan.FightType.HeavyState, swanState);
     }
 
     public void SpawnBasicUIStateArrows()
     {
-        // fightInputStateContainerUI.
-
-        swanState.FightState("Basic");
         ActionContainer.SetActive(false);
+        SpecialPowerUIObj.SetActive(false);
         BasicActionInputStateContainer.SetActive(true);
     }
 
     public void SpawnHeavyUIStateArrows()
     {
-        // fightInputStateContainerUI.
-
-        swanState.FightState("Heavy");
         ActionContainer.SetActive(false);
         HeavyActionInputStateContainer.SetActive(true);
     }
@@ -87,17 +55,20 @@ public class SwanUI : MonoBehaviour
     public void ActionStateUI()
     {
         ActionContainer.SetActive(!ActionContainer.activeSelf);
-
-        // stateUI.visible = !stateUI.visible;
     }
 
     public void ShowItemUI()
     {
-        ItemsUI.SetActive(!ItemsUI.activeSelf);
+        ItemsUIObj.SetActive(!ItemsUIObj.activeSelf);
     }
 
-    public void DefendStateUI()
+    public void ShowSpecialPowerUI()
     {
+        SpecialPowerUIObj.SetActive(!SpecialPowerUIObj.activeSelf);
+    }
 
+    public void ShowDefendStateUI()
+    {
+        DefendObjUI.SetActive(!DefendObjUI.activeSelf);
     }
 }
