@@ -24,6 +24,7 @@ public class BreadManager : MonoBehaviour
     public void StartBreadsTurn()
     {
         breadOrders = new List<Bread>(breads);
+        breadOrders.RemoveAll(x => x.Dead);
 
         breadOrders[Random.Range(0, breadOrders.Count)].StartTurn();
     }
