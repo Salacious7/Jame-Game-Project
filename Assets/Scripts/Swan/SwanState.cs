@@ -65,6 +65,11 @@ public class SwanState : MonoBehaviour, OnEventHandler
                 swanUI.SpawnHeavyUIStateArrows();
                 StartCoroutine(InitializeHeavyArrowKey(state));
                 break;
+            case Swan.FightType.DefendState:
+                Debug.Log("Defending attack!");
+                swanUI.SpawnBasicUIStateArrows();
+                StartCoroutine(InitializeBasicArrowKey(state));
+                break;
         }
     }
 

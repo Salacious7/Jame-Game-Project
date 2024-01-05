@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public abstract class Bread : MonoBehaviour, IActionState
 {
@@ -59,6 +60,8 @@ public abstract class Bread : MonoBehaviour, IActionState
         // while(!actionFinished)
         //     yield return null;
 
+        yield return new WaitUntil(() => actionFinished);
+
         yield return new WaitForSeconds(breadManager.TurnEndDelay);
         Debug.Log(name + " end turn");
         breadManager.SetTransparency(1);
@@ -68,18 +71,24 @@ public abstract class Bread : MonoBehaviour, IActionState
 
     void ChooseAction()
     {
-        switch(Random.Range(0, 4))
+        if(GameObject.FindWithTag("Swan").TryGetComponent(out SwanState swanState))
         {
-            case 0: Fight();
-                break;
-            case 1: SpecialPower();
-                break;
-            case 2: UseItem();
-                break;
-            case 3: Defend();
-                break;
-            
-            default: break;
+            var swan = GameObject.FindWithTag("Swan").GetComponent<Swan>();
+            swan.fightType = Swan.FightType.DefendState;
+            swanState.FightState(Swan.FightType.DefendState, swan);
         }
+        // switch(Random.Range(0, 4))
+        // {
+        //     case 0: Fight();
+        //         break;
+        //     case 1: SpecialPower();
+        //         break;
+        //     case 2: UseItem();
+        //         break;
+        //     case 3: Defend();
+        //         break;
+            
+        //     default: break;
+        // }
     }
 }

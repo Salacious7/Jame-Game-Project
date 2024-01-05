@@ -21,16 +21,18 @@ public class SwanData
 public class Swan : MonoBehaviour, IActionState, OnEventHandler
 {
     [SerializeField] private SwanData swanData;
+    [SerializeField] BreadManager breadManager;
     private SwanState swanState;
     private SwanUI swanUI;
 
     public enum FightType
     {
         BasicState,
-        HeavyState
+        HeavyState,
+        DefendState
     }
 
-    private FightType fightType;
+    public FightType fightType {get; set;}
 
     private void Awake()
     {
@@ -93,6 +95,10 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler
             case FightType.HeavyState:
                 Debug.Log("Attacked using Heavy Attack is Success!");
                 HeavyAttack();
+                break;
+            case FightType.DefendState:
+                Debug.Log("Defended attack!");
+                breadManager.EndTurn();
                 break;
         }
     }

@@ -41,6 +41,11 @@ public class BreadManager : MonoBehaviour
                 renderer.color = new Color(renderer.color.r, renderer.color.g, renderer.color.b, value);
     }
 
+    public void FinishAction()
+    {
+        currentBread.EndTurn();
+    }
+
     void EndBreadsTurn()
     {
         //switch over to swans turn
