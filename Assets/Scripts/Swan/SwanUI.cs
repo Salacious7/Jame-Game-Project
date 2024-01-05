@@ -9,10 +9,12 @@ public class SwanUI : MonoBehaviour
     private SwanState swanState;
 
     [Header("ActionStateUI")]
-    public GameObject ActionContainer;
     public GameObject BasicActionInputStateContainer;
     public GameObject HeavyActionInputStateContainer;
     public UnityEngine.UI.Slider heavyDataSlider;
+
+    [Header("FightUI")]
+    public GameObject FightUI;
 
     [Header("ItemsUI")]
     public GameObject ItemsUIObj;
@@ -42,7 +44,7 @@ public class SwanUI : MonoBehaviour
     public void SpawnBasicUIStateArrows()
     {
         BasicActionInputStateContainer.SetActive(true);
-        ActionContainer.SetActive(false);
+        FightUI.SetActive(false);
 
         if(SpecialPowerUIObj == null)
             return;
@@ -52,13 +54,13 @@ public class SwanUI : MonoBehaviour
 
     public void SpawnHeavyUIStateArrows()
     {
-        ActionContainer.SetActive(false);
+        FightUI.SetActive(false);
         HeavyActionInputStateContainer.SetActive(true);
     }
 
     public void ActionStateUI()
     {
-        ActionContainer.SetActive(!ActionContainer.activeSelf);
+        FightUI.SetActive(!FightUI.activeSelf);
     }
 
     public void ShowItemUI()

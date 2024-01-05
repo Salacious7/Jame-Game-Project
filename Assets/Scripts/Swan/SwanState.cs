@@ -63,7 +63,7 @@ public class SwanState : MonoBehaviour, OnEventHandler
             case Swan.FightType.HeavyState:
                 Debug.Log("Heavy attack pressed!");
                 swanUI.SpawnHeavyUIStateArrows();
-                PlayHeavyArrowKey();
+                StartCoroutine(InitializeHeavyArrowKey(state));
                 break;
         }
     }
@@ -141,68 +141,39 @@ public class SwanState : MonoBehaviour, OnEventHandler
         }
     }
 
-    private void PlayHeavyArrowKey()
+    public IEnumerator InitializeHeavyArrowKey(OnEventHandler state)
     {
-        if (getHeavyMashTimer <= 0)
+        swanUI.HeavyActionInputStateContainer.SetActive(true);
+
+        while (getHeavyMashTimer >= 0 && sliderValueIncreased <= 100)
         {
-            if (sliderValueIncreased <= 25f)
+            yield return null;
+
+            Debug.Log("Heavy attack pressed!");
+
+            if (Input.GetKeyDown(keyCodeArrows[rightRandomIndex]) && canRightMash)
             {
-                Debug.Log("Current damage: " + 5f);
-            }
-            else if (sliderValueIncreased <= 50f)
-            {
-                Debug.Log("Current damage: " + 10f);
-            }
-            else if (sliderValueIncreased <= 75f)
-            {
-                Debug.Log("Current damage: " + 15f);
-            }
-            else if (sliderValueIncreased <= 100f)
-            {
-                Debug.Log("Current damage: " + 20f);
+                sliderValueIncreased += 10f;
+                canRightMash = false;
             }
 
-            swanUI.HeavyActionInputStateContainer.SetActive(false);
+            if (Input.GetKeyDown(keyCodeArrows[leftRandomIndex]) && !canRightMash)
+            {
+                sliderValueIncreased += 10f;
+                canRightMash = true;
+            }
 
-            getHeavyMashTimer = setHeavyMashTimer;
-
-            return;
-        }
-        else
-        {
             getHeavyMashTimer -= Time.deltaTime;
+
+            swanUI.heavyDataSlider.value = sliderValueIncreased;
         }
 
-        if (swanUI.heavyDataSlider.value == 100)
-        {
-            Debug.Log("Current damage: " + 20f);
-            swanUI.HeavyActionInputStateContainer.SetActive(false);
-            return;
-        }
+        yield return new WaitUntil(() => getHeavyMashTimer <= 0 || sliderValueIncreased >= 100);
 
-        HeavyMashInput(keyCodeArrows[(int)Mathf.PingPong(0, 1)]);
+        swanUI.HeavyActionInputStateContainer.SetActive(false);
+        swanUI.heavyDataSlider.value = 0f;
+        getHeavyMashTimer = setHeavyMashTimer;
 
-        if (Input.GetKeyDown(keyCodeArrows[rightRandomIndex]) && canRightMash)
-        {
-            sliderValueIncreased += 10f;
-            canRightMash = false;
-        }
-
-        if (Input.GetKeyDown(keyCodeArrows[leftRandomIndex]) && !canRightMash)
-        {
-            sliderValueIncreased += 10f;
-            canRightMash = true;
-        }
-
-        swanUI.heavyDataSlider.value = sliderValueIncreased;
-    }
-
-    private void HeavyMashInput(KeyCode keyCode)
-    {
-        if (Input.GetKeyDown(keyCode))
-        {
-            sliderValueIncreased += 10f;
-            canRightMash = true;
-        }
+        state.OnSuccess();
     }
 }
