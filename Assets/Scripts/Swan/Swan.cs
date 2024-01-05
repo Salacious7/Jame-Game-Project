@@ -18,7 +18,7 @@ public class SwanData
     public List<SpecialPower> negativeStatus = new List<SpecialPower>();
 }
 
-public class Swan : MonoBehaviour, IActionState, OnEventHandler
+public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 {
     [SerializeField] private SwanData swanData;
     private SwanState swanState;
@@ -66,13 +66,13 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler
 
     public void UseBasicAttack()
     {
-        swanState.FightState(FightType.BasicState, this);
+        swanState.FightState(FightType.BasicState);
         fightType = FightType.BasicState;
     }
 
     public void UseHeavyAttack()
     {
-        swanState.FightState(FightType.HeavyState, this);
+        swanState.FightState(FightType.HeavyState);
         fightType = FightType.HeavyState;
     }
 
@@ -82,27 +82,32 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler
         swanUI.DefendObjUI.SetActive(false);
     }
 
-    public void OnSuccess()
+    public void OnSuccess(Bread bread)
     {
         switch (fightType)
         {
             case FightType.BasicState:
                 Debug.Log("Attacked using Basic Attack is Success!");
-                BasicAttack();
+                BasicAttack(bread);
                 break;
             case FightType.HeavyState:
                 Debug.Log("Attacked using Heavy Attack is Success!");
-                HeavyAttack();
+                HeavyAttack(bread);
                 break;
         }
     }
 
-    public void BasicAttack()
+    public void OnSuccess()
     {
 
     }
 
-    public void HeavyAttack()
+    public void BasicAttack(Bread bread)
+    {
+        Debug.Log("Damage hit to " + bread.name);
+    }
+
+    public void HeavyAttack(Bread bread)
     {
 
         if (swanUI.heavyDataSlider.value < 25f)

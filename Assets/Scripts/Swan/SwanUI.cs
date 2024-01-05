@@ -28,17 +28,16 @@ public class SwanUI : MonoBehaviour
     private void Awake()
     {
         swan = GetComponent<Swan>();
-        swanState = GetComponent<SwanState>();
     }
 
     public void OnClickBasicButton()
     {
-        swanState.FightState(Swan.FightType.BasicState, swanState);
+        swanState.FightState(Swan.FightType.BasicState);
     }
 
     public void OnClickHeavyButton()
     {
-        swanState.FightState(Swan.FightType.HeavyState, swanState);
+        swanState.FightState(Swan.FightType.HeavyState);
     }
 
     public void SpawnBasicUIStateArrows()

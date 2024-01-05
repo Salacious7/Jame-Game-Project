@@ -7,6 +7,7 @@ public abstract class Bread : MonoBehaviour, IActionState
     [SerializeField] BreadManager breadManager;
     bool actionFinished;
     public bool Dead {get; private set;}
+    public GameObject selectedArrow;
 
     // Start is called before the first frame update
     void Start()

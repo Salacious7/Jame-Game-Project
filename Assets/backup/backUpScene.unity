@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breadManager: {fileID: 1723480714}
-  selectedArrow: {fileID: 1871949548}
+  selectedArrow: {fileID: 0}
 --- !u!95 &44301768
 Animator:
   serializedVersion: 5
@@ -3436,15 +3436,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819995543}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc886ccad67241746978bada9f84e830, type: 3}
+  m_Script: {fileID: 11500000, guid: 109cceb3f0af49248ae110d6771add88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  islandRenderer: {fileID: 0}
-  island1: {fileID: 0}
-  island2: {fileID: 0}
-  swapInterval: 0
 --- !u!1 &825397562
 GameObject:
   m_ObjectHideFlags: 0
@@ -5358,10 +5354,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breads:
-  - {fileID: 1929451457}
+  - {fileID: 1495082034}
   - {fileID: 44301767}
   - {fileID: 1819663951}
-  - {fileID: 1495082034}
+  - {fileID: 1929451457}
 --- !u!1 &1495082032
 GameObject:
   m_ObjectHideFlags: 0
@@ -5409,7 +5405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breadManager: {fileID: 1723480714}
-  selectedArrow: {fileID: 1205302422}
+  selectedArrow: {fileID: 0}
 --- !u!1 &1523791295
 GameObject:
   m_ObjectHideFlags: 0
@@ -5540,7 +5536,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723480713}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24a1017c8a5bec34fa0769149e17d71d, type: 3}
   m_Name: 
@@ -5797,7 +5793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breadManager: {fileID: 1723480714}
-  selectedArrow: {fileID: 750238746}
+  selectedArrow: {fileID: 0}
 --- !u!1 &1824916203
 GameObject:
   m_ObjectHideFlags: 0
@@ -6343,7 +6339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breadManager: {fileID: 1723480714}
-  selectedArrow: {fileID: 2027765511}
+  selectedArrow: {fileID: 0}
 --- !u!1 &1948286572
 GameObject:
   m_ObjectHideFlags: 0
