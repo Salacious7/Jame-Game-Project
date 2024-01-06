@@ -26,6 +26,7 @@ public class SwanUI : MonoBehaviour, OnEventHandler
     public Slider heavyArrowTimerSlider;
 
     [SerializeField] private List<GameObject> actionStateList = new List<GameObject>();
+    [SerializeField] private List<Button> actionStateBtnList = new List<Button>();
 
     [Header("FightUI")]
     public GameObject FightUI;
@@ -99,15 +100,30 @@ public class SwanUI : MonoBehaviour, OnEventHandler
         HeavyActionInputStateContainer.SetActive(true);
     }
 
+    public void ActionStateButtonInteractable()
+    {
+        foreach (Button btn in actionStateBtnList)
+        {
+            btn.interactable = true;
+        }
+    }
+
+    public void ActionStateButtonUninteractable()
+    {
+        foreach (Button btn in actionStateBtnList)
+        {
+            btn.interactable = false;
+        }
+    }
+
     public void ActionStateNoAllAccessible()
     {
-        ActionStateContainer.SetActive(true);
         BasicActionInputStateContainer.SetActive(false);
         HeavyActionInputStateContainer.SetActive(false);
 
-        foreach (GameObject btn in actionStateList)
+        foreach (GameObject item in actionStateList)
         {
-            btn.SetActive(false);
+            item.SetActive(false);
         }
     }
 

@@ -60,6 +60,7 @@ public class SwanManager : MonoBehaviour
         yield return new WaitUntil(() => selectedBread);
 
         state.OnSuccess(breads[selectedCharacterIndex]);
+        selectedBread = false;
     }
 }
 
