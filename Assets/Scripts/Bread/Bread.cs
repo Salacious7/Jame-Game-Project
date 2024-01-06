@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public abstract class Bread : MonoBehaviour, IActionState
 {
     [SerializeField] BreadManager breadManager;
+    [field: SerializeField] public Transform AttackPosition {get; private set;}
     bool actionFinished;
     public bool Dead {get; private set;}
     public GameObject selectedArrow;
@@ -57,6 +58,9 @@ public abstract class Bread : MonoBehaviour, IActionState
     {
         breadHealth -= damage;
         breadHealthBarSlider.value = breadHealth;
+
+        if(breadHealth <= 0)
+            Dead = true;
     }
 
     IEnumerator TakeTurn()

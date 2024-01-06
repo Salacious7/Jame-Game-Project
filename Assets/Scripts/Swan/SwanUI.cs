@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,7 @@ public class SwanUI : MonoBehaviour, OnEventHandler
     [Header("StatsUI")]
     public Slider healthBarSlider;
     public Slider specialPowerBarSlider;
+    public TextMeshProUGUI healthText;
 
     [Header("ActionStateUI")]
     public GameObject ActionStateContainer;
@@ -48,8 +50,9 @@ public class SwanUI : MonoBehaviour, OnEventHandler
     {
         swan = GetComponent<Swan>();
 
-        healthBarSlider.value = swan.swanData.health;
         specialPowerBarSlider.value = swan.swanData.mana;
+
+        swan.UpdateHealthUI(swan.swanData.health);
     }
 
     private void Update()
