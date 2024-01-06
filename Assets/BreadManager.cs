@@ -13,22 +13,15 @@ public class BreadManager : MonoBehaviour
     [SerializeField] private SwanUI swanUI;
     [SerializeField] private UIManager uiManager;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        StartCoroutine(StartBreadsTurn());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        StartCoroutine(EndBreadsTurn());
     }
 
     public IEnumerator StartBreadsTurn()
     {
         uiManager.panelCurrentTurnObj.SetActive(true);
-        uiManager.currentTextCurrentTurn.text = "Bread's turn to shine.";
+        uiManager.currentTextCurrentTurn.text = "Bread's turn to shine. Dodge their hits.";
 
         yield return new WaitForSeconds(2f);
 
@@ -70,7 +63,7 @@ public class BreadManager : MonoBehaviour
         uiManager.panelCurrentTurnObj.SetActive(false);
         uiManager.currentTextCurrentTurn.text = "";
 
-        swanUI.ActionStateAllAccessible();
+        swanUI.ActionStateNoAllAccessible();
         Debug.Log("bread's turn end");
     }
 
@@ -89,6 +82,12 @@ public class BreadManager : MonoBehaviour
             currentBread.StartTurn();
         }
         else
-            StartCoroutine(EndBreadsTurn());
+            StartCoroutine(InitEndBreadsTurn());
+    }
+
+    private IEnumerator InitEndBreadsTurn()
+    {
+        yield return new WaitForSeconds(1f);
+        StartCoroutine(EndBreadsTurn());
     }
 }

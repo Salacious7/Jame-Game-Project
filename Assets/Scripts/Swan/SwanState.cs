@@ -9,8 +9,8 @@ public class SwanState : MonoBehaviour, OnBreadHandler
     private bool canRightMash, canLeftMash;
     public float sliderValueIncreased;
 
-    [SerializeField] private float setDefenseTimer;
-    private float getDefenseTimer;
+    [SerializeField] private float setTimerBasicAttack;
+    private float getTimerBasicAttack;
     [SerializeField] private float setHeavyMashTimer;
     private float getHeavyMashTimer;
 
@@ -38,7 +38,9 @@ public class SwanState : MonoBehaviour, OnBreadHandler
         swanPowers = GetComponent<SwanPowers>();
 
         getHeavyMashTimer = setHeavyMashTimer;
-        getDefenseTimer = setDefenseTimer;
+        getTimerBasicAttack = setTimerBasicAttack;
+        swanUI.basicArrowTimerSlider.maxValue = setTimerBasicAttack;
+        swanUI.heavyArrowTimerSlider.maxValue = setHeavyMashTimer;
     }
 
     public void OnSuccess(Bread bread)
@@ -96,7 +98,7 @@ public class SwanState : MonoBehaviour, OnBreadHandler
     {
         List<Transform> children = new List<Transform>();
 
-        foreach (Transform child in swanUI.BasicActionInputStateContainer.transform)
+        foreach (Transform child in swanUI.BasicArrowsActionInput.transform)
         {
             children.Add(child);
         }
@@ -155,21 +157,22 @@ public class SwanState : MonoBehaviour, OnBreadHandler
         bool condition = true;
         int index = 0;
 
-        while (index < swanUI.BasicActionInputStateContainer.transform.childCount && condition && getDefenseTimer > 0)
+        while (index < swanUI.BasicArrowsActionInput.transform.childCount && condition && getTimerBasicAttack > 0)
         {
             yield return null;
 
-            Debug.Log(swanUI.BasicActionInputStateContainer.transform.GetChild(index).gameObject.name);
+            Debug.Log(swanUI.BasicArrowsActionInput.transform.GetChild(index).gameObject.name);
 
             PlayDefendBasicArrowKey(KeyCode.LeftArrow, state, ref condition, ref index);
             PlayDefendBasicArrowKey(KeyCode.RightArrow, state, ref condition, ref index);
             PlayDefendBasicArrowKey(KeyCode.DownArrow, state, ref condition, ref index);
             PlayDefendBasicArrowKey(KeyCode.UpArrow, state, ref condition, ref index);
 
-            getDefenseTimer -= Time.deltaTime;
+            getTimerBasicAttack -= Time.deltaTime;
+            swanUI.basicArrowTimerSlider.value = getTimerBasicAttack;
         }
 
-        if(getDefenseTimer <= 0)
+        if(getTimerBasicAttack <= 0)
         {
             Debug.Log("You failed!");
 
@@ -177,9 +180,10 @@ public class SwanState : MonoBehaviour, OnBreadHandler
             swanUI.BasicActionInputStateContainer.SetActive(false);
 
             state.OnFailed(0);
-            getDefenseTimer = setDefenseTimer;
+            getTimerBasicAttack = setTimerBasicAttack;
+            swanUI.basicArrowTimerSlider.value = setTimerBasicAttack;
 
-            foreach (Transform item in swanUI.BasicActionInputStateContainer.transform)
+            foreach (Transform item in swanUI.BasicArrowsActionInput.transform)
             {
                 item.gameObject.SetActive(true);
             }
@@ -187,15 +191,16 @@ public class SwanState : MonoBehaviour, OnBreadHandler
             yield break;
         }
 
-        yield return new WaitUntil(() => index >= swanUI.BasicActionInputStateContainer.transform.childCount);
+        yield return new WaitUntil(() => index >= swanUI.BasicArrowsActionInput.transform.childCount);
 
-        getDefenseTimer = setDefenseTimer;
+        getTimerBasicAttack = setTimerBasicAttack;
+        swanUI.basicArrowTimerSlider.value = setTimerBasicAttack;
         swanUI.BasicActionInputStateContainer.SetActive(false);
         swan.damageIndex = index;
 
         Debug.Log("Initialize done!");
 
-        foreach (Transform item in swanUI.BasicActionInputStateContainer.transform)
+        foreach (Transform item in swanUI.BasicArrowsActionInput.transform)
         {
             item.gameObject.SetActive(true);
         }
@@ -207,14 +212,16 @@ public class SwanState : MonoBehaviour, OnBreadHandler
     {
         if (Input.GetKeyDown(keyCode))
         {
-            if (keyCode.ToString() != swanUI.BasicActionInputStateContainer.transform.GetChild(index).gameObject.name)
+            if (keyCode.ToString() != swanUI.BasicArrowsActionInput.transform.GetChild(index).gameObject.name)
             {
                 Debug.Log("You failed!");
 
                 condition = false;
                 swanUI.BasicActionInputStateContainer.SetActive(false);
+                getTimerBasicAttack = setTimerBasicAttack;
+                swanUI.basicArrowTimerSlider.value = setTimerBasicAttack;
 
-                foreach (Transform item in swanUI.BasicActionInputStateContainer.transform)
+                foreach (Transform item in swanUI.BasicArrowsActionInput.transform)
                 {
                     item.gameObject.SetActive(true);
                 }
@@ -225,7 +232,7 @@ public class SwanState : MonoBehaviour, OnBreadHandler
             }
 
 
-            swanUI.BasicActionInputStateContainer.transform.GetChild(index).gameObject.SetActive(false);
+            swanUI.BasicArrowsActionInput.transform.GetChild(index).gameObject.SetActive(false);
 
             index++;
         }
@@ -240,55 +247,70 @@ public class SwanState : MonoBehaviour, OnBreadHandler
         bool condition = true;
         int index = 0;
 
-        while (index < swanUI.BasicActionInputStateContainer.transform.childCount && condition)
+        while (index < swanUI.BasicArrowsActionInput.transform.childCount && condition && getTimerBasicAttack > 0)
         {
             yield return null;
 
-            Debug.Log(swanUI.BasicActionInputStateContainer.transform.GetChild(index).gameObject.name);
+            Debug.Log(swanUI.BasicArrowsActionInput.transform.GetChild(index).gameObject.name);
 
-            PlayBasicArrowKey(KeyCode.LeftArrow, state, ref condition, ref index);
-            PlayBasicArrowKey(KeyCode.RightArrow, state, ref condition, ref index);
-            PlayBasicArrowKey(KeyCode.DownArrow, state, ref condition, ref index);
-            PlayBasicArrowKey(KeyCode.UpArrow, state, ref condition, ref index);
+            PlayBasicArrowKey(KeyCode.LeftArrow, bread, state, ref condition, ref index);
+            PlayBasicArrowKey(KeyCode.RightArrow, bread, state, ref condition, ref index);
+            PlayBasicArrowKey(KeyCode.DownArrow, bread, state, ref condition, ref index);
+            PlayBasicArrowKey(KeyCode.UpArrow, bread, state, ref condition, ref index);
+
+            getTimerBasicAttack -= Time.deltaTime;
+            swanUI.basicArrowTimerSlider.value = getTimerBasicAttack;
         }
 
-        yield return new WaitUntil(() => index >= swanUI.BasicActionInputStateContainer.transform.childCount);
+        swan.damageIndex = index;
+
+        yield return new WaitUntil(() => index >= swanUI.BasicArrowsActionInput.transform.childCount || getTimerBasicAttack <= 0);
 
         swanUI.BasicActionInputStateContainer.SetActive(false);
+        swanUI.basicArrowTimerSlider.value = setTimerBasicAttack;
+        getTimerBasicAttack = setTimerBasicAttack;
 
         Debug.Log("Initialize done!");
 
         state.OnSuccess(bread);
 
-        foreach (Transform img in swanUI.BasicActionInputStateContainer.transform)
+        foreach (Transform img in swanUI.BasicArrowsActionInput.transform)
         {
             Image currentObj = img.GetComponent<Image>();
             currentObj.color = Color.black;
         }
+
+        foreach (Transform item in swanUI.BasicArrowsActionInput.transform)
+        {
+            item.gameObject.SetActive(true);
+        }
     }
 
-    public void PlayBasicArrowKey(KeyCode keyCode, OnBreadHandler state, ref bool condition, ref int index)
+    public void PlayBasicArrowKey(KeyCode keyCode, Bread bread, OnBreadHandler state, ref bool condition, ref int index)
     {
         if (Input.GetKeyDown(keyCode))
         {
-            if (keyCode.ToString() != swanUI.BasicActionInputStateContainer.transform.GetChild(index).gameObject.name)
+            if (keyCode.ToString() != swanUI.BasicArrowsActionInput.transform.GetChild(index).gameObject.name)
             {
                 Debug.Log("You failed!");
 
                 condition = false;
-                swanUI.BasicActionInputStateContainer.SetActive(false);
 
-                foreach (Transform item in swanUI.BasicActionInputStateContainer.transform)
+                foreach (Transform item in swanUI.BasicArrowsActionInput.transform)
                 {
                     item.gameObject.SetActive(true);
                 }
 
-                state.OnFailed(index);
+                // Should be onfailed but this can still work temporarily
+                state.OnSuccess(bread);
+                swanUI.basicArrowTimerSlider.value = setTimerBasicAttack;
+                swanUI.BasicActionInputStateContainer.SetActive(false);
+                getTimerBasicAttack = setTimerBasicAttack;
 
                 return;
             }
 
-            swanUI.BasicActionInputStateContainer.transform.GetChild(index).gameObject.SetActive(false);
+            swanUI.BasicArrowsActionInput.transform.GetChild(index).gameObject.SetActive(false);
 
             index++;
         }
@@ -327,6 +349,7 @@ public class SwanState : MonoBehaviour, OnBreadHandler
             getHeavyMashTimer -= Time.deltaTime;
 
             swanUI.heavyDataSlider.value = sliderValueIncreased;
+            swanUI.heavyArrowTimerSlider.value = getHeavyMashTimer;
         }
 
         yield return new WaitUntil(() => getHeavyMashTimer <= 0 || sliderValueIncreased >= 100);
@@ -334,6 +357,7 @@ public class SwanState : MonoBehaviour, OnBreadHandler
         swanUI.HeavyActionInputStateContainer.SetActive(false);
         swanUI.heavyDataSlider.value = 0f;
         getHeavyMashTimer = setHeavyMashTimer;
+        swanUI.heavyArrowTimerSlider.value = setHeavyMashTimer;
 
         swanUI.HeavyArrowsActionInput.transform.GetChild(0).gameObject.SetActive(false);
         swanUI.HeavyArrowsActionInput.transform.GetChild(1).gameObject.SetActive(false);

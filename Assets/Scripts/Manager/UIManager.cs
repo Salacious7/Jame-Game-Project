@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    public static UIManager Instance { get; set; }
+
     public GameObject panelCurrentTurnObj;
     public TextMeshProUGUI currentTextCurrentTurn;
 
@@ -19,6 +21,11 @@ public class UIManager : MonoBehaviour
     {
         transitionImage.raycastTarget = false;
         Time.timeScale = 1f;
+
+        if(Instance == null)
+        {
+            Instance = this;
+        }
     }
 
     private void Update()
