@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5d78a55cad5d10547a5766d8e0429092
+guid: a85dcb6bae3a54eb0a0c39c6367cf9db
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,19 +81,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -149,12 +136,54 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet_0
+      name: swan_idle_0
       rect:
         serializedVersion: 2
-        x: 568
-        y: 4445
-        width: 761
+        x: 573
+        y: 4447
+        width: 751
+        height: 777
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c673302734f4941d687798eb0ac0951f
+      internalID: 205420433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_1
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 4447
+        width: 745
+        height: 784
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c60df12c6c7b4fad86f066a9d5c39e9
+      internalID: 564773714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_2
+      rect:
+        serializedVersion: 2
+        x: 4409
+        y: 4447
+        width: 741
         height: 787
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -163,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6795b51fb1a6eb44c970c342a3bdb328
-      internalID: -1592435933
+      spriteID: a7ac48818dba14007a179cdd9344a773
+      internalID: -324896200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_1
+      name: swan_idle_3
       rect:
         serializedVersion: 2
-        x: 2491
-        y: 4445
-        width: 748
-        height: 788
+        x: 6328
+        y: 4447
+        width: 735
+        height: 791
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,19 +213,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d0647dae4b7a124d81f4bf561c0f370
-      internalID: -1885834676
+      spriteID: 84fd4dcb33c014429ba628ab2e4f7e7d
+      internalID: -482905012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_2
+      name: swan_idle_4
       rect:
         serializedVersion: 2
-        x: 4407
-        y: 4445
-        width: 748
+        x: 8247
+        y: 4447
+        width: 729
         height: 794
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -205,19 +234,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b3ab76eb6b28ee4a8de03c062e80a54
-      internalID: 1676531882
+      spriteID: 790e5ee0ad5ca44a389be1911783da49
+      internalID: -423537321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_3
+      name: swan_idle_5
       rect:
         serializedVersion: 2
-        x: 6323
-        y: 4442
-        width: 741
+        x: 10164
+        y: 4447
+        width: 725
         height: 797
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -226,19 +255,61 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff65caab1b140ba438eda7232f92b8a7
-      internalID: 1969145335
+      spriteID: 18bc613ca937c40c7ac2b8d3df4959ec
+      internalID: -837969951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_4
+      name: swan_idle_6
       rect:
         serializedVersion: 2
-        x: 8243
-        y: 4440
-        width: 738
+        x: 12083
+        y: 4445
+        width: 715
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d656b0419fbd41bc9eb208cbecbdcca
+      internalID: -600977186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_7
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 3365
+        width: 708
+        height: 803
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f11d0e8c72f483e9ce1a36d20353cb
+      internalID: -2085651726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_8
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 3365
+        width: 699
         height: 806
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -247,355 +318,61 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fb45ecaa484a6740887df1306fc7857
-      internalID: 1912082927
+      spriteID: 5b4a8f2e4e42b4d699cb8d750fccbab3
+      internalID: -2047519144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_5
+      name: swan_idle_9
       rect:
         serializedVersion: 2
-        x: 10162
-        y: 4442
-        width: 728
-        height: 804
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c7fdd9528792fc4f804a5f77dff7fc7
-      internalID: 2042325727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 12079
-        y: 4440
-        width: 724
-        height: 812
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84781694a2f5198428d0d62cdcf8f6f3
-      internalID: -1264115723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 561
-        y: 3363
-        width: 715
-        height: 812
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da0859810d498be4d8b74a1b8cd74a96
-      internalID: 1265140192
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_8
-      rect:
-        serializedVersion: 2
-        x: 2477
-        y: 3363
-        width: 709
-        height: 813
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a568f247cd166c74f91aeee5f18b54de
-      internalID: -1675499574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_9
-      rect:
-        serializedVersion: 2
-        x: 4395
-        y: 3363
-        width: 706
-        height: 813
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ffab5bdc7c02aea4b8b88682b348549b
-      internalID: -806573480
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_10
-      rect:
-        serializedVersion: 2
-        x: 6316
-        y: 3363
-        width: 696
-        height: 813
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86854f553181f3f4e9fc91b9e77d6261
-      internalID: -2049257869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_11
-      rect:
-        serializedVersion: 2
-        x: 8233
-        y: 3363
-        width: 689
-        height: 820
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 310506da49258a94294894acfcb2a0dc
-      internalID: -606111266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_12
-      rect:
-        serializedVersion: 2
-        x: 10156
-        y: 3363
-        width: 675
-        height: 820
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23fca00b2a9856a4d99ce73c0603555b
-      internalID: -1316660879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_13
-      rect:
-        serializedVersion: 2
-        x: 12072
-        y: 3363
-        width: 669
-        height: 820
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7438d6b2f44dac14a9e64475cb604cc2
-      internalID: 1330873338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_14
-      rect:
-        serializedVersion: 2
-        x: 555
-        y: 2280
-        width: 662
-        height: 820
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51fad77eaad8c42419f09fae722c2733
-      internalID: -1336658639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_15
-      rect:
-        serializedVersion: 2
-        x: 2471
-        y: 2281
-        width: 663
-        height: 823
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0ae6f89df705044c8b89534d3376a08
-      internalID: 278720287
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_16
-      rect:
-        serializedVersion: 2
-        x: 4394
-        y: 2280
-        width: 669
-        height: 820
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d884b6521a0c7b4ea35d5188c8d578c
-      internalID: -1322476948
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_17
-      rect:
-        serializedVersion: 2
-        x: 6311
-        y: 2280
-        width: 675
-        height: 820
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6fcb325030edf10439be925498cda566
-      internalID: -1240739509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_18
-      rect:
-        serializedVersion: 2
-        x: 8233
-        y: 2280
-        width: 682
-        height: 820
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63e7e89056a443d4fa4920601d8f19bc
-      internalID: -1425930079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_19
-      rect:
-        serializedVersion: 2
-        x: 10156
-        y: 2280
-        width: 682
-        height: 820
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5404529852e473a4d99b6c3a463bd1a7
-      internalID: -1422594735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_20
-      rect:
-        serializedVersion: 2
-        x: 12072
-        y: 2280
-        width: 689
-        height: 820
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f26335c20e8952444b9c7a34a710dc95
-      internalID: -1662548723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_21
-      rect:
-        serializedVersion: 2
-        x: 555
-        y: 1204
+        x: 4399
+        y: 3364
         width: 695
+        height: 811
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e245466e3ec84459994c83674f374e43
+      internalID: -2128938244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_10
+      rect:
+        serializedVersion: 2
+        x: 6318
+        y: 3364
+        width: 689
+        height: 811
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abefa0bbf8ad44c6b11a748b0c1fe06
+      internalID: -1259639431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_11
+      rect:
+        serializedVersion: 2
+        x: 8238
+        y: 3364
+        width: 679
         height: 814
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -604,103 +381,250 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 828454ab7bf44554ab88c35312b1250f
-      internalID: 403086932
+      spriteID: aef305dfa2dcb49d79c3ea39faf4c8af
+      internalID: 800691612
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_22
-      rect:
-        serializedVersion: 2
-        x: 2477
-        y: 1204
-        width: 696
-        height: 814
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90e7211bbe6cc0149949cfcde0075927
-      internalID: -598995171
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_23
-      rect:
-        serializedVersion: 2
-        x: 4395
-        y: 1204
-        width: 707
-        height: 814
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c723130381ae5643bf2370ab9551722
-      internalID: 6188564
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_24
-      rect:
-        serializedVersion: 2
-        x: 6317
-        y: 1204
-        width: 708
-        height: 813
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c3b66d33df16e44ba0d9ea25ec55241
-      internalID: -1917666781
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_25
-      rect:
-        serializedVersion: 2
-        x: 8239
-        y: 1204
-        width: 709
-        height: 813
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e5d5eeb7b70c61f47921599f6e4b5fad
-      internalID: -1679869488
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_26
+      name: swan_idle_12
       rect:
         serializedVersion: 2
         x: 10157
-        y: 1204
-        width: 720
+        y: 3364
+        width: 673
+        height: 814
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d772048377074cb591e1a91f8a202a3
+      internalID: -1799192481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_13
+      rect:
+        serializedVersion: 2
+        x: 12077
+        y: 3365
+        width: 662
+        height: 815
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca3b5cecd6bf486cbc8f0501d4a74d6
+      internalID: 1278188789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_14
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 2285
+        width: 656
+        height: 814
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e4821faca054d58bcfd27290adea5f
+      internalID: -952362510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_15
+      rect:
+        serializedVersion: 2
+        x: 2476
+        y: 2285
+        width: 653
+        height: 814
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12c390c8180746308164e6a653d17f5
+      internalID: 613733215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_16
+      rect:
+        serializedVersion: 2
+        x: 4395
+        y: 2285
+        width: 663
+        height: 814
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5118d83cd082641a18f90204a83e0bcf
+      internalID: -500330109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_17
+      rect:
+        serializedVersion: 2
+        x: 6316
+        y: 2285
+        width: 665
+        height: 814
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7c6872c83b640dc91aa1fa3974cee2
+      internalID: -112589005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_18
+      rect:
+        serializedVersion: 2
+        x: 8238
+        y: 2285
+        width: 672
+        height: 814
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2a1e3e200b4492ab3ac3c49028074a
+      internalID: 1311349787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_19
+      rect:
+        serializedVersion: 2
+        x: 10157
+        y: 2285
+        width: 676
+        height: 813
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304144a08e22a4986b4e92176851104c
+      internalID: 912031671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_20
+      rect:
+        serializedVersion: 2
+        x: 12077
+        y: 2285
+        width: 682
+        height: 812
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b63e1792a3e641f4b75a420056efc0d
+      internalID: 437476700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_21
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1206
+        width: 686
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc4f0860b29c42d0a3d335cd3cb4419
+      internalID: -903573777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_22
+      rect:
+        serializedVersion: 2
+        x: 2479
+        y: 1206
+        width: 692
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85330870ebfc49f2910a462faae88f7
+      internalID: -1176186114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_23
+      rect:
+        serializedVersion: 2
+        x: 4399
+        y: 1206
+        width: 698
         height: 807
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -709,20 +633,104 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55263be6a5dfbba4b9cc56988717de84
-      internalID: 162205564
+      spriteID: 98497a1c8d7b245f48941cdd0b61fc80
+      internalID: -1469317799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_27
+      name: swan_idle_24
       rect:
         serializedVersion: 2
-        x: 12078
-        y: 1204
+        x: 6321
+        y: 1206
+        width: 702
+        height: 807
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d488ca6ebfba4dd385380436180ebb4
+      internalID: -879767876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_25
+      rect:
+        serializedVersion: 2
+        x: 8241
+        y: 1206
+        width: 705
+        height: 806
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41529cddac60447d0905b8411f205d62
+      internalID: -1963155617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_26
+      rect:
+        serializedVersion: 2
+        x: 10164
+        y: 1206
+        width: 708
+        height: 803
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50517289907c4254a0ff20563e22d4c
+      internalID: -785841580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_27
+      rect:
+        serializedVersion: 2
+        x: 12083
+        y: 1206
+        width: 715
+        height: 803
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08397bef8388a41dd8c02f6192ddfa15
+      internalID: -1113949832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_28
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 126
         width: 722
-        height: 807
+        height: 801
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -730,20 +738,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23f431c917a505c4e9bc878a3b3fe07a
-      internalID: -1723062754
+      spriteID: 84a10e20ef28840ce855a356da2034b8
+      internalID: 1224779069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_28
+      name: swan_idle_29
       rect:
         serializedVersion: 2
-        x: 561
-        y: 121
+        x: 2486
+        y: 126
+        width: 721
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc73a5c91c484c75b1b933b81a84d32
+      internalID: 128807370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_idle_30
+      rect:
+        serializedVersion: 2
+        x: 4405
+        y: 126
         width: 728
-        height: 807
+        height: 797
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -751,20 +780,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4760b20e82a756643bce166daaa9e7cb
-      internalID: 895059721
+      spriteID: ae9a641bc20b447e58d6c9bb954f7cbb
+      internalID: -998854770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_29
+      name: swan_idle_31
       rect:
         serializedVersion: 2
-        x: 2484
-        y: 122
-        width: 728
-        height: 806
+        x: 6328
+        y: 126
+        width: 732
+        height: 794
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -772,20 +801,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04d1e9ebf123ad249b975f24426822d1
-      internalID: -666043194
+      spriteID: c269c95c5c913473f9702613fcaf704d
+      internalID: 174904509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_30
+      name: swan_idle_32
       rect:
         serializedVersion: 2
-        x: 4401
-        y: 122
+        x: 8248
+        y: 126
         width: 734
-        height: 806
+        height: 791
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -793,20 +822,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 985eb940fef7e5140899094013f893db
-      internalID: 620026651
+      spriteID: 6f48ae8bc940e4578a91fb39a6888902
+      internalID: -818975808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_31
+      name: swan_idle_33
       rect:
         serializedVersion: 2
-        x: 6323
-        y: 122
-        width: 741
-        height: 800
+        x: 10170
+        y: 126
+        width: 738
+        height: 788
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -814,20 +843,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfdc333753e410043955d5d010918313
-      internalID: 1483265372
+      spriteID: a6a9be766234a4ded822814c817692b6
+      internalID: -448938691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_32
+      name: swan_idle_34
       rect:
         serializedVersion: 2
-        x: 8246
-        y: 122
-        width: 741
-        height: 800
+        x: 12090
+        y: 126
+        width: 744
+        height: 784
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -835,50 +864,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5ed08d34e474004f95695a5a3710d0a
-      internalID: -865518380
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_33
-      rect:
-        serializedVersion: 2
-        x: 10165
-        y: 122
-        width: 751
-        height: 793
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de983a17e2ef82c4e8533d467ad9356d
-      internalID: -456212522
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_34
-      rect:
-        serializedVersion: 2
-        x: 12085
-        y: 122
-        width: 754
-        height: 793
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9052f01869a5f8b48b708d6dc01b3d6f
-      internalID: -1067851073
+      spriteID: 4f01c2d516e3c49069179a782d1c52dd
+      internalID: -795961031
       vertices: []
       indices: 
       edges: []
@@ -894,41 +881,41 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      spritesheet_0: -1592435933
-      spritesheet_1: -1885834676
-      spritesheet_10: -2049257869
-      spritesheet_11: -606111266
-      spritesheet_12: -1316660879
-      spritesheet_13: 1330873338
-      spritesheet_14: -1336658639
-      spritesheet_15: 278720287
-      spritesheet_16: -1322476948
-      spritesheet_17: -1240739509
-      spritesheet_18: -1425930079
-      spritesheet_19: -1422594735
-      spritesheet_2: 1676531882
-      spritesheet_20: -1662548723
-      spritesheet_21: 403086932
-      spritesheet_22: -598995171
-      spritesheet_23: 6188564
-      spritesheet_24: -1917666781
-      spritesheet_25: -1679869488
-      spritesheet_26: 162205564
-      spritesheet_27: -1723062754
-      spritesheet_28: 895059721
-      spritesheet_29: -666043194
-      spritesheet_3: 1969145335
-      spritesheet_30: 620026651
-      spritesheet_31: 1483265372
-      spritesheet_32: -865518380
-      spritesheet_33: -456212522
-      spritesheet_34: -1067851073
-      spritesheet_4: 1912082927
-      spritesheet_5: 2042325727
-      spritesheet_6: -1264115723
-      spritesheet_7: 1265140192
-      spritesheet_8: -1675499574
-      spritesheet_9: -806573480
+      swan_idle_0: 205420433
+      swan_idle_1: 564773714
+      swan_idle_10: -1259639431
+      swan_idle_11: 800691612
+      swan_idle_12: -1799192481
+      swan_idle_13: 1278188789
+      swan_idle_14: -952362510
+      swan_idle_15: 613733215
+      swan_idle_16: -500330109
+      swan_idle_17: -112589005
+      swan_idle_18: 1311349787
+      swan_idle_19: 912031671
+      swan_idle_2: -324896200
+      swan_idle_20: 437476700
+      swan_idle_21: -903573777
+      swan_idle_22: -1176186114
+      swan_idle_23: -1469317799
+      swan_idle_24: -879767876
+      swan_idle_25: -1963155617
+      swan_idle_26: -785841580
+      swan_idle_27: -1113949832
+      swan_idle_28: 1224779069
+      swan_idle_29: 128807370
+      swan_idle_3: -482905012
+      swan_idle_30: -998854770
+      swan_idle_31: 174904509
+      swan_idle_32: -818975808
+      swan_idle_33: -448938691
+      swan_idle_34: -795961031
+      swan_idle_4: -423537321
+      swan_idle_5: -837969951
+      swan_idle_6: -600977186
+      swan_idle_7: -2085651726
+      swan_idle_8: -2047519144
+      swan_idle_9: -2128938244
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
