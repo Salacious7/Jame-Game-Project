@@ -106,6 +106,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -113,12 +152,12 @@ TextureImporter:
       name: muffin_idle_0
       rect:
         serializedVersion: 2
-        x: 503
-        y: 1706
-        width: 463
-        height: 528
+        x: 0
+        y: 1580
+        width: 1405
+        height: 790
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +173,12 @@ TextureImporter:
       name: muffin_idle_1
       rect:
         serializedVersion: 2
-        x: 1911
-        y: 1706
-        width: 463
-        height: 528
+        x: 1405
+        y: 1580
+        width: 1405
+        height: 790
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +194,12 @@ TextureImporter:
       name: muffin_idle_2
       rect:
         serializedVersion: 2
-        x: 3316
-        y: 1709
-        width: 460
-        height: 528
+        x: 2810
+        y: 1580
+        width: 1405
+        height: 790
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,12 +215,12 @@ TextureImporter:
       name: muffin_idle_6
       rect:
         serializedVersion: 2
-        x: 8934
-        y: 1718
-        width: 462
-        height: 526
+        x: 8430
+        y: 1580
+        width: 1405
+        height: 790
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +236,12 @@ TextureImporter:
       name: muffin_idle_3
       rect:
         serializedVersion: 2
-        x: 4720
-        y: 1712
-        width: 460
-        height: 527
+        x: 4215
+        y: 1580
+        width: 1405
+        height: 790
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,12 +257,12 @@ TextureImporter:
       name: muffin_idle_4
       rect:
         serializedVersion: 2
-        x: 6124
-        y: 1716
-        width: 461
-        height: 525
+        x: 5620
+        y: 1580
+        width: 1405
+        height: 790
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,12 +278,12 @@ TextureImporter:
       name: muffin_idle_5
       rect:
         serializedVersion: 2
-        x: 7529
-        y: 1718
-        width: 461
-        height: 526
+        x: 7025
+        y: 1580
+        width: 1405
+        height: 790
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -260,12 +299,12 @@ TextureImporter:
       name: muffin_idle_7
       rect:
         serializedVersion: 2
-        x: 503
-        y: 933
-        width: 463
-        height: 526
+        x: 0
+        y: 790
+        width: 1405
+        height: 790
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -281,12 +320,12 @@ TextureImporter:
       name: muffin_idle_8
       rect:
         serializedVersion: 2
-        x: 1908
-        y: 935
-        width: 463
-        height: 521
+        x: 1405
+        y: 790
+        width: 1405
+        height: 790
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -302,12 +341,12 @@ TextureImporter:
       name: muffin_idle_9
       rect:
         serializedVersion: 2
-        x: 3310
-        y: 933
-        width: 466
-        height: 523
+        x: 2810
+        y: 790
+        width: 1405
+        height: 790
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -323,12 +362,12 @@ TextureImporter:
       name: muffin_idle_10
       rect:
         serializedVersion: 2
-        x: 4716
-        y: 933
-        width: 464
-        height: 523
+        x: 4215
+        y: 790
+        width: 1405
+        height: 790
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -344,12 +383,12 @@ TextureImporter:
       name: muffin_idle_11
       rect:
         serializedVersion: 2
-        x: 6122
-        y: 930
-        width: 463
-        height: 525
+        x: 5620
+        y: 790
+        width: 1405
+        height: 790
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -365,12 +404,12 @@ TextureImporter:
       name: muffin_idle_12
       rect:
         serializedVersion: 2
-        x: 7529
-        y: 928
-        width: 461
-        height: 526
+        x: 7025
+        y: 790
+        width: 1405
+        height: 790
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -386,12 +425,12 @@ TextureImporter:
       name: muffin_idle_13
       rect:
         serializedVersion: 2
-        x: 8934
-        y: 928
-        width: 462
-        height: 526
+        x: 8430
+        y: 790
+        width: 1405
+        height: 790
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -407,12 +446,12 @@ TextureImporter:
       name: muffin_idle_14
       rect:
         serializedVersion: 2
-        x: 503
-        y: 133
-        width: 463
-        height: 526
+        x: 0
+        y: 0
+        width: 1405
+        height: 790
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -428,12 +467,12 @@ TextureImporter:
       name: muffin_idle_15
       rect:
         serializedVersion: 2
-        x: 1910
-        y: 133
-        width: 461
-        height: 526
+        x: 1405
+        y: 0
+        width: 1405
+        height: 790
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -449,12 +488,12 @@ TextureImporter:
       name: muffin_idle_16
       rect:
         serializedVersion: 2
-        x: 3317
-        y: 133
-        width: 459
-        height: 526
+        x: 2810
+        y: 0
+        width: 1405
+        height: 790
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -491,51 +530,11 @@ TextureImporter:
       muffin_idle_19: 624149518
       muffin_idle_2: -1992646094
       muffin_idle_20: 1951198741
-      muffin_idle_21: 153397352
-      muffin_idle_22: -1575998068
-      muffin_idle_23: 950898247
-      muffin_idle_24: -838418316
-      muffin_idle_25: 279838276
-      muffin_idle_26: 1826892101
-      muffin_idle_27: -1850913549
-      muffin_idle_28: 82780167
       muffin_idle_3: -272179857
-      muffin_idle_36: -789755087
-      muffin_idle_37: -1830873146
-      muffin_idle_38: -346391291
-      muffin_idle_39: 1069792174
       muffin_idle_4: -1026639491
-      muffin_idle_40: -1577713865
-      muffin_idle_41: 526971949
-      muffin_idle_42: -1998915970
-      muffin_idle_43: -1882741791
-      muffin_idle_44: 504840440
-      muffin_idle_45: -1011328015
-      muffin_idle_46: -228090626
-      muffin_idle_47: 268776684
-      muffin_idle_48: -1561733629
-      muffin_idle_49: 2057677584
       muffin_idle_5: 4685306
-      muffin_idle_50: -1902485229
-      muffin_idle_51: 1688380926
-      muffin_idle_52: 985563898
-      muffin_idle_53: -1450869392
-      muffin_idle_54: -1104800913
-      muffin_idle_55: 2115560746
-      muffin_idle_56: 189760176
-      muffin_idle_57: 377785637
-      muffin_idle_59: -1450405215
       muffin_idle_6: -1378171825
-      muffin_idle_60: 1860533464
-      muffin_idle_62: 1849028563
-      muffin_idle_63: -1969729965
-      muffin_idle_64: -1074487211
-      muffin_idle_65: 884548357
-      muffin_idle_67: 1752650022
-      muffin_idle_68: 1455582624
-      muffin_idle_69: -1874282465
       muffin_idle_7: -1033697941
-      muffin_idle_70: -883399135
       muffin_idle_8: 490598265
       muffin_idle_9: -1758460228
   mipmapLimitGroupName: 

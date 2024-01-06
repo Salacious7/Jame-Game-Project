@@ -152,10 +152,10 @@ TextureImporter:
       name: swan_peck_0
       rect:
         serializedVersion: 2
-        x: 573
-        y: 4447
-        width: 751
-        height: 779
+        x: 0
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: swan_peck_1
       rect:
         serializedVersion: 2
-        x: 2496
-        y: 4450
-        width: 778
-        height: 764
+        x: 1920
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +194,10 @@ TextureImporter:
       name: swan_peck_2
       rect:
         serializedVersion: 2
-        x: 4420
-        y: 4450
-        width: 801
-        height: 742
+        x: 3840
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: swan_peck_3
       rect:
         serializedVersion: 2
-        x: 6347
-        y: 4446
-        width: 846
-        height: 703
+        x: 5760
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: swan_peck_4
       rect:
         serializedVersion: 2
-        x: 8272
-        y: 4446
-        width: 868
-        height: 663
+        x: 7680
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +257,10 @@ TextureImporter:
       name: swan_peck_5
       rect:
         serializedVersion: 2
-        x: 10198
-        y: 4444
-        width: 883
-        height: 626
+        x: 9600
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: swan_peck_6
       rect:
         serializedVersion: 2
-        x: 12127
-        y: 4443
-        width: 902
-        height: 627
+        x: 11520
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,10 +299,10 @@ TextureImporter:
       name: swan_peck_7
       rect:
         serializedVersion: 2
-        x: 606
-        y: 3360
-        width: 906
-        height: 636
+        x: 0
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +320,10 @@ TextureImporter:
       name: swan_peck_8
       rect:
         serializedVersion: 2
-        x: 2536
-        y: 3360
-        width: 912
-        height: 640
+        x: 1920
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,10 +341,10 @@ TextureImporter:
       name: swan_peck_9
       rect:
         serializedVersion: 2
-        x: 4463
-        y: 3358
-        width: 915
-        height: 645
+        x: 3840
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,10 +362,10 @@ TextureImporter:
       name: swan_peck_10
       rect:
         serializedVersion: 2
-        x: 6386
-        y: 3357
-        width: 913
-        height: 649
+        x: 5760
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,10 +383,10 @@ TextureImporter:
       name: swan_peck_11
       rect:
         serializedVersion: 2
-        x: 8306
-        y: 3357
-        width: 916
-        height: 649
+        x: 7680
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,10 +404,10 @@ TextureImporter:
       name: swan_peck_12
       rect:
         serializedVersion: 2
-        x: 10227
-        y: 3357
-        width: 915
-        height: 649
+        x: 9600
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,10 +425,10 @@ TextureImporter:
       name: swan_peck_13
       rect:
         serializedVersion: 2
-        x: 12147
-        y: 3357
-        width: 916
-        height: 649
+        x: 11520
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -446,10 +446,10 @@ TextureImporter:
       name: swan_peck_14
       rect:
         serializedVersion: 2
-        x: 622
-        y: 2277
-        width: 916
-        height: 649
+        x: 0
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -467,10 +467,10 @@ TextureImporter:
       name: swan_peck_15
       rect:
         serializedVersion: 2
-        x: 2542
-        y: 2280
-        width: 913
-        height: 643
+        x: 1920
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -488,10 +488,10 @@ TextureImporter:
       name: swan_peck_16
       rect:
         serializedVersion: 2
-        x: 4450
-        y: 2280
-        width: 908
-        height: 637
+        x: 3840
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -509,10 +509,10 @@ TextureImporter:
       name: swan_peck_17
       rect:
         serializedVersion: 2
-        x: 6366
-        y: 2283
-        width: 903
-        height: 627
+        x: 5760
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -530,10 +530,10 @@ TextureImporter:
       name: swan_peck_18
       rect:
         serializedVersion: 2
-        x: 8278
-        y: 2284
-        width: 883
-        height: 626
+        x: 7680
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -551,10 +551,10 @@ TextureImporter:
       name: swan_peck_19
       rect:
         serializedVersion: 2
-        x: 10194
-        y: 2286
-        width: 861
-        height: 673
+        x: 9600
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -572,10 +572,10 @@ TextureImporter:
       name: swan_peck_20
       rect:
         serializedVersion: 2
-        x: 12108
-        y: 2290
-        width: 836
-        height: 712
+        x: 11520
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,10 +593,10 @@ TextureImporter:
       name: swan_peck_21
       rect:
         serializedVersion: 2
-        x: 576
-        y: 1210
-        width: 784
-        height: 758
+        x: 0
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -614,10 +614,10 @@ TextureImporter:
       name: swan_peck_22
       rect:
         serializedVersion: 2
-        x: 2493
-        y: 1207
-        width: 752
-        height: 779
+        x: 1920
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -635,10 +635,10 @@ TextureImporter:
       name: swan_peck_23
       rect:
         serializedVersion: 2
-        x: 4413
-        y: 1206
-        width: 752
-        height: 778
+        x: 3840
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -656,10 +656,10 @@ TextureImporter:
       name: swan_peck_24
       rect:
         serializedVersion: 2
-        x: 6334
-        y: 1207
-        width: 751
-        height: 777
+        x: 5760
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -677,10 +677,10 @@ TextureImporter:
       name: swan_peck_25
       rect:
         serializedVersion: 2
-        x: 8257
-        y: 1207
-        width: 748
-        height: 779
+        x: 7680
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -698,10 +698,10 @@ TextureImporter:
       name: swan_peck_26
       rect:
         serializedVersion: 2
-        x: 10177
-        y: 1206
-        width: 750
-        height: 778
+        x: 9600
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -719,10 +719,10 @@ TextureImporter:
       name: swan_peck_27
       rect:
         serializedVersion: 2
-        x: 12098
-        y: 1207
-        width: 748
-        height: 777
+        x: 11520
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -740,10 +740,10 @@ TextureImporter:
       name: swan_peck_28
       rect:
         serializedVersion: 2
-        x: 573
-        y: 127
-        width: 751
-        height: 779
+        x: 0
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -761,10 +761,10 @@ TextureImporter:
       name: swan_peck_29
       rect:
         serializedVersion: 2
-        x: 2493
-        y: 127
-        width: 752
-        height: 779
+        x: 1920
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -782,10 +782,10 @@ TextureImporter:
       name: swan_peck_30
       rect:
         serializedVersion: 2
-        x: 4413
-        y: 126
-        width: 752
-        height: 778
+        x: 3840
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -803,10 +803,10 @@ TextureImporter:
       name: swan_peck_31
       rect:
         serializedVersion: 2
-        x: 6334
-        y: 127
-        width: 751
-        height: 777
+        x: 5760
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -824,10 +824,10 @@ TextureImporter:
       name: swan_peck_32
       rect:
         serializedVersion: 2
-        x: 8257
-        y: 127
-        width: 748
-        height: 779
+        x: 7680
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -845,10 +845,10 @@ TextureImporter:
       name: swan_peck_33
       rect:
         serializedVersion: 2
-        x: 10177
-        y: 126
-        width: 750
-        height: 778
+        x: 9600
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -866,10 +866,10 @@ TextureImporter:
       name: swan_peck_34
       rect:
         serializedVersion: 2
-        x: 12098
-        y: 127
-        width: 748
-        height: 777
+        x: 11520
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

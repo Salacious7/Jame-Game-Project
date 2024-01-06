@@ -119,6 +119,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -126,10 +152,10 @@ TextureImporter:
       name: bag_idle_0
       rect:
         serializedVersion: 2
-        x: 678
-        y: 4388
-        width: 600
-        height: 889
+        x: 0
+        y: 4320
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +173,10 @@ TextureImporter:
       name: bag_idle_1
       rect:
         serializedVersion: 2
-        x: 2577
-        y: 4388
-        width: 640
-        height: 889
+        x: 1920
+        y: 4320
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +194,10 @@ TextureImporter:
       name: bag_idle_2
       rect:
         serializedVersion: 2
-        x: 4500
-        y: 4388
-        width: 633
-        height: 892
+        x: 3840
+        y: 4320
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,10 +215,10 @@ TextureImporter:
       name: bag_idle_3
       rect:
         serializedVersion: 2
-        x: 6423
-        y: 4388
-        width: 627
-        height: 896
+        x: 5760
+        y: 4320
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,10 +236,10 @@ TextureImporter:
       name: bag_idle_4
       rect:
         serializedVersion: 2
-        x: 12192
-        y: 4388
-        width: 603
-        height: 902
+        x: 7680
+        y: 4320
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +257,10 @@ TextureImporter:
       name: bag_idle_5
       rect:
         serializedVersion: 2
-        x: 8346
-        y: 4388
-        width: 620
-        height: 899
+        x: 9600
+        y: 4320
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,10 +278,10 @@ TextureImporter:
       name: bag_idle_6
       rect:
         serializedVersion: 2
-        x: 10269
-        y: 4388
-        width: 610
-        height: 902
+        x: 11520
+        y: 4320
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,10 +299,10 @@ TextureImporter:
       name: bag_idle_7
       rect:
         serializedVersion: 2
-        x: 678
-        y: 3309
-        width: 600
-        height: 908
+        x: 0
+        y: 3240
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,10 +320,10 @@ TextureImporter:
       name: bag_idle_8
       rect:
         serializedVersion: 2
-        x: 2577
-        y: 3309
-        width: 640
-        height: 912
+        x: 1920
+        y: 3240
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,10 +341,10 @@ TextureImporter:
       name: bag_idle_9
       rect:
         serializedVersion: 2
-        x: 4500
-        y: 3309
-        width: 633
-        height: 912
+        x: 3840
+        y: 3240
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,10 +362,10 @@ TextureImporter:
       name: bag_idle_10
       rect:
         serializedVersion: 2
-        x: 6423
-        y: 3312
-        width: 627
-        height: 912
+        x: 5760
+        y: 3240
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,10 +383,10 @@ TextureImporter:
       name: bag_idle_11
       rect:
         serializedVersion: 2
-        x: 8346
-        y: 3312
-        width: 620
-        height: 915
+        x: 7680
+        y: 3240
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,10 +404,10 @@ TextureImporter:
       name: bag_idle_12
       rect:
         serializedVersion: 2
-        x: 10269
-        y: 3312
-        width: 610
-        height: 918
+        x: 9600
+        y: 3240
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -399,10 +425,10 @@ TextureImporter:
       name: bag_idle_13
       rect:
         serializedVersion: 2
-        x: 12192
-        y: 3309
-        width: 603
-        height: 925
+        x: 11520
+        y: 3240
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -420,10 +446,10 @@ TextureImporter:
       name: bag_idle_14
       rect:
         serializedVersion: 2
-        x: 678
-        y: 2229
-        width: 600
-        height: 928
+        x: 0
+        y: 2160
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -441,10 +467,10 @@ TextureImporter:
       name: bag_idle_15
       rect:
         serializedVersion: 2
-        x: 2577
-        y: 2229
-        width: 640
-        height: 929
+        x: 1920
+        y: 2160
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,10 +488,10 @@ TextureImporter:
       name: bag_idle_16
       rect:
         serializedVersion: 2
-        x: 4500
-        y: 2229
-        width: 633
-        height: 932
+        x: 3840
+        y: 2160
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,10 +509,10 @@ TextureImporter:
       name: bag_idle_17
       rect:
         serializedVersion: 2
-        x: 6423
-        y: 2229
-        width: 627
-        height: 932
+        x: 5760
+        y: 2160
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -504,10 +530,10 @@ TextureImporter:
       name: bag_idle_18
       rect:
         serializedVersion: 2
-        x: 8346
-        y: 2229
-        width: 620
-        height: 928
+        x: 7680
+        y: 2160
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -525,10 +551,10 @@ TextureImporter:
       name: bag_idle_19
       rect:
         serializedVersion: 2
-        x: 10269
-        y: 2229
-        width: 610
-        height: 925
+        x: 9600
+        y: 2160
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -546,10 +572,10 @@ TextureImporter:
       name: bag_idle_20
       rect:
         serializedVersion: 2
-        x: 12192
-        y: 2229
-        width: 603
-        height: 922
+        x: 11520
+        y: 2160
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -567,10 +593,10 @@ TextureImporter:
       name: bag_idle_21
       rect:
         serializedVersion: 2
-        x: 678
-        y: 1150
-        width: 600
-        height: 915
+        x: 0
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -588,10 +614,10 @@ TextureImporter:
       name: bag_idle_22
       rect:
         serializedVersion: 2
-        x: 2577
-        y: 1150
-        width: 640
-        height: 915
+        x: 1920
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,10 +635,10 @@ TextureImporter:
       name: bag_idle_23
       rect:
         serializedVersion: 2
-        x: 4500
-        y: 1150
-        width: 633
-        height: 912
+        x: 3840
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -630,10 +656,10 @@ TextureImporter:
       name: bag_idle_24
       rect:
         serializedVersion: 2
-        x: 6423
-        y: 1150
-        width: 627
-        height: 912
+        x: 5760
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -651,10 +677,10 @@ TextureImporter:
       name: bag_idle_25
       rect:
         serializedVersion: 2
-        x: 8346
-        y: 1150
-        width: 620
-        height: 909
+        x: 7680
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -672,10 +698,10 @@ TextureImporter:
       name: bag_idle_26
       rect:
         serializedVersion: 2
-        x: 10269
-        y: 1150
-        width: 610
-        height: 905
+        x: 9600
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -693,10 +719,10 @@ TextureImporter:
       name: bag_idle_27
       rect:
         serializedVersion: 2
-        x: 12192
-        y: 1150
-        width: 603
-        height: 902
+        x: 11520
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -714,10 +740,10 @@ TextureImporter:
       name: bag_idle_28
       rect:
         serializedVersion: 2
-        x: 678
-        y: 68
-        width: 600
-        height: 901
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -735,10 +761,10 @@ TextureImporter:
       name: bag_idle_29
       rect:
         serializedVersion: 2
-        x: 2577
-        y: 68
-        width: 640
-        height: 898
+        x: 1920
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -756,10 +782,10 @@ TextureImporter:
       name: bag_idle_30
       rect:
         serializedVersion: 2
-        x: 4500
-        y: 67
-        width: 633
-        height: 896
+        x: 3840
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -777,10 +803,10 @@ TextureImporter:
       name: bag_idle_31
       rect:
         serializedVersion: 2
-        x: 6423
-        y: 67
-        width: 627
-        height: 893
+        x: 5760
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -832,6 +858,8 @@ TextureImporter:
       bag_idle_30: 1627627126
       bag_idle_31: 1696824568
       bag_idle_32: 2096304157
+      bag_idle_33: 1796745714
+      bag_idle_34: -182654582
       bag_idle_4: -969550794
       bag_idle_5: -1707681476
       bag_idle_6: 157319146
