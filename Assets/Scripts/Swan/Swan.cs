@@ -91,6 +91,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         UIManager.Instance.panelCurrentTurnObj.SetActive(true);
         UIManager.Instance.currentTextCurrentTurn.text = "Select enemy to Attack";
         swanUI.ActionStateNoAllAccessible();
+        swanUI.ActionStateButtonUninteractable();
 
         getWaitTimer -= Time.deltaTime;
 
@@ -114,6 +115,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         UIManager.Instance.panelCurrentTurnObj.SetActive(true);
         UIManager.Instance.currentTextCurrentTurn.text = "Select enemy to Attack";
         swanUI.ActionStateNoAllAccessible();
+        swanUI.ActionStateButtonUninteractable();
 
         getWaitTimer -= Time.deltaTime;
 
@@ -135,6 +137,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
     private IEnumerator UseDefend()
     {
         swanUI.ActionStateNoAllAccessible();
+        swanUI.ActionStateButtonUninteractable();
 
         UIManager.Instance.panelCurrentTurnObj.SetActive(true);
         UIManager.Instance.currentTextCurrentTurn.text = "Defense increased!";
@@ -143,10 +146,10 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
         UIManager.Instance.currentTextCurrentTurn.text = "";
 
-        swanData.defenseBoost += 10f;
+        swanData.defenseBoost += 2f;
 
         yield return new WaitForSeconds(1f);
-
+        
         breadManager.StartCoroutine(breadManager.StartBreadsTurn());
     }
 
@@ -182,6 +185,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
     public IEnumerator BasicAttack(Bread bread)
     {
         swanUI.ActionStateNoAllAccessible();
+        swanUI.ActionStateButtonUninteractable();
         UIManager.Instance.panelCurrentTurnObj.SetActive(true);
         UIManager.Instance.currentTextCurrentTurn.text = "Basic Attack!";
 
@@ -248,6 +252,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
             }
 
             hasHeavyDamaged = true;
+            swanState.sliderValueIncreased = 0f;
         }
 
         yield return new WaitForSeconds(1f);
@@ -268,6 +273,47 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
                 break;
         }
     }
+
+    public IEnumerator DamageFromEnemy(int amount)
+    {
+        yield return new WaitForSeconds(1f);
+
+        switch (amount)
+        {
+            case 0:
+                swanData.health -= (swanData.defenseBoost > 0 ? 25f / swanData.defenseBoost : 25f);
+                break;
+            case 1:
+                swanData.health -= (swanData.defenseBoost > 0 ? 15f / swanData.defenseBoost : 15f);
+                break;
+            case 2:
+                swanData.health -= (swanData.defenseBoost > 0 ? 10f / swanData.defenseBoost : 10f);
+                break;
+            case 3:
+                swanData.health -= 0f;
+                break;
+        }
+
+        anim.SetTrigger("isDamage");
+
+        swanUI.healthBarSlider.value = swanData.health;
+
+        yield return new WaitForSeconds(2f);
+
+        swanSprite.color = new Color(255f, 255f, 255f, 255f);
+        swanData.defenseBoost = 0;
+
+        if (swanData.health > 0)
+        {
+            breadManager.EndTurn();
+        }
+        else
+        {
+            gameManager.InitializeLoseScreen();
+        }
+
+    }
+
 
     #region Item
     public void HealSwan(BreadCrumbs breadCrumbs)
@@ -393,46 +439,6 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
         yield return new WaitForSeconds(1f);
         breadManager.StartCoroutine(breadManager.StartBreadsTurn());
-    }
-
-    public IEnumerator DamageFromEnemy(int amount)
-    {
-        yield return new WaitForSeconds(1f);
-
-        switch (amount)
-        {
-            case 0:
-                swanData.health -= (swanData.defenseBoost > 0 ? 15f / swanData.defenseBoost : 15f);
-                break;
-            case 1:
-                swanData.health -= (swanData.defenseBoost > 0 ? 12f / swanData.defenseBoost : 12f);
-                break;
-            case 2:
-                swanData.health -= (swanData.defenseBoost > 0 ? 6f / swanData.defenseBoost : 6f);
-                break;
-            case 3:
-                swanData.health -= 0f;
-                break;
-        }
-
-        anim.SetTrigger("isDamage");
-
-        swanUI.healthBarSlider.value = swanData.health;
-
-        yield return new WaitForSeconds(2f);
-
-        swanSprite.color = new Color(255f, 255f, 255f, 255f);
-        swanData.defenseBoost = 0;
-
-        if(swanData.health > 0)
-        {
-            breadManager.EndTurn();
-        }
-        else
-        {
-            gameManager.InitializeLoseScreen();
-        }
-        
     }
     #endregion
 }

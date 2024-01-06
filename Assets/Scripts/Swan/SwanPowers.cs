@@ -36,6 +36,7 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
         swanState.FightState(Swan.FightType.SpecialPowerState, this);
         specialPowerType = SpecialPowerType.SwanLeap;
         swanUI.ActionStateNoAllAccessible();
+        swanUI.ActionStateButtonUninteractable();
     }
 
     public void UseGroundPummel()
@@ -43,6 +44,7 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
         swanState.FightState(Swan.FightType.SpecialPowerState, this);
         specialPowerType = SpecialPowerType.GroundPummel;
         swanUI.ActionStateNoAllAccessible();
+        swanUI.ActionStateButtonUninteractable();
     }
 
     public void OnSuccess(Bread bread)
@@ -64,6 +66,7 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
     private IEnumerator SwanLeap(Bread bread)
     {
         swanUI.ActionStateNoAllAccessible();
+        swanUI.ActionStateButtonUninteractable();
 
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
         UIManager.Instance.currentTextCurrentTurn.text = "Swan used Swan Leap!";
@@ -83,6 +86,7 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
 
     private IEnumerator GroundPummel(Bread bread)
     {
+        swanUI.ActionStateButtonUninteractable();
         swanUI.ActionStateNoAllAccessible();
 
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);

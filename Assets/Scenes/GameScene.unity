@@ -15095,6 +15095,11 @@ MonoBehaviour:
   - {fileID: 402087480}
   - {fileID: 2048213676}
   - {fileID: 492588268}
+  actionStateBtnList:
+  - {fileID: 1171708923}
+  - {fileID: 339927289}
+  - {fileID: 2097663502}
+  - {fileID: 453915377}
   FightUI: {fileID: 1254438251}
   ItemsUIObj: {fileID: 402087480}
   SpecialPowerUIObj: {fileID: 2048213676}
