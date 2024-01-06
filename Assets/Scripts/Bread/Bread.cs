@@ -66,6 +66,15 @@ public abstract class Bread : MonoBehaviour, IActionState
         yield return new WaitForSeconds(breadManager.TakeActionDelay);
         breadManager.SetTransparency(breadManager.unfocusedTransparency);
         Debug.Log(name + " taking action");
+
+        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+        UIManager.Instance.currentTextCurrentTurn.text = name + " is taking action!";
+
+        yield return new WaitForSeconds(2f);
+
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "";
+
         ChooseAction();
         
         // while(!actionFinished)

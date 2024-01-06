@@ -14,11 +14,18 @@ public class SwanUI : MonoBehaviour, OnEventHandler
 
     [Header("ActionStateUI")]
     public GameObject ActionStateContainer;
+
     public GameObject BasicActionInputStateContainer;
+    public GameObject BasicArrowsActionInput;
+    public Slider basicArrowTimerSlider;
+
+
     public GameObject HeavyActionInputStateContainer;
     public GameObject HeavyArrowsActionInput;
-    public UnityEngine.UI.Slider heavyDataSlider;
-    [SerializeField] private List<Button> actionStateBtnList = new List<Button>();
+    public Slider heavyDataSlider;
+    public Slider heavyArrowTimerSlider;
+
+    [SerializeField] private List<GameObject> actionStateList = new List<GameObject>();
 
     [Header("FightUI")]
     public GameObject FightUI;
@@ -39,6 +46,9 @@ public class SwanUI : MonoBehaviour, OnEventHandler
     private void Awake()
     {
         swan = GetComponent<Swan>();
+
+        healthBarSlider.value = swan.swanData.health;
+        specialPowerBarSlider.value = swan.swanData.mana;
     }
 
     private void Update()
@@ -89,37 +99,26 @@ public class SwanUI : MonoBehaviour, OnEventHandler
         HeavyActionInputStateContainer.SetActive(true);
     }
 
-    public void ActionStateAllAccessible()
-    {
-        ActionStateContainer.SetActive(true);
-
-        foreach (Button btn in actionStateBtnList)
-        {
-            btn.interactable = true;
-        }
-    }
-
     public void ActionStateNoAllAccessible()
     {
-        foreach (Button btn in actionStateBtnList)
-        {
-            btn.interactable = false;
-        }
+        ActionStateContainer.SetActive(true);
+        BasicActionInputStateContainer.SetActive(false);
+        HeavyActionInputStateContainer.SetActive(false);
 
-        FightUI.SetActive(false);
-        ItemsUIObj.SetActive(false);
-        SpecialPowerUIObj.SetActive(false);
-        DefendObjUI.SetActive(false);
+        foreach (GameObject btn in actionStateList)
+        {
+            btn.SetActive(false);
+        }
     }
 
     public void OnlyAccessOne(int index)
     {
-        for(int i = 0; i < actionStateBtnList.Count; i++)
+        for(int i = 0; i < actionStateList.Count; i++)
         {
             if (index == i)
-                actionStateBtnList[i].interactable = true;
+                actionStateList[i].SetActive(true);
             else
-                actionStateBtnList[i].interactable = false;
+                actionStateList[i].SetActive(false);
         }
     }
 
@@ -127,9 +126,9 @@ public class SwanUI : MonoBehaviour, OnEventHandler
     {
         FightUI.SetActive(!FightUI.activeSelf);
 
-        if(!FightUI.activeSelf)
+        if (!FightUI.activeSelf)
         {
-            ActionStateAllAccessible();
+            ActionStateNoAllAccessible();
         }
         else
         {
@@ -143,7 +142,7 @@ public class SwanUI : MonoBehaviour, OnEventHandler
 
         if (!ItemsUIObj.activeSelf)
         {
-            ActionStateAllAccessible();
+            ActionStateNoAllAccessible();
         }
         else
         {
@@ -157,7 +156,7 @@ public class SwanUI : MonoBehaviour, OnEventHandler
 
         if (!SpecialPowerUIObj.activeSelf)
         {
-            ActionStateAllAccessible();
+            ActionStateNoAllAccessible();
         }
         else
         {
@@ -171,7 +170,7 @@ public class SwanUI : MonoBehaviour, OnEventHandler
 
         if (!DefendObjUI.activeSelf)
         {
-            ActionStateAllAccessible();
+            ActionStateNoAllAccessible();
         }
         else
         {

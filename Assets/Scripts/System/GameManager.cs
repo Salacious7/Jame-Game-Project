@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private void Awake()
+    [SerializeField] private GameObject loseScreenObj;
+    [SerializeField] private BreadManager breadManager;
+    [SerializeField] private SwanManager swanManager;
+
+    public void InitializeLoseScreen()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        loseScreenObj.SetActive(true);
+        StopAllCoroutines();
     }
 }

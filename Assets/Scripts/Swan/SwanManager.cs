@@ -31,14 +31,9 @@ public class SwanManager : MonoBehaviour
         {
             yield return null;
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
                 selectedBread = true;
-            }
-
-            if(Input.GetKeyDown(KeyCode.Z))
-            {
-                StopCoroutine("SelectBread");
             }
 
             if (Input.GetKeyDown(KeyCode.LeftArrow))
