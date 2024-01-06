@@ -5245,7 +5245,7 @@ MonoBehaviour:
   m_text: Swan
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10394,7 +10394,7 @@ MonoBehaviour:
   m_text: Pretzel
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11415,8 +11415,8 @@ MonoBehaviour:
   - {fileID: 44301767}
   - {fileID: 1929451457}
   unfocusedTransparency: 0.6
-  <TakeActionDelay>k__BackingField: 2
-  <TurnEndDelay>k__BackingField: 2
+  <TakeActionDelay>k__BackingField: 0
+  <TurnEndDelay>k__BackingField: 0
   swanUI: {fileID: 7889627638665617725}
   uiManager: {fileID: 1287801693}
 --- !u!4 &1723480715
@@ -11928,7 +11928,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.8, y: -0.8, z: -0.85}
-  m_LocalScale: {x: 0.32, y: 0.32, z: 0.32}
+  m_LocalScale: {x: 0.42, y: 0.42, z: 0.42}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 750238747}
@@ -11992,12 +11992,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 1411675412, guid: 62bc880036dc0ae4d8ed14681ee22c79, type: 3}
+  m_Sprite: {fileID: 367210676, guid: d8b1c04945011497b87a590744484143, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6.512827, y: 7.7999997}
+  m_Size: {x: 4.7, y: 5.3251843}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

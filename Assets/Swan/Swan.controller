@@ -171,7 +171,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: None
+  m_Name: swan_peck
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -228,7 +228,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -5909407114424895799}
-    m_Position: {x: 280, y: 110, z: 0}
+    m_Position: {x: 270, y: 20, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 5799915815455137701}
+    m_Position: {x: 305, y: 85, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
