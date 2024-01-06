@@ -416,9 +416,6 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
     public void ItemRemoveNegativeStatus(Milk milk)
     {
-        if (swanData.negativeStatus.Count <= 0)
-            return;
-
         StartCoroutine(StartItemRemoveNegativeStatus(milk));
     }
 
@@ -439,6 +436,11 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
         yield return new WaitForSeconds(1f);
         breadManager.StartCoroutine(breadManager.StartBreadsTurn());
+    }
+
+    public void OnFailed()
+    {
+        throw new NotImplementedException();
     }
     #endregion
 }
