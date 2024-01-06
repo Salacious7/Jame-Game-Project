@@ -24,6 +24,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
     [SerializeField] BreadManager breadManager;
     [SerializeField] private SwanManager swanManager;
     [SerializeField] private GameManager gameManager;
+    [SerializeField] Transform startingPosition;
     private SwanState swanState;
     private SwanUI swanUI;
     private SwanItemChance swanItemChance;
@@ -34,6 +35,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
     private float getWaitTimer;
     [SerializeField] private float setDamageTimer;
     private float getDamageTimer;
+    private Bread target;
 
     [Header("Components")]
     private Animator anim;
@@ -188,8 +190,11 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         swanUI.ActionStateButtonUninteractable();
         UIManager.Instance.panelCurrentTurnObj.SetActive(true);
         UIManager.Instance.currentTextCurrentTurn.text = "Basic Attack!";
+        target = bread;
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0f);
+
+        anim.SetTrigger("basicAttack");
 
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
         UIManager.Instance.currentTextCurrentTurn.text = "";
@@ -222,6 +227,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         swanUI.ActionStateNoAllAccessible();
         UIManager.Instance.panelCurrentTurnObj.SetActive(true);
         UIManager.Instance.currentTextCurrentTurn.text = "Heavy Attack!";
+        target = bread;
 
         yield return new WaitForSeconds(2f);
 
@@ -296,7 +302,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
         anim.SetTrigger("isDamage");
 
-        swanUI.healthBarSlider.value = swanData.health;
+        UpdateHealthUI(swanData.health);
 
         yield return new WaitForSeconds(2f);
 
@@ -312,6 +318,28 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
             gameManager.InitializeLoseScreen();
         }
 
+    }
+
+    public void UpdateHealthUI(float value)
+    {
+        swanUI.healthBarSlider.value = value;
+
+        if(value <= 0)
+        {
+            swanUI.healthText.text = "000";
+            swanUI.healthText.ForceMeshUpdate();
+            return;
+        }
+
+        string s = "";
+
+        if(value < 100)
+            s = "0";
+        else if(value < 10)
+            s = "00";
+
+        swanUI.healthText.text = s + value.ToString();
+        swanUI.healthText.ForceMeshUpdate();
     }
 
 
@@ -333,7 +361,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         UIManager.Instance.currentTextCurrentTurn.text = "";
 
         swanData.health += breadCrumbs.IncreaseHealth();
-        swanUI.healthBarSlider.value = swanData.health;
+        UpdateHealthUI(swanData.health);
         breadCrumbs.DoSomething();
         Debug.Log("Your health increased!");
 
@@ -442,5 +470,47 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
     {
         throw new NotImplementedException();
     }
+    #endregion
+
+    #region Attack Movement
+
+    public void MoveToBread()
+    {
+        StartCoroutine(nameof(MoveToBreadCo));
+    }
+
+    IEnumerator MoveToBreadCo()
+    {
+        float timer = 0;
+
+        float duration = 0.25f;
+        var startingPos = transform.position;
+        while(timer < duration)
+        {
+            transform.position = Vector3.Lerp(startingPos, target.AttackPosition.position, timer / duration);
+            timer += Time.deltaTime;
+            yield return null;
+        }
+    }
+
+    public void MoveToStartingPosition()
+    {
+        StartCoroutine(nameof(MoveToStartingPositionCo));
+    }
+
+    IEnumerator MoveToStartingPositionCo()
+    {
+        float timer = 0;
+
+        float duration = 0.25f;
+        var startingPos = target.AttackPosition.position;
+        while(timer < duration)
+        {
+            transform.position = Vector3.Lerp(target.AttackPosition.position, startingPosition.position, timer / duration);
+            timer += Time.deltaTime;
+            yield return null;
+        }
+    }
+
     #endregion
 }
