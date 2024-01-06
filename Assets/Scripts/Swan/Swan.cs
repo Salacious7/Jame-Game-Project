@@ -189,7 +189,9 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         UIManager.Instance.panelCurrentTurnObj.SetActive(true);
         UIManager.Instance.currentTextCurrentTurn.text = "Basic Attack!";
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0f);
+
+        anim.SetTrigger("basicAttack");
 
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
         UIManager.Instance.currentTextCurrentTurn.text = "";
