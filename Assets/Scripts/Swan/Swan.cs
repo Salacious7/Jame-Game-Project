@@ -23,12 +23,21 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
     public SwanData swanData;
     [SerializeField] BreadManager breadManager;
     [SerializeField] private SwanManager swanManager;
+    [SerializeField] private GameManager gameManager;
     private SwanState swanState;
     private SwanUI swanUI;
     private SwanItemChance swanItemChance;
 
     public float damageIndex;
     private bool hasHeavyDamaged;
+    [SerializeField] private float setWaitTimer;
+    private float getWaitTimer;
+    [SerializeField] private float setDamageTimer;
+    private float getDamageTimer;
+
+    [Header("Components")]
+    private Animator anim;
+    private SpriteRenderer swanSprite;
 
     public enum FightType
     {
@@ -45,6 +54,11 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         swanState = GetComponent<SwanState>();
         swanUI = GetComponent<SwanUI>();
         swanItemChance = GetComponent<SwanItemChance>();
+        swanSprite = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
+
+        getDamageTimer = setDamageTimer;
+        getWaitTimer = setWaitTimer;
     }
 
     public void Fight()
@@ -69,32 +83,71 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
     public void UseBasicAttack()
     {
+        StartCoroutine(InitBasicAttack());
+    }
+
+    public IEnumerator InitBasicAttack()
+    {
+        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+        UIManager.Instance.currentTextCurrentTurn.text = "Select enemy to Attack";
+        swanUI.ActionStateNoAllAccessible();
+
+        getWaitTimer -= Time.deltaTime;
+
+        yield return new WaitForSeconds(getWaitTimer);
+
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "";
+
+        getWaitTimer = setWaitTimer;
         swanState.FightState(FightType.BasicState, this);
         fightType = FightType.BasicState;
-        swanUI.ActionStateNoAllAccessible();
     }
 
     public void UseHeavyAttack()
     {
+        StartCoroutine(InitHeavyAttack());
+    }
+
+    public IEnumerator InitHeavyAttack()
+    {
+        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+        UIManager.Instance.currentTextCurrentTurn.text = "Select enemy to Attack";
+        swanUI.ActionStateNoAllAccessible();
+
+        getWaitTimer -= Time.deltaTime;
+
+        yield return new WaitForSeconds(getWaitTimer);
+
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "";
+
+        getWaitTimer = setWaitTimer;
         swanState.FightState(FightType.HeavyState, this);
         fightType = FightType.HeavyState;
-        swanUI.ActionStateNoAllAccessible();
     }
 
     public void UseDefendBtn()
     {
-        swanUI.DefendObjUI.SetActive(false);
-        swanUI.ActionStateNoAllAccessible();
-
         StartCoroutine(UseDefend());
     }
 
     private IEnumerator UseDefend()
     {
-        yield return new WaitForSeconds(1f);
+        swanUI.ActionStateNoAllAccessible();
+
+        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+        UIManager.Instance.currentTextCurrentTurn.text = "Defense increased!";
+
+        yield return new WaitForSeconds(2f);
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "";
 
         swanData.defenseBoost += 10f;
-        breadManager.StartBreadsTurn();
+
+        yield return new WaitForSeconds(1f);
+
+        breadManager.StartCoroutine(breadManager.StartBreadsTurn());
     }
 
     public void OnSuccess(Bread bread)
@@ -128,25 +181,32 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
     public IEnumerator BasicAttack(Bread bread)
     {
-        yield return new WaitForSeconds(1f);
+        swanUI.ActionStateNoAllAccessible();
+        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+        UIManager.Instance.currentTextCurrentTurn.text = "Basic Attack!";
+
+        yield return new WaitForSeconds(2f);
+
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "";
 
         switch (damageIndex)
         {
-            case 0:
+            case 1:
                 bread.ReduceBreadHealth(3f + swanData.damageBoost);
                 break;
-            case 1:
+            case 2:
                 bread.ReduceBreadHealth(7f + swanData.damageBoost);
                 break;
-            case 2:
+            case 3:
                 bread.ReduceBreadHealth(15f + swanData.damageBoost);
                 break;
-            case 3:
+            case 4:
                 bread.ReduceBreadHealth(25f + swanData.damageBoost);
                 break;
         }
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         swanData.damageBoost = 0;
         bread.selectedArrow.SetActive(false);
@@ -155,7 +215,16 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
     public IEnumerator HeavyAttack(Bread bread)
     {
-        if(!hasHeavyDamaged)
+        swanUI.ActionStateNoAllAccessible();
+        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+        UIManager.Instance.currentTextCurrentTurn.text = "Heavy Attack!";
+
+        yield return new WaitForSeconds(2f);
+
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "";
+
+        if (!hasHeavyDamaged)
         {
             if (swanState.sliderValueIncreased < 25f)
             {
@@ -203,52 +272,127 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
     #region Item
     public void HealSwan(BreadCrumbs breadCrumbs)
     {
+        StartCoroutine(StartHealSwan(breadCrumbs));
+    }
+
+    public IEnumerator StartHealSwan(BreadCrumbs breadCrumbs)
+    {
+        swanUI.ActionStateNoAllAccessible();
+        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+        UIManager.Instance.currentTextCurrentTurn.text = "Swan used Bread Crumbs Item!";
+
+        yield return new WaitForSeconds(2f);
+
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "";
+
         swanData.health += breadCrumbs.IncreaseHealth();
         swanUI.healthBarSlider.value = swanData.health;
-        StartCoroutine(StartUseItem());
-
         breadCrumbs.DoSomething();
         Debug.Log("Your health increased!");
+
+        yield return new WaitForSeconds(1f);
+        breadManager.StartCoroutine(breadManager.StartBreadsTurn());
     }
 
     public void ItemDamage(ShinyFeather shinyFeather)
     {
+        StartCoroutine(StartItemDamage(shinyFeather));
+    }
+
+    public IEnumerator StartItemDamage(ShinyFeather shinyFeather)
+    {
+        swanUI.ActionStateNoAllAccessible();
+        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+        UIManager.Instance.currentTextCurrentTurn.text = "Swan used Shiny Feather Item!";
+
+        yield return new WaitForSeconds(2f);
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "";
+
         swanData.damageBoost += shinyFeather.IncreaseDamage();
-        StartCoroutine(StartUseItem());
         shinyFeather.DoSomething();
 
         Debug.Log("Your damage increased!");
+
+        yield return new WaitForSeconds(1f);
+
+        breadManager.StartCoroutine(breadManager.StartBreadsTurn());
     }
 
     public void ItemMana(ClearBlueCrystal clearBlueCrystal)
     {
+        StartCoroutine(StartItemMana(clearBlueCrystal));
+    }
+
+    public IEnumerator StartItemMana(ClearBlueCrystal clearBlueCrystal)
+    {
+        swanUI.ActionStateNoAllAccessible();
+        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+        UIManager.Instance.currentTextCurrentTurn.text = "Swan used Clear Blue Crystal Item!";
+
+        yield return new WaitForSeconds(2f);
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "";
+
+
         swanData.mana += clearBlueCrystal.IncreaseMana();
         swanUI.specialPowerBarSlider.value = swanData.mana;
-        StartCoroutine(StartUseItem());
         clearBlueCrystal.DoSomething();
         Debug.Log("Your mana increased!");
+
+        yield return new WaitForSeconds(1f);
+        breadManager.StartCoroutine(breadManager.StartBreadsTurn());
     }
 
     public void ItemPassive(CaffeinatedDrink caffeinatedDrink)
     {
+        StartCoroutine(StartItemPassive(caffeinatedDrink));
+    }
+
+    public IEnumerator StartItemPassive(CaffeinatedDrink caffeinatedDrink)
+    {
+        swanUI.ActionStateNoAllAccessible();
+        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+        UIManager.Instance.currentTextCurrentTurn.text = "Swan used Caffeinated Drink Item!";
+
+        yield return new WaitForSeconds(2f);
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "";
+
         swanData.passiveBoost += caffeinatedDrink.IncreasePassive();
-        StartCoroutine(StartUseItem());
         caffeinatedDrink.DoSomething();
         Debug.Log("Your passive increased!");
+
+        yield return new WaitForSeconds(1f);
+        breadManager.StartCoroutine(breadManager.StartBreadsTurn());
     }
 
     public void ItemRemoveNegativeStatus(Milk milk)
     {
-
         if (swanData.negativeStatus.Count <= 0)
             return;
 
-        StartCoroutine(StartUseItem());
+        StartCoroutine(StartItemRemoveNegativeStatus(milk));
+    }
+
+    public IEnumerator StartItemRemoveNegativeStatus(Milk milk)
+    {
+        swanUI.ActionStateNoAllAccessible();
+        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+        UIManager.Instance.currentTextCurrentTurn.text = "Swan used Milk Item!";
+
+        yield return new WaitForSeconds(2f);
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "";
 
         swanData.negativeStatus.Clear();
         milk.DoSomething();
 
         Debug.Log("Your negtive status has been cleared!");
+
+        yield return new WaitForSeconds(1f);
+        breadManager.StartCoroutine(breadManager.StartBreadsTurn());
     }
 
     public IEnumerator DamageFromEnemy(int amount)
@@ -258,32 +402,37 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         switch (amount)
         {
             case 0:
-                swanUI.healthBarSlider.value -= (swanData.defenseBoost > 0 ? 15f / swanData.defenseBoost : 15f);
+                swanData.health -= (swanData.defenseBoost > 0 ? 15f / swanData.defenseBoost : 15f);
                 break;
             case 1:
-                swanUI.healthBarSlider.value -= (swanData.defenseBoost > 0 ? 12f / swanData.defenseBoost : 12f);
+                swanData.health -= (swanData.defenseBoost > 0 ? 12f / swanData.defenseBoost : 12f);
                 break;
             case 2:
-                swanUI.healthBarSlider.value -= (swanData.defenseBoost > 0 ? 6f / swanData.defenseBoost : 6f);
+                swanData.health -= (swanData.defenseBoost > 0 ? 6f / swanData.defenseBoost : 6f);
                 break;
             case 3:
-                swanUI.healthBarSlider.value -= 0f;
+                swanData.health -= 0f;
                 break;
         }
 
-        yield return new WaitForSeconds(1f);
+        anim.SetTrigger("isDamage");
 
+        swanUI.healthBarSlider.value = swanData.health;
+
+        yield return new WaitForSeconds(2f);
+
+        swanSprite.color = new Color(255f, 255f, 255f, 255f);
         swanData.defenseBoost = 0;
-        breadManager.EndTurn();
+
+        if(swanData.health > 0)
+        {
+            breadManager.EndTurn();
+        }
+        else
+        {
+            gameManager.InitializeLoseScreen();
+        }
+        
     }
     #endregion
-
-    public IEnumerator StartUseItem()
-    {
-        swanUI.ActionStateNoAllAccessible();
-
-        yield return new WaitForSeconds(1f);
-
-        breadManager.StartCoroutine(breadManager.StartBreadsTurn());
-    }
 }

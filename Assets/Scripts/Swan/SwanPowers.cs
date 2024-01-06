@@ -64,20 +64,42 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
     private IEnumerator SwanLeap(Bread bread)
     {
         swanUI.ActionStateNoAllAccessible();
-        yield return new WaitForSeconds(1f);
+
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "Swan used Swan Leap!";
+
+        yield return new WaitForSeconds(2f);
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "";
+
         swanUI.specialPowerBarSlider.value -= 10f;
         bread.ReduceBreadHealth(20f);
         swanItemChance.GetClearBlueCrystalChance();
+
+        yield return new WaitForSeconds(1f);
+
         breadManager.StartCoroutine(breadManager.StartBreadsTurn());
     }
 
     private IEnumerator GroundPummel(Bread bread)
     {
         swanUI.ActionStateNoAllAccessible();
-        yield return new WaitForSeconds(1f);
+
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "Swan used Ground Pummel!";
+
+        yield return new WaitForSeconds(2f);
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "";
+
         swanUI.specialPowerBarSlider.value -= 20f;
         bread.ReduceBreadHealth(30f);
         swanItemChance.GetCaffeinatedDrinkOrMilkChance();
+
+        yield return new WaitForSeconds(1f);
+
+        breadManager.StartCoroutine(breadManager.StartBreadsTurn());
+
         breadManager.StartCoroutine(breadManager.StartBreadsTurn());
     }
 
