@@ -36,7 +36,7 @@ public class BreadManager : MonoBehaviour
         currentBread = breadOrders[Random.Range(0, breadOrders.Count)];
         // currentBread.selectedArrow.SetActive(true);
         Debug.Log(currentBread.name + " starting turn");
-
+        swanUI.ActionStateButtonInteractable();
 
         currentBread.StartTurn();
     }
@@ -55,6 +55,7 @@ public class BreadManager : MonoBehaviour
 
     public IEnumerator EndBreadsTurn()
     {
+        swanUI.ActionStateButtonInteractable();
         uiManager.panelCurrentTurnObj.SetActive(true);
         uiManager.currentTextCurrentTurn.text = "Swan's turn to shine.";
 
@@ -63,7 +64,7 @@ public class BreadManager : MonoBehaviour
         uiManager.panelCurrentTurnObj.SetActive(false);
         uiManager.currentTextCurrentTurn.text = "";
 
-        swanUI.ActionStateNoAllAccessible();
+        swanUI.ActionStateContainer.SetActive(true);
         Debug.Log("bread's turn end");
     }
 
