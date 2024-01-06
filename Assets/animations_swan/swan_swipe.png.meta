@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -147,7 +147,721 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: swan_swipe_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1063fa908fec5bd469f070f6a89466a1
+      internalID: 1245771441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_1
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36271e5ef2478db4a84f9475d5528736
+      internalID: -1531705529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_2
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906d8ce4c69e69446b0387541f92a283
+      internalID: 1369827878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_3
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd8670b70ffd4d4897523ad6b74ab55
+      internalID: 1058507980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_4
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5d8e02a9f8a1b4aad9ed0d0abe8d79
+      internalID: -1392046725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_5
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2145bf970a8c80c49921a550afc37546
+      internalID: -586650395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_6
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e3efd09017028419d360b6fb261f27
+      internalID: 287113467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79cd983181c3ca8459716d1a1fcde92a
+      internalID: -1453446293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_8
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93ec7c9cbcf94c4a8cd479ec2cda1b4
+      internalID: 553423028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_9
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de165542a213104a9bbcb3b5021984c
+      internalID: 1662970342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_10
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9f8cea0f3136949bc51e71dca5a90c
+      internalID: -1286878888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_11
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fde808a29eb3fd47bcdeff1ee0a7071
+      internalID: -2015354204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_12
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b830f4580915342865bb0dd5b7f2ef
+      internalID: -997113396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_13
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76eb85bb46e98a04b823b54365801da5
+      internalID: -1443053010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd0224b6a2c5684d9a8d10473d1ce91
+      internalID: 2076808328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_15
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74a263112a727d4892b246dbbf1be19
+      internalID: -690051139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_16
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0828b16c863a5d41a688e5f8db78e26
+      internalID: 939748467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_17
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313a0f9fd8088dd4a9584891c67c3e0f
+      internalID: -818679964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_18
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75040dc4ea865d8428b3a76febc5768a
+      internalID: 1542234521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_19
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60208af259d25944891567ea8e1292b8
+      internalID: 14590771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_20
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4bacd23e69004478b056f324e713aa
+      internalID: 54916937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f68065eb51fc8548894fc38057710bd
+      internalID: -1264379436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_22
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea5a740edfc71a4fb6c8f370d8527f3
+      internalID: -661355629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_23
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53dd460aecbc0045bbac8fb7b28ed26
+      internalID: -120959032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_24
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45bd0a7bc57a6bb49b9a5f5594b67be5
+      internalID: 781136196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_25
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e5c7214f211ee42904b42d0a3ddc70
+      internalID: 625336074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_26
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e5a9295705bb241b55982bfe37bcbf
+      internalID: -1618774099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_27
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc66a7fe781e34a4da20d5f009ed6804
+      internalID: 1550674769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6306d39fc417b6542a9dbe8af7e55f60
+      internalID: -1648258633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_29
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5600b8fc35c9a42ab18bc1f363ddd9
+      internalID: 1790632907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_30
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb6f5e724939444b9400c42e12ce775
+      internalID: -383986168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_31
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d2f0a7b4a2b924d8a803db832d458e
+      internalID: 1484407327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_32
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12586edd6b929e145b61f71e016d32de
+      internalID: 457165810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_swipe_33
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1b1a09cafacd04190933332ef44732
+      internalID: 437979911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -158,7 +872,42 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      swan_swipe_0: 1245771441
+      swan_swipe_1: -1531705529
+      swan_swipe_10: -1286878888
+      swan_swipe_11: -2015354204
+      swan_swipe_12: -997113396
+      swan_swipe_13: -1443053010
+      swan_swipe_14: 2076808328
+      swan_swipe_15: -690051139
+      swan_swipe_16: 939748467
+      swan_swipe_17: -818679964
+      swan_swipe_18: 1542234521
+      swan_swipe_19: 14590771
+      swan_swipe_2: 1369827878
+      swan_swipe_20: 54916937
+      swan_swipe_21: -1264379436
+      swan_swipe_22: -661355629
+      swan_swipe_23: -120959032
+      swan_swipe_24: 781136196
+      swan_swipe_25: 625336074
+      swan_swipe_26: -1618774099
+      swan_swipe_27: 1550674769
+      swan_swipe_28: -1648258633
+      swan_swipe_29: 1790632907
+      swan_swipe_3: 1058507980
+      swan_swipe_30: -383986168
+      swan_swipe_31: 1484407327
+      swan_swipe_32: 457165810
+      swan_swipe_33: 437979911
+      swan_swipe_34: 279225140
+      swan_swipe_4: -1392046725
+      swan_swipe_5: -586650395
+      swan_swipe_6: 287113467
+      swan_swipe_7: -1453446293
+      swan_swipe_8: 553423028
+      swan_swipe_9: 1662970342
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

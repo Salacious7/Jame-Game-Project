@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -147,7 +147,742 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: swan_scream_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa56c2b777aa2f4697e7b417c036ac6
+      internalID: 374293210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_1
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8a5977adb01ad42a089f26ccf47103
+      internalID: 1973146127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_2
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4531b606ee6f3b74395fc50b3cb9f4c0
+      internalID: -1449335490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_3
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2a1ba9858390243add317077add768
+      internalID: -2041306327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_4
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37f88b6acea598409d998434ff04f43
+      internalID: 273343449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_5
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1049fd12ad5344440bc66ca9cc9e672b
+      internalID: -1133431085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_6
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b880aeee430883c4baa5bec170b57d4c
+      internalID: -941726909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b065ee2033b292a46adc045e7f631192
+      internalID: 710034773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_8
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a596cbf9d0e1e4abbf64378b7bab8f
+      internalID: -1906700441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_9
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd6df0bd9ae60246bb817e07ae44eeb
+      internalID: 733888848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_10
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a2e61b190c24146838a6e4dce846c1
+      internalID: -1472373208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_11
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba73b5f10542e5a458e48e809577c066
+      internalID: -2079858777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_12
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734ceada5e6715946bdd98a411b3cba3
+      internalID: 1016968945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_13
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1035594a4a01d48b0151bc6a75f068
+      internalID: -906998416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3dff602a4a07dd44bab593d29cb0ee7
+      internalID: 139840622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_15
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9377907dce7e0994b95a3a1a5c21410b
+      internalID: -1734301485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_16
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f7cbc3d760e114693406f8dd5d20a2
+      internalID: 695267909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_17
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadb2cb10d7d2f641854e4201490f616
+      internalID: 847926030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_18
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c232196a01be7724fa79f78fd3a78d23
+      internalID: 1781268682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_19
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641ba208da20a6e408f8abe7af80bf15
+      internalID: -1580114335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_20
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551ff92ddecfe5d4ab397934f9ef02c5
+      internalID: 1780724385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d4afb5624f5504486011ac2bc46f0c
+      internalID: -1433874570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_22
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99bc62cda57652b4eaf481dad786194f
+      internalID: 2118372708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_23
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886dac0035914c840afe0a125d181326
+      internalID: 1914149254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_24
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69ea22dc54fb3a4fbba3319a175be6c
+      internalID: -1514809277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_25
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1767b48f891e207499d3b93a27221ef2
+      internalID: 327371370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_26
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7967c811e61a0047be3039c94b690cc
+      internalID: -2048935499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_27
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8dae94e5339764b9c52916abeef757
+      internalID: 140480570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8654a1c1c26217848a56a9772e8db224
+      internalID: -638411410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_29
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe6fe9cc11e84741966c40dd316e44a
+      internalID: 286152301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_30
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106cd2e44ca59db40bdbdcb0de444e79
+      internalID: -714078804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_31
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b674b2c1e633f47bb25d5e927dfd67
+      internalID: -223680982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_32
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfeef36c3c8b3944bb38afc19ad8c1a4
+      internalID: -2095045854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_33
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5512ba52a069f0f489783150ffd5b2c8
+      internalID: 1169835300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_scream_34
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1035e73ae22f84c4d88f96e09a31408f
+      internalID: -469167253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -158,7 +893,42 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      swan_scream_0: 374293210
+      swan_scream_1: 1973146127
+      swan_scream_10: -1472373208
+      swan_scream_11: -2079858777
+      swan_scream_12: 1016968945
+      swan_scream_13: -906998416
+      swan_scream_14: 139840622
+      swan_scream_15: -1734301485
+      swan_scream_16: 695267909
+      swan_scream_17: 847926030
+      swan_scream_18: 1781268682
+      swan_scream_19: -1580114335
+      swan_scream_2: -1449335490
+      swan_scream_20: 1780724385
+      swan_scream_21: -1433874570
+      swan_scream_22: 2118372708
+      swan_scream_23: 1914149254
+      swan_scream_24: -1514809277
+      swan_scream_25: 327371370
+      swan_scream_26: -2048935499
+      swan_scream_27: 140480570
+      swan_scream_28: -638411410
+      swan_scream_29: 286152301
+      swan_scream_3: -2041306327
+      swan_scream_30: -714078804
+      swan_scream_31: -223680982
+      swan_scream_32: -2095045854
+      swan_scream_33: 1169835300
+      swan_scream_34: -469167253
+      swan_scream_4: 273343449
+      swan_scream_5: -1133431085
+      swan_scream_6: -941726909
+      swan_scream_7: 710034773
+      swan_scream_8: -1906700441
+      swan_scream_9: 733888848
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

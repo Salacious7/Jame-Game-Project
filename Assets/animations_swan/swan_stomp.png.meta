@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -147,7 +147,742 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: swan_stomp_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d73eee9960add4c89ffdf40f67edc7
+      internalID: -93359910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_1
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9163f1153d25242933395dd92e524a
+      internalID: 38508498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_2
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b873b72287d9d1b4ea2556e33dd41d44
+      internalID: -737078734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_3
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ed840d8d650854d9cd64ae411b8c62
+      internalID: 380971441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_4
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682f059b5aa6cb64797edec79e0d5f1c
+      internalID: -421770767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_5
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056374feee58ef141a7672cae6d4d092
+      internalID: -745783179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_6
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 3160
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0f55b517c10a842b1f74f5a5afb5b8
+      internalID: -299252051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ccd08271e6da84ebf74bcb17e65e5a
+      internalID: -1364744071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_8
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc07f0f2c346727408ec7a1e4352a5b4
+      internalID: -1670857772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_9
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86be93325f93304793d483012664a71
+      internalID: 819940172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_10
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37dabb410d5f2b4da33770212db76e0
+      internalID: 1859936730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_11
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c7939583ade4e499943c2a2c3bb753
+      internalID: -774348411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_12
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ab9e24c03b1884985a2c30cf0a7429
+      internalID: 1327838939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_13
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 2370
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aceaa315d50cdf142848c5a90f57982e
+      internalID: 1798364717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40fe4250bf6e0b4a999477820c2785f
+      internalID: 1150498988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_15
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6197922bc5b114780413b478d494c4
+      internalID: 1663830433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_16
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22579071fe3ddbe46ad8cbe17f5ccbfa
+      internalID: -85618308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_17
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e921abf3bd0c01c4385ec17c2555008d
+      internalID: 512237728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_18
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b761e116ca22246b5b00e8031f276d
+      internalID: -1062298462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_19
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8847751cef693a24aa120d38cab39abe
+      internalID: 1665344904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_20
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 1580
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db52502e18b38443857ec2207a9e0a7
+      internalID: 1586391725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dffea13ad4612b45954611e792532af
+      internalID: 423065590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_22
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2909f707b95df7498a61e76f40fe093
+      internalID: 1681273345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_23
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9798703f21c53014b99bfc39a60d4bf8
+      internalID: -440204678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_24
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae404ed87548cf408eb4a1528323e02
+      internalID: -445575059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_25
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b1e12e8baf0374ea8f5fe30a1149d2
+      internalID: -1971133729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_26
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cea3fa14abe10c43a2d16cc081fed7f
+      internalID: 33322315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_27
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 790
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd838b36df958d94e81f1e9215130f6b
+      internalID: -1073318429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afe33ad264488540bf596fc913c09de
+      internalID: 295045508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_29
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5770abdc9ab7c346905859e7ccf1dbc
+      internalID: 1773041740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_30
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310eeea56a6c6a243859ca9f64152c73
+      internalID: -1597734336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_31
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42c72e2c5516374b9effa3ec8bd4022
+      internalID: -949788695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_32
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8f36eae785e87488559e4cdd266d04
+      internalID: 346565379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_33
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8881c8058b6bd4748ae19e0e4f961043
+      internalID: -1504161108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swan_stomp_34
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 0
+        width: 1405
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c64264ed44e194daf2dc332aa9ca74
+      internalID: 532323487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -158,7 +893,42 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      swan_stomp_0: -93359910
+      swan_stomp_1: 38508498
+      swan_stomp_10: 1859936730
+      swan_stomp_11: -774348411
+      swan_stomp_12: 1327838939
+      swan_stomp_13: 1798364717
+      swan_stomp_14: 1150498988
+      swan_stomp_15: 1663830433
+      swan_stomp_16: -85618308
+      swan_stomp_17: 512237728
+      swan_stomp_18: -1062298462
+      swan_stomp_19: 1665344904
+      swan_stomp_2: -737078734
+      swan_stomp_20: 1586391725
+      swan_stomp_21: 423065590
+      swan_stomp_22: 1681273345
+      swan_stomp_23: -440204678
+      swan_stomp_24: -445575059
+      swan_stomp_25: -1971133729
+      swan_stomp_26: 33322315
+      swan_stomp_27: -1073318429
+      swan_stomp_28: 295045508
+      swan_stomp_29: 1773041740
+      swan_stomp_3: 380971441
+      swan_stomp_30: -1597734336
+      swan_stomp_31: -949788695
+      swan_stomp_32: 346565379
+      swan_stomp_33: -1504161108
+      swan_stomp_34: 532323487
+      swan_stomp_4: -421770767
+      swan_stomp_5: -745783179
+      swan_stomp_6: -299252051
+      swan_stomp_7: -1364744071
+      swan_stomp_8: -1670857772
+      swan_stomp_9: 819940172
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

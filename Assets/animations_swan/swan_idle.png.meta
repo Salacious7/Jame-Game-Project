@@ -132,6 +132,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -139,10 +152,10 @@ TextureImporter:
       name: swan_idle_0
       rect:
         serializedVersion: 2
-        x: 573
-        y: 4447
-        width: 751
-        height: 777
+        x: 0
+        y: 4320
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +173,10 @@ TextureImporter:
       name: swan_idle_1
       rect:
         serializedVersion: 2
-        x: 2492
-        y: 4447
-        width: 745
-        height: 784
+        x: 1920
+        y: 4320
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +194,10 @@ TextureImporter:
       name: swan_idle_2
       rect:
         serializedVersion: 2
-        x: 4409
-        y: 4447
-        width: 741
-        height: 787
+        x: 3840
+        y: 4320
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +215,10 @@ TextureImporter:
       name: swan_idle_3
       rect:
         serializedVersion: 2
-        x: 6328
-        y: 4447
-        width: 735
-        height: 791
+        x: 5760
+        y: 4320
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,10 +236,10 @@ TextureImporter:
       name: swan_idle_4
       rect:
         serializedVersion: 2
-        x: 8247
-        y: 4447
-        width: 729
-        height: 794
+        x: 7680
+        y: 4320
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,10 +257,10 @@ TextureImporter:
       name: swan_idle_5
       rect:
         serializedVersion: 2
-        x: 10164
-        y: 4447
-        width: 725
-        height: 797
+        x: 9600
+        y: 4320
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,10 +278,10 @@ TextureImporter:
       name: swan_idle_6
       rect:
         serializedVersion: 2
-        x: 12083
-        y: 4445
-        width: 715
-        height: 802
+        x: 11520
+        y: 4320
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,10 +299,10 @@ TextureImporter:
       name: swan_idle_7
       rect:
         serializedVersion: 2
-        x: 563
-        y: 3365
-        width: 708
-        height: 803
+        x: 0
+        y: 3240
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,10 +320,10 @@ TextureImporter:
       name: swan_idle_8
       rect:
         serializedVersion: 2
-        x: 2482
-        y: 3365
-        width: 699
-        height: 806
+        x: 1920
+        y: 3240
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,10 +341,10 @@ TextureImporter:
       name: swan_idle_9
       rect:
         serializedVersion: 2
-        x: 4399
-        y: 3364
-        width: 695
-        height: 811
+        x: 3840
+        y: 3240
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,10 +362,10 @@ TextureImporter:
       name: swan_idle_10
       rect:
         serializedVersion: 2
-        x: 6318
-        y: 3364
-        width: 689
-        height: 811
+        x: 5760
+        y: 3240
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,10 +383,10 @@ TextureImporter:
       name: swan_idle_11
       rect:
         serializedVersion: 2
-        x: 8238
-        y: 3364
-        width: 679
-        height: 814
+        x: 7680
+        y: 3240
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,10 +404,10 @@ TextureImporter:
       name: swan_idle_12
       rect:
         serializedVersion: 2
-        x: 10157
-        y: 3364
-        width: 673
-        height: 814
+        x: 9600
+        y: 3240
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,10 +425,10 @@ TextureImporter:
       name: swan_idle_13
       rect:
         serializedVersion: 2
-        x: 12077
-        y: 3365
-        width: 662
-        height: 815
+        x: 11520
+        y: 3240
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,10 +446,10 @@ TextureImporter:
       name: swan_idle_14
       rect:
         serializedVersion: 2
-        x: 556
-        y: 2285
-        width: 656
-        height: 814
+        x: 0
+        y: 2160
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -454,10 +467,10 @@ TextureImporter:
       name: swan_idle_15
       rect:
         serializedVersion: 2
-        x: 2476
-        y: 2285
-        width: 653
-        height: 814
+        x: 1920
+        y: 2160
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -475,10 +488,10 @@ TextureImporter:
       name: swan_idle_16
       rect:
         serializedVersion: 2
-        x: 4395
-        y: 2285
-        width: 663
-        height: 814
+        x: 3840
+        y: 2160
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -496,10 +509,10 @@ TextureImporter:
       name: swan_idle_17
       rect:
         serializedVersion: 2
-        x: 6316
-        y: 2285
-        width: 665
-        height: 814
+        x: 5760
+        y: 2160
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -517,10 +530,10 @@ TextureImporter:
       name: swan_idle_18
       rect:
         serializedVersion: 2
-        x: 8238
-        y: 2285
-        width: 672
-        height: 814
+        x: 7680
+        y: 2160
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -538,10 +551,10 @@ TextureImporter:
       name: swan_idle_19
       rect:
         serializedVersion: 2
-        x: 10157
-        y: 2285
-        width: 676
-        height: 813
+        x: 9600
+        y: 2160
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -559,10 +572,10 @@ TextureImporter:
       name: swan_idle_20
       rect:
         serializedVersion: 2
-        x: 12077
-        y: 2285
-        width: 682
-        height: 812
+        x: 11520
+        y: 2160
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -580,10 +593,10 @@ TextureImporter:
       name: swan_idle_21
       rect:
         serializedVersion: 2
-        x: 559
-        y: 1206
-        width: 686
-        height: 810
+        x: 0
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -601,10 +614,10 @@ TextureImporter:
       name: swan_idle_22
       rect:
         serializedVersion: 2
-        x: 2479
-        y: 1206
-        width: 692
-        height: 810
+        x: 1920
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -622,10 +635,10 @@ TextureImporter:
       name: swan_idle_23
       rect:
         serializedVersion: 2
-        x: 4399
-        y: 1206
-        width: 698
-        height: 807
+        x: 3840
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -643,10 +656,10 @@ TextureImporter:
       name: swan_idle_24
       rect:
         serializedVersion: 2
-        x: 6321
-        y: 1206
-        width: 702
-        height: 807
+        x: 5760
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -664,10 +677,10 @@ TextureImporter:
       name: swan_idle_25
       rect:
         serializedVersion: 2
-        x: 8241
-        y: 1206
-        width: 705
-        height: 806
+        x: 7680
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -685,10 +698,10 @@ TextureImporter:
       name: swan_idle_26
       rect:
         serializedVersion: 2
-        x: 10164
-        y: 1206
-        width: 708
-        height: 803
+        x: 9600
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -706,10 +719,10 @@ TextureImporter:
       name: swan_idle_27
       rect:
         serializedVersion: 2
-        x: 12083
-        y: 1206
-        width: 715
-        height: 803
+        x: 11520
+        y: 1080
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -727,10 +740,10 @@ TextureImporter:
       name: swan_idle_28
       rect:
         serializedVersion: 2
-        x: 563
-        y: 126
-        width: 722
-        height: 801
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -748,10 +761,10 @@ TextureImporter:
       name: swan_idle_29
       rect:
         serializedVersion: 2
-        x: 2486
-        y: 126
-        width: 721
-        height: 797
+        x: 1920
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -769,10 +782,10 @@ TextureImporter:
       name: swan_idle_30
       rect:
         serializedVersion: 2
-        x: 4405
-        y: 126
-        width: 728
-        height: 797
+        x: 3840
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -790,10 +803,10 @@ TextureImporter:
       name: swan_idle_31
       rect:
         serializedVersion: 2
-        x: 6328
-        y: 126
-        width: 732
-        height: 794
+        x: 5760
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -811,10 +824,10 @@ TextureImporter:
       name: swan_idle_32
       rect:
         serializedVersion: 2
-        x: 8248
-        y: 126
-        width: 734
-        height: 791
+        x: 7680
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -832,10 +845,10 @@ TextureImporter:
       name: swan_idle_33
       rect:
         serializedVersion: 2
-        x: 10170
-        y: 126
-        width: 738
-        height: 788
+        x: 9600
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -853,10 +866,10 @@ TextureImporter:
       name: swan_idle_34
       rect:
         serializedVersion: 2
-        x: 12090
-        y: 126
-        width: 744
-        height: 784
+        x: 11520
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

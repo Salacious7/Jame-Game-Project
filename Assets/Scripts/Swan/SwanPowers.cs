@@ -103,17 +103,37 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
         yield return new WaitForSeconds(1f);
 
         breadManager.StartCoroutine(breadManager.StartBreadsTurn());
+    }
+
+    private IEnumerator FailedSpecialPower()
+    {
+        swanUI.ActionStateButtonUninteractable();
+        swanUI.ActionStateNoAllAccessible();
+
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "Failed to Special Power!";
+
+        yield return new WaitForSeconds(2f);
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "";
+
+        yield return new WaitForSeconds(1f);
 
         breadManager.StartCoroutine(breadManager.StartBreadsTurn());
     }
 
-    public void OnFailed(int amount)
-    {
-        
-    }
-
     public void OnSuccess()
     {
-        throw new System.NotImplementedException();
+
+    }
+
+    public void OnFailed(int index)
+    {
+
+    }
+
+    public void OnFailed()
+    {
+        StartCoroutine(FailedSpecialPower());
     }
 }
