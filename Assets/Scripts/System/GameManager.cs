@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject loseScreenObj;
+    [SerializeField] private GameObject winScreenObj;
     [SerializeField] private BreadManager breadManager;
     [SerializeField] private SwanManager swanManager;
 
@@ -16,6 +17,12 @@ public class GameManager : MonoBehaviour
     public void InitializeLoseScreen()
     {
         loseScreenObj.SetActive(true);
+        StopAllCoroutines();
+    }
+
+    public void InitializeWinScreen()
+    {
+        winScreenObj.SetActive(true);
         StopAllCoroutines();
     }
 }
