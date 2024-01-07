@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class Baguette : Bread
 {
-    public override void SpecialPower()
-    {
-        
-    }
+
 
     // Start is called before the first frame update
     void Start()

@@ -10,6 +10,10 @@ public abstract class Bread : MonoBehaviour, IActionState
     [field: SerializeField] public Transform AttackPosition {get; private set;}
     [SerializeField] TextMeshProUGUI healthText;
     [SerializeField] TextMeshProUGUI manaText;
+    [SerializeField] float basicAttackDamage;
+    [SerializeField] float heavyAttackDamage;
+    [SerializeField] float specialAttack1Damage;
+    [SerializeField] float specialAttack2Damage;
     bool actionFinished;
     public bool Dead {get; private set;}
     public GameObject selectedArrow;
@@ -18,6 +22,7 @@ public abstract class Bread : MonoBehaviour, IActionState
 
     public float breadHealth;
     public float breadMana;
+    public float DamageFromCurrentAttack {get; private set;}
 
     void Awake()
     {
@@ -38,10 +43,35 @@ public abstract class Bread : MonoBehaviour, IActionState
 
     public void Fight()
     {
-        
+        if(Random.Range(0, 2) == 0)
+        {
+            Debug.Log(name + " used basic attack");
+            DamageFromCurrentAttack = basicAttackDamage;
+            //trigger animation
+        }
+        else
+        {
+            Debug.Log(name + " used heavy attack");
+            DamageFromCurrentAttack = heavyAttackDamage;
+            //trigger animation
+        }
     }
 
-    public abstract void SpecialPower();
+    public void SpecialPower()
+    {
+        if(Random.Range(0, 2) == 0)
+        {
+            Debug.Log(name + " used special 1");
+            DamageFromCurrentAttack = specialAttack1Damage;
+            //trigger animation
+        }
+        else
+        {
+            Debug.Log(name + " used special 2");
+            DamageFromCurrentAttack = specialAttack2Damage;
+            //trigger animation
+        }
+    }
 
     public void UseItem()
     {
@@ -146,18 +176,18 @@ public abstract class Bread : MonoBehaviour, IActionState
             swan.fightType = Swan.FightType.DefendState;
             swanState.FightState(Swan.FightType.DefendState, swan);
         }
-        // switch(Random.Range(0, 4))
-        // {
-        //     case 0: Fight();
-        //         break;
-        //     case 1: SpecialPower();
-        //         break;
-        //     case 2: UseItem();
-        //         break;
-        //     case 3: Defend();
-        //         break;
+        switch(Random.Range(0, 2))
+        {
+            case 0: Fight();
+                break;
+            case 1: SpecialPower();
+                break;
+            // case 2: UseItem();
+            //     break;
+            // case 3: Defend();
+            //     break;
             
-        //     default: break;
-        // }
+            default: break;
+        }
     }
 }
