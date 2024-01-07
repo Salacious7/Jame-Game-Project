@@ -22,7 +22,7 @@ public class Sandwich : Bread
         }
         else
         {
-            if(breadMana <= special1Cost)
+            if(breadMana <= special2Cost)
             {
                 Fight();
                 return;

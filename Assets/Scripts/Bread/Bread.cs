@@ -24,7 +24,7 @@ public abstract class Bread : MonoBehaviour, IActionState
 
     [field: SerializeField] public float breadHealth {get; private set;}
     [field: SerializeField] public float breadMana {get; private set;}
-    public float DamageFromCurrentAttack {get; protected set;}
+    protected float DamageFromCurrentAttack {get; set;}
 
     public float maxHealth {get; private set;}
     public float maxMana {get; private set;}

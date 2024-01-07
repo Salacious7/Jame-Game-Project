@@ -289,16 +289,16 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         switch (amount)
         {
             case 0:
-                swanData.health -= swanData.defenseBoost > 0 ? target.DamageFromCurrentAttack / swanData.defenseBoost : target.DamageFromCurrentAttack;
+                swanData.health -= swanData.defenseBoost > 0 ? IncomingDamage / swanData.defenseBoost : IncomingDamage;
                 break;
             case 1:
-                swanData.health -= swanData.defenseBoost > 0 ? target.DamageFromCurrentAttack * 0.75f / swanData.defenseBoost : target.DamageFromCurrentAttack;
+                swanData.health -= swanData.defenseBoost > 0 ? IncomingDamage * 0.75f / swanData.defenseBoost : IncomingDamage;
                 break;
             case 2:
-                swanData.health -= swanData.defenseBoost > 0 ? target.DamageFromCurrentAttack * 0.5f / swanData.defenseBoost : target.DamageFromCurrentAttack;
+                swanData.health -= swanData.defenseBoost > 0 ? IncomingDamage * 0.5f / swanData.defenseBoost : IncomingDamage;
                 break;
             case 3:
-                swanData.health -= swanData.defenseBoost > 0 ? target.DamageFromCurrentAttack * 0.25f / swanData.defenseBoost : target.DamageFromCurrentAttack;
+                swanData.health -= swanData.defenseBoost > 0 ? IncomingDamage * 0.25f / swanData.defenseBoost : IncomingDamage;
                 break;
         }
 
