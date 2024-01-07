@@ -17,6 +17,11 @@ public class MenuManager : MonoBehaviour
         transitionImage.raycastTarget = false;
     }
 
+    private void Start()
+    {
+        SoundManager.Instance.OnPlayTitleMusic();
+    }
+
     public void OnPlayGameButton()
     {
         StartCoroutine(PlayGame());
@@ -28,12 +33,6 @@ public class MenuManager : MonoBehaviour
         transitionAnim.SetTrigger("isTransition");
         yield return new WaitForSecondsRealtime(1.5f);
         menu.SetActive(false);
-        sceneTransition.SetActive(false);
         openingCutscene.SetActive(true);
-    }
-
-    void LoadGameScene()
-    {
-        SceneManager.LoadScene(1);
     }
 }

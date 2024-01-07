@@ -297,7 +297,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1150
+  Length: 1106
 --- !u!114 &-4712017158314135597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,7 +324,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 3034
 --- !u!114 &-4299421959585771521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,7 +405,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 10500
+  Length: 8820
 --- !u!114 &-3452662664162949669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -634,7 +634,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 7250
 --- !u!114 &-1873680803180222120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -688,7 +688,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1800
+  Length: 1772
 --- !u!114 &-813005079522493847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -868,7 +868,7 @@ MonoBehaviour:
   - {fileID: 5777904686703053624}
   StringsBanks:
   - {fileID: -3301980602566170062}
-  cacheTime: 638402778480281309
+  cacheTime: 638402788477788462
   cacheVersion: 131616
 --- !u!114 &295734867017174787
 MonoBehaviour:
@@ -924,7 +924,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 7812
+  Length: 6982
 --- !u!114 &884608241911222043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -951,7 +951,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 5500
+  Length: 3820
 --- !u!114 &1072966452611252735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1032,7 +1032,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2374
+  Length: 2324
 --- !u!114 &1951543025229541323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1075,10 +1075,10 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638402737898985306
+  lastModified: 638402788477788462
   FileSizes:
   - Name: Desktop
-    Value: 1372544
+    Value: 1372864
   Exists: 1
 --- !u!114 &2502443107559671357
 MonoBehaviour:
@@ -1160,7 +1160,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 1648
 --- !u!114 &3314168827041030268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1343,7 +1343,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2150
+  Length: 2120
 --- !u!114 &7841046669628295856
 MonoBehaviour:
   m_ObjectHideFlags: 0

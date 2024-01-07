@@ -91,7 +91,9 @@ public abstract class Bread : MonoBehaviour, IActionState
 
     public void Fight()
     {
-        if(Random.Range(0, 2) == 0)
+        Attack();
+
+        if (Random.Range(0, 2) == 0)
         {
             OnAttack(FightType.BasicState);
             Debug.Log(name + " used basic attack");
@@ -109,10 +111,6 @@ public abstract class Bread : MonoBehaviour, IActionState
                 swan.IncomingDamage = DamageFromCurrentAttack;
             //trigger animation
         }
-
-        Attack();
-        Debug.Log("Bread is Fighting!");
-
     }
 
     public abstract void OnAttack(FightType fightType);
