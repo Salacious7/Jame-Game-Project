@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{4f325b7c-1012-4dcc-9722-9c4cc929f30c}">
+		<property name="assetPath">
+			<value>SFX/Swan/Swan Passive Bar Full.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.0833333333333335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4b49c24f-dc5b-40ec-a0c5-68ec656200a1}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="EventFolder" id="{561aed1e-608f-4e2c-9869-0379beb9ce13}">
+		<property name="name">
+			<value>Bread Passive Bar</value>
+		</property>
+		<relationship name="folder">
+			<destination>{7960683f-4053-4e73-a641-03361b43de50}</destination>
+		</relationship>
+	</object>
+</objects>

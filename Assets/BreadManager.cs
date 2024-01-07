@@ -21,9 +21,11 @@ public class BreadManager : MonoBehaviour
     public IEnumerator StartBreadsTurn()
     {
         uiManager.panelCurrentTurnObj.SetActive(true);
+        CameraManager.Instance.StartCoroutine(CameraManager.Instance.CamLookBread());
         uiManager.currentTextCurrentTurn.text = "Bread's turn to shine. Dodge their hits.";
 
         yield return new WaitForSeconds(2f);
+        CameraManager.Instance.StartCoroutine(CameraManager.Instance.CamBackToInitialPos());
 
         swanUI.ActionStateContainer.SetActive(false);
         uiManager.panelCurrentTurnObj.SetActive(false);
@@ -58,13 +60,15 @@ public class BreadManager : MonoBehaviour
         swanUI.ActionStateButtonInteractable();
         uiManager.panelCurrentTurnObj.SetActive(true);
         uiManager.currentTextCurrentTurn.text = "Swan's turn to shine.";
+        CameraManager.Instance.StartCoroutine(CameraManager.Instance.CamLookSwan());
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2f);
 
         uiManager.panelCurrentTurnObj.SetActive(false);
         uiManager.currentTextCurrentTurn.text = "";
 
         swanUI.ActionStateContainer.SetActive(true);
+        CameraManager.Instance.StartCoroutine(CameraManager.Instance.CamBackToInitialPos());
         Debug.Log("bread's turn end");
     }
 
