@@ -180,9 +180,10 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         {
             case FightType.DefendState:
                 Debug.Log("Defended attack!");
+                anim.SetTrigger("isBlock");
                 swanItemChance.GetShinyFeatherChance();
                 breadManager.EndTurn();
-                break;
+                break;   
         }
     }
 
@@ -231,7 +232,9 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         UIManager.Instance.currentTextCurrentTurn.text = "Heavy Attack!";
         target = bread;
 
-        yield return new WaitForSeconds(2f);
+        anim.SetTrigger("heavyAttack");
+
+        yield return new WaitForSeconds(1f);
 
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
         UIManager.Instance.currentTextCurrentTurn.text = "";

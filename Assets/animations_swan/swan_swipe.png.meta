@@ -152,12 +152,12 @@ TextureImporter:
       name: swan_swipe_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3160
-        width: 1405
-        height: 790
+        x: 570
+        y: 4446
+        width: 745
+        height: 785
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,12 +173,12 @@ TextureImporter:
       name: swan_swipe_1
       rect:
         serializedVersion: 2
-        x: 1405
-        y: 3160
-        width: 1405
-        height: 790
+        x: 2490
+        y: 4445
+        width: 738
+        height: 792
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: swan_swipe_2
       rect:
         serializedVersion: 2
-        x: 2810
-        y: 3160
-        width: 1405
-        height: 790
+        x: 4407
+        y: 4443
+        width: 728
+        height: 801
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: swan_swipe_3
       rect:
         serializedVersion: 2
-        x: 4215
-        y: 3160
-        width: 1405
-        height: 790
+        x: 6324
+        y: 4443
+        width: 827
+        height: 808
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -236,12 +236,12 @@ TextureImporter:
       name: swan_swipe_4
       rect:
         serializedVersion: 2
-        x: 5620
-        y: 3160
-        width: 1405
-        height: 790
+        x: 8244
+        y: 4443
+        width: 926
+        height: 811
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,12 +257,12 @@ TextureImporter:
       name: swan_swipe_5
       rect:
         serializedVersion: 2
-        x: 7025
-        y: 3160
-        width: 1405
-        height: 790
+        x: 10164
+        y: 4443
+        width: 959
+        height: 817
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,12 +278,12 @@ TextureImporter:
       name: swan_swipe_6
       rect:
         serializedVersion: 2
-        x: 8430
-        y: 3160
-        width: 1405
-        height: 790
+        x: 12081
+        y: 4443
+        width: 913
+        height: 821
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: swan_swipe_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2370
-        width: 1405
-        height: 790
+        x: 557
+        y: 3363
+        width: 866
+        height: 821
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -320,12 +320,12 @@ TextureImporter:
       name: swan_swipe_8
       rect:
         serializedVersion: 2
-        x: 1405
-        y: 2370
-        width: 1405
-        height: 790
+        x: 2480
+        y: 3363
+        width: 929
+        height: 820
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,12 +341,12 @@ TextureImporter:
       name: swan_swipe_9
       rect:
         serializedVersion: 2
-        x: 2810
-        y: 2370
-        width: 1405
-        height: 790
+        x: 4402
+        y: 3363
+        width: 963
+        height: 814
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -362,12 +362,12 @@ TextureImporter:
       name: swan_swipe_10
       rect:
         serializedVersion: 2
-        x: 4215
-        y: 2370
-        width: 1405
-        height: 790
+        x: 6324
+        y: 3363
+        width: 919
+        height: 811
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -383,12 +383,12 @@ TextureImporter:
       name: swan_swipe_11
       rect:
         serializedVersion: 2
-        x: 5620
-        y: 2370
-        width: 1405
-        height: 790
+        x: 8247
+        y: 3363
+        width: 827
+        height: 808
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -404,12 +404,12 @@ TextureImporter:
       name: swan_swipe_12
       rect:
         serializedVersion: 2
-        x: 7025
-        y: 2370
-        width: 1405
-        height: 790
+        x: 10171
+        y: 3365
+        width: 731
+        height: 799
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -425,12 +425,12 @@ TextureImporter:
       name: swan_swipe_13
       rect:
         serializedVersion: 2
-        x: 8430
-        y: 2370
-        width: 1405
-        height: 790
+        x: 12091
+        y: 3366
+        width: 739
+        height: 794
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -446,12 +446,12 @@ TextureImporter:
       name: swan_swipe_14
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1580
-        width: 1405
-        height: 790
+        x: 570
+        y: 2286
+        width: 741
+        height: 788
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -467,12 +467,12 @@ TextureImporter:
       name: swan_swipe_15
       rect:
         serializedVersion: 2
-        x: 1405
-        y: 1580
-        width: 1405
-        height: 790
+        x: 2493
+        y: 2287
+        width: 752
+        height: 779
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -488,12 +488,12 @@ TextureImporter:
       name: swan_swipe_16
       rect:
         serializedVersion: 2
-        x: 2810
-        y: 1580
-        width: 1405
-        height: 790
+        x: 4413
+        y: 2286
+        width: 752
+        height: 778
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -509,12 +509,12 @@ TextureImporter:
       name: swan_swipe_17
       rect:
         serializedVersion: 2
-        x: 4215
-        y: 1580
-        width: 1405
-        height: 790
+        x: 6334
+        y: 2287
+        width: 751
+        height: 777
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -530,12 +530,12 @@ TextureImporter:
       name: swan_swipe_18
       rect:
         serializedVersion: 2
-        x: 5620
-        y: 1580
-        width: 1405
-        height: 790
+        x: 8257
+        y: 2287
+        width: 748
+        height: 779
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -551,12 +551,12 @@ TextureImporter:
       name: swan_swipe_19
       rect:
         serializedVersion: 2
-        x: 7025
-        y: 1580
-        width: 1405
-        height: 790
+        x: 10177
+        y: 2286
+        width: 750
+        height: 778
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -572,12 +572,12 @@ TextureImporter:
       name: swan_swipe_20
       rect:
         serializedVersion: 2
-        x: 8430
-        y: 1580
-        width: 1405
-        height: 790
+        x: 12098
+        y: 2287
+        width: 748
+        height: 777
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -593,12 +593,12 @@ TextureImporter:
       name: swan_swipe_21
       rect:
         serializedVersion: 2
-        x: 0
-        y: 790
-        width: 1405
-        height: 790
+        x: 573
+        y: 1207
+        width: 751
+        height: 779
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -614,12 +614,12 @@ TextureImporter:
       name: swan_swipe_22
       rect:
         serializedVersion: 2
-        x: 1405
-        y: 790
-        width: 1405
-        height: 790
+        x: 2493
+        y: 1207
+        width: 752
+        height: 779
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -635,12 +635,12 @@ TextureImporter:
       name: swan_swipe_23
       rect:
         serializedVersion: 2
-        x: 2810
-        y: 790
-        width: 1405
-        height: 790
+        x: 4413
+        y: 1206
+        width: 752
+        height: 778
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -656,12 +656,12 @@ TextureImporter:
       name: swan_swipe_24
       rect:
         serializedVersion: 2
-        x: 4215
-        y: 790
-        width: 1405
-        height: 790
+        x: 6334
+        y: 1207
+        width: 751
+        height: 777
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -677,12 +677,12 @@ TextureImporter:
       name: swan_swipe_25
       rect:
         serializedVersion: 2
-        x: 5620
-        y: 790
-        width: 1405
-        height: 790
+        x: 8257
+        y: 1207
+        width: 748
+        height: 779
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -698,12 +698,12 @@ TextureImporter:
       name: swan_swipe_26
       rect:
         serializedVersion: 2
-        x: 7025
-        y: 790
-        width: 1405
-        height: 790
+        x: 10177
+        y: 1206
+        width: 750
+        height: 778
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -719,12 +719,12 @@ TextureImporter:
       name: swan_swipe_27
       rect:
         serializedVersion: 2
-        x: 8430
-        y: 790
-        width: 1405
-        height: 790
+        x: 12098
+        y: 1207
+        width: 748
+        height: 777
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -740,12 +740,12 @@ TextureImporter:
       name: swan_swipe_28
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1405
-        height: 790
+        x: 573
+        y: 127
+        width: 751
+        height: 779
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -761,12 +761,12 @@ TextureImporter:
       name: swan_swipe_29
       rect:
         serializedVersion: 2
-        x: 1405
-        y: 0
-        width: 1405
-        height: 790
+        x: 2493
+        y: 127
+        width: 752
+        height: 779
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -782,12 +782,12 @@ TextureImporter:
       name: swan_swipe_30
       rect:
         serializedVersion: 2
-        x: 2810
-        y: 0
-        width: 1405
-        height: 790
+        x: 4413
+        y: 126
+        width: 752
+        height: 778
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -803,12 +803,12 @@ TextureImporter:
       name: swan_swipe_31
       rect:
         serializedVersion: 2
-        x: 4215
-        y: 0
-        width: 1405
-        height: 790
+        x: 6334
+        y: 127
+        width: 751
+        height: 777
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -824,12 +824,12 @@ TextureImporter:
       name: swan_swipe_32
       rect:
         serializedVersion: 2
-        x: 5620
-        y: 0
-        width: 1405
-        height: 790
+        x: 8257
+        y: 127
+        width: 748
+        height: 779
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -845,12 +845,12 @@ TextureImporter:
       name: swan_swipe_33
       rect:
         serializedVersion: 2
-        x: 7025
-        y: 0
-        width: 1405
-        height: 790
+        x: 10177
+        y: 126
+        width: 750
+        height: 778
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -901,7 +901,6 @@ TextureImporter:
       swan_swipe_31: 1484407327
       swan_swipe_32: 457165810
       swan_swipe_33: 437979911
-      swan_swipe_34: 279225140
       swan_swipe_4: -1392046725
       swan_swipe_5: -586650395
       swan_swipe_6: 287113467

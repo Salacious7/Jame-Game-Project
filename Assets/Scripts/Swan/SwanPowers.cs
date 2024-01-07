@@ -16,6 +16,9 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
     public SwanLeap swanLeap;
     public GroundPummel groundPummel;
 
+    [Header("Components")]
+    private Animator anim;
+
     private enum SpecialPowerType
     {
         SwanLeap,
@@ -29,6 +32,7 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
         swanState = GetComponent<SwanState>();
         swanUI = GetComponent<SwanUI>();
         swanItemChance = GetComponent<SwanItemChance>();
+        anim = GetComponent<Animator>();
     }
 
     public void UseSwanLeap()
@@ -69,7 +73,9 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
         swanUI.ActionStateButtonUninteractable();
 
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-        UIManager.Instance.currentTextCurrentTurn.text = "Swan used Swan Leap!";
+        UIManager.Instance.currentTextCurrentTurn.text = "Swan used Swan Scream!";
+
+        anim.SetTrigger("specialScream");
 
         yield return new WaitForSeconds(2f);
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
@@ -91,6 +97,8 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
 
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
         UIManager.Instance.currentTextCurrentTurn.text = "Swan used Ground Pummel!";
+
+        anim.SetTrigger("specialStomp");
 
         yield return new WaitForSeconds(2f);
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
