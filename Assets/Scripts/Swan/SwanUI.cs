@@ -92,10 +92,6 @@ public class SwanUI : MonoBehaviour, OnEventHandler
     {
         BasicActionInputStateContainer.SetActive(true);
         FightUI.SetActive(false);
-
-        if(SpecialPowerUIObj == null)
-            return;
-
         SpecialPowerUIObj.SetActive(false);
     }
 

@@ -1,5 +1,802 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9159261782915650400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Game State
+  m_EditorClassIdentifier: 
+  Name: Game State
+  StudioPath: parameter:/Game State
+  Min: 0
+  Max: 3
+  Default: 3
+  ID:
+    data1: 2867788319
+    data2: 355818519
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Win
+  - Lose
+  - Combat
+  - Title Screen
+  Exists: 1
+--- !u!114 &-9112518548033035705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Pretzel/Pretzel Death
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Pretzel/Pretzel Death
+  Guid:
+    Data1: 134945484
+    Data2: 1156711914
+    Data3: -495614058
+    Data4: -860096725
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1400
+--- !u!114 &-8274182773565126432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Misc./Universal Button Click
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Misc./Universal Button Click
+  Guid:
+    Data1: 1670294325
+    Data2: 1090747338
+    Data3: -1974528838
+    Data4: 1007986423
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8041871031152803675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Bread Passive Bar/Bread Full PB
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Bread Passive Bar/Bread Full PB
+  Guid:
+    Data1: -962047950
+    Data2: 1152432152
+    Data3: 1368458687
+    Data4: -2073506106
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6346944008668156656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Sandwich/Sandwich Heavy
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Sandwich/Sandwich Heavy
+  Guid:
+    Data1: 171420243
+    Data2: 1076769460
+    Data3: 67540889
+    Data4: 115206369
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-6146377044992850346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Muffin/Muffin Skill 1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Muffin/Muffin Skill 1
+  Guid:
+    Data1: -602207021
+    Data2: 1244882932
+    Data3: 1271255940
+    Data4: 186915730
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4750
+--- !u!114 &-6125304100996316462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Muffin/Muffin Death
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Muffin/Muffin Death
+  Guid:
+    Data1: -2030295313
+    Data2: 1289317767
+    Data3: -1414355324
+    Data4: 439211911
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6820
+--- !u!114 &-5932553207016836135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Swan Passive Bar/Swan Use PB
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Swan Passive Bar/Swan Use PB
+  Guid:
+    Data1: -910528451
+    Data2: 1104947455
+    Data3: 1135937449
+    Data4: 1665440015
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5509827864945467102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Baguette/Baguette Skill 2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Baguette/Baguette Skill 2
+  Guid:
+    Data1: -1646842692
+    Data2: 1312952427
+    Data3: 1591359422
+    Data4: -26136196
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3375
+--- !u!114 &-5396647392231905242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Baguette/Baguette Main
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Baguette/Baguette Main
+  Guid:
+    Data1: -935268393
+    Data2: 1294151324
+    Data3: 901841030
+    Data4: 912471709
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
+--- !u!114 &-5126583616170971058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Swan/Swan Main Peck Attack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Swan/Swan Main Peck Attack
+  Guid:
+    Data1: 232598560
+    Data2: 1164306765
+    Data3: 1845486986
+    Data4: -1778341189
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1150
+--- !u!114 &-4712017158314135597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Swan/Swan Block
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Swan/Swan Block
+  Guid:
+    Data1: 864600331
+    Data2: 1207150683
+    Data3: 680823688
+    Data4: -1290371144
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4299421959585771521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Sandwich/Sandwich Skill 1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Sandwich/Sandwich Skill 1
+  Guid:
+    Data1: -1122947933
+    Data2: 1097745116
+    Data3: -1485581151
+    Data4: -1407093808
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3250
+--- !u!114 &-4168574333133478001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Swan Passive Bar/Swan Inc. PB
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Swan Passive Bar/Swan Inc. PB
+  Guid:
+    Data1: 290849382
+    Data2: 1141716953
+    Data3: 629612186
+    Data4: -1815100755
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3638396223307532134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Swan/Swan Skill 1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Swan/Swan Skill 1
+  Guid:
+    Data1: 417507539
+    Data2: 1266230984
+    Data3: -1057535338
+    Data4: 12159360
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10500
+--- !u!114 &-3452662664162949669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Baguette/Baguette Skill 1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Baguette/Baguette Skill 1
+  Guid:
+    Data1: 182414979
+    Data2: 1240232584
+    Data3: 142466989
+    Data4: 421197539
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3750
+--- !u!114 &-3301980602566170062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638402730483362901
+  FileSizes:
+  - Name: Desktop
+    Value: 3104
+  Exists: 1
+--- !u!114 &-3050524713700236793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Pretzel/Pretzel Main
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Pretzel/Pretzel Main
+  Guid:
+    Data1: 2128695276
+    Data2: 1275124890
+    Data3: 1223435929
+    Data4: 958177593
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4062
+--- !u!114 &-2972738058138612311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638402778480281309
+  FileSizes:
+  - Name: Desktop
+    Value: 2061344
+  Exists: 1
+--- !u!114 &-2966240515378149170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Muffin/Muffin Dodge
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Muffin/Muffin Dodge
+  Guid:
+    Data1: -1146014772
+    Data2: 1294418566
+    Data3: -804575050
+    Data4: -475350558
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2374
+--- !u!114 &-2519852337080169267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Muffin/Muffin Skill 2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Muffin/Muffin Skill 2
+  Guid:
+    Data1: -294211280
+    Data2: 1258420228
+    Data3: -1143854971
+    Data4: 1818593512
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10500
+--- !u!114 &-2495066439584367544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Muffin/Muffin Main
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Muffin/Muffin Main
+  Guid:
+    Data1: 585063100
+    Data2: 1227753564
+    Data3: 1706300585
+    Data4: 1334596270
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4062
+--- !u!114 &-2454741757570452589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Misc./Menu Roll Down
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Misc./Menu Roll Down
+  Guid:
+    Data1: 1065124342
+    Data2: 1284545142
+    Data3: 953686922
+    Data4: 1816420685
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2041331338179178595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Swan/Swan Healing
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Swan/Swan Healing
+  Guid:
+    Data1: -2087791044
+    Data2: 1214760040
+    Data3: 1468013193
+    Data4: 406090985
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1873680803180222120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Bread Passive Bar/Bread Inc. PB
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Bread Passive Bar/Bread Inc. PB
+  Guid:
+    Data1: 1483528303
+    Data2: 1126937977
+    Data3: 2107136446
+    Data4: -1435863980
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-844003220522278125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Sandwich/Sandwich Death
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Sandwich/Sandwich Death
+  Guid:
+    Data1: 124887344
+    Data2: 1260619749
+    Data3: -138587769
+    Data4: -212571012
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1800
+--- !u!114 &-813005079522493847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Sandwich/Sandwich Main
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Sandwich/Sandwich Main
+  Guid:
+    Data1: 1538561567
+    Data2: 1222754173
+    Data3: 1678833538
+    Data4: -1740591764
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4062
+--- !u!114 &-476499647179556874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Baguette/Baguette Dodge
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Baguette/Baguette Dodge
+  Guid:
+    Data1: -467318393
+    Data2: 1320063113
+    Data3: 728122038
+    Data4: -1288303761
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2374
+--- !u!114 &-424542274507403607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Misc./Rolling Health Meter
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Misc./Rolling Health Meter
+  Guid:
+    Data1: -419105222
+    Data2: 1098351517
+    Data3: -1561415506
+    Data4: 690343018
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-42453059869056979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Pretzel/Pretzel Heavy
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Pretzel/Pretzel Heavy
+  Guid:
+    Data1: 1868140733
+    Data2: 1280197798
+    Data3: -1186770777
+    Data4: 1228506418
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1700
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,10 +809,673 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
-  EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  cacheTime: 0
+  EditorBanks:
+  - {fileID: -3301980602566170062}
+  - {fileID: 5777904686703053624}
+  - {fileID: -2972738058138612311}
+  - {fileID: 2336781008119307528}
+  EditorEvents:
+  - {fileID: 295734867017174787}
+  - {fileID: -4712017158314135597}
+  - {fileID: 2502443107559671357}
+  - {fileID: 6752595070354032383}
+  - {fileID: -813005079522493847}
+  - {fileID: -5126583616170971058}
+  - {fileID: 2867050267809344165}
+  - {fileID: -844003220522278125}
+  - {fileID: -2519852337080169267}
+  - {fileID: -8041871031152803675}
+  - {fileID: 398762218865198901}
+  - {fileID: -8274182773565126432}
+  - {fileID: -424542274507403607}
+  - {fileID: -2041331338179178595}
+  - {fileID: -5932553207016836135}
+  - {fileID: -6346944008668156656}
+  - {fileID: 1507701429345440130}
+  - {fileID: 8089509750773748237}
+  - {fileID: -4168574333133478001}
+  - {fileID: -1873680803180222120}
+  - {fileID: -3452662664162949669}
+  - {fileID: -476499647179556874}
+  - {fileID: 1072966452611252735}
+  - {fileID: 884608241911222043}
+  - {fileID: 3314168827041030268}
+  - {fileID: -4299421959585771521}
+  - {fileID: 4594353144196860451}
+  - {fileID: 8680899676280512681}
+  - {fileID: 1951543025229541323}
+  - {fileID: -5509827864945467102}
+  - {fileID: -42453059869056979}
+  - {fileID: -9112518548033035705}
+  - {fileID: -2966240515378149170}
+  - {fileID: 9177966948247156069}
+  - {fileID: -6146377044992850346}
+  - {fileID: -3638396223307532134}
+  - {fileID: 1573270733648762838}
+  - {fileID: 8461869168465632760}
+  - {fileID: -3050524713700236793}
+  - {fileID: -6125304100996316462}
+  - {fileID: 7841046669628295856}
+  - {fileID: -2454741757570452589}
+  - {fileID: 7054741195642938760}
+  - {fileID: 3289782684584882260}
+  - {fileID: -2495066439584367544}
+  - {fileID: 5902770162576746646}
+  - {fileID: -5396647392231905242}
+  EditorParameters:
+  - {fileID: -9159261782915650400}
+  MasterBanks:
+  - {fileID: 5777904686703053624}
+  StringsBanks:
+  - {fileID: -3301980602566170062}
+  cacheTime: 638402778480281309
   cacheVersion: 131616
+--- !u!114 &295734867017174787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Snack Attack! Music Layout
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Snack Attack! Music Layout
+  Guid:
+    Data1: 1506433753
+    Data2: 1335044497
+    Data3: 627261089
+    Data4: 1868554348
+  Banks:
+  - {fileID: -2972738058138612311}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 3363505427423468420}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 311422
+--- !u!114 &398762218865198901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Swan/Swan Skill 2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Swan/Swan Skill 2
+  Guid:
+    Data1: 596317237
+    Data2: 1234840605
+    Data3: -104479298
+    Data4: -1100910407
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7812
+--- !u!114 &884608241911222043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Swan/Swan Main Heavy
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Swan/Swan Main Heavy
+  Guid:
+    Data1: 1274041229
+    Data2: 1175901638
+    Data3: 2040702655
+    Data4: 1460031809
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5500
+--- !u!114 &1072966452611252735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Pretzel/Pretzel Heal
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Pretzel/Pretzel Heal
+  Guid:
+    Data1: -1040702327
+    Data2: 1195109992
+    Data3: -442961756
+    Data4: 1485178523
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1507701429345440130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Sandwich/Sandwich Heal
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Sandwich/Sandwich Heal
+  Guid:
+    Data1: -51005345
+    Data2: 1308866197
+    Data3: -1967625804
+    Data4: 23098380
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1573270733648762838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Sandwich/Sandwich Dodge
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Sandwich/Sandwich Dodge
+  Guid:
+    Data1: 129116379
+    Data2: 1294481235
+    Data3: 1109009829
+    Data4: -115148929
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2374
+--- !u!114 &1951543025229541323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Muffin/Muffin Heal
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Muffin/Muffin Heal
+  Guid:
+    Data1: -186455370
+    Data2: 1297464822
+    Data3: -2074839666
+    Data4: 673999780
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2336781008119307528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638402737898985306
+  FileSizes:
+  - Name: Desktop
+    Value: 1372544
+  Exists: 1
+--- !u!114 &2502443107559671357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Swan Passive Bar/Swan Full PB
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Swan Passive Bar/Swan Full PB
+  Guid:
+    Data1: 1826369292
+    Data2: 1129531554
+    Data3: 572304271
+    Data4: -759211751
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2867050267809344165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Misc./Use Mana
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Misc./Use Mana
+  Guid:
+    Data1: -1613200592
+    Data2: 1099883963
+    Data3: -652104297
+    Data4: 1912124144
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3289782684584882260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Swan/Swan Hurt
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Swan/Swan Hurt
+  Guid:
+    Data1: 933314006
+    Data2: 1247052612
+    Data3: -1803677024
+    Data4: 196381579
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3314168827041030268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Bread Passive Bar/Bread Use PB
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Bread Passive Bar/Bread Use PB
+  Guid:
+    Data1: 849538208
+    Data2: 1114469331
+    Data3: -994079855
+    Data4: -201694319
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3363505427423468420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Snack Attack! Music Layout/Game State
+  m_EditorClassIdentifier: 
+  Name: Game State
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 3
+  ID:
+    data1: 2867788319
+    data2: 355818519
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Win
+  - Lose
+  - Combat
+  - Title Screen
+  Exists: 1
+--- !u!114 &4594353144196860451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Sandwich/Sandwich Skill 2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Sandwich/Sandwich Skill 2
+  Guid:
+    Data1: -420132437
+    Data2: 1160506508
+    Data3: -1873335652
+    Data4: -899154609
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &5777904686703053624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638402730483347820
+  FileSizes:
+  - Name: Desktop
+    Value: 1264
+  Exists: 1
+--- !u!114 &5902770162576746646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Baguette/Baguette Heavy
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Baguette/Baguette Heavy
+  Guid:
+    Data1: -2117518769
+    Data2: 1155051620
+    Data3: 1558965382
+    Data4: -1367087386
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6752595070354032383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Baguette/Baguette Heal
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Baguette/Baguette Heal
+  Guid:
+    Data1: -1414744806
+    Data2: 1326958064
+    Data3: 1638352000
+    Data4: -232661901
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7054741195642938760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Swan/Use Item
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Swan/Use Item
+  Guid:
+    Data1: 281241352
+    Data2: 1133641726
+    Data3: 65441180
+    Data4: -2005937622
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2150
+--- !u!114 &7841046669628295856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Pretzel/Pretzel Skill 1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Pretzel/Pretzel Skill 1
+  Guid:
+    Data1: 143263472
+    Data2: 1220801490
+    Data3: -544094300
+    Data4: 1255334268
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9000
+--- !u!114 &8089509750773748237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Pretzel/Pretzel Dodge
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Pretzel/Pretzel Dodge
+  Guid:
+    Data1: 78272099
+    Data2: 1204138881
+    Data3: -1799067471
+    Data4: -660501776
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2374
+--- !u!114 &8461869168465632760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Pretzel/Pretzel Skill 2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Pretzel/Pretzel Skill 2
+  Guid:
+    Data1: 394046175
+    Data2: 1239114779
+    Data3: -1883633491
+    Data4: -171478423
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &8680899676280512681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Baguette/Baguette Death
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Baguette/Baguette Death
+  Guid:
+    Data1: -2125527457
+    Data2: 1254518739
+    Data3: 1153095339
+    Data4: 1930659585
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1200
+--- !u!114 &9177966948247156069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Muffin/Muffin Heavy
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Muffin/Muffin Heavy
+  Guid:
+    Data1: 949678546
+    Data2: 1159798944
+    Data3: -270373484
+    Data4: 1673172185
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3375

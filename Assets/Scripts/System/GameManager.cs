@@ -8,6 +8,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private BreadManager breadManager;
     [SerializeField] private SwanManager swanManager;
 
+    private void Start()
+    {
+        SoundManager.Instance.OnPlayCombatMusic();
+    }
+
     public void InitializeLoseScreen()
     {
         loseScreenObj.SetActive(true);

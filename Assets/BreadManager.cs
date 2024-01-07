@@ -15,19 +15,19 @@ public class BreadManager : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(EndBreadsTurn());
+        StartCoroutine(StartInitEndBreadsTurn());
     }
 
     public IEnumerator StartBreadsTurn()
     {
+        swanUI.ActionStateContainer.SetActive(false);
         uiManager.panelCurrentTurnObj.SetActive(true);
+        CameraManager.Instance.StartCoroutine(CameraManager.Instance.CamLookBread());
         uiManager.currentTextCurrentTurn.text = "Bread's turn to shine. Dodge their hits.";
 
         yield return new WaitForSeconds(2f);
 
-        swanUI.ActionStateContainer.SetActive(false);
-        uiManager.panelCurrentTurnObj.SetActive(false);
-        uiManager.currentTextCurrentTurn.text = "";
+        CameraManager.Instance.StartCoroutine(CameraManager.Instance.CamBackToInitialPos());
 
         Debug.Log("bread's turn starting");
         breadOrders = new List<Bread>(breads);
@@ -58,13 +58,31 @@ public class BreadManager : MonoBehaviour
         swanUI.ActionStateButtonInteractable();
         uiManager.panelCurrentTurnObj.SetActive(true);
         uiManager.currentTextCurrentTurn.text = "Swan's turn to shine.";
+        CameraManager.Instance.StartCoroutine(CameraManager.Instance.CamLookSwan());
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2f);
+        swanUI.ActionStateContainer.SetActive(true);
 
         uiManager.panelCurrentTurnObj.SetActive(false);
         uiManager.currentTextCurrentTurn.text = "";
 
+        CameraManager.Instance.StartCoroutine(CameraManager.Instance.CamBackToInitialPos());
+        Debug.Log("bread's turn end");
+    }
+
+    public IEnumerator StartEndBreadsTurn()
+    {
+        swanUI.ActionStateButtonInteractable();
+        uiManager.panelCurrentTurnObj.SetActive(true);
+        uiManager.currentTextCurrentTurn.text = "Swan's turn to shine.";
+        CameraManager.Instance.StartCoroutine(CameraManager.Instance.CamLookSwan());
+
+        yield return new WaitForSeconds(2f);
         swanUI.ActionStateContainer.SetActive(true);
+        uiManager.panelCurrentTurnObj.SetActive(false);
+        uiManager.currentTextCurrentTurn.text = "";
+
+        CameraManager.Instance.StartCoroutine(CameraManager.Instance.CamBackToInitialPos());
         Debug.Log("bread's turn end");
     }
 
@@ -86,9 +104,16 @@ public class BreadManager : MonoBehaviour
             StartCoroutine(InitEndBreadsTurn());
     }
 
+    private IEnumerator StartInitEndBreadsTurn()
+    {
+        swanUI.ActionStateContainer.SetActive(false);
+        yield return new WaitForSeconds(1.25f);
+        StartCoroutine(StartEndBreadsTurn());
+    }
+
     private IEnumerator InitEndBreadsTurn()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.25f);
         StartCoroutine(EndBreadsTurn());
     }
 }

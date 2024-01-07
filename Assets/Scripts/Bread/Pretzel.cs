@@ -4,12 +4,36 @@ using UnityEngine;
 
 public class Pretzel : Bread
 {
+    public override void OnAttack(FightType fightType)
+    {
+        switch (fightType)
+        {
+            case FightType.BasicState:
+                SoundManager.Instance.OnPlayPretzelMainAttack();
+                break;
+            case FightType.HeavyState:
+                SoundManager.Instance.OnPlayPretzelHeavyAttack();
+                break;
+        }
+    }
+
+    public override void OnDeath()
+    {
+        SoundManager.Instance.OnPlayPretzelDeath();
+    }
+
+    public override void OnHeal()
+    {
+        SoundManager.Instance.OnPlayPretzelHeal();
+    }
+
     public override void SpecialPower()
     {
         if(Random.Range(0, 2) == 0)
         {
             if(breadMana <= special1Cost)
             {
+                SoundManager.Instance.OnPlayPretzelSkillOne();
                 Fight();
                 return;
             }
@@ -24,6 +48,7 @@ public class Pretzel : Bread
         {
             if(breadMana <= special2Cost)
             {
+                SoundManager.Instance.OnPlayPretzelSkillTwo();
                 Fight();
                 return;
             }

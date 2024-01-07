@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="EncodableAsset" id="{7165ede0-c91b-4bd3-b148-f97fcee43ab2}">
+		<property name="assetPath">
+			<value>SFX/Bread/Pretzel/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{4b49c24f-dc5b-40ec-a0c5-68ec656200a1}</destination>
+		</relationship>
+	</object>
+</objects>

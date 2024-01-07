@@ -184,6 +184,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
                 anim.SetTrigger("isBlock");
                 swanItemChance.GetShinyFeatherChance();
                 breadManager.EndTurn();
+                SoundManager.Instance.OnPlaySwanBlock();
                 break;   
         }
     }
@@ -198,6 +199,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
         yield return new WaitForSeconds(0f);
 
+        SoundManager.Instance.OnPlaySwanMainPeckAttack();
         anim.SetTrigger("basicAttack");
 
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
@@ -233,12 +235,15 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         UIManager.Instance.currentTextCurrentTurn.text = "Heavy Attack!";
         target = bread;
 
-        anim.SetTrigger("heavyAttack");
-
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
         UIManager.Instance.currentTextCurrentTurn.text = "";
+        SoundManager.Instance.OnPlaySwanMainHeavy();
+
+        yield return new WaitForSeconds(2f);
+
+        anim.SetTrigger("heavyAttack");
 
         if (!hasHeavyDamaged)
         {
@@ -307,6 +312,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         }
 
         anim.SetTrigger("isDamage");
+        SoundManager.Instance.OnPlaySwanHurt();
 
         UpdateHealthUI(swanData.health);
 
@@ -389,6 +395,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
         UIManager.Instance.currentTextCurrentTurn.text = "";
 
+        SoundManager.Instance.OnPlaySwanHealing();
         swanData.health += breadCrumbs.IncreaseHealth();
         UpdateHealthUI(swanData.health);
         breadCrumbs.DoSomething();
@@ -415,6 +422,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
         swanData.damageBoost += shinyFeather.IncreaseDamage();
         shinyFeather.DoSomething();
+        SoundManager.Instance.OnPlaySwanUseItem();
 
         Debug.Log("Your damage increased!");
 

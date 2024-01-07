@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="EventFolder" id="{24799019-9ced-4293-b92d-ba0225f588b1}">
+		<property name="name">
+			<value>Swan Passive Bar</value>
+		</property>
+		<relationship name="folder">
+			<destination>{7960683f-4053-4e73-a641-03361b43de50}</destination>
+		</relationship>
+	</object>
+</objects>

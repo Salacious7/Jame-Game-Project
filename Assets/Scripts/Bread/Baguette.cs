@@ -4,12 +4,36 @@ using UnityEngine;
 
 public class Baguette : Bread
 {
+    public override void OnAttack(FightType fightType)
+    {
+        switch(fightType)
+        {
+            case FightType.BasicState:
+                SoundManager.Instance.OnPlayBaguetteMainAttack();
+                break;
+            case FightType.HeavyState:
+                SoundManager.Instance.OnPlayBaguetteHeavyAttack();
+                break;
+        }
+    }
+
+    public override void OnHeal()
+    {
+        SoundManager.Instance.OnPlayBaguetteHeal();
+    }
+
+    public override void OnDeath()
+    {
+        SoundManager.Instance.OnPlayBaguetteDeath();
+    }
+
     public override void SpecialPower()
     {
         if(Random.Range(0, 2) == 0)
         {
             if(breadMana <= special1Cost)
             {
+                SoundManager.Instance.OnPlayBaguetteSkillOne();
                 Fight();
                 return;
             }
@@ -24,6 +48,7 @@ public class Baguette : Bread
         {
             if(breadMana <= special2Cost)
             {
+                SoundManager.Instance.OnPlayBaguetteSkillTwo();
                 Fight();
                 return;
             }
@@ -48,6 +73,6 @@ public class Baguette : Bread
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

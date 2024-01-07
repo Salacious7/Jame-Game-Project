@@ -74,6 +74,7 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
 
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
         UIManager.Instance.currentTextCurrentTurn.text = "Swan used Swan Scream!";
+        SoundManager.Instance.OnPlaySwanSkillOne();
 
         anim.SetTrigger("specialScream");
 
@@ -98,6 +99,7 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
         UIManager.Instance.currentTextCurrentTurn.text = "Swan used Ground Pummel!";
 
+        SoundManager.Instance.OnPlaySwanSkillTwo();
         anim.SetTrigger("specialStomp");
 
         yield return new WaitForSeconds(2f);
