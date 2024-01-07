@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{fcf5b85f-b695-4e03-b469-b88a0c746001}">
 		<property name="name">
 			<value>Sandwich Heal</value>

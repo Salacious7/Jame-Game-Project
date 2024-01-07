@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{6cdc2f0c-48a2-4353-8fab-1c221959bfd2}">
 		<property name="name">
 			<value>Swan Full PB</value>

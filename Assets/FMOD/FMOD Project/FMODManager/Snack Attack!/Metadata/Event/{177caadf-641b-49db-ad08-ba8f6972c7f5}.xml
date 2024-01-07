@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{177caadf-641b-49db-ad08-ba8f6972c7f5}">
 		<property name="name">
 			<value>Pretzel Skill 2</value>

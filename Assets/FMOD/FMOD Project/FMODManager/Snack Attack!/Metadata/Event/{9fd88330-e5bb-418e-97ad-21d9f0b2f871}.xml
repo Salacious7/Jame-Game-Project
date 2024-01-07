@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{9fd88330-e5bb-418e-97ad-21d9f0b2f871}">
 		<property name="name">
 			<value>Use Mana</value>

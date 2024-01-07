@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{bd112ca3-42dc-416e-a1d4-73a7d07321ac}">
 		<property name="name">
 			<value>Sandwich Skill 1</value>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{dc1b0cd3-67f4-4a33-84d3-c54b921b240b}">
 		<property name="name">
 			<value>Muffin Skill 1</value>

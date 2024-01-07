@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{638eab35-7bca-4103-ba14-4f8af7a6143c}">
 		<property name="name">
 			<value>Universal Button Click</value>

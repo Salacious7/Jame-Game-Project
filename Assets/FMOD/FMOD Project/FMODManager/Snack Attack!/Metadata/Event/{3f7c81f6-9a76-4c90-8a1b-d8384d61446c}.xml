@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{3f7c81f6-9a76-4c90-8a1b-d8384d61446c}">
 		<property name="name">
 			<value>Menu Roll Down</value>

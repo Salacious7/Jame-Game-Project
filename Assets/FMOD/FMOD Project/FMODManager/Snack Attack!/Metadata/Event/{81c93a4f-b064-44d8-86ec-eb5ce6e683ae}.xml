@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{81c93a4f-b064-44d8-86ec-eb5ce6e683ae}">
 		<property name="name">
 			<value>Baguette Main Heavy</value>

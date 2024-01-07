@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{544c2fb6-860c-4738-a1c9-637c42472541}">
 		<property name="name">
 			<value>Baguette Death</value>
