@@ -29,6 +29,9 @@ public abstract class Bread : MonoBehaviour, IActionState
     public float maxHealth {get; private set;}
     public float maxMana {get; private set;}
 
+    protected Animator anim;
+    protected string animTrigger;
+
     public enum FightType
     {
         BasicState,
@@ -41,6 +44,7 @@ public abstract class Bread : MonoBehaviour, IActionState
     {
         maxHealth = breadHealth;
         maxMana = breadMana;
+        anim = GetComponent<Animator>();
 
         UpdateHealthUI(breadHealth);
         UpdateManaUI(breadMana);
@@ -101,6 +105,8 @@ public abstract class Bread : MonoBehaviour, IActionState
             if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
                 swan.IncomingDamage = DamageFromCurrentAttack;
             //trigger animation
+            animTrigger = "basicAttack";
+            
         }
         else
         {
@@ -110,6 +116,7 @@ public abstract class Bread : MonoBehaviour, IActionState
             if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
                 swan.IncomingDamage = DamageFromCurrentAttack;
             //trigger animation
+            animTrigger = "heavyAttack";
         }
     }
 
@@ -151,6 +158,7 @@ public abstract class Bread : MonoBehaviour, IActionState
         breadHealth -= damage;
         breadHealthBarSlider.value = breadHealth;
         UpdateHealthUI(breadHealth);
+        anim.SetTrigger("hit");
 
         OnDeath();
 
@@ -223,6 +231,8 @@ public abstract class Bread : MonoBehaviour, IActionState
         
         // while(!actionFinished)
         //     yield return null;
+        yield return new WaitForSeconds(3f);
+        anim.SetTrigger(animTrigger);
 
         yield return new WaitUntil(() => actionFinished);
 

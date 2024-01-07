@@ -57,6 +57,7 @@ public class Sandwich : Bread
             if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
                 swan.IncomingDamage = DamageFromCurrentAttack;
             //trigger animation
+            animTrigger = "special1";
         }
         else
         {
@@ -72,6 +73,7 @@ public class Sandwich : Bread
             if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
                 swan.IncomingDamage = DamageFromCurrentAttack;
             //trigger animation
+            animTrigger = "special2";
         }
 
         Attack();
