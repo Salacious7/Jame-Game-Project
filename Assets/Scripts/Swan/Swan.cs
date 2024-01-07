@@ -180,11 +180,11 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         {
             case FightType.DefendState:
                 Debug.Log("Defended attack!");
+                anim.SetTrigger("isBlock");
                 swanItemChance.GetShinyFeatherChance();
                 breadManager.EndTurn();
-                break;
+                break;   
         }
-            anim.SetTrigger("isBlocking");
     }
 
     public IEnumerator BasicAttack(Bread bread)
