@@ -15,7 +15,7 @@ public class BreadManager : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(EndBreadsTurn());
+        StartCoroutine(InitEndBreadsTurn());
     }
 
     public IEnumerator StartBreadsTurn()
@@ -26,10 +26,6 @@ public class BreadManager : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
         CameraManager.Instance.StartCoroutine(CameraManager.Instance.CamBackToInitialPos());
-
-        swanUI.ActionStateContainer.SetActive(false);
-        uiManager.panelCurrentTurnObj.SetActive(false);
-        uiManager.currentTextCurrentTurn.text = "";
 
         Debug.Log("bread's turn starting");
         breadOrders = new List<Bread>(breads);
@@ -92,7 +88,7 @@ public class BreadManager : MonoBehaviour
 
     private IEnumerator InitEndBreadsTurn()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.25f);
         StartCoroutine(EndBreadsTurn());
     }
 }
