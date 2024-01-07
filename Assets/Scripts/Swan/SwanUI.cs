@@ -13,6 +13,7 @@ public class SwanUI : MonoBehaviour, OnEventHandler
     public Slider healthBarSlider;
     public Slider specialPowerBarSlider;
     public TextMeshProUGUI healthText;
+    public TextMeshProUGUI manaText;
 
     [Header("ActionStateUI")]
     public GameObject ActionStateContainer;
@@ -53,6 +54,7 @@ public class SwanUI : MonoBehaviour, OnEventHandler
         specialPowerBarSlider.value = swan.swanData.mana;
 
         swan.UpdateHealthUI(swan.swanData.health);
+        swan.UpdateManaUI(swan.swanData.mana);
     }
 
     private void Update()
