@@ -113,12 +113,12 @@ TextureImporter:
       name: sandwich_cheese_0
       rect:
         serializedVersion: 2
-        x: 611
-        y: 6465
-        width: 1065
-        height: 649
+        x: 0
+        y: 5796
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: sandwich_cheese_1
       rect:
         serializedVersion: 2
-        x: 2390
-        y: 6465
-        width: 1065
-        height: 892
+        x: 1801
+        y: 5796
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +155,12 @@ TextureImporter:
       name: sandwich_cheese_2
       rect:
         serializedVersion: 2
-        x: 4104
-        y: 6465
-        width: 1065
-        height: 892
+        x: 3602
+        y: 5796
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,12 +176,12 @@ TextureImporter:
       name: sandwich_cheese_3
       rect:
         serializedVersion: 2
-        x: 5720
-        y: 6465
-        width: 1065
-        height: 892
+        x: 5403
+        y: 5796
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: sandwich_cheese_4
       rect:
         serializedVersion: 2
-        x: 7382
-        y: 6465
-        width: 1065
-        height: 892
+        x: 7204
+        y: 5796
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,12 +218,12 @@ TextureImporter:
       name: sandwich_cheese_5
       rect:
         serializedVersion: 2
-        x: 9186
-        y: 6465
-        width: 1065
-        height: 892
+        x: 9005
+        y: 5796
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,12 +239,12 @@ TextureImporter:
       name: sandwich_cheese_6
       rect:
         serializedVersion: 2
-        x: 10971
-        y: 6465
-        width: 1065
-        height: 892
+        x: 10806
+        y: 5796
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -260,12 +260,12 @@ TextureImporter:
       name: sandwich_cheese_7
       rect:
         serializedVersion: 2
-        x: 177
-        y: 4532
-        width: 1065
-        height: 892
+        x: 0
+        y: 3864
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -281,12 +281,12 @@ TextureImporter:
       name: sandwich_cheese_8
       rect:
         serializedVersion: 2
-        x: 2141
-        y: 4532
-        width: 1065
-        height: 892
+        x: 1801
+        y: 3864
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -302,12 +302,12 @@ TextureImporter:
       name: sandwich_cheese_9
       rect:
         serializedVersion: 2
-        x: 4064
-        y: 4532
-        width: 1065
-        height: 892
+        x: 3602
+        y: 3864
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -323,12 +323,12 @@ TextureImporter:
       name: sandwich_cheese_10
       rect:
         serializedVersion: 2
-        x: 5917
-        y: 4532
-        width: 1065
-        height: 892
+        x: 5403
+        y: 3864
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -344,12 +344,12 @@ TextureImporter:
       name: sandwich_cheese_11
       rect:
         serializedVersion: 2
-        x: 7813
-        y: 4532
-        width: 1065
-        height: 892
+        x: 7204
+        y: 3864
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -365,12 +365,12 @@ TextureImporter:
       name: sandwich_cheese_12
       rect:
         serializedVersion: 2
-        x: 9616
-        y: 4532
-        width: 1065
-        height: 892
+        x: 9005
+        y: 3864
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -386,12 +386,12 @@ TextureImporter:
       name: sandwich_cheese_13
       rect:
         serializedVersion: 2
-        x: 11417
-        y: 4532
-        width: 1065
-        height: 892
+        x: 10806
+        y: 3864
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -407,12 +407,12 @@ TextureImporter:
       name: sandwich_cheese_14
       rect:
         serializedVersion: 2
-        x: 611
-        y: 2599
-        width: 634
-        height: 649
+        x: 0
+        y: 1932
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -428,12 +428,12 @@ TextureImporter:
       name: sandwich_cheese_15
       rect:
         serializedVersion: 2
-        x: 2412
-        y: 2599
-        width: 633
-        height: 649
+        x: 1801
+        y: 1932
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -449,12 +449,12 @@ TextureImporter:
       name: sandwich_cheese_16
       rect:
         serializedVersion: 2
-        x: 4212
-        y: 2599
-        width: 634
-        height: 649
+        x: 3602
+        y: 1932
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -470,12 +470,12 @@ TextureImporter:
       name: sandwich_cheese_17
       rect:
         serializedVersion: 2
-        x: 6013
-        y: 2599
-        width: 634
-        height: 649
+        x: 5403
+        y: 1932
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -491,12 +491,12 @@ TextureImporter:
       name: sandwich_cheese_18
       rect:
         serializedVersion: 2
-        x: 7813
-        y: 2599
-        width: 634
-        height: 649
+        x: 7204
+        y: 1932
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -512,12 +512,12 @@ TextureImporter:
       name: sandwich_cheese_19
       rect:
         serializedVersion: 2
-        x: 9615
-        y: 2599
-        width: 633
-        height: 649
+        x: 9005
+        y: 1932
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -533,12 +533,12 @@ TextureImporter:
       name: sandwich_cheese_20
       rect:
         serializedVersion: 2
-        x: 11417
-        y: 2599
-        width: 633
-        height: 649
+        x: 10806
+        y: 1932
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -554,12 +554,12 @@ TextureImporter:
       name: sandwich_cheese_21
       rect:
         serializedVersion: 2
-        x: 611
-        y: 669
-        width: 634
-        height: 650
+        x: 0
+        y: 0
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -575,12 +575,12 @@ TextureImporter:
       name: sandwich_cheese_22
       rect:
         serializedVersion: 2
-        x: 2412
-        y: 669
-        width: 633
-        height: 650
+        x: 1801
+        y: 0
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -596,12 +596,12 @@ TextureImporter:
       name: sandwich_cheese_23
       rect:
         serializedVersion: 2
-        x: 4212
-        y: 669
-        width: 634
-        height: 650
+        x: 3602
+        y: 0
+        width: 1801
+        height: 1932
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
