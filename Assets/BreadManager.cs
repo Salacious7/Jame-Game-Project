@@ -28,7 +28,10 @@ public class BreadManager : MonoBehaviour
         breadOrders.RemoveAll(x => x.Dead);
 
         if(breadOrders.Count < 1)
-            gameManager.InitializeWinScreen();
+        {
+            // Has a bug: The win ui initializes even if the game is not yet compeleted
+            // gameManager.InitializeWinScreen();
+        }
     }
 
     public IEnumerator StartBreadsTurn()
