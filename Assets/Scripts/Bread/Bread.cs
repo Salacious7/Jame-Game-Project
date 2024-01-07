@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,8 @@ public abstract class Bread : MonoBehaviour, IActionState
 {
     [SerializeField] BreadManager breadManager;
     [field: SerializeField] public Transform AttackPosition {get; private set;}
+    [SerializeField] TextMeshProUGUI healthText;
+    [SerializeField] TextMeshProUGUI manaText;
     bool actionFinished;
     public bool Dead {get; private set;}
     public GameObject selectedArrow;
@@ -14,11 +17,12 @@ public abstract class Bread : MonoBehaviour, IActionState
     public Slider breadSpecialPowerBarSlider;
 
     public float breadHealth;
+    public float breadMana;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        UpdateHealthUI(breadHealth);
+        UpdateManaUI(breadMana);
     }
 
     // Update is called once per frame
@@ -58,9 +62,50 @@ public abstract class Bread : MonoBehaviour, IActionState
     {
         breadHealth -= damage;
         breadHealthBarSlider.value = breadHealth;
+        UpdateHealthUI(breadHealth);
 
         if(breadHealth <= 0)
             Dead = true;
+    }
+
+    public void UpdateHealthUI(float value)
+    {
+        if(value <= 0)
+        {
+            healthText.text = "000";
+            healthText.ForceMeshUpdate();
+            return;
+        }
+
+        string s = "";
+
+        if(value < 100)
+            s = "0";
+        else if(value < 10)
+            s = "00";
+
+        healthText.text = s + value.ToString();
+        healthText.ForceMeshUpdate();
+    }
+
+    public void UpdateManaUI(float value)
+    {
+        if(value <= 0)
+        {
+            manaText.text = "000";
+            manaText.ForceMeshUpdate();
+            return;
+        }
+
+        string s = "";
+
+        if(value < 100)
+            s = "0";
+        else if(value < 10)
+            s = "00";
+
+        manaText.text = s + value.ToString();
+        manaText.ForceMeshUpdate();
     }
 
     IEnumerator TakeTurn()

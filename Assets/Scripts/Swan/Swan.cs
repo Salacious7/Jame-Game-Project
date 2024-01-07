@@ -342,6 +342,28 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         swanUI.healthText.ForceMeshUpdate();
     }
 
+    public void UpdateManaUI(float value)
+    {
+        swanUI.specialPowerBarSlider.value = value;
+
+        if(value <= 0)
+        {
+            swanUI.manaText.text = "000";
+            swanUI.manaText.ForceMeshUpdate();
+            return;
+        }
+
+        string s = "";
+
+        if(value < 100)
+            s = "0";
+        else if(value < 10)
+            s = "00";
+
+        swanUI.manaText.text = s + value.ToString();
+        swanUI.manaText.ForceMeshUpdate();
+    }
+
 
     #region Item
     public void HealSwan(BreadCrumbs breadCrumbs)
@@ -411,6 +433,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
 
         swanData.mana += clearBlueCrystal.IncreaseMana();
+        UpdateManaUI(swanData.mana);
         swanUI.specialPowerBarSlider.value = swanData.mana;
         clearBlueCrystal.DoSomething();
         Debug.Log("Your mana increased!");
