@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: 5ba3f788fe27c4e3c9b708528b82f584
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pretzel_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3161.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56074a15c243a430ab369f295a027252
+      internalID: -350692654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_1
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 3161.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f0af9fc77c44071aa29d744751a17c
+      internalID: -1598679591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_2
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 3161.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637aad033ea974b6ea51cc7ebf940ee6
+      internalID: -1518797104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_3
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 3161.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a6e69344404418fbfb522732f38eaa
+      internalID: -351800074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_4
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 3161.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0124834c122f8405a8e0a82b1a9a35b4
+      internalID: 458964458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_5
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 3161.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e5d6fba6bb1491aa84d79917eae960
+      internalID: 510067092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_6
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 3161.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ccc85c2c6f34e93b458a40bd5698e6
+      internalID: 245692090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2371.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f0e7623ee674a1fb992c1844300d8c
+      internalID: 191098818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_8
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 2371.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8fe6f01a6a4f4c30b34aaf5ffacee4a
+      internalID: 1280832916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_9
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 2371.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f15b2c15b4f4680a42779d7b5f788d
+      internalID: 2014708490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_10
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 2371.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbad863c869f2455fb818c8dd55219fd
+      internalID: -1374484750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_11
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 2371.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b4b2b1863024130988bc56080b646d
+      internalID: 1458687229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_12
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 2371.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d02a5f8d8e14428faae5834dadf5c56
+      internalID: -477719821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_13
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 2371.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509f30b4768cf4a75b4ec93e0108bd6e
+      internalID: 1721176207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1581.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8cb3dc0cd8842abbd953da1f8c5100
+      internalID: -1636682235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_15
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1581.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b0cf900d06c4c5981b024bd6d7bbac
+      internalID: 2131168152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_16
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1581.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500dbdf832b374896aff2e757c79ffc0
+      internalID: 1541661163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_17
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 1581.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8592442fdf4f422b85e5bad59497ff3
+      internalID: -1975096402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_18
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 1581.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f321cab9763e44e2b9e7a9701ddf0e5d
+      internalID: -48393086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_19
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 1581.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26f0f7f40e1e475c81bd459b3529129
+      internalID: -285749055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_20
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 1581.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5a22c4f24094c5f953d0506a929890
+      internalID: -516946238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 791.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23eb0cb3bb98a4fc8b85fa6d9edf0239
+      internalID: 2083992040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_22
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 791.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55b6373467a941f88e9b7f859e09f51
+      internalID: 484091573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_23
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 791.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e7aea5d52084975922b4084ddf82d8
+      internalID: 1215194175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_24
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 791.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d15a797fc2d476281b2dd5cbc0c364
+      internalID: 2008906293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_25
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 791.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6f2609d95c84a0dbbdd3c04841db65
+      internalID: -1313738925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_26
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 791.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db04462e70d0442790e429d05af4781
+      internalID: -219539788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_27
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 791.6
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d81d6e55ec254997a125c8489e813a1
+      internalID: 489320288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5999756
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad41c691604e64b54b1ab3c0bccac3b7
+      internalID: -319794117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_29
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 1.5999756
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b79810eb512c400b8c1c5b23ba7cec2
+      internalID: -694624341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_30
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1.5999756
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22b836d875154fa5946c7a306942af7
+      internalID: -1407774323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_31
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 1.5999756
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7afabb9870943b9b773608f0ea51d5
+      internalID: 550027599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_32
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 1.5999756
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4208f454f327e4140988202b9796afd8
+      internalID: 1327187210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_33
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 1.5999756
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2911434d4de0946ffb7f75d62d735ec6
+      internalID: -1445864169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pretzel_idle_34
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 1.5999756
+        width: 1405
+        height: 790.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24c0f3cb19b7427895940902edf281a
+      internalID: 1626567141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      pretzel_idle_0: -350692654
+      pretzel_idle_1: -1598679591
+      pretzel_idle_10: -1374484750
+      pretzel_idle_11: 1458687229
+      pretzel_idle_12: -477719821
+      pretzel_idle_13: 1721176207
+      pretzel_idle_14: -1636682235
+      pretzel_idle_15: 2131168152
+      pretzel_idle_16: 1541661163
+      pretzel_idle_17: -1975096402
+      pretzel_idle_18: -48393086
+      pretzel_idle_19: -285749055
+      pretzel_idle_2: -1518797104
+      pretzel_idle_20: -516946238
+      pretzel_idle_21: 2083992040
+      pretzel_idle_22: 484091573
+      pretzel_idle_23: 1215194175
+      pretzel_idle_24: 2008906293
+      pretzel_idle_25: -1313738925
+      pretzel_idle_26: -219539788
+      pretzel_idle_27: 489320288
+      pretzel_idle_28: -319794117
+      pretzel_idle_29: -694624341
+      pretzel_idle_3: -351800074
+      pretzel_idle_30: -1407774323
+      pretzel_idle_31: 550027599
+      pretzel_idle_32: 1327187210
+      pretzel_idle_33: -1445864169
+      pretzel_idle_34: 1626567141
+      pretzel_idle_4: 458964458
+      pretzel_idle_5: 510067092
+      pretzel_idle_6: 245692090
+      pretzel_idle_7: 191098818
+      pretzel_idle_8: 1280832916
+      pretzel_idle_9: 2014708490
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

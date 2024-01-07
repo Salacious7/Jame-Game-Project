@@ -356,8 +356,8 @@ Transform:
   m_GameObject: {fileID: 44301765}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.72, y: -2.32, z: -0.85}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalPosition: {x: 2.72, y: -1.95, z: -0.85}
+  m_LocalScale: {x: 0.36, y: 0.36, z: 0.36}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1871949549}
@@ -454,12 +454,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 1464933928, guid: d3dac748dd1383c4e8a1cde7c630806b, type: 3}
+  m_Sprite: {fileID: -350692654, guid: 5ba3f788fe27c4e3c9b708528b82f584, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.199999, y: 10.801875}
+  m_Size: {x: 14.049999, y: 7.904497}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -14116,6 +14116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseScreenObj: {fileID: 1684547440}
+  winScreenObj: {fileID: 0}
   breadManager: {fileID: 1723480714}
   swanManager: {fileID: 1467019278}
 --- !u!1 &1711106625
@@ -14386,6 +14387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a1017c8a5bec34fa0769149e17d71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
   breads:
   - {fileID: 1495082034}
   - {fileID: 1819663951}
