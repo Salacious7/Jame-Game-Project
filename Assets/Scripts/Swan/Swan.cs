@@ -37,6 +37,8 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
     private float getDamageTimer;
     private Bread target;
 
+    public float IncomingDamage {get; set;}
+
     [Header("Components")]
     private Animator anim;
     private SpriteRenderer swanSprite;
@@ -287,16 +289,16 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         switch (amount)
         {
             case 0:
-                swanData.health -= (swanData.defenseBoost > 0 ? 25f / swanData.defenseBoost : 25f);
+                swanData.health -= swanData.defenseBoost > 0 ? IncomingDamage / swanData.defenseBoost : IncomingDamage;
                 break;
             case 1:
-                swanData.health -= (swanData.defenseBoost > 0 ? 15f / swanData.defenseBoost : 15f);
+                swanData.health -= swanData.defenseBoost > 0 ? IncomingDamage * 0.75f / swanData.defenseBoost : IncomingDamage;
                 break;
             case 2:
-                swanData.health -= (swanData.defenseBoost > 0 ? 10f / swanData.defenseBoost : 10f);
+                swanData.health -= swanData.defenseBoost > 0 ? IncomingDamage * 0.5f / swanData.defenseBoost : IncomingDamage;
                 break;
             case 3:
-                swanData.health -= 0f;
+                swanData.health -= swanData.defenseBoost > 0 ? IncomingDamage * 0.25f / swanData.defenseBoost : IncomingDamage;
                 break;
         }
 
@@ -338,7 +340,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         else if(value < 10)
             s = "00";
 
-        swanUI.healthText.text = s + value.ToString();
+        swanUI.healthText.text = s + value.ToString("0");
         swanUI.healthText.ForceMeshUpdate();
     }
 
@@ -360,7 +362,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         else if(value < 10)
             s = "00";
 
-        swanUI.manaText.text = s + value.ToString();
+        swanUI.manaText.text = s + value.ToString("0");
         swanUI.manaText.ForceMeshUpdate();
     }
 
