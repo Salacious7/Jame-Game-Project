@@ -18,10 +18,6 @@ public class SoundManager : MonoBehaviour
         }
 
         FMODData = new FMODData();
-    }
-
-    private void Start()
-    {
         FMODData.InitFMODData();
     }
 
