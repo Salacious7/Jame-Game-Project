@@ -6,26 +6,34 @@ using UnityEngine.UI;
 
 public abstract class Bread : MonoBehaviour, IActionState
 {
-    [SerializeField] BreadManager breadManager;
+    [SerializeField] protected BreadManager breadManager;
     [field: SerializeField] public Transform AttackPosition {get; private set;}
     [SerializeField] TextMeshProUGUI healthText;
     [SerializeField] TextMeshProUGUI manaText;
     [SerializeField] float basicAttackDamage;
     [SerializeField] float heavyAttackDamage;
-    [SerializeField] float specialAttack1Damage;
-    [SerializeField] float specialAttack2Damage;
+    [SerializeField] protected float specialAttack1Damage;
+    [SerializeField] protected float specialAttack2Damage;
+    [SerializeField] protected float special1Cost;
+    [SerializeField] protected float special2Cost;
     bool actionFinished;
     public bool Dead {get; private set;}
     public GameObject selectedArrow;
     public Slider breadHealthBarSlider;
     public Slider breadSpecialPowerBarSlider;
 
-    public float breadHealth;
-    public float breadMana;
-    public float DamageFromCurrentAttack {get; private set;}
+    [field: SerializeField] public float breadHealth {get; private set;}
+    [field: SerializeField] public float breadMana {get; private set;}
+    public float DamageFromCurrentAttack {get; protected set;}
+
+    public float maxHealth {get; private set;}
+    public float maxMana {get; private set;}
 
     void Awake()
     {
+        maxHealth = breadHealth;
+        maxMana = breadMana;
+
         UpdateHealthUI(breadHealth);
         UpdateManaUI(breadMana);
     }
@@ -34,6 +42,34 @@ public abstract class Bread : MonoBehaviour, IActionState
     void Update()
     {
         
+    }
+
+    public void Heal(float amount)
+    {
+        breadHealth += amount;
+
+        if(breadHealth >= maxHealth)
+            breadHealth = maxHealth;
+
+        UpdateHealthUI(breadHealth);
+    }
+
+    public void RestoreMana(float amount)
+    {
+        breadMana += amount;
+
+        if(breadMana >= maxMana)
+            breadMana = maxMana;
+
+        UpdateManaUI(breadMana);
+    }
+
+    public void UseMana(float amount)
+    {
+        breadMana -= amount;
+        UpdateHealthUI(breadMana);
+
+        UpdateManaUI(breadMana);
     }
 
     public void Defend()
@@ -55,23 +91,21 @@ public abstract class Bread : MonoBehaviour, IActionState
             DamageFromCurrentAttack = heavyAttackDamage;
             //trigger animation
         }
+
+        Attack();
     }
 
-    public void SpecialPower()
+    protected void Attack()
     {
-        if(Random.Range(0, 2) == 0)
+        if(GameObject.FindWithTag("Swan").TryGetComponent(out SwanState swanState))
         {
-            Debug.Log(name + " used special 1");
-            DamageFromCurrentAttack = specialAttack1Damage;
-            //trigger animation
-        }
-        else
-        {
-            Debug.Log(name + " used special 2");
-            DamageFromCurrentAttack = specialAttack2Damage;
-            //trigger animation
+            var swan = GameObject.FindWithTag("Swan").GetComponent<Swan>();
+            swan.fightType = Swan.FightType.DefendState;
+            swanState.FightState(Swan.FightType.DefendState, swan);
         }
     }
+
+    public abstract void SpecialPower();
 
     public void UseItem()
     {
@@ -170,12 +204,6 @@ public abstract class Bread : MonoBehaviour, IActionState
 
     void ChooseAction()
     {
-        if(GameObject.FindWithTag("Swan").TryGetComponent(out SwanState swanState))
-        {
-            var swan = GameObject.FindWithTag("Swan").GetComponent<Swan>();
-            swan.fightType = Swan.FightType.DefendState;
-            swanState.FightState(Swan.FightType.DefendState, swan);
-        }
         switch(Random.Range(0, 2))
         {
             case 0: Fight();
