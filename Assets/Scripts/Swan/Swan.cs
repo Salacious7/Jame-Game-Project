@@ -338,7 +338,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         else if(value < 10)
             s = "00";
 
-        swanUI.healthText.text = s + value.ToString();
+        swanUI.healthText.text = s + value.ToString("0");
         swanUI.healthText.ForceMeshUpdate();
     }
 
@@ -360,7 +360,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         else if(value < 10)
             s = "00";
 
-        swanUI.manaText.text = s + value.ToString();
+        swanUI.manaText.text = s + value.ToString("0");
         swanUI.manaText.ForceMeshUpdate();
     }
 

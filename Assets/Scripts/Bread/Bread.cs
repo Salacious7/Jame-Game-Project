@@ -84,7 +84,7 @@ public abstract class Bread : MonoBehaviour, IActionState
         else if(value < 10)
             s = "00";
 
-        healthText.text = s + value.ToString();
+        healthText.text = s + value.ToString("0");
         healthText.ForceMeshUpdate();
     }
 
@@ -104,7 +104,7 @@ public abstract class Bread : MonoBehaviour, IActionState
         else if(value < 10)
             s = "00";
 
-        manaText.text = s + value.ToString();
+        manaText.text = s + value.ToString("0");
         manaText.ForceMeshUpdate();
     }
 
