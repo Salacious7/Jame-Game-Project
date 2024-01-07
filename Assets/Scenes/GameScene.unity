@@ -380,11 +380,17 @@ MonoBehaviour:
   <AttackPosition>k__BackingField: {fileID: 1149969677}
   healthText: {fileID: 841479992}
   manaText: {fileID: 1512386713}
+  basicAttackDamage: 20
+  heavyAttackDamage: 30
+  specialAttack1Damage: 40
+  specialAttack2Damage: 50
+  special1Cost: 20
+  special2Cost: 20
   selectedArrow: {fileID: 1871949548}
   breadHealthBarSlider: {fileID: 1711106627}
   breadSpecialPowerBarSlider: {fileID: 1327579645}
-  breadHealth: 100
-  breadMana: 75
+  <breadHealth>k__BackingField: 100
+  <breadMana>k__BackingField: 100
 --- !u!95 &44301768
 Animator:
   serializedVersion: 5
@@ -12137,11 +12143,17 @@ MonoBehaviour:
   <AttackPosition>k__BackingField: {fileID: 1049102743}
   healthText: {fileID: 300275929}
   manaText: {fileID: 1619647822}
+  basicAttackDamage: 10
+  heavyAttackDamage: 20
+  specialAttack1Damage: 30
+  specialAttack2Damage: 40
+  special1Cost: 20
+  special2Cost: 30
   selectedArrow: {fileID: 1205302422}
   breadHealthBarSlider: {fileID: 828533616}
   breadSpecialPowerBarSlider: {fileID: 1634304618}
-  breadHealth: 200
-  breadMana: 50
+  <breadHealth>k__BackingField: 200
+  <breadMana>k__BackingField: 75
 --- !u!212 &1495082036
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14890,11 +14902,19 @@ MonoBehaviour:
   <AttackPosition>k__BackingField: {fileID: 1833297732}
   healthText: {fileID: 1311083429}
   manaText: {fileID: 2014886891}
+  basicAttackDamage: 10
+  heavyAttackDamage: 20
+  specialAttack1Damage: 30
+  specialAttack2Damage: 40
+  special1Cost: 20
+  special2Cost: 40
   selectedArrow: {fileID: 750238746}
   breadHealthBarSlider: {fileID: 429113397}
   breadSpecialPowerBarSlider: {fileID: 1736009148}
-  breadHealth: 50
-  breadMana: 100
+  <breadHealth>k__BackingField: 50
+  <breadMana>k__BackingField: 100
+  healAmount: 20
+  groupHealAmount: 20
 --- !u!212 &1819663952
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16116,11 +16136,17 @@ MonoBehaviour:
   <AttackPosition>k__BackingField: {fileID: 1822635608}
   healthText: {fileID: 1331278855}
   manaText: {fileID: 1629630434}
+  basicAttackDamage: 20
+  heavyAttackDamage: 30
+  specialAttack1Damage: 40
+  specialAttack2Damage: 50
+  special1Cost: 20
+  special2Cost: 20
   selectedArrow: {fileID: 2027765511}
   breadHealthBarSlider: {fileID: 347755384}
   breadSpecialPowerBarSlider: {fileID: 148324287}
-  breadHealth: 100
-  breadMana: 75
+  <breadHealth>k__BackingField: 100
+  <breadMana>k__BackingField: 100
 --- !u!95 &1929451458
 Animator:
   serializedVersion: 5
