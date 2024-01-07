@@ -8,7 +8,7 @@ public class BreadManager : MonoBehaviour
     [SerializeField, Range(0, 1f)] public float unfocusedTransparency;
     [field: SerializeField] public float TakeActionDelay {get; set;}
     [field: SerializeField] public float TurnEndDelay {get; set;}
-    List<Bread> breadOrders;
+    public List<Bread> breadOrders {get; private set;}
     Bread currentBread;
     [SerializeField] private SwanUI swanUI;
     [SerializeField] private UIManager uiManager;
