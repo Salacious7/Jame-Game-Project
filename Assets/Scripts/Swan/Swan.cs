@@ -147,6 +147,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         UIManager.Instance.currentTextCurrentTurn.text = "Defense increased!";
 
         yield return new WaitForSeconds(2f);
+
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
         UIManager.Instance.currentTextCurrentTurn.text = "";
 
@@ -320,6 +321,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         }
         else
         {
+            anim.SetTrigger("isBlock");
             gameManager.InitializeLoseScreen();
         }
 
