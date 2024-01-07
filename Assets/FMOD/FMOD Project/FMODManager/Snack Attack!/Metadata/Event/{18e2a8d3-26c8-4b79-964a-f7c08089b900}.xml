@@ -5,7 +5,7 @@
 			<value>Swan Skill 1</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{43206275-0b4f-425b-b314-67289348f7db}</destination>
@@ -65,14 +65,17 @@
 	<object class="EventAutomatableProperties" id="{26b476b6-0d93-4d8b-87b5-bad46dc3c3b9}" />
 	<object class="MarkerTrack" id="{a96e22df-62b4-4a8f-8792-9e57ece9941f}" />
 	<object class="GroupTrack" id="{f826f62d-3eb1-4c1b-92eb-e5fa0e2278d4}">
+		<relationship name="modules">
+			<destination>{99af6a05-d686-4033-b017-84995374290e}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{7a651387-339a-4409-9464-e36cc3750e86}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{a21b1575-db31-48ff-bf75-0f8cf4addd6f}">
-		<property name="isProxyEnabled">
-			<value>false</value>
-		</property>
+		<relationship name="modules">
+			<destination>{99af6a05-d686-4033-b017-84995374290e}</destination>
+		</relationship>
 	</object>
 	<object class="ActionSheet" id="{c6afbfa4-e231-4aa3-b434-92b4e9e8c4b5}">
 		<relationship name="modules">
@@ -97,6 +100,17 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{7579b2b9-513f-49d0-8ac3-01c7dab8dbae}" />
+	<object class="SingleSound" id="{99af6a05-d686-4033-b017-84995374290e}">
+		<property name="length">
+			<value>8.8199999999999985</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>1.6800000000000002</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{21c3b735-f600-43f5-89c3-3412b6167050}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{7a651387-339a-4409-9464-e36cc3750e86}">
 		<property name="name">
 			<value>Audio 1</value>

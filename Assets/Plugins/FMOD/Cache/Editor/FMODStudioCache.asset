@@ -54,7 +54,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 1400
 --- !u!114 &-8274182773565126432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +135,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 2000
 --- !u!114 &-6146377044992850346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +162,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 4750
 --- !u!114 &-6125304100996316462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,7 +189,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 6820
 --- !u!114 &-5932553207016836135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,7 +243,34 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 3375
+--- !u!114 &-5396647392231905242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Baguette/Baguette Main
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Baguette/Baguette Main
+  Guid:
+    Data1: -935268393
+    Data2: 1294151324
+    Data3: 901841030
+    Data4: 912471709
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
 --- !u!114 &-5126583616170971058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,7 +297,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 1150
 --- !u!114 &-4712017158314135597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,7 +351,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 3250
 --- !u!114 &-4168574333133478001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,13 +399,13 @@ MonoBehaviour:
     Data4: 12159360
   Banks:
   - {fileID: 2336781008119307528}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 10500
 --- !u!114 &-3452662664162949669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,7 +432,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 3750
 --- !u!114 &-3301980602566170062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,10 +448,10 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638402281696579627
+  lastModified: 638402730483362901
   FileSizes:
   - Name: Desktop
-    Value: 3018
+    Value: 3104
   Exists: 1
 --- !u!114 &-3050524713700236793
 MonoBehaviour:
@@ -452,7 +479,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 4062
 --- !u!114 &-2972738058138612311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,10 +495,10 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638402281711703851
+  lastModified: 638402778480281309
   FileSizes:
   - Name: Desktop
-    Value: 2061472
+    Value: 2061344
   Exists: 1
 --- !u!114 &-2966240515378149170
 MonoBehaviour:
@@ -499,7 +526,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 2374
 --- !u!114 &-2519852337080169267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,13 +547,40 @@ MonoBehaviour:
     Data4: 1818593512
   Banks:
   - {fileID: 2336781008119307528}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10500
+--- !u!114 &-2495066439584367544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Muffin/Muffin Main
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Muffin/Muffin Main
+  Guid:
+    Data1: 585063100
+    Data2: 1227753564
+    Data3: 1706300585
+    Data4: 1334596270
+  Banks:
+  - {fileID: 2336781008119307528}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 4062
 --- !u!114 &-2454741757570452589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -634,7 +688,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 1800
 --- !u!114 &-813005079522493847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,7 +715,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 4062
 --- !u!114 &-476499647179556874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -688,7 +742,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 2374
 --- !u!114 &-424542274507403607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -742,7 +796,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 1700
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,7 +830,6 @@ MonoBehaviour:
   - {fileID: -424542274507403607}
   - {fileID: -2041331338179178595}
   - {fileID: -5932553207016836135}
-  - {fileID: 5538087677300587794}
   - {fileID: -6346944008668156656}
   - {fileID: 1507701429345440130}
   - {fileID: 8089509750773748237}
@@ -792,27 +845,30 @@ MonoBehaviour:
   - {fileID: 8680899676280512681}
   - {fileID: 1951543025229541323}
   - {fileID: -5509827864945467102}
-  - {fileID: 6908246134219698170}
   - {fileID: -42453059869056979}
   - {fileID: -9112518548033035705}
   - {fileID: -2966240515378149170}
   - {fileID: 9177966948247156069}
   - {fileID: -6146377044992850346}
   - {fileID: -3638396223307532134}
-  - {fileID: 3865856102525745624}
   - {fileID: 1573270733648762838}
   - {fileID: 8461869168465632760}
   - {fileID: -3050524713700236793}
   - {fileID: -6125304100996316462}
   - {fileID: 7841046669628295856}
   - {fileID: -2454741757570452589}
+  - {fileID: 7054741195642938760}
+  - {fileID: 3289782684584882260}
+  - {fileID: -2495066439584367544}
+  - {fileID: 5902770162576746646}
+  - {fileID: -5396647392231905242}
   EditorParameters:
   - {fileID: -9159261782915650400}
   MasterBanks:
   - {fileID: 5777904686703053624}
   StringsBanks:
   - {fileID: -3301980602566170062}
-  cacheTime: 638402281715173410
+  cacheTime: 638402778480281309
   cacheVersion: 131616
 --- !u!114 &295734867017174787
 MonoBehaviour:
@@ -868,7 +924,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 7812
 --- !u!114 &884608241911222043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -889,13 +945,13 @@ MonoBehaviour:
     Data4: 1460031809
   Banks:
   - {fileID: 2336781008119307528}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 5500
 --- !u!114 &1072966452611252735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -976,7 +1032,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 2374
 --- !u!114 &1951543025229541323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1019,10 +1075,10 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638402281715173410
+  lastModified: 638402737898985306
   FileSizes:
   - Name: Desktop
-    Value: 353920
+    Value: 1372544
   Exists: 1
 --- !u!114 &2502443107559671357
 MonoBehaviour:
@@ -1069,6 +1125,33 @@ MonoBehaviour:
     Data2: 1099883963
     Data3: -652104297
     Data4: 1912124144
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3289782684584882260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Swan/Swan Hurt
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Swan/Swan Hurt
+  Guid:
+    Data1: 933314006
+    Data2: 1247052612
+    Data3: -1803677024
+    Data4: 196381579
   Banks:
   - {fileID: 2336781008119307528}
   IsStream: 0
@@ -1133,33 +1216,6 @@ MonoBehaviour:
   - Combat
   - Title Screen
   Exists: 1
---- !u!114 &3865856102525745624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Bread/Baguette/Baguette Main Attack
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Bread/Baguette/Baguette Main Attack
-  Guid:
-    Data1: -935268393
-    Data2: 1294151324
-    Data3: 901841030
-    Data4: 912471709
-  Banks:
-  - {fileID: 2336781008119307528}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &4594353144196860451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1186,34 +1242,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
---- !u!114 &5538087677300587794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Bread/Baguette/Baguette Main Heavy
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Bread/Baguette/Baguette Main Heavy
-  Guid:
-    Data1: -2117518769
-    Data2: 1155051620
-    Data3: 1558965382
-    Data4: -1367087386
-  Banks:
-  - {fileID: 2336781008119307528}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
+  Length: 2000
 --- !u!114 &5777904686703053624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1229,11 +1258,38 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638402281696569575
+  lastModified: 638402730483347820
   FileSizes:
   - Name: Desktop
     Value: 1264
   Exists: 1
+--- !u!114 &5902770162576746646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Baguette/Baguette Heavy
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Baguette/Baguette Heavy
+  Guid:
+    Data1: -2117518769
+    Data2: 1155051620
+    Data3: 1558965382
+    Data4: -1367087386
+  Banks:
+  - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6752595070354032383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1261,7 +1317,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &6908246134219698170
+--- !u!114 &7054741195642938760
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1271,14 +1327,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Bread/Muffin/Muffin Main
+  m_Name: event:/SFX/Swan/Use Item
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Bread/Muffin/Muffin Main
+  Path: event:/SFX/Swan/Use Item
   Guid:
-    Data1: 585063100
-    Data2: 1227753564
-    Data3: 1706300585
-    Data4: 1334596270
+    Data1: 281241352
+    Data2: 1133641726
+    Data3: 65441180
+    Data4: -2005937622
   Banks:
   - {fileID: 2336781008119307528}
   IsStream: 0
@@ -1287,7 +1343,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 2150
 --- !u!114 &7841046669628295856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1314,7 +1370,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 9000
 --- !u!114 &8089509750773748237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1341,7 +1397,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 2374
 --- !u!114 &8461869168465632760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1368,7 +1424,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 2000
 --- !u!114 &8680899676280512681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1383,10 +1439,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Bread/Baguette/Baguette Death
   Guid:
-    Data1: 1414279094
-    Data2: 1194886668
-    Data3: 2086914465
-    Data4: 1092962114
+    Data1: -2125527457
+    Data2: 1254518739
+    Data3: 1153095339
+    Data4: 1930659585
   Banks:
   - {fileID: 2336781008119307528}
   IsStream: 0
@@ -1395,7 +1451,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 1200
 --- !u!114 &9177966948247156069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1422,4 +1478,4 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 3375

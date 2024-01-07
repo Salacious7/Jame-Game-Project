@@ -391,6 +391,7 @@ MonoBehaviour:
   breadSpecialPowerBarSlider: {fileID: 1327579645}
   <breadHealth>k__BackingField: 100
   <breadMana>k__BackingField: 100
+  fightType: 0
 --- !u!95 &44301768
 Animator:
   serializedVersion: 5
@@ -5046,8 +5047,8 @@ GameObject:
   m_Component:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
-  - component: {fileID: 519420029}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5055,14 +5056,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &519420029
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -5189,6 +5182,19 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &520100496
 GameObject:
   m_ObjectHideFlags: 0
@@ -8385,6 +8391,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 980013448}
+  - component: {fileID: 980013449}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -8407,6 +8414,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &980013449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980013447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc0437391b02144d9391578681e9c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &989566618
 GameObject:
   m_ObjectHideFlags: 0
@@ -12216,6 +12235,7 @@ MonoBehaviour:
   breadSpecialPowerBarSlider: {fileID: 1634304618}
   <breadHealth>k__BackingField: 200
   <breadMana>k__BackingField: 75
+  fightType: 0
 --- !u!212 &1495082036
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14994,6 +15014,7 @@ MonoBehaviour:
   breadSpecialPowerBarSlider: {fileID: 1736009148}
   <breadHealth>k__BackingField: 50
   <breadMana>k__BackingField: 100
+  fightType: 0
   healAmount: 20
   groupHealAmount: 20
 --- !u!212 &1819663952
@@ -16290,6 +16311,7 @@ MonoBehaviour:
   breadSpecialPowerBarSlider: {fileID: 148324287}
   <breadHealth>k__BackingField: 100
   <breadMana>k__BackingField: 100
+  fightType: 0
 --- !u!95 &1929451458
 Animator:
   serializedVersion: 5

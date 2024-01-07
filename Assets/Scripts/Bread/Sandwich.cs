@@ -4,12 +4,36 @@ using UnityEngine;
 
 public class Sandwich : Bread
 {
+    public override void OnAttack(FightType fightType)
+    {
+        switch (fightType)
+        {
+            case FightType.BasicState:
+                SoundManager.Instance.OnPlaySandwichMainAttack();
+                break;
+            case FightType.HeavyState:
+                SoundManager.Instance.OnPlaySandwichHeavyAttack();
+                break;
+        }
+    }
+
+    public override void OnHeal()
+    {
+        SoundManager.Instance.OnPlaySandwichHeal();
+    }
+
+    public override void OnDeath()
+    {
+        SoundManager.Instance.OnPlaySandwichDeath();
+    }
+
     public override void SpecialPower()
     {
         if(Random.Range(0, 2) == 0)
         {
             if(breadMana <= special1Cost)
             {
+                SoundManager.Instance.OnPlaySandwichSkillOne();
                 Fight();
                 return;
             }
@@ -24,6 +48,7 @@ public class Sandwich : Bread
         {
             if(breadMana <= special2Cost)
             {
+                SoundManager.Instance.OnPlaySandwichSkillTwo();
                 Fight();
                 return;
             }

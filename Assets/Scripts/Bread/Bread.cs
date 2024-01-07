@@ -29,6 +29,14 @@ public abstract class Bread : MonoBehaviour, IActionState
     public float maxHealth {get; private set;}
     public float maxMana {get; private set;}
 
+    public enum FightType
+    {
+        BasicState,
+        HeavyState,
+    }
+
+    public FightType fightType;
+
     void Awake()
     {
         maxHealth = breadHealth;
@@ -51,8 +59,12 @@ public abstract class Bread : MonoBehaviour, IActionState
         if(breadHealth >= maxHealth)
             breadHealth = maxHealth;
 
+        OnHeal();
+
         UpdateHealthUI(breadHealth);
     }
+
+    public abstract void OnHeal();
 
     public void RestoreMana(float amount)
     {
@@ -81,6 +93,7 @@ public abstract class Bread : MonoBehaviour, IActionState
     {
         if(Random.Range(0, 2) == 0)
         {
+            OnAttack(FightType.BasicState);
             Debug.Log(name + " used basic attack");
             DamageFromCurrentAttack = basicAttackDamage;
             if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
@@ -89,6 +102,7 @@ public abstract class Bread : MonoBehaviour, IActionState
         }
         else
         {
+            OnAttack(FightType.HeavyState);
             Debug.Log(name + " used heavy attack");
             DamageFromCurrentAttack = heavyAttackDamage;
             if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
@@ -97,15 +111,23 @@ public abstract class Bread : MonoBehaviour, IActionState
         }
 
         Attack();
+        Debug.Log("Bread is Fighting!");
+
     }
+
+    public abstract void OnAttack(FightType fightType);
 
     protected void Attack()
     {
-        if(GameObject.FindWithTag("Swan").TryGetComponent(out SwanState swanState))
+        if (GameObject.FindWithTag("Swan").TryGetComponent(out SwanState swanState))
         {
             var swan = GameObject.FindWithTag("Swan").GetComponent<Swan>();
             swan.fightType = Swan.FightType.DefendState;
             swanState.FightState(Swan.FightType.DefendState, swan);
+        }
+        else
+        {
+            Debug.LogError("Could not find swan!");
         }
     }
 
@@ -132,9 +154,16 @@ public abstract class Bread : MonoBehaviour, IActionState
         breadHealthBarSlider.value = breadHealth;
         UpdateHealthUI(breadHealth);
 
-        if(breadHealth <= 0)
+        OnDeath();
+
+        if (breadHealth <= 0)
+        {
             Dead = true;
+        }
     }
+
+
+    public abstract void OnDeath();
 
     public void UpdateHealthUI(float value)
     {

@@ -5,7 +5,7 @@
 			<value>Sandwich Death</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{69fd82a5-bc0f-4887-9a21-0f385cb3896b}</destination>
@@ -65,14 +65,17 @@
 	<object class="EventAutomatableProperties" id="{c4d3d031-437c-4b02-b20f-069d3a735392}" />
 	<object class="MarkerTrack" id="{d4ba67bd-bb85-4f62-b8f0-ed338f9e3cf8}" />
 	<object class="GroupTrack" id="{5d543618-be69-4f2c-8513-3a95bd96709b}">
+		<relationship name="modules">
+			<destination>{0f4ba944-d916-43a2-972a-e3d390262752}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{15646e2e-aa0d-41c8-82b1-fcbacb88e1bc}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{80a2cc8e-0c13-4a95-a081-947c8db38385}">
-		<property name="isProxyEnabled">
-			<value>false</value>
-		</property>
+		<relationship name="modules">
+			<destination>{0f4ba944-d916-43a2-972a-e3d390262752}</destination>
+		</relationship>
 	</object>
 	<object class="ActionSheet" id="{cb1e92a9-ecf8-44b0-a797-30e4d6348eeb}">
 		<relationship name="modules">
@@ -97,6 +100,20 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{5784f6bb-2061-48fe-b006-f15a9760130a}" />
+	<object class="SingleSound" id="{0f4ba944-d916-43a2-972a-e3d390262752}">
+		<property name="length">
+			<value>1.7719999999999998</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>0.22800000000000004</value>
+		</property>
+		<property name="volume">
+			<value>-5</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{24216e7e-27f5-4bfb-a223-295317462b49}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{15646e2e-aa0d-41c8-82b1-fcbacb88e1bc}">
 		<property name="name">
 			<value>Audio 1</value>

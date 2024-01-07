@@ -5,7 +5,7 @@
 			<value>Baguette Skill 2</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{51904717-b068-4de7-bef0-c8974b4f80fa}</destination>
@@ -65,14 +65,17 @@
 	<object class="EventAutomatableProperties" id="{a974e90f-6585-480a-89f9-3a5da3cbb3b4}" />
 	<object class="MarkerTrack" id="{3f7a333b-7083-4ac4-b296-926713e3cc28}" />
 	<object class="GroupTrack" id="{a278785c-954b-449f-b775-3672b3487655}">
+		<relationship name="modules">
+			<destination>{82b88eb2-4838-412b-8dfb-d17e65360d42}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{ecf8813f-5c0a-4909-a5e2-2d50312ccfd7}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{661298ab-3dae-449a-915b-edd89b7d8dce}">
-		<property name="isProxyEnabled">
-			<value>false</value>
-		</property>
+		<relationship name="modules">
+			<destination>{82b88eb2-4838-412b-8dfb-d17e65360d42}</destination>
+		</relationship>
 	</object>
 	<object class="ActionSheet" id="{e664320e-b5ef-4771-9358-1eaf3ed2d7d6}">
 		<relationship name="modules">
@@ -97,6 +100,17 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{2a4c9dfd-6a81-4bee-9f1c-4a62daebad8b}" />
+	<object class="SingleSound" id="{82b88eb2-4838-412b-8dfb-d17e65360d42}">
+		<property name="length">
+			<value>3.375</value>
+		</property>
+		<property name="volume">
+			<value>6</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{293ea5c6-294f-4aef-955b-4e1eb1e02d89}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{ecf8813f-5c0a-4909-a5e2-2d50312ccfd7}">
 		<property name="name">
 			<value>Audio 1</value>

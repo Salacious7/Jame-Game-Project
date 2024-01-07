@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{81c93a4f-b064-44d8-86ec-eb5ce6e683ae}">
 		<property name="name">
-			<value>Baguette Main Heavy</value>
+			<value>Baguette Heavy</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>

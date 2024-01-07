@@ -5,7 +5,7 @@
 			<value>Pretzel Skill 1</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{cf1c041d-298d-4121-8313-52d842ed229e}</destination>
@@ -65,14 +65,17 @@
 	<object class="EventAutomatableProperties" id="{71411bbf-f308-4e4f-9e3b-4a98993e7ad3}" />
 	<object class="MarkerTrack" id="{e3672be6-694a-4b13-b18c-6dbbee9138b0}" />
 	<object class="GroupTrack" id="{742d4306-bfda-4397-a403-97eb64b8cceb}">
+		<relationship name="modules">
+			<destination>{c181c6b9-ac22-4016-bd1d-ca1bc567c167}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{de64e1ac-0ff4-4cc8-8014-27764ff747aa}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{f0cf92aa-385e-4c58-8d93-4044e9993204}">
-		<property name="isProxyEnabled">
-			<value>false</value>
-		</property>
+		<relationship name="modules">
+			<destination>{c181c6b9-ac22-4016-bd1d-ca1bc567c167}</destination>
+		</relationship>
 	</object>
 	<object class="ActionSheet" id="{66985998-ee35-4945-ac02-23d030f15732}">
 		<relationship name="modules">
@@ -97,6 +100,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{983e6fbc-419a-4b22-875a-397bec311b5e}" />
+	<object class="SingleSound" id="{c181c6b9-ac22-4016-bd1d-ca1bc567c167}">
+		<property name="length">
+			<value>9</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{64b84b5f-644f-4415-9998-f44d3225607e}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{de64e1ac-0ff4-4cc8-8014-27764ff747aa}">
 		<property name="name">
 			<value>Audio 1</value>

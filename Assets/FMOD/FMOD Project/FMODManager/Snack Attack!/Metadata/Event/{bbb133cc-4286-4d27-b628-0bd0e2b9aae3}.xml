@@ -5,7 +5,7 @@
 			<value>Muffin Dodge</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{bde6932e-ebbb-4ccf-bb2f-7aed450e23b4}</destination>
@@ -65,14 +65,17 @@
 	<object class="EventAutomatableProperties" id="{255c77a9-35d2-43c4-ba0a-232e0486395a}" />
 	<object class="MarkerTrack" id="{65c761f6-2f61-447b-80c5-570bf75fee51}" />
 	<object class="GroupTrack" id="{a9b1e38f-7a13-48b7-9dfd-c44262dc2ebb}">
+		<relationship name="modules">
+			<destination>{c50a1493-c168-411d-8b48-32ced0b75c31}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{699723f8-b6bc-42b7-b9e6-2bbf69b46d09}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{15a06e84-0d30-4b3b-a305-99d8adc7ba3a}">
-		<property name="isProxyEnabled">
-			<value>false</value>
-		</property>
+		<relationship name="modules">
+			<destination>{c50a1493-c168-411d-8b48-32ced0b75c31}</destination>
+		</relationship>
 	</object>
 	<object class="ActionSheet" id="{2f135c07-a416-469a-8b2a-98f901e3f7e3}">
 		<relationship name="modules">
@@ -97,6 +100,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{490ec35c-110f-434d-899c-338e033f619f}" />
+	<object class="SingleSound" id="{c50a1493-c168-411d-8b48-32ced0b75c31}">
+		<property name="length">
+			<value>2.3749791666666669</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{910b7b0a-5c42-4862-9b48-c4658b17f778}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{699723f8-b6bc-42b7-b9e6-2bbf69b46d09}">
 		<property name="name">
 			<value>Audio 1</value>

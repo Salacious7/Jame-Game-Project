@@ -5,7 +5,7 @@
 			<value>Muffin Death</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{bde6932e-ebbb-4ccf-bb2f-7aed450e23b4}</destination>
@@ -65,14 +65,17 @@
 	<object class="EventAutomatableProperties" id="{f4d31b52-eee8-402f-b3fe-ab3b0a6c3655}" />
 	<object class="MarkerTrack" id="{5d393926-b1f5-4ce5-b053-021f028d2cfd}" />
 	<object class="GroupTrack" id="{e2cd3515-8ade-454c-9e7c-5986b7443624}">
+		<relationship name="modules">
+			<destination>{fc6a9b27-fe64-4118-a8cd-3719ab4f6caa}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{e663e4b9-47fd-4e0d-bef2-c04e3ae97594}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{45e01db0-c328-4a63-a255-7b77e579302f}">
-		<property name="isProxyEnabled">
-			<value>false</value>
-		</property>
+		<relationship name="modules">
+			<destination>{fc6a9b27-fe64-4118-a8cd-3719ab4f6caa}</destination>
+		</relationship>
 	</object>
 	<object class="ActionSheet" id="{41ae7e25-8869-4cc1-8779-602f586bf424}">
 		<relationship name="modules">
@@ -97,6 +100,20 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{81528514-faf7-4100-9105-1229a7821f75}" />
+	<object class="SingleSound" id="{fc6a9b27-fe64-4118-a8cd-3719ab4f6caa}">
+		<property name="length">
+			<value>6.8200000000000056</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>0.18000000000000002</value>
+		</property>
+		<property name="volume">
+			<value>-5</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{dad2f477-afa0-461e-88d6-19d2c4c7ed6e}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{e663e4b9-47fd-4e0d-bef2-c04e3ae97594}">
 		<property name="name">
 			<value>Audio 1</value>

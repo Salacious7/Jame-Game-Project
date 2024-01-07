@@ -5,7 +5,7 @@
 			<value>Sandwich Skill 1</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{69fd82a5-bc0f-4887-9a21-0f385cb3896b}</destination>
@@ -65,14 +65,17 @@
 	<object class="EventAutomatableProperties" id="{80356333-73c1-4d0b-9134-c1073c3d1841}" />
 	<object class="MarkerTrack" id="{f31d2d36-fac8-4f88-9a81-8ffb912bca81}" />
 	<object class="GroupTrack" id="{41bf5acb-2a2b-4166-8f6e-4c0f78640f35}">
+		<relationship name="modules">
+			<destination>{c288705c-b4d5-43dd-90cb-b444d595fb7e}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{0c043d4c-0d6a-4dbd-9e89-33da2b1ba56b}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{18597209-d9df-4396-b060-f4da8b649ecf}">
-		<property name="isProxyEnabled">
-			<value>false</value>
-		</property>
+		<relationship name="modules">
+			<destination>{c288705c-b4d5-43dd-90cb-b444d595fb7e}</destination>
+		</relationship>
 	</object>
 	<object class="ActionSheet" id="{3dc33f9a-e586-48cc-b7e5-3bcd6e7bee49}">
 		<relationship name="modules">
@@ -97,6 +100,17 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{92c85274-1e30-4185-9174-12e1a5a48c0f}" />
+	<object class="SingleSound" id="{c288705c-b4d5-43dd-90cb-b444d595fb7e}">
+		<property name="start">
+			<value>1.1102230246251565e-16</value>
+		</property>
+		<property name="length">
+			<value>3.25</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{8f8cfe1f-5047-4b6f-a487-84f3ff6e8901}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{0c043d4c-0d6a-4dbd-9e89-33da2b1ba56b}">
 		<property name="name">
 			<value>Audio 1</value>
