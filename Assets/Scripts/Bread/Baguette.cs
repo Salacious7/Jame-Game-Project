@@ -16,6 +16,8 @@ public class Baguette : Bread
 
             Debug.Log(name + " used roll");
             DamageFromCurrentAttack = specialAttack1Damage;
+            if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
+                swan.IncomingDamage = DamageFromCurrentAttack;
             //trigger animation
         }
         else
@@ -28,6 +30,8 @@ public class Baguette : Bread
 
             Debug.Log(name + " used barrage");
             DamageFromCurrentAttack = specialAttack2Damage;
+            if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
+                swan.IncomingDamage = DamageFromCurrentAttack;
             //trigger animation
         }
 

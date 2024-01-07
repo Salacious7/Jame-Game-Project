@@ -16,6 +16,8 @@ public class Sandwich : Bread
 
             Debug.Log(name + " used hot sauce");
             DamageFromCurrentAttack = specialAttack1Damage;
+            if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
+                swan.IncomingDamage = DamageFromCurrentAttack;
             //trigger animation
         }
         else
@@ -28,6 +30,8 @@ public class Sandwich : Bread
 
             Debug.Log(name + " used mayo");
             DamageFromCurrentAttack = specialAttack2Damage;
+            if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
+                swan.IncomingDamage = DamageFromCurrentAttack;
             //trigger animation
         }
 

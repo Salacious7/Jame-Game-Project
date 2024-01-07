@@ -37,6 +37,8 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
     private float getDamageTimer;
     private Bread target;
 
+    public float IncomingDamage {get; set;}
+
     [Header("Components")]
     private Animator anim;
     private SpriteRenderer swanSprite;

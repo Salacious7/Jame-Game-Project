@@ -16,6 +16,8 @@ public class Pretzel : Bread
 
             Debug.Log(name + " used twister");
             DamageFromCurrentAttack = specialAttack1Damage;
+            if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
+                swan.IncomingDamage = DamageFromCurrentAttack;
             //trigger animation
         }
         else
@@ -28,6 +30,8 @@ public class Pretzel : Bread
 
             Debug.Log(name + " used rain cheese");
             DamageFromCurrentAttack = specialAttack2Damage;
+            if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
+                swan.IncomingDamage = DamageFromCurrentAttack;
             //trigger animation
         }
 

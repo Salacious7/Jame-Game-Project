@@ -83,12 +83,16 @@ public abstract class Bread : MonoBehaviour, IActionState
         {
             Debug.Log(name + " used basic attack");
             DamageFromCurrentAttack = basicAttackDamage;
+            if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
+                swan.IncomingDamage = DamageFromCurrentAttack;
             //trigger animation
         }
         else
         {
             Debug.Log(name + " used heavy attack");
             DamageFromCurrentAttack = heavyAttackDamage;
+            if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
+                swan.IncomingDamage = DamageFromCurrentAttack;
             //trigger animation
         }
 
