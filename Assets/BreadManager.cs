@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class BreadManager : MonoBehaviour
@@ -22,12 +23,10 @@ public class BreadManager : MonoBehaviour
 
     void Update()
     {
-        if(breadOrders == null || winCondition)
+        if(breads == null || winCondition)
             return;
 
-        breadOrders.RemoveAll(x => x.Dead);
-
-        if(breadOrders.Count < 1)
+        if(breads.All(x => x.Dead))
             gameManager.InitializeWinScreen();
     }
 

@@ -53,6 +53,7 @@ public class UIManager : MonoBehaviour
         transitionImage.raycastTarget = true;
         transitionAnim.SetTrigger("isTransition");
         yield return new WaitForSecondsRealtime(1.5f);
+        SoundManager.Instance.OnMusicStop();
         SceneManager.LoadScene(0);
     }
 }

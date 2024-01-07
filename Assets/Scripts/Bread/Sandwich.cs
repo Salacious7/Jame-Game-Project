@@ -4,6 +4,20 @@ using UnityEngine;
 
 public class Sandwich : Bread
 {
+    [SerializeField] private Transform throwPos;
+    [SerializeField] private Transform swanPos;
+    [SerializeField] private GameObject tomatoObj;
+    [SerializeField] private float throwTomatoSpeed;
+    [SerializeField] private bool throwTomato;
+
+    private void Update()
+    {
+        if(throwTomato)
+        {
+            ThrowTomato();
+        }
+    }
+
     public override void OnAttack(FightType fightType)
     {
         switch (fightType)
@@ -43,6 +57,7 @@ public class Sandwich : Bread
             if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
                 swan.IncomingDamage = DamageFromCurrentAttack;
             //trigger animation
+            animTrigger = "special1";
         }
         else
         {
@@ -58,21 +73,23 @@ public class Sandwich : Bread
             if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
                 swan.IncomingDamage = DamageFromCurrentAttack;
             //trigger animation
+            animTrigger = "special2";
         }
 
         Attack();
     }
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void ThrowTomato()
     {
-        
-    }
+        tomatoObj.SetActive(true);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        tomatoObj.transform.position = Vector3.MoveTowards(tomatoObj.transform.position, swanPos.position, throwTomatoSpeed * Time.deltaTime);
+
+        if(Vector3.Distance(tomatoObj.transform.position, swanPos.position) <= 0.1f)
+        {
+            tomatoObj.SetActive(false);
+            tomatoObj.transform.position = throwPos.position;
+            throwTomato = false;
+        }
     }
 }
