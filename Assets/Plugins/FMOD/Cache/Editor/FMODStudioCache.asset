@@ -55,6 +55,53 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1400
+--- !u!114 &-8817038025756680708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Sandwich/Sandwich Death
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Sandwich/Sandwich Death
+  Guid:
+    Data1: 124887344
+    Data2: 1260619749
+    Data3: -138587769
+    Data4: -212571012
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1772
+--- !u!114 &-8540748474614112452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638402257258129433
+  FileSizes:
+  - Name: Desktop
+    Value: 1264
+  Exists: 1
 --- !u!114 &-8511898489796210833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,6 +129,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-8289275311092860103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Muffin/Muffin Dodge
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Muffin/Muffin Dodge
+  Guid:
+    Data1: -1146014772
+    Data2: 1294418566
+    Data3: -804575050
+    Data4: -475350558
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2374
 --- !u!114 &-8274182773565126432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +203,33 @@ MonoBehaviour:
     Data4: -2073506106
   Banks:
   - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-7905832309336581578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Misc./Universal Button Click
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Misc./Universal Button Click
+  Guid:
+    Data1: 1670294325
+    Data2: 1090747338
+    Data3: -1974528838
+    Data4: 1007986423
+  Banks:
+  - {fileID: -1219169602661318204}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -190,6 +291,53 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1772
+--- !u!114 &-7625043791353982561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638402257258134719
+  FileSizes:
+  - Name: Desktop
+    Value: 3104
+  Exists: 1
+--- !u!114 &-7497926735284011207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Baguette/Baguette Skill 2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Baguette/Baguette Skill 2
+  Guid:
+    Data1: -1646842692
+    Data2: 1312952427
+    Data3: 1591359422
+    Data4: -26136196
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3375
 --- !u!114 &-7481399085788585236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,6 +419,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-7061888014004979700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Baguette/Baguette Dodge
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Baguette/Baguette Dodge
+  Guid:
+    Data1: -467318393
+    Data2: 1320063113
+    Data3: 728122038
+    Data4: -1288303761
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2374
+--- !u!114 &-6669910693301742610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Muffin/Muffin Skill 2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Muffin/Muffin Skill 2
+  Guid:
+    Data1: -294211280
+    Data2: 1258420228
+    Data3: -1143854971
+    Data4: 1818593512
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10500
+--- !u!114 &-6595411746254265652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Pretzel/Pretzel Heavy
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Pretzel/Pretzel Heavy
+  Guid:
+    Data1: 1868140733
+    Data2: 1280197798
+    Data3: -1186770777
+    Data4: 1228506418
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1700
 --- !u!114 &-6516956303193719779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,6 +554,88 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &-6328054033097060449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Game State
+  m_EditorClassIdentifier: 
+  Name: Game State
+  StudioPath: parameter:/Game State
+  Min: 0
+  Max: 3
+  Default: 3
+  ID:
+    data1: 2867788319
+    data2: 355818519
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Win
+  - Lose
+  - Combat
+  - Title Screen
+  Exists: 1
+--- !u!114 &-6250442395018520860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Swan/Swan Skill 2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Swan/Swan Skill 2
+  Guid:
+    Data1: 596317237
+    Data2: 1234840605
+    Data3: -104479298
+    Data4: -1100910407
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6982
+--- !u!114 &-6236475452653043544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Swan/Swan Healing
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Swan/Swan Healing
+  Guid:
+    Data1: -2087791044
+    Data2: 1214760040
+    Data3: 1468013193
+    Data4: 406090985
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7250
 --- !u!114 &-6146377044992850346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,6 +690,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6820
+--- !u!114 &-5998812610924374108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Swan Passive Bar/Swan Full PB
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Swan Passive Bar/Swan Full PB
+  Guid:
+    Data1: 1826369292
+    Data2: 1129531554
+    Data3: 572304271
+    Data4: -759211751
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5932553207016836135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -453,6 +791,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3375
+--- !u!114 &-5445959405244454753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Pretzel/Pretzel Skill 2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Pretzel/Pretzel Skill 2
+  Guid:
+    Data1: 394046175
+    Data2: 1239114779
+    Data3: -1883633491
+    Data4: -171478423
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-5396647392231905242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -534,6 +899,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1150
+--- !u!114 &-5121186979023283728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Bread Passive Bar/Bread Use PB
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Bread Passive Bar/Bread Use PB
+  Guid:
+    Data1: 849538208
+    Data2: 1114469331
+    Data3: -994079855
+    Data4: -201694319
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5019831729782619163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Sandwich/Sandwich Main
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Sandwich/Sandwich Main
+  Guid:
+    Data1: 1538561567
+    Data2: 1222754173
+    Data3: 1678833538
+    Data4: -1740591764
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4062
+--- !u!114 &-5018533760518512571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Pretzel/Pretzel Heal
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Pretzel/Pretzel Heal
+  Guid:
+    Data1: -1040702327
+    Data2: 1195109992
+    Data3: -442961756
+    Data4: 1485178523
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4891057859895120231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,6 +1034,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-4449926060996203121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Swan Passive Bar/Swan Inc. PB
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Swan Passive Bar/Swan Inc. PB
+  Guid:
+    Data1: 290849382
+    Data2: 1141716953
+    Data3: 629612186
+    Data4: -1815100755
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4299421959585771521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -635,6 +1108,33 @@ MonoBehaviour:
     Data4: -1815100755
   Banks:
   - {fileID: 2336781008119307528}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4093449009339331428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Bread Passive Bar/Bread Inc. PB
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Bread Passive Bar/Bread Inc. PB
+  Guid:
+    Data1: 1483528303
+    Data2: 1126937977
+    Data3: 2107136446
+    Data4: -1435863980
+  Banks:
+  - {fileID: -1219169602661318204}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -797,6 +1297,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2374
+--- !u!114 &-3068398348648725041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Baguette/Baguette Skill 1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Baguette/Baguette Skill 1
+  Guid:
+    Data1: 182414979
+    Data2: 1240232584
+    Data3: 142466989
+    Data4: 421197539
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3750
 --- !u!114 &-3050524713700236793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -891,6 +1418,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2374
+--- !u!114 &-2809378827790367848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Swan/Swan Hurt
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Swan/Swan Hurt
+  Guid:
+    Data1: 933314006
+    Data2: 1247052612
+    Data3: -1803677024
+    Data4: 196381579
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1648
+--- !u!114 &-2620391476282234383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Swan/Swan Main Peck Attack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Swan/Swan Main Peck Attack
+  Guid:
+    Data1: 232598560
+    Data2: 1164306765
+    Data3: 1845486986
+    Data4: -1778341189
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1106
 --- !u!114 &-2521089310544321912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1107,6 +1688,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-1621530533602732409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Pretzel/Pretzel Skill 1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Pretzel/Pretzel Skill 1
+  Guid:
+    Data1: 143263472
+    Data2: 1220801490
+    Data3: -544094300
+    Data4: 1255334268
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9000
 --- !u!114 &-1488071942900395687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1134,6 +1742,81 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1400
+--- !u!114 &-1219169602661318204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638402257258304761
+  FileSizes:
+  - Name: Desktop
+    Value: 1372864
+  Exists: 1
+--- !u!114 &-1032140103859178241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Snack Attack! Music Layout
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Snack Attack! Music Layout
+  Guid:
+    Data1: 1506433753
+    Data2: 1335044497
+    Data3: 627261089
+    Data4: 1868554348
+  Banks:
+  - {fileID: 7416006862049189614}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6895325022395185554}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 311422
+--- !u!114 &-954348477928549396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Pretzel/Pretzel Main
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Pretzel/Pretzel Main
+  Guid:
+    Data1: 2128695276
+    Data2: 1275124890
+    Data3: 1223435929
+    Data4: 958177593
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4062
 --- !u!114 &-891727836553800999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1188,6 +1871,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1800
+--- !u!114 &-818941903490530253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Muffin/Muffin Main
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Muffin/Muffin Main
+  Guid:
+    Data1: 585063100
+    Data2: 1227753564
+    Data3: 1706300585
+    Data4: 1334596270
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4062
 --- !u!114 &-813005079522493847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1263,6 +1973,60 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1264
   Exists: 1
+--- !u!114 &-599945764432067412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Swan/Swan Main Heavy
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Swan/Swan Main Heavy
+  Guid:
+    Data1: 1274041229
+    Data2: 1175901638
+    Data3: 2040702655
+    Data4: 1460031809
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3820
+--- !u!114 &-572938504157642410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Misc./Menu Roll Down
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Misc./Menu Roll Down
+  Guid:
+    Data1: 1065124342
+    Data2: 1284545142
+    Data3: 953686922
+    Data4: 1816420685
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-476499647179556874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1411,65 +2175,65 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -5788187049059661495}
-  - {fileID: -611845647957527929}
-  - {fileID: -2990916844383786127}
-  - {fileID: 3988749154328546553}
+  - {fileID: -7625043791353982561}
+  - {fileID: -8540748474614112452}
+  - {fileID: 7416006862049189614}
+  - {fileID: -1219169602661318204}
   EditorEvents:
-  - {fileID: 5051389242159861978}
-  - {fileID: 1715584701451139484}
-  - {fileID: 1287532504060407726}
-  - {fileID: 6998082827553698902}
-  - {fileID: -7777686932519230876}
-  - {fileID: 2493055582215798595}
-  - {fileID: 7337657341030975882}
-  - {fileID: 3795373672506791346}
-  - {fileID: -7654925226225794911}
-  - {fileID: -163478934896109129}
-  - {fileID: 4043937921871030485}
-  - {fileID: 360198239521994638}
-  - {fileID: -8511898489796210833}
-  - {fileID: 7170683608674531360}
-  - {fileID: -3830876064096499830}
-  - {fileID: -4891057859895120231}
-  - {fileID: 8862516953875895406}
-  - {fileID: 2158985908669663374}
-  - {fileID: 5556265400555292062}
-  - {fileID: 5761739964013232957}
-  - {fileID: -5308484210113752808}
-  - {fileID: 5487177334355210304}
-  - {fileID: 8114223051286683020}
-  - {fileID: 3303145348964869480}
-  - {fileID: -3284981394207781889}
-  - {fileID: -7151390408155094448}
-  - {fileID: -2521089310544321912}
-  - {fileID: 7659607495883091854}
-  - {fileID: 3797108787082215437}
-  - {fileID: -891727836553800999}
-  - {fileID: -7481399085788585236}
-  - {fileID: -6516956303193719779}
-  - {fileID: 8318432525786433258}
-  - {fileID: -2141999397076891522}
-  - {fileID: -1488071942900395687}
-  - {fileID: -223216052039542369}
-  - {fileID: 6705839607901626119}
-  - {fileID: 822463542648314634}
-  - {fileID: 7356634998163837735}
-  - {fileID: -3561932257967216421}
-  - {fileID: 6372639051852362515}
-  - {fileID: -2086780372128460095}
-  - {fileID: 4363787609561930383}
-  - {fileID: 3428177945551284124}
-  - {fileID: 3469258093682250522}
-  - {fileID: -7172653497802204693}
-  - {fileID: 557713080950016338}
+  - {fileID: -1032140103859178241}
+  - {fileID: 1460862134905280321}
+  - {fileID: 7477221893410630959}
+  - {fileID: -5998812610924374108}
+  - {fileID: 6348257871882781534}
+  - {fileID: -5019831729782619163}
+  - {fileID: -2620391476282234383}
+  - {fileID: 8633344574481599892}
+  - {fileID: -8817038025756680708}
+  - {fileID: -6669910693301742610}
+  - {fileID: 8983939572126332243}
+  - {fileID: -6250442395018520860}
+  - {fileID: -7905832309336581578}
+  - {fileID: 7298234514034422822}
+  - {fileID: -6236475452653043544}
+  - {fileID: 422130225212162297}
+  - {fileID: 6880999946483625266}
+  - {fileID: 8593041058788908122}
+  - {fileID: 1233415665868087862}
+  - {fileID: 1681912204819803198}
+  - {fileID: 3624457036629286043}
+  - {fileID: -4449926060996203121}
+  - {fileID: -4093449009339331428}
+  - {fileID: -3068398348648725041}
+  - {fileID: -7061888014004979700}
+  - {fileID: -5018533760518512571}
+  - {fileID: -599945764432067412}
+  - {fileID: -5121186979023283728}
+  - {fileID: 333823697434407390}
+  - {fileID: 5079705151619563361}
+  - {fileID: 8041033729365320186}
+  - {fileID: -7497926735284011207}
+  - {fileID: -818941903490530253}
+  - {fileID: -6595411746254265652}
+  - {fileID: 867698672370769972}
+  - {fileID: -8289275311092860103}
+  - {fileID: 8991571313207925312}
+  - {fileID: 9069578101322230134}
+  - {fileID: 4405036440404906288}
+  - {fileID: -2809378827790367848}
+  - {fileID: 2308062563825020617}
+  - {fileID: 8815695514414215028}
+  - {fileID: -5445959405244454753}
+  - {fileID: -954348477928549396}
+  - {fileID: 4620479605882384919}
+  - {fileID: -1621530533602732409}
+  - {fileID: -572938504157642410}
   EditorParameters:
-  - {fileID: 160902614392158875}
+  - {fileID: -6328054033097060449}
   MasterBanks:
-  - {fileID: -611845647957527929}
+  - {fileID: -8540748474614112452}
   StringsBanks:
-  - {fileID: -5788187049059661495}
-  cacheTime: 638402293499582833
+  - {fileID: -7625043791353982561}
+  cacheTime: 638402257258304761
   cacheVersion: 131616
 --- !u!114 &160902614392158875
 MonoBehaviour:
@@ -1527,6 +2291,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 311422
+--- !u!114 &333823697434407390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Sandwich/Sandwich Skill 1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Sandwich/Sandwich Skill 1
+  Guid:
+    Data1: -1122947933
+    Data2: 1097745116
+    Data3: -1485581151
+    Data4: -1407093808
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3250
 --- !u!114 &360198239521994638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1581,6 +2372,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7812
+--- !u!114 &422130225212162297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Swan Passive Bar/Swan Use PB
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Swan Passive Bar/Swan Use PB
+  Guid:
+    Data1: -910528451
+    Data2: 1104947455
+    Data3: 1135937449
+    Data4: 1665440015
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &557713080950016338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1635,6 +2453,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4750
+--- !u!114 &867698672370769972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Pretzel/Pretzel Death
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Pretzel/Pretzel Death
+  Guid:
+    Data1: 134945484
+    Data2: 1156711914
+    Data3: -495614058
+    Data4: -860096725
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1400
 --- !u!114 &884608241911222043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1689,6 +2534,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1233415665868087862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Baguette/Baguette Death
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Baguette/Baguette Death
+  Guid:
+    Data1: -2125527457
+    Data2: 1254518739
+    Data3: 1153095339
+    Data4: 1930659585
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1200
 --- !u!114 &1287532504060407726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1716,6 +2588,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3034
+--- !u!114 &1460862134905280321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Swan/Use Item
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Swan/Use Item
+  Guid:
+    Data1: 281241352
+    Data2: 1133641726
+    Data3: 65441180
+    Data4: -2005937622
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2120
 --- !u!114 &1507701429345440130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1770,6 +2669,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2374
+--- !u!114 &1681912204819803198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Sandwich/Sandwich Heal
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Sandwich/Sandwich Heal
+  Guid:
+    Data1: -51005345
+    Data2: 1308866197
+    Data3: -1967625804
+    Data4: 23098380
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1715584701451139484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1851,6 +2777,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &2308062563825020617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Baguette/Baguette Main
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Baguette/Baguette Main
+  Guid:
+    Data1: -935268393
+    Data2: 1294151324
+    Data3: 901841030
+    Data4: 912471709
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
 --- !u!114 &2336781008119307528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2115,6 +3068,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6820
+--- !u!114 &3624457036629286043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Pretzel/Pretzel Dodge
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Pretzel/Pretzel Dodge
+  Guid:
+    Data1: 78272099
+    Data2: 1204138881
+    Data3: -1799067471
+    Data4: -660501776
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2374
 --- !u!114 &3795373672506791346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2243,6 +3223,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &4405036440404906288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Swan/Swan Skill 1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Swan/Swan Skill 1
+  Guid:
+    Data1: 417507539
+    Data2: 1266230984
+    Data3: -1057535338
+    Data4: 12159360
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8820
 --- !u!114 &4594353144196860451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2270,6 +3277,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &4620479605882384919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Muffin/Muffin Death
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Muffin/Muffin Death
+  Guid:
+    Data1: -2030295313
+    Data2: 1289317767
+    Data3: -1414355324
+    Data4: 439211911
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6820
 --- !u!114 &5051389242159861978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2298,6 +3332,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 311422
+--- !u!114 &5079705151619563361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Sandwich/Sandwich Skill 2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Sandwich/Sandwich Skill 2
+  Guid:
+    Data1: -420132437
+    Data2: 1160506508
+    Data3: -1873335652
+    Data4: -899154609
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &5487177334355210304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2426,6 +3487,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6348257871882781534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Baguette/Baguette Heal
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Baguette/Baguette Heal
+  Guid:
+    Data1: -1414744806
+    Data2: 1326958064
+    Data3: 1638352000
+    Data4: -232661901
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6372639051852362515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2507,6 +3595,61 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6880999946483625266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Baguette/Baguette Heavy
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Baguette/Baguette Heavy
+  Guid:
+    Data1: -2117518769
+    Data2: 1155051620
+    Data3: 1558965382
+    Data4: -1367087386
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6895325022395185554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Snack Attack! Music Layout/Game State
+  m_EditorClassIdentifier: 
+  Name: Game State
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 3
+  ID:
+    data1: 2867788319
+    data2: 355818519
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Win
+  - Lose
+  - Combat
+  - Title Screen
+  Exists: 1
 --- !u!114 &6998082827553698902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2588,6 +3731,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7298234514034422822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Misc./Rolling Health Meter
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Misc./Rolling Health Meter
+  Guid:
+    Data1: -419105222
+    Data2: 1098351517
+    Data3: -1561415506
+    Data4: 690343018
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7337657341030975882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2642,6 +3812,53 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8820
+--- !u!114 &7416006862049189614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638402257258259409
+  FileSizes:
+  - Name: Desktop
+    Value: 2061344
+  Exists: 1
+--- !u!114 &7477221893410630959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Swan/Swan Block
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Swan/Swan Block
+  Guid:
+    Data1: 864600331
+    Data2: 1207150683
+    Data3: 680823688
+    Data4: -1290371144
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3034
 --- !u!114 &7659607495883091854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2696,6 +3913,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9000
+--- !u!114 &8041033729365320186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Muffin/Muffin Heal
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Muffin/Muffin Heal
+  Guid:
+    Data1: -186455370
+    Data2: 1297464822
+    Data3: -2074839666
+    Data4: 673999780
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8089509750773748237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2804,6 +4048,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &8593041058788908122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Sandwich/Sandwich Heavy
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Sandwich/Sandwich Heavy
+  Guid:
+    Data1: 171420243
+    Data2: 1076769460
+    Data3: 67540889
+    Data4: 115206369
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &8633344574481599892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Misc./Use Mana
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Misc./Use Mana
+  Guid:
+    Data1: -1613200592
+    Data2: 1099883963
+    Data3: -652104297
+    Data4: 1912124144
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8680899676280512681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2831,6 +4129,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1200
+--- !u!114 &8815695514414215028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Sandwich/Sandwich Dodge
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Sandwich/Sandwich Dodge
+  Guid:
+    Data1: 129116379
+    Data2: 1294481235
+    Data3: 1109009829
+    Data4: -115148929
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2324
 --- !u!114 &8862516953875895406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2858,6 +4183,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &8983939572126332243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Bread Passive Bar/Bread Full PB
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Bread Passive Bar/Bread Full PB
+  Guid:
+    Data1: -962047950
+    Data2: 1152432152
+    Data3: 1368458687
+    Data4: -2073506106
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8991571313207925312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Muffin/Muffin Heavy
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Muffin/Muffin Heavy
+  Guid:
+    Data1: 949678546
+    Data2: 1159798944
+    Data3: -270373484
+    Data4: 1673172185
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3375
+--- !u!114 &9069578101322230134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Bread/Muffin/Muffin Skill 1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Bread/Muffin/Muffin Skill 1
+  Guid:
+    Data1: -602207021
+    Data2: 1244882932
+    Data3: 1271255940
+    Data4: 186915730
+  Banks:
+  - {fileID: -1219169602661318204}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4750
 --- !u!114 &9177966948247156069
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BreadManager : MonoBehaviour
 {
+    [SerializeField] private GameManager gameManager;
     [SerializeField] List<Bread> breads;
     [SerializeField, Range(0, 1f)] public float unfocusedTransparency;
     [field: SerializeField] public float TakeActionDelay {get; set;}
@@ -12,10 +13,22 @@ public class BreadManager : MonoBehaviour
     Bread currentBread;
     [SerializeField] private SwanUI swanUI;
     [SerializeField] private UIManager uiManager;
+    bool winCondition;
 
     private void Start()
     {
         StartCoroutine(StartInitEndBreadsTurn());
+    }
+
+    void Update()
+    {
+        if(breadOrders == null || winCondition)
+            return;
+
+        breadOrders.RemoveAll(x => x.Dead);
+
+        if(breadOrders.Count < 1)
+            gameManager.InitializeWinScreen();
     }
 
     public IEnumerator StartBreadsTurn()
