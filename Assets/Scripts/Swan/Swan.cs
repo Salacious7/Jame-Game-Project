@@ -182,6 +182,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
                 breadManager.EndTurn();
                 break;
         }
+            anim.SetTrigger("isBlocking");
     }
 
     public IEnumerator BasicAttack(Bread bread)
@@ -229,7 +230,9 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         UIManager.Instance.currentTextCurrentTurn.text = "Heavy Attack!";
         target = bread;
 
-        yield return new WaitForSeconds(2f);
+        anim.SetTrigger("heavyAttack");
+
+        yield return new WaitForSeconds(1f);
 
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
         UIManager.Instance.currentTextCurrentTurn.text = "";
