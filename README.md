@@ -6,24 +6,24 @@ Oh how Ms. Buttersnitch's journey to the park can take such a turn. In this shor
 
 ## Controls:
 
-Arrow keys: Select target
+**Arrow keys:** Select target
 
-Right Click: Action buttons
+**Right Click:** Action buttons
 
-Enter: Select attack
+**Enter:** Select attack
 
 ## Credit:
 
-Akomo Crogoze - Game Director/Design, Technical Animator
+**Akomo Crogoze** - Game Director/Design, Technical Animator
 
-Shotty Games - Game Design,  Artist/Animator, Voice Acting
+**Shotty Games** - Game Design,  Artist/Animator, Voice Acting
 
-Saidus: Programmer
+**Saidus:** Programmer
 
-Salacious: Programmer
+**Salacious:** Programmer
 
-Illuminati - Artist
+**Illuminati** - Artist
 
-Sparklesandstuff - Artist 
+**Sparklesandstuff** - Artist 
 
 Ms. Maness - Music/SFX
