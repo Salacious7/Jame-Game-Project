@@ -9,6 +9,7 @@ public abstract class Bread : MonoBehaviour, IActionState
     [SerializeField] protected BreadManager breadManager;
     [field: SerializeField] public Transform AttackPosition {get; private set;}
     [field: SerializeField] protected Transform SwanAttackPosition {get; private set;}
+    [field: SerializeField] public Animator HealAnimator {get; private set;}
     [SerializeField] TextMeshProUGUI healthText;
     [SerializeField] TextMeshProUGUI manaText;
     [SerializeField] float basicAttackDamage;

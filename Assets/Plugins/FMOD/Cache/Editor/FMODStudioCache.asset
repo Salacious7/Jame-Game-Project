@@ -483,7 +483,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638403157946424813
+  lastModified: 638402639932220063
   FileSizes:
   - Name: Desktop
     Value: 3230
@@ -1301,7 +1301,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638403157946369249
+  lastModified: 638402639932215070
   FileSizes:
   - Name: Desktop
     Value: 1390

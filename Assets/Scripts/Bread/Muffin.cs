@@ -52,7 +52,9 @@ public class Muffin : Bread
             }
 
             Debug.Log(name + " used heal");
-            breadManager.breadOrders[Random.Range(0, breadManager.breadOrders.Count)].Heal(healAmount);
+            var bread = breadManager.breadOrders[Random.Range(0, breadManager.breadOrders.Count)];
+            bread.Heal(healAmount);
+            bread.HealAnimator.SetTrigger("activate");
             UseMana(special1Cost);
 
             //trigger animation
@@ -68,7 +70,11 @@ public class Muffin : Bread
             }
 
             Debug.Log(name + " used group heal");
-            breadManager.breadOrders.ForEach(x => x.Heal(groupHealAmount));
+            breadManager.breadOrders.ForEach(x => 
+            {
+                x.Heal(groupHealAmount);
+                x.HealAnimator.SetTrigger("activate");
+            });
             UseMana(special2Cost);
 
             //trigger animation
