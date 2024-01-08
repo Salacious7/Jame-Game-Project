@@ -145,6 +145,7 @@ public abstract class Bread : MonoBehaviour, IActionState
 
     public void StartTurn()
     {
+        actionFinished = false;
         StartCoroutine(nameof(TakeTurn));
     }
 
@@ -158,6 +159,7 @@ public abstract class Bread : MonoBehaviour, IActionState
         breadHealth -= damage;
         breadHealthBarSlider.value = breadHealth;
         UpdateHealthUI(breadHealth);
+        Debug.Log("hit");
         anim.SetTrigger("hit");
 
         OnDeath();

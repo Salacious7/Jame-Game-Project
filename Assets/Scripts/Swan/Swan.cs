@@ -321,11 +321,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         swanSprite.color = new Color(255f, 255f, 255f, 255f);
         swanData.defenseBoost = 0;
 
-        if (swanData.health > 0)
-        {
-            breadManager.EndTurn();
-        }
-        else
+        if (swanData.health <= 0)
         {
             anim.SetTrigger("isBlock");
             gameManager.InitializeLoseScreen();
