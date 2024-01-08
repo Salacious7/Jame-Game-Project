@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -121,7 +121,553 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: sandwich_mayo_0
+      rect:
+        serializedVersion: 2
+        x: 2844
+        y: 2937
+        width: 49
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62e526c90bf34d65a6a718fc3805f18
+      internalID: -949821645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_1
+      rect:
+        serializedVersion: 2
+        x: 4246
+        y: 2930
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8bbfc99a7294751afda66568c3720d
+      internalID: 815788204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_2
+      rect:
+        serializedVersion: 2
+        x: 5627
+        y: 2930
+        width: 150
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68c0de78d0434426a6eaa21acf525cc
+      internalID: -97914918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_3
+      rect:
+        serializedVersion: 2
+        x: 7027
+        y: 2930
+        width: 151
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328aebc6f04b9491eb106f4dafdd7ac8
+      internalID: 645107684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_4
+      rect:
+        serializedVersion: 2
+        x: 8430
+        y: 2930
+        width: 150
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8c5eedf442343edadb69cb1f10e2ec
+      internalID: -2050371111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_5
+      rect:
+        serializedVersion: 2
+        x: 9810
+        y: 2930
+        width: 151
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5954ac9358195484d99d873c442b6f7b
+      internalID: 2142924673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_6
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 2080
+        width: 151
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bcdf1d701c8c4f588d782a5f3004f40
+      internalID: -1433737890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_7
+      rect:
+        serializedVersion: 2
+        x: 2476
+        y: 2079
+        width: 150
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2cdd998dcd8c4b26afea3ec8b506377
+      internalID: -527991086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_8
+      rect:
+        serializedVersion: 2
+        x: 3878
+        y: 2080
+        width: 151
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4d3f6c7d2424629947d557134b7fed
+      internalID: -1521845238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_9
+      rect:
+        serializedVersion: 2
+        x: 5281
+        y: 2079
+        width: 148
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6204daa29be9b4bceb59f836b5e64bb2
+      internalID: -1602475894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_10
+      rect:
+        serializedVersion: 2
+        x: 6659
+        y: 2079
+        width: 151
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8becda3ae8d46258a0c51f7fa5eaba
+      internalID: -279161765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_11
+      rect:
+        serializedVersion: 2
+        x: 8062
+        y: 2080
+        width: 150
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53dab716bae5c4900a396d0bba8a9306
+      internalID: -710945695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_12
+      rect:
+        serializedVersion: 2
+        x: 9442
+        y: 2080
+        width: 151
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de39a6132eb249fcb52ea67ebe0945b
+      internalID: 167655327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_13
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 1228
+        width: 153
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0120ed75d014bafadf6dcfba99935b
+      internalID: -301059302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_14
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 1228
+        width: 151
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73626f52b8d424936bbdec4fe0a7d38a
+      internalID: 1012437232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_15
+      rect:
+        serializedVersion: 2
+        x: 3510
+        y: 1228
+        width: 151
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b109bf8d501449c8a672d97bf4359eb
+      internalID: 551407918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_16
+      rect:
+        serializedVersion: 2
+        x: 4912
+        y: 1228
+        width: 151
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c7d8b8d7a934b7bb753ee74f2fe369
+      internalID: 1416466971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_17
+      rect:
+        serializedVersion: 2
+        x: 6291
+        y: 1228
+        width: 152
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e974af38c841458abd0fd8ea3b52363
+      internalID: 1098817968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_18
+      rect:
+        serializedVersion: 2
+        x: 7694
+        y: 1228
+        width: 150
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc9840a326d24d7ead4e47fc726c7fb
+      internalID: -1427810086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_19
+      rect:
+        serializedVersion: 2
+        x: 9096
+        y: 1228
+        width: 151
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0eec95845eb4dc7b2cc3d24aed439d
+      internalID: -1584313392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_20
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 379
+        width: 150
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be0e884c7ebb409099de258a126926c
+      internalID: -330860317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_21
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 379
+        width: 151
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d3016ac457c48c2a58191aaa32ab59
+      internalID: -1339103749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_22
+      rect:
+        serializedVersion: 2
+        x: 3142
+        y: 379
+        width: 151
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a845168fdb51492793e0fee02383caf
+      internalID: -1025453794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_23
+      rect:
+        serializedVersion: 2
+        x: 4544
+        y: 379
+        width: 152
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db577fa1d0b24307a58bfcea0119630
+      internalID: 1315639602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_24
+      rect:
+        serializedVersion: 2
+        x: 5945
+        y: 379
+        width: 151
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2687568861c4f0d9737b9585e84b26
+      internalID: 1407229331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sandwich_mayo_25
+      rect:
+        serializedVersion: 2
+        x: 7326
+        y: 379
+        width: 150
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75727ea8118c4cacb27cfd1f5f346ed
+      internalID: 1981017177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +678,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sandwich_mayo_0: -949821645
+      sandwich_mayo_1: 815788204
+      sandwich_mayo_10: -279161765
+      sandwich_mayo_11: -710945695
+      sandwich_mayo_12: 167655327
+      sandwich_mayo_13: -301059302
+      sandwich_mayo_14: 1012437232
+      sandwich_mayo_15: 551407918
+      sandwich_mayo_16: 1416466971
+      sandwich_mayo_17: 1098817968
+      sandwich_mayo_18: -1427810086
+      sandwich_mayo_19: -1584313392
+      sandwich_mayo_2: -97914918
+      sandwich_mayo_20: -330860317
+      sandwich_mayo_21: -1339103749
+      sandwich_mayo_22: -1025453794
+      sandwich_mayo_23: 1315639602
+      sandwich_mayo_24: 1407229331
+      sandwich_mayo_25: 1981017177
+      sandwich_mayo_3: 645107684
+      sandwich_mayo_4: -2050371111
+      sandwich_mayo_5: 2142924673
+      sandwich_mayo_6: -1433737890
+      sandwich_mayo_7: -527991086
+      sandwich_mayo_8: -1521845238
+      sandwich_mayo_9: -1602475894
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
