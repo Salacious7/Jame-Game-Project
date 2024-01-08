@@ -448,7 +448,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638402730483362901
+  lastModified: 638402293499403423
   FileSizes:
   - Name: Desktop
     Value: 3104
@@ -495,7 +495,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638402778480281309
+  lastModified: 638402293499565063
   FileSizes:
   - Name: Desktop
     Value: 2061344
@@ -868,7 +868,7 @@ MonoBehaviour:
   - {fileID: 5777904686703053624}
   StringsBanks:
   - {fileID: -3301980602566170062}
-  cacheTime: 638402788477788462
+  cacheTime: 638402293499582833
   cacheVersion: 131616
 --- !u!114 &295734867017174787
 MonoBehaviour:
@@ -1075,7 +1075,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638402788477788462
+  lastModified: 638402293499582833
   FileSizes:
   - Name: Desktop
     Value: 1372864
@@ -1258,7 +1258,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638402730483347820
+  lastModified: 638402293499399708
   FileSizes:
   - Name: Desktop
     Value: 1264
