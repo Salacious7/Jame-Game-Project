@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -108,7 +108,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: healing_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 449
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b013064cf7341f19ccba0bd5f14caa
+      internalID: -1495000756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_1
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 432
+        width: 449
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8886970e7c5498aaa075b1e7746e60
+      internalID: -327681350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_2
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 432
+        width: 449
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a3e98f39dd842ec8975f2f4d26d8fb
+      internalID: 1822233610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_3
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 432
+        width: 449
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0483ac627d444f9be9b9bec4b0dbc0
+      internalID: 654273202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_4
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 432
+        width: 449
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3319904a592594d9394a55d1c12be664
+      internalID: -929091863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_5
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 432
+        width: 449
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a6c9802888f47728c7ce1733909362
+      internalID: -300470632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_6
+      rect:
+        serializedVersion: 2
+        x: 2694
+        y: 432
+        width: 449
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57700ba5eb9354f749ba5526b7f8dc56
+      internalID: 2045561936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 449
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8760caa2cfa40068709f0b5de9fd3c
+      internalID: -584231261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_8
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 0
+        width: 449
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca71100a5bbc4d0483b84ae3487798a
+      internalID: 658553244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_9
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 0
+        width: 449
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1223e76df113e4e889a9582a0d7d6092
+      internalID: -1169873606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_10
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 0
+        width: 449
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20027efd1bb24a5fa877088d84aea97
+      internalID: -2146527251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_11
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 0
+        width: 449
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8681df8ece554f988e24250a17b919f
+      internalID: -1319821408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_12
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 0
+        width: 449
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707b446fe9a434249a1a41a3fdb271c0
+      internalID: -2110423977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_13
+      rect:
+        serializedVersion: 2
+        x: 2694
+        y: 0
+        width: 449
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20637c9d44774db0b77628e77c4bc84
+      internalID: 2011834752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +413,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      healing_0: -1495000756
+      healing_1: -327681350
+      healing_10: -2146527251
+      healing_11: -1319821408
+      healing_12: -2110423977
+      healing_13: 2011834752
+      healing_2: 1822233610
+      healing_3: 654273202
+      healing_4: -929091863
+      healing_5: -300470632
+      healing_6: 2045561936
+      healing_7: -584231261
+      healing_8: 658553244
+      healing_9: -1169873606
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
