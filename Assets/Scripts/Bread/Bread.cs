@@ -8,6 +8,7 @@ public abstract class Bread : MonoBehaviour, IActionState
 {
     [SerializeField] protected BreadManager breadManager;
     [field: SerializeField] public Transform AttackPosition {get; private set;}
+    [field: SerializeField] protected Transform SwanAttackPosition {get; private set;}
     [SerializeField] TextMeshProUGUI healthText;
     [SerializeField] TextMeshProUGUI manaText;
     [SerializeField] float basicAttackDamage;
@@ -31,6 +32,7 @@ public abstract class Bread : MonoBehaviour, IActionState
 
     protected Animator anim;
     protected string animTrigger;
+    protected Vector2 startingPosition;
 
     public enum FightType
     {
@@ -42,6 +44,7 @@ public abstract class Bread : MonoBehaviour, IActionState
 
     void Awake()
     {
+        startingPosition = transform.position;
         maxHealth = breadHealth;
         maxMana = breadMana;
         anim = GetComponent<Animator>();
@@ -259,6 +262,43 @@ public abstract class Bread : MonoBehaviour, IActionState
             //     break;
             
             default: break;
+        }
+    }
+
+    public void MoveToSwan()
+    {
+        StartCoroutine(nameof(MoveToSwanCo));
+    }
+
+    IEnumerator MoveToSwanCo()
+    {
+        float timer = 0;
+
+        float duration = 0.25f;
+
+        while(timer < duration)
+        {
+            transform.position = Vector3.Lerp(startingPosition, SwanAttackPosition.position, timer / duration);
+            timer += Time.deltaTime;
+            yield return null;
+        }
+    }
+
+    public void MoveToStartingPosition()
+    {
+        StartCoroutine(nameof(MoveToStartingPositionCo));
+    }
+
+    IEnumerator MoveToStartingPositionCo()
+    {
+        float timer = 0;
+
+        float duration = 0.25f;
+        while(timer < duration)
+        {
+            transform.position = Vector3.Lerp(SwanAttackPosition.position, startingPosition, timer / duration);
+            timer += Time.deltaTime;
+            yield return null;
         }
     }
 }

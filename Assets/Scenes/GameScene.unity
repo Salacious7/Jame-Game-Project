@@ -289,7 +289,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 1281118822, guid: a680c4d705d37ff4884e36ec45c4f80d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -484,6 +484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   breadManager: {fileID: 1723480714}
   <AttackPosition>k__BackingField: {fileID: 1149969677}
+  <SwanAttackPosition>k__BackingField: {fileID: 442401659}
   healthText: {fileID: 841479992}
   manaText: {fileID: 1512386713}
   basicAttackDamage: 20
@@ -2118,7 +2119,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 158517115, guid: a680c4d705d37ff4884e36ec45c4f80d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4943,7 +4944,7 @@ Transform:
   m_GameObject: {fileID: 442401658}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.56, y: -1.01, z: 0}
+  m_LocalPosition: {x: -1.07, y: -0.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10220,7 +10221,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 1281118822, guid: a680c4d705d37ff4884e36ec45c4f80d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13550,6 +13551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   breadManager: {fileID: 1723480714}
   <AttackPosition>k__BackingField: {fileID: 1049102743}
+  <SwanAttackPosition>k__BackingField: {fileID: 442401659}
   healthText: {fileID: 300275929}
   manaText: {fileID: 1619647822}
   basicAttackDamage: 10
@@ -16438,6 +16440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   breadManager: {fileID: 1723480714}
   <AttackPosition>k__BackingField: {fileID: 1833297732}
+  <SwanAttackPosition>k__BackingField: {fileID: 442401659}
   healthText: {fileID: 1311083429}
   manaText: {fileID: 2014886891}
   basicAttackDamage: 10
@@ -17735,6 +17738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   breadManager: {fileID: 1723480714}
   <AttackPosition>k__BackingField: {fileID: 1822635608}
+  <SwanAttackPosition>k__BackingField: {fileID: 442401659}
   healthText: {fileID: 1331278855}
   manaText: {fileID: 1629630434}
   basicAttackDamage: 20
