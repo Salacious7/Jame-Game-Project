@@ -12,8 +12,8 @@ public abstract class Bread : MonoBehaviour, IActionState
     [field: SerializeField] public Animator HealAnimator {get; private set;}
     [SerializeField] TextMeshProUGUI healthText;
     [SerializeField] TextMeshProUGUI manaText;
-    [SerializeField] float basicAttackDamage;
-    [SerializeField] float heavyAttackDamage;
+    [HideInInspector] public float basicAttackDamage;
+    [HideInInspector] public float heavyAttackDamage;
     [SerializeField] protected float specialAttack1Damage;
     [SerializeField] protected float specialAttack2Damage;
     [SerializeField] protected float special1Cost;
@@ -139,25 +139,7 @@ public abstract class Bread : MonoBehaviour, IActionState
         }
     }
 
-    public virtual void DoAction()
-    {
-        if (GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
-        {
-            switch (fightType)
-            {
-                case FightType.BasicState:
-                    DamageFromCurrentAttack = basicAttackDamage;
-                    swan.IncomingDamage = DamageFromCurrentAttack;
-                    OnAttack(fightType);
-                    break;
-                case FightType.HeavyState:
-                    DamageFromCurrentAttack = heavyAttackDamage;
-                    swan.IncomingDamage = DamageFromCurrentAttack;
-                    OnAttack(FightType.HeavyState);
-                    break;
-            }
-        }
-    }
+    public abstract void DoAction();
 
     public abstract void OnAttack(FightType fightType);
 
@@ -280,7 +262,7 @@ public abstract class Bread : MonoBehaviour, IActionState
         DoAction();
         anim.SetTrigger(animTrigger);
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         Debug.Log(name + " end turn");
         breadManager.SetTransparency(1);

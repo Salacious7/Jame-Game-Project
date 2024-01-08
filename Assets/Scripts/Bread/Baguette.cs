@@ -4,6 +4,36 @@ using UnityEngine;
 
 public class Baguette : Bread
 {
+    [SerializeField] private Transform throwPos;
+    [SerializeField] private Transform swanPos;
+    [SerializeField] private GameObject baguetteObj;
+    [SerializeField] private float throwBaguetteSpeed;
+    [SerializeField] private bool throwBaguette;
+
+    [SerializeField] private Animator baguetteSpike;
+
+    private void Update()
+    {
+        if (throwBaguette)
+        {
+            ThrowTomato();
+        }
+    }
+
+    private void ThrowTomato()
+    {
+        baguetteObj.SetActive(true);
+
+        baguetteObj.transform.position = Vector3.MoveTowards(baguetteObj.transform.position, swanPos.position, throwBaguetteSpeed * Time.deltaTime);
+
+        if (Vector3.Distance(baguetteObj.transform.position, swanPos.position) <= 0.1f)
+        {
+            baguetteObj.SetActive(false);
+            baguetteObj.transform.position = throwPos.position;
+            throwBaguette = false;
+        }
+    }
+
     public override void OnAttack(FightType fightType)
     {
         switch(fightType)
@@ -86,30 +116,29 @@ public class Baguette : Bread
         {
             switch (fightType)
             {
+                case FightType.BasicState:
+                    DamageFromCurrentAttack = basicAttackDamage;
+                    swan.IncomingDamage = DamageFromCurrentAttack;
+                    throwBaguette = true;
+                    OnAttack(fightType);
+                    break;
+                case FightType.HeavyState:
+                    DamageFromCurrentAttack = heavyAttackDamage;
+                    swan.IncomingDamage = DamageFromCurrentAttack;
+                    OnAttack(FightType.HeavyState);
+                    break;
                 case FightType.SpecialSkillOne:
                     SoundManager.Instance.OnPlayBaguetteSkillOne();
                     DamageFromCurrentAttack = specialAttack1Damage;
                     swan.IncomingDamage = DamageFromCurrentAttack;
                     break;
                 case FightType.SpecialSkillTwo:
+                    baguetteSpike.SetTrigger("activate");
                     SoundManager.Instance.OnPlayBaguetteSkillTwo();
                     DamageFromCurrentAttack = specialAttack2Damage;
                     swan.IncomingDamage = DamageFromCurrentAttack;
                     break;
             }
         }
-    }
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
