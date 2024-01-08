@@ -485,7 +485,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
     {
         swanUI.ActionStateNoAllAccessible();
         UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-        UIManager.Instance.currentTextCurrentTurn.text = "Swan used Milk Item!";
+        UIManager.Instance.currentTextCurrentTurn.text = "Swan used Jam Item!";
 
         yield return new WaitForSeconds(2f);
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
