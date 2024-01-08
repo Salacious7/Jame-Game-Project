@@ -27,6 +27,11 @@ public class MenuManager : MonoBehaviour
         StartCoroutine(PlayGame());
     }
 
+    public void OnQuitGameButton()
+    {
+        StartCoroutine(QuitGame());
+    }
+
     private IEnumerator PlayGame()
     {
         transitionImage.raycastTarget = true;
@@ -34,5 +39,13 @@ public class MenuManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(1.5f);
         menu.SetActive(false);
         openingCutscene.SetActive(true);
+    }
+
+    private IEnumerator QuitGame()
+    {
+        transitionImage.raycastTarget = true;
+        transitionAnim.SetTrigger("isTransition");
+        yield return new WaitForSecondsRealtime(1.5f);
+        Application.Quit();
     }
 }
