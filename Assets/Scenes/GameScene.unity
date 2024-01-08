@@ -16739,7 +16739,7 @@ MonoBehaviour:
   - {fileID: 1929451457}
   unfocusedTransparency: 0.6
   <TakeActionDelay>k__BackingField: 0
-  <TurnEndDelay>k__BackingField: 3
+  <TurnEndDelay>k__BackingField: 2
   swanUI: {fileID: 7889627638665617725}
   uiManager: {fileID: 1287801693}
   transitionAnim: {fileID: 1048515540}
@@ -22154,8 +22154,6 @@ SceneRoots:
   - {fileID: 57556336}
   - {fileID: 1755576448}
   - {fileID: 148169870}
-  - {fileID: 278839156}
-  - {fileID: 570262391}
   - {fileID: 1906167179}
   - {fileID: 1822635608}
   - {fileID: 1049102743}

@@ -40,6 +40,8 @@ public abstract class Bread : MonoBehaviour, IActionState
     {
         BasicState,
         HeavyState,
+        SpecialSkillOne,
+        SpecialSkillTwo
     }
 
 
@@ -101,29 +103,59 @@ public abstract class Bread : MonoBehaviour, IActionState
         
     }
 
-    public void Fight()
+    void IActionState.Fight()
     {
-        Attack();
 
+    }
+
+    public IEnumerator Fight()
+    {
         if (Random.Range(0, 2) == 0)
         {
-            OnAttack(FightType.BasicState);
             Debug.Log(name + " used basic attack");
-            DamageFromCurrentAttack = basicAttackDamage;
-            if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
-                swan.IncomingDamage = DamageFromCurrentAttack;
-            //trigger animation
+            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+            UIManager.Instance.currentTextCurrentTurn.text = name + " used basic attack";
+
+            yield return new WaitForSeconds(2f);
+            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+            UIManager.Instance.currentTextCurrentTurn.text = "";
+
+            fightType = FightType.BasicState;
             animTrigger = "basicAttack";
         }
         else
         {
-            OnAttack(FightType.HeavyState);
             Debug.Log(name + " used heavy attack");
-            DamageFromCurrentAttack = heavyAttackDamage;
-            if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
-                swan.IncomingDamage = DamageFromCurrentAttack;
-            //trigger animation
+            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+            UIManager.Instance.currentTextCurrentTurn.text = name + " used heavy attack";
+
+            yield return new WaitForSeconds(2f);
+            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+            UIManager.Instance.currentTextCurrentTurn.text = "";
+
+            fightType = FightType.HeavyState;
+
             animTrigger = "heavyAttack";
+        }
+    }
+
+    public virtual void DoAction()
+    {
+        if (GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
+        {
+            switch (fightType)
+            {
+                case FightType.BasicState:
+                    DamageFromCurrentAttack = basicAttackDamage;
+                    swan.IncomingDamage = DamageFromCurrentAttack;
+                    OnAttack(fightType);
+                    break;
+                case FightType.HeavyState:
+                    DamageFromCurrentAttack = heavyAttackDamage;
+                    swan.IncomingDamage = DamageFromCurrentAttack;
+                    OnAttack(FightType.HeavyState);
+                    break;
+            }
         }
     }
 
@@ -143,7 +175,7 @@ public abstract class Bread : MonoBehaviour, IActionState
         }
     }
 
-    public abstract void SpecialPower();
+    public abstract IEnumerator SpecialPower();
 
     public void UseItem()
     {
@@ -238,15 +270,18 @@ public abstract class Bread : MonoBehaviour, IActionState
         UIManager.Instance.currentTextCurrentTurn.text = "";
 
         ChooseAction();
-        
-        // while(!actionFinished)
-        //     yield return null;
-        yield return new WaitForSeconds(3f);
-        anim.SetTrigger(animTrigger);
+
+        yield return new WaitForSeconds(2f);
+
+        Attack();
 
         yield return new WaitUntil(() => actionFinished);
 
-        yield return new WaitForSeconds(breadManager.TurnEndDelay);
+        DoAction();
+        anim.SetTrigger(animTrigger);
+
+        yield return new WaitForSeconds(1f);
+
         Debug.Log(name + " end turn");
         breadManager.SetTransparency(1);
 
@@ -257,9 +292,10 @@ public abstract class Bread : MonoBehaviour, IActionState
     {
         switch(Random.Range(0, 2))
         {
-            case 0: Fight();
+            case 0:
+                StartCoroutine(Fight());
                 break;
-            case 1: SpecialPower();
+            case 1: StartCoroutine(SpecialPower());
                 break;
             // case 2: UseItem();
             //     break;
@@ -305,5 +341,10 @@ public abstract class Bread : MonoBehaviour, IActionState
             timer += Time.deltaTime;
             yield return null;
         }
+    }
+
+    void IActionState.SpecialPower()
+    {
+        throw new System.NotImplementedException();
     }
 }

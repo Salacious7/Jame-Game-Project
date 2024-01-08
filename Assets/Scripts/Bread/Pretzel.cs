@@ -36,54 +36,80 @@ public class Pretzel : Bread
         SoundManager.Instance.OnPlayPretzelHeal();
     }
 
-    public override void SpecialPower()
+    public override IEnumerator SpecialPower()
     {
-        if(Random.Range(0, 2) == 0)
+        if (Random.Range(0, 2) == 0)
         {
-            if(breadMana <= special1Cost)
+            if (breadMana <= special1Cost)
             {
-                SoundManager.Instance.OnPlayPretzelSkillOne();
-                Fight();
-                return;
+                StartCoroutine(Fight());
+                yield break;
             }
 
+            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+            UIManager.Instance.currentTextCurrentTurn.text = name + " used twister";
             Debug.Log(name + " used twister");
-            DamageFromCurrentAttack = specialAttack1Damage;
-            if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
-                swan.IncomingDamage = DamageFromCurrentAttack;
-            //trigger animation
+
+            yield return new WaitForSeconds(2f);
+            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+            UIManager.Instance.currentTextCurrentTurn.text = "";
+
+            fightType = FightType.SpecialSkillOne;
+
             animTrigger = "special1";
         }
         else
         {
-            if(breadMana <= special2Cost)
+            if (breadMana <= special2Cost)
             {
-                SoundManager.Instance.OnPlayPretzelSkillTwo();
-                Fight();
-                return;
+                StartCoroutine(Fight());
+                yield break;
             }
 
+            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+            UIManager.Instance.currentTextCurrentTurn.text = name + " used rain cheese";
             Debug.Log(name + " used rain cheese");
-            DamageFromCurrentAttack = specialAttack2Damage;
-            if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
-                swan.IncomingDamage = DamageFromCurrentAttack;
-            //trigger animation
+
+            yield return new WaitForSeconds(2f);
+            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+            UIManager.Instance.currentTextCurrentTurn.text = "";
+
+            fightType = FightType.SpecialSkillTwo;
+
             animTrigger = "special2";
         }
+    }
 
-        Attack();
+    public override void DoAction()
+    {
+        if (GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
+        {
+            switch (fightType)
+            {
+                case FightType.SpecialSkillOne:
+                    DamageFromCurrentAttack = specialAttack1Damage;
+                    swan.IncomingDamage = DamageFromCurrentAttack;
+                    SoundManager.Instance.OnPlayPretzelSkillOne();
+                    break;
+                case FightType.SpecialSkillTwo:
+                    DamageFromCurrentAttack = specialAttack2Damage;
+                    swan.IncomingDamage = DamageFromCurrentAttack;
+                    SoundManager.Instance.OnPlayPretzelSkillTwo();
+                    break;
+            }
+        }
     }
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

@@ -23,6 +23,8 @@ public class BreadManager : MonoBehaviour
     [SerializeField] private Animator transitionAnim;
     [SerializeField] private Image transitionImage;
 
+
+    private bool isGameEnd;
     private void Awake()
     {
         if(Instance == null)
@@ -39,8 +41,11 @@ public class BreadManager : MonoBehaviour
     void Update()
     {
         
-        if (breads.All(x => x.Dead))
+        if (breads.All(x => x.Dead) && !isGameEnd)
+        {
             StartCoroutine(End());
+            isGameEnd = true;
+        }
     }
 
     public IEnumerator End()
