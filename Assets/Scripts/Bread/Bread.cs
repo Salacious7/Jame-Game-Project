@@ -214,7 +214,7 @@ public abstract class Bread : MonoBehaviour, IActionState
     IEnumerator TakeTurn()
     {
         actionFinished = false;
-        
+        selectedArrow.SetActive(false);
         yield return new WaitForSeconds(breadManager.TakeActionDelay);
         breadManager.SetTransparency(breadManager.unfocusedTransparency);
         Debug.Log(name + " taking action");
