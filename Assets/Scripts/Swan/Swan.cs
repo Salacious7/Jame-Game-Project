@@ -25,6 +25,8 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
     [SerializeField] private SwanManager swanManager;
     [SerializeField] private GameManager gameManager;
     [SerializeField] Transform startingPosition;
+    [SerializeField] Animator DefenseAnimator;
+    [SerializeField] Animator HealAnimator;
     private SwanState swanState;
     private SwanUI swanUI;
     private SwanItemChance swanItemChance;
@@ -147,6 +149,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         UIManager.Instance.currentTextCurrentTurn.text = "Defense increased!";
 
         yield return new WaitForSeconds(2f);
+        DefenseAnimator.SetTrigger("activate");
 
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
         UIManager.Instance.currentTextCurrentTurn.text = "";
@@ -393,6 +396,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
         SoundManager.Instance.OnPlaySwanHealing();
         swanData.health += breadCrumbs.IncreaseHealth();
+        HealAnimator.SetTrigger("activate");
         UpdateHealthUI(swanData.health);
         breadCrumbs.DoSomething();
         Debug.Log("Your health increased!");

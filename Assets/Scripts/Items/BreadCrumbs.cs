@@ -12,6 +12,6 @@ public class BreadCrumbs : Item
 
     public float IncreaseHealth()
     {
-        return 10f;
+        return 40f;
     }
 }
