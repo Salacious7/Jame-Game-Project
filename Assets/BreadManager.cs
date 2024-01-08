@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class BreadManager : MonoBehaviour
 {
+    public static BreadManager Instance { get; set; }
+
     [SerializeField] private GameManager gameManager;
-    [SerializeField] List<Bread> breads;
+    public List<Bread> breads;
     [SerializeField, Range(0, 1f)] public float unfocusedTransparency;
     [field: SerializeField] public float TakeActionDelay {get; set;}
     [field: SerializeField] public float TurnEndDelay {get; set;}
@@ -16,6 +20,17 @@ public class BreadManager : MonoBehaviour
     [SerializeField] private UIManager uiManager;
     bool winCondition;
 
+    [SerializeField] private Animator transitionAnim;
+    [SerializeField] private Image transitionImage;
+
+    private void Awake()
+    {
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+    }
+
     private void Start()
     {
         StartCoroutine(StartInitEndBreadsTurn());
@@ -23,19 +38,35 @@ public class BreadManager : MonoBehaviour
 
     void Update()
     {
-        if(breads == null || winCondition)
-            return;
+        
+        if (breads.All(x => x.Dead))
+            StartCoroutine(End());
+    }
 
-        if(breads.All(x => x.Dead))
-            gameManager.InitializeWinScreen();
+    public IEnumerator End()
+    {
+        yield return new WaitForSeconds(1f);
+        SoundManager.Instance.OnPlayWin();
+        yield return new WaitForSeconds(2f);
+        transitionImage.raycastTarget = true;
+        transitionAnim.SetTrigger("isTransition");
+        yield return new WaitForSeconds(1.5f);
+        transitionAnim.SetTrigger("isEndTransition");
+        gameManager.InitializeWinScreen();
+        SoundManager.Instance.OnPlayEndCutscene();
+        yield return new WaitForSeconds(13f);
+        UIManager.Instance.OnBackToMenuBtn();
     }
 
     public IEnumerator StartBreadsTurn()
     {
+        if (breads.All(x => x.Dead))
+            yield break;
+
         swanUI.ActionStateContainer.SetActive(false);
         uiManager.panelCurrentTurnObj.SetActive(true);
         CameraManager.Instance.StartCoroutine(CameraManager.Instance.CamLookBread());
-        uiManager.currentTextCurrentTurn.text = "Bread's turn to shine. Dodge their hits.";
+        uiManager.currentTextCurrentTurn.text = "Bread's turn to shine";
 
         yield return new WaitForSeconds(2f);
 
@@ -69,7 +100,7 @@ public class BreadManager : MonoBehaviour
     {
         swanUI.ActionStateButtonInteractable();
         uiManager.panelCurrentTurnObj.SetActive(true);
-        uiManager.currentTextCurrentTurn.text = "Swan's turn to shine.";
+        uiManager.currentTextCurrentTurn.text = "Swan's turn to shine";
         CameraManager.Instance.StartCoroutine(CameraManager.Instance.CamLookSwan());
 
         yield return new WaitForSeconds(2f);
@@ -86,7 +117,7 @@ public class BreadManager : MonoBehaviour
     {
         swanUI.ActionStateButtonInteractable();
         uiManager.panelCurrentTurnObj.SetActive(true);
-        uiManager.currentTextCurrentTurn.text = "Swan's turn to shine.";
+        uiManager.currentTextCurrentTurn.text = "Swan's turn to shine";
         CameraManager.Instance.StartCoroutine(CameraManager.Instance.CamLookSwan());
 
         yield return new WaitForSeconds(2f);
@@ -113,7 +144,9 @@ public class BreadManager : MonoBehaviour
             currentBread.StartTurn();
         }
         else
+        {
             StartCoroutine(InitEndBreadsTurn());
+        }
     }
 
     private IEnumerator StartInitEndBreadsTurn()

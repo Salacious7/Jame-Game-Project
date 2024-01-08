@@ -26,8 +26,17 @@ public class Muffin : Bread
         SoundManager.Instance.OnPlayMuffinHeal();
     }
 
-    public override void OnDeath()
+    public override void OnDamage(DamageState damageState)
     {
+        switch(damageState)
+        {
+            case DamageState.DamageState:
+                break;
+            case DamageState.DeathState:
+                gameObject.SetActive(false);
+                break;
+        }
+        
         SoundManager.Instance.OnPlayMuffinDeath();
     }
 

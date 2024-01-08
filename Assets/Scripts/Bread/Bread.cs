@@ -19,6 +19,7 @@ public abstract class Bread : MonoBehaviour, IActionState
     [SerializeField] protected float special1Cost;
     [SerializeField] protected float special2Cost;
     bool actionFinished;
+    bool checkForFinished;
     public bool Dead {get; private set;}
     public GameObject selectedArrow;
     public Slider breadHealthBarSlider;
@@ -41,7 +42,16 @@ public abstract class Bread : MonoBehaviour, IActionState
         HeavyState,
     }
 
+
     public FightType fightType;
+
+    public enum DamageState
+    {
+        DamageState,
+        DeathState,
+    }
+
+    public DamageState damageState;
 
     void Awake()
     {
@@ -52,12 +62,6 @@ public abstract class Bread : MonoBehaviour, IActionState
 
         UpdateHealthUI(breadHealth);
         UpdateManaUI(breadMana);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void Heal(float amount)
@@ -110,7 +114,6 @@ public abstract class Bread : MonoBehaviour, IActionState
                 swan.IncomingDamage = DamageFromCurrentAttack;
             //trigger animation
             animTrigger = "basicAttack";
-            
         }
         else
         {
@@ -166,16 +169,17 @@ public abstract class Bread : MonoBehaviour, IActionState
         Debug.Log("hit");
         anim.SetTrigger("hit");
 
-        OnDeath();
+        OnDamage(DamageState.DamageState);
 
         if (breadHealth <= 0)
         {
+            OnDamage(DamageState.DeathState);
             Dead = true;
         }
     }
 
 
-    public abstract void OnDeath();
+    public abstract void OnDamage(DamageState damageState);
 
     public void UpdateHealthUI(float value)
     {
@@ -226,7 +230,7 @@ public abstract class Bread : MonoBehaviour, IActionState
         Debug.Log(name + " taking action");
 
         UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-        UIManager.Instance.currentTextCurrentTurn.text = name + " is taking action!";
+        UIManager.Instance.currentTextCurrentTurn.text = name + " is taking action";
 
         yield return new WaitForSeconds(2f);
 

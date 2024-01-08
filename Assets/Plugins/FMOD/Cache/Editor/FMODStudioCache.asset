@@ -440,7 +440,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 8820
+  Length: 10420
 --- !u!114 &-3452662664162949669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,7 +530,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638402639932315072
+  lastModified: 638403218142931935
   FileSizes:
   - Name: Desktop
     Value: 3065120
@@ -904,7 +904,7 @@ MonoBehaviour:
   - {fileID: 5777904686703053624}
   StringsBanks:
   - {fileID: -3301980602566170062}
-  cacheTime: 638402639932465067
+  cacheTime: 638403220769830174
   cacheVersion: 131616
 --- !u!114 &295734867017174787
 MonoBehaviour:
@@ -987,7 +987,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3820
+  Length: 5420
 --- !u!114 &1072966452611252735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1111,7 +1111,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMOD Project/FMODManager/Snack Attack!/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638402639932465067
+  lastModified: 638403220769830174
   FileSizes:
   - Name: Desktop
     Value: 2396416

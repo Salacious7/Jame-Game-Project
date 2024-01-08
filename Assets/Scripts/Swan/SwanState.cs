@@ -152,8 +152,6 @@ public class SwanState : MonoBehaviour, OnBreadHandler
     {
         yield return new WaitUntil(() => BasicArrowDisplay());
 
-        Debug.Log("Initialize Basic Arrow Key");
-
         bool condition = true;
         int index = 0;
 
@@ -198,14 +196,14 @@ public class SwanState : MonoBehaviour, OnBreadHandler
         swanUI.BasicActionInputStateContainer.SetActive(false);
         swan.damageIndex = index;
 
-        Debug.Log("Initialize done!");
+        Debug.Log("Initialize defended done!");
 
         foreach (Transform item in swanUI.BasicArrowsActionInput.transform)
         {
             item.gameObject.SetActive(true);
         }
 
-        state.OnSuccess();
+        // state.OnSuccess();
     }
 
     public void PlayDefendBasicArrowKey(KeyCode keyCode, OnEventHandler state, ref bool condition, ref int index)

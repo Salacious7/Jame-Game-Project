@@ -877,6 +877,9 @@
 		<property name="length">
 			<value>17.090100961538454</value>
 		</property>
+		<property name="triggerProbabilityEnabled">
+			<value>true</value>
+		</property>
 		<relationship name="timeline">
 			<destination>{ba0b9c26-5848-4ad7-864d-aab3ede70103}</destination>
 		</relationship>

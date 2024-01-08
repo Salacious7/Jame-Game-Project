@@ -40,6 +40,20 @@ public class SoundManager : MonoBehaviour
         FMODData.music.release();
     }
 
+    public void OnPlayWin()
+    {
+        RuntimeManager.StudioSystem.setParameterByName("Game State", 0f);
+    }
+
+    public void OnPlayLose()
+    {
+        RuntimeManager.StudioSystem.setParameterByName("Game State", 1f);
+    }
+
+    public void OnPlayEndCutscene()
+    {
+        RuntimeManager.StudioSystem.setParameterByName("Game State", 10f);
+    }
     #region Swan SFX
     public void OnPlaySwanBlock()
     {

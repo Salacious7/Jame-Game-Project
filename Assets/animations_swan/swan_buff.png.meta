@@ -106,6 +106,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -113,12 +152,12 @@ TextureImporter:
       name: swan_buff_0
       rect:
         serializedVersion: 2
-        x: 567
-        y: 1200
-        width: 764
-        height: 791
+        x: 0
+        y: 1078.5
+        width: 1920.7142
+        height: 1078.5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +173,12 @@ TextureImporter:
       name: swan_buff_1
       rect:
         serializedVersion: 2
-        x: 2442
-        y: 1200
-        width: 819
-        height: 793
+        x: 1920
+        y: 1078.5
+        width: 1920.7142
+        height: 1078.5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +194,12 @@ TextureImporter:
       name: swan_buff_2
       rect:
         serializedVersion: 2
-        x: 4338
-        y: 1200
-        width: 922
-        height: 793
+        x: 3840
+        y: 1078.5
+        width: 1920.7142
+        height: 1078.5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,12 +215,12 @@ TextureImporter:
       name: swan_buff_3
       rect:
         serializedVersion: 2
-        x: 6169
-        y: 1200
-        width: 1248
-        height: 793
+        x: 5760
+        y: 1078.5
+        width: 1920.7142
+        height: 1078.5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +236,12 @@ TextureImporter:
       name: swan_buff_4
       rect:
         serializedVersion: 2
-        x: 8064
-        y: 1200
-        width: 1371
-        height: 793
+        x: 7680
+        y: 1078.5
+        width: 1920.7142
+        height: 1078.5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,12 +257,12 @@ TextureImporter:
       name: swan_buff_5
       rect:
         serializedVersion: 2
-        x: 9987
-        y: 1200
-        width: 1418
-        height: 793
+        x: 9600
+        y: 1078.5
+        width: 1920.7142
+        height: 1078.5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,12 +278,12 @@ TextureImporter:
       name: swan_buff_13
       rect:
         serializedVersion: 2
-        x: 11809
-        y: 127
-        width: 1286
-        height: 848
+        x: 11520
+        y: 0.5
+        width: 1920.7142
+        height: 1078.5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -260,12 +299,12 @@ TextureImporter:
       name: swan_buff_12
       rect:
         serializedVersion: 2
-        x: 9829
-        y: 81
-        width: 1454
-        height: 856
+        x: 9600
+        y: 0.5
+        width: 1920.7142
+        height: 1078.5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -281,12 +320,12 @@ TextureImporter:
       name: swan_buff_7
       rect:
         serializedVersion: 2
-        x: 146
-        y: 61
-        width: 1454
-        height: 850
+        x: 0
+        y: 0.5
+        width: 1920.7142
+        height: 1078.5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -302,12 +341,12 @@ TextureImporter:
       name: swan_buff_8
       rect:
         serializedVersion: 2
-        x: 2060
-        y: 61
-        width: 1585
-        height: 850
+        x: 1920
+        y: 0.5
+        width: 1920.7142
+        height: 1078.5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -323,12 +362,12 @@ TextureImporter:
       name: swan_buff_9
       rect:
         serializedVersion: 2
-        x: 3974
-        y: 61
-        width: 1613
-        height: 848
+        x: 3840
+        y: 0.5
+        width: 1920.7142
+        height: 1078.5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -344,12 +383,12 @@ TextureImporter:
       name: swan_buff_10
       rect:
         serializedVersion: 2
-        x: 5934
-        y: 61
-        width: 1584
-        height: 850
+        x: 5760
+        y: 0.5
+        width: 1920.7142
+        height: 1078.5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -365,12 +404,12 @@ TextureImporter:
       name: swan_buff_11
       rect:
         serializedVersion: 2
-        x: 7840
-        y: 61
-        width: 1564
-        height: 849
+        x: 7680
+        y: 0.5
+        width: 1920.7142
+        height: 1078.5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -386,12 +425,12 @@ TextureImporter:
       name: swan_buff_6
       rect:
         serializedVersion: 2
-        x: 11809
-        y: 1200
-        width: 1549
-        height: 793
+        x: 11520
+        y: 1078.5
+        width: 1920.7142
+        height: 1078.5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -417,180 +456,17 @@ TextureImporter:
       swan_buff_0: -709229373
       swan_buff_1: -1499790964
       swan_buff_10: -1524950074
-      swan_buff_100: -899504356
-      swan_buff_101: 868473669
-      swan_buff_102: 48809907
-      swan_buff_103: -483334967
-      swan_buff_104: 399417602
-      swan_buff_105: -1438997738
-      swan_buff_106: -1304473557
-      swan_buff_107: 1498507
-      swan_buff_108: 625310098
-      swan_buff_109: 338675615
       swan_buff_11: 240590285
-      swan_buff_110: 1249388350
-      swan_buff_111: -448502757
-      swan_buff_112: -982271124
-      swan_buff_113: 1171515802
-      swan_buff_114: 218078076
-      swan_buff_115: -1139926892
-      swan_buff_116: -1699397234
-      swan_buff_117: -1107338365
-      swan_buff_118: 1087992218
-      swan_buff_119: 453737648
       swan_buff_12: 582917024
-      swan_buff_120: 360600099
-      swan_buff_121: -286704052
-      swan_buff_122: 608617678
-      swan_buff_123: -1739764041
-      swan_buff_124: -806472932
-      swan_buff_125: -169615335
-      swan_buff_126: -2067992109
-      swan_buff_127: 1112632311
-      swan_buff_128: -564759595
-      swan_buff_129: 1679438245
       swan_buff_13: 380946345
-      swan_buff_130: 1939108334
-      swan_buff_131: 2088670899
-      swan_buff_132: 1473321737
-      swan_buff_133: -1527405427
-      swan_buff_134: 1538566605
-      swan_buff_135: -233830176
-      swan_buff_136: 284786280
-      swan_buff_137: 937696696
-      swan_buff_138: 119284356
-      swan_buff_139: 1011467234
-      swan_buff_14: 1393819299
-      swan_buff_140: -938694721
-      swan_buff_141: -538965154
-      swan_buff_142: 737049860
-      swan_buff_143: 885113424
-      swan_buff_144: 1872076487
-      swan_buff_145: 1961422991
-      swan_buff_146: 556908508
-      swan_buff_147: -375958612
-      swan_buff_148: 1718391070
-      swan_buff_149: 138720410
-      swan_buff_15: -609310754
-      swan_buff_150: 982889149
-      swan_buff_151: -1035055535
-      swan_buff_152: -669075159
-      swan_buff_153: 1915313936
-      swan_buff_154: 767449307
-      swan_buff_155: -81473852
-      swan_buff_156: -1774455029
-      swan_buff_157: 42287252
-      swan_buff_158: -1071979188
-      swan_buff_159: -108029384
-      swan_buff_16: 238363137
-      swan_buff_160: -754570713
-      swan_buff_161: 469092164
-      swan_buff_162: 1179265323
-      swan_buff_163: 1391321924
-      swan_buff_164: -12370625
-      swan_buff_165: 887637114
-      swan_buff_166: -908276997
-      swan_buff_167: 659573423
-      swan_buff_168: 732334844
-      swan_buff_169: -1770654297
-      swan_buff_17: -183195191
-      swan_buff_170: 1788672050
-      swan_buff_171: 195693812
-      swan_buff_172: -1258046419
-      swan_buff_173: -391516322
-      swan_buff_174: -1252430571
-      swan_buff_175: -1939687275
-      swan_buff_176: -21915402
-      swan_buff_177: -545568272
-      swan_buff_178: -272249380
-      swan_buff_179: 917757254
-      swan_buff_18: 769149133
-      swan_buff_180: -224199340
-      swan_buff_181: -1694745386
-      swan_buff_182: 2083358640
-      swan_buff_183: -1049689730
-      swan_buff_19: -1152137370
       swan_buff_2: 899500709
-      swan_buff_20: -349284960
-      swan_buff_21: 1427672318
-      swan_buff_22: -1151490379
-      swan_buff_23: 849515542
-      swan_buff_24: 251322160
-      swan_buff_25: 270296154
-      swan_buff_26: -67947526
-      swan_buff_27: -1069912666
-      swan_buff_28: -920247693
-      swan_buff_29: -1516030227
       swan_buff_3: -1265206534
-      swan_buff_30: -211799304
-      swan_buff_31: 1811254816
-      swan_buff_32: -2056832163
-      swan_buff_33: 264398558
-      swan_buff_34: 1261422594
-      swan_buff_35: -1076073011
-      swan_buff_36: -896707557
-      swan_buff_37: -1302667692
-      swan_buff_38: -626332015
-      swan_buff_39: -1434809209
       swan_buff_4: 70698401
-      swan_buff_40: 1029986928
-      swan_buff_41: -1223231869
-      swan_buff_42: -1565751598
-      swan_buff_43: -1928743791
-      swan_buff_44: -1907306180
-      swan_buff_45: -389257821
-      swan_buff_46: -359623173
-      swan_buff_47: -59027163
-      swan_buff_48: -928727408
-      swan_buff_49: 303912947
       swan_buff_5: -1107525911
-      swan_buff_50: -1082168516
-      swan_buff_51: 1999022895
-      swan_buff_52: 712325956
-      swan_buff_53: 1861287448
-      swan_buff_54: -1020281340
-      swan_buff_55: 799614793
-      swan_buff_57: 1660007968
-      swan_buff_58: -1098469492
-      swan_buff_59: -1723953612
       swan_buff_6: 336051957
-      swan_buff_60: 1085189975
-      swan_buff_61: 1453747287
-      swan_buff_62: 685339031
-      swan_buff_63: 1994087729
-      swan_buff_64: -1628586703
-      swan_buff_65: -420065214
-      swan_buff_66: 623132312
-      swan_buff_67: 48981982
-      swan_buff_68: -632908495
       swan_buff_7: 1846841477
-      swan_buff_75: -869651541
-      swan_buff_76: -664927291
-      swan_buff_77: 1955879214
-      swan_buff_78: 1333722468
-      swan_buff_79: 263465906
       swan_buff_8: 2008832159
-      swan_buff_80: 397518716
-      swan_buff_81: 1645218843
-      swan_buff_82: -196597618
-      swan_buff_83: 2104882027
-      swan_buff_84: 520655542
-      swan_buff_85: 1086686819
-      swan_buff_86: -916207268
-      swan_buff_87: 1900769049
-      swan_buff_88: -794759623
-      swan_buff_89: -868382062
       swan_buff_9: 634981450
-      swan_buff_90: 191939479
-      swan_buff_91: -1203695916
-      swan_buff_92: 1358918409
-      swan_buff_93: -1386118726
-      swan_buff_94: -298245312
-      swan_buff_95: 264292067
-      swan_buff_96: 1716614131
-      swan_buff_97: 1949991765
-      swan_buff_98: -1052804538
-      swan_buff_99: 957679318
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
