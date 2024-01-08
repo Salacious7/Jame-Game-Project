@@ -4,13 +4,13 @@
 
 Oh how Ms. Buttersnitch's journey to the park can take such a turn. In this short tale, you'll come across the characters Pretzel, Muffin, Baguette and Sandwich. Watch they face off against the mighty Swan! Who will come out on top in this story? Find out in Snack Attack! 
 
-**Controls:**
+## Controls:
 
 Arrow keys: Select target
 Right Click: Action buttons
 Enter: Select attack
 
-**Credit:** 
+## Credit:
 
 Akomo Crogoze - Game Director/Design, Technical Animator
 
