@@ -7,7 +7,9 @@ Oh how Ms. Buttersnitch's journey to the park can take such a turn. In this shor
 ## Controls:
 
 Arrow keys: Select target
+
 Right Click: Action buttons
+
 Enter: Select attack
 
 ## Credit:
