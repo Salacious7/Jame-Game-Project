@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEditor;
+using FMOD.Studio;
 
 public class OpeningCutscene : MonoBehaviour
 {
@@ -14,11 +15,12 @@ public class OpeningCutscene : MonoBehaviour
     [SerializeField] private Animator transitionAnim;
     [SerializeField] private Image transitionImage;
 
+    private int slide;
+
     private IEnumerator Start()
     {
-        int slide = 0;
-
         transitionAnim.SetTrigger("isEndTransition");
+        CutsceneVoiceState(slide);
 
         while (slide < slides.Count)
         {
@@ -29,12 +31,16 @@ public class OpeningCutscene : MonoBehaviour
             while (true)
             {
                 if (Input.GetMouseButtonDown(0))
+                {
                     break;
+                }
+
 
                 yield return null;
             }
 
             slide++;
+            CutsceneVoiceState(slide);
         }
 
         StartCoroutine(PlayGame());
@@ -45,18 +51,25 @@ public class OpeningCutscene : MonoBehaviour
         switch (value)
         {
             case 0:
+                SoundManager.Instance.OnPlayPanelOne();
                 break;
             case 1:
+                SoundManager.Instance.OnPlayPanelTwo();
                 break;
             case 2:
+                SoundManager.Instance.OnPlayPanelThree();
                 break;
             case 3:
+                SoundManager.Instance.OnPlayPanelFour();
                 break;
             case 4:
+                SoundManager.Instance.OnPlayPanelFive();
                 break;
             case 5:
+                SoundManager.Instance.OnPlayPanelSix();
                 break;
             case 6:
+                SoundManager.Instance.OnPlayPanelEnd();
                 break;
         }
     }

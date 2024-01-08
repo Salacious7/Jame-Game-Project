@@ -65,5 +65,4 @@ public class FMODData
         swanSkillTwo = RuntimeManager.CreateInstance("event:/SFX/Swan/Swan Skill 2");
         swanUseItem = RuntimeManager.CreateInstance("event:/SFX/Swan/Use Item");
     }
-
 }

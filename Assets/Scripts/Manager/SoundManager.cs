@@ -8,7 +8,7 @@ using FMODUnity;
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance { get; set; }
-    private FMODData FMODData;
+    public FMODData FMODData { get; set; }
 
     private void Awake()
     {
@@ -30,16 +30,17 @@ public class SoundManager : MonoBehaviour
     {
         RuntimeManager.StudioSystem.setParameterByName("Game State", 2f);
         FMODData.music.start();
+        FMODData.music.release();
     }
 
     public void OnPlayTitleMusic()
     {
         RuntimeManager.StudioSystem.setParameterByName("Game State", 3f);
         FMODData.music.start();
+        FMODData.music.release();
     }
 
-
-    // Swan SFX
+    #region Swan SFX
     public void OnPlaySwanBlock()
     {
         FMODData.swanBlock.start();
@@ -79,8 +80,9 @@ public class SoundManager : MonoBehaviour
     {
         FMODData.swanUseItem.start();
     }
+    #endregion
 
-    // Bread SFX
+    #region Bread SFX
     public void OnPlayBaguetteDeath()
     {
         FMODData.baguetteDeath.start();
@@ -220,5 +222,42 @@ public class SoundManager : MonoBehaviour
     {
         FMODData.sandwichSkillTwo.start();
     }
+    #endregion
 
+    #region Cutscene SFX
+    public void OnPlayPanelOne()
+    {
+        RuntimeManager.StudioSystem.setParameterByName("Game State", 4f);
+    }
+
+    public void OnPlayPanelTwo()
+    {
+        RuntimeManager.StudioSystem.setParameterByName("Game State", 5f);
+    }
+
+    public void OnPlayPanelThree()
+    {
+        RuntimeManager.StudioSystem.setParameterByName("Game State", 6f);
+    }
+
+    public void OnPlayPanelFour()
+    {
+        RuntimeManager.StudioSystem.setParameterByName("Game State", 7f);
+    }
+
+    public void OnPlayPanelFive()
+    {
+        RuntimeManager.StudioSystem.setParameterByName("Game State", 8f);
+    }
+
+    public void OnPlayPanelSix()
+    {
+        RuntimeManager.StudioSystem.setParameterByName("Game State", 9f);
+    }
+
+    public void OnPlayPanelEnd()
+    {
+        RuntimeManager.StudioSystem.setParameterByName("Game State", 10f);
+    }
+    #endregion
 }

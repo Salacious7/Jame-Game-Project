@@ -16,13 +16,20 @@
 			<value>2</value>
 		</property>
 		<property name="maximum">
-			<value>4</value>
+			<value>11</value>
 		</property>
 		<property name="enumerationLabels">
 			<value>Win</value>
 			<value>Lose</value>
 			<value>Combat</value>
 			<value>Title Screen</value>
+			<value>Story Panel 1</value>
+			<value>Story Panel 2</value>
+			<value>Story Panel 3</value>
+			<value>Story Panel 4</value>
+			<value>Story Panel 5</value>
+			<value>Story Panel 6</value>
+			<value>Story panel End (Win)</value>
 		</property>
 		<property name="isGlobal">
 			<value>true</value>
