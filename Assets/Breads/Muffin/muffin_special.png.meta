@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d8b1c04945011497b87a590744484143
+guid: d403e045b9e504999848ea363d2a7dde
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,56 +106,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 4096
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 4096
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 4096
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: muffin_idle_0
+      name: muffin_special_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 658
+        y: 987.75
         width: 585.1429
-        height: 329
+        height: 329.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20d610ff4fcfd4f7da351708b4b5a935
-      internalID: 367210676
+      spriteID: 4e23e018d5de64184b3cfccd8b95eb84
+      internalID: 489018933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muffin_idle_1
+      name: muffin_special_1
       rect:
         serializedVersion: 2
         x: 585
-        y: 658
+        y: 987.75
         width: 585.1429
-        height: 329
+        height: 329.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f300935bc33984e87a3bad79aa777ea7
-      internalID: -878167947
+      spriteID: fbd5be3db6b7b4ba3be1b3091e5ade2d
+      internalID: 551586606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muffin_idle_2
+      name: muffin_special_2
       rect:
         serializedVersion: 2
         x: 1170
-        y: 658
+        y: 987.75
         width: 585.1429
-        height: 329
+        height: 329.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,41 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3bb66c61a58f4849a3465ef5afb7d77
-      internalID: -1992646094
+      spriteID: bf921ae3cd28c43f8abb4ca4d2e57c09
+      internalID: -71071666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muffin_idle_6
-      rect:
-        serializedVersion: 2
-        x: 3510
-        y: 658
-        width: 585.1429
-        height: 329
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f10624dd221a44a269719b8c60e7fc54
-      internalID: -1378171825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: muffin_idle_3
+      name: muffin_special_3
       rect:
         serializedVersion: 2
         x: 1755
-        y: 658
+        y: 987.75
         width: 585.1429
-        height: 329
+        height: 329.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b01ef051c72aa464e94f0049b53bbdbd
-      internalID: -272179857
+      spriteID: 50f741d00b3f7415781220d82421f671
+      internalID: 1013543728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muffin_idle_4
+      name: muffin_special_4
       rect:
         serializedVersion: 2
         x: 2340
-        y: 658
+        y: 987.75
         width: 585.1429
-        height: 329
+        height: 329.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c12c800dc635c4bcea6538f3edcf79bd
-      internalID: -1026639491
+      spriteID: c5b5dd304213c4dcd9d8734085183c61
+      internalID: -1175106263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muffin_idle_5
+      name: muffin_special_5
       rect:
         serializedVersion: 2
         x: 2925
-        y: 658
+        y: 987.75
         width: 585.1429
-        height: 329
+        height: 329.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,146 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ac2eb2253a6341609768c884a17b2bd
-      internalID: 4685306
+      spriteID: 6fd2ef1c4cbef4283ad95054f84f9cff
+      internalID: 408706194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muffin_idle_7
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 329
-        width: 585.1429
-        height: 329
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 650b0cdefbeb8471bbc21bd77aa928e5
-      internalID: -1033697941
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: muffin_idle_8
-      rect:
-        serializedVersion: 2
-        x: 585
-        y: 329
-        width: 585.1429
-        height: 329
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90bcb21b3362f4eb19687b17ead302d6
-      internalID: 490598265
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: muffin_idle_9
-      rect:
-        serializedVersion: 2
-        x: 1170
-        y: 329
-        width: 585.1429
-        height: 329
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cf769600b3214343ade1391916e663b
-      internalID: -1758460228
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: muffin_idle_10
-      rect:
-        serializedVersion: 2
-        x: 1755
-        y: 329
-        width: 585.1429
-        height: 329
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29b957874f9784750ab4b8c6048584e2
-      internalID: -1815442614
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: muffin_idle_11
-      rect:
-        serializedVersion: 2
-        x: 2340
-        y: 329
-        width: 585.1429
-        height: 329
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39f83ba66646f4f64b6796e706284b4c
-      internalID: 1032384963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: muffin_idle_12
-      rect:
-        serializedVersion: 2
-        x: 2925
-        y: 329
-        width: 585.1429
-        height: 329
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a31a995adaf1a47baaa45ce6ff115a2c
-      internalID: -1779204646
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: muffin_idle_13
+      name: muffin_special_6
       rect:
         serializedVersion: 2
         x: 3510
-        y: 329
+        y: 987.75
         width: 585.1429
-        height: 329
+        height: 329.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3a296b2785174766be359990128a136
-      internalID: -1157092870
+      spriteID: 25ecfa727906140b288f8bb86db74ab9
+      internalID: 1468997001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muffin_idle_14
+      name: muffin_special_7
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 658.75
         width: 585.1429
-        height: 329
+        height: 329.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bec2fb9d9eecd4365a6dc4784107c236
-      internalID: 759571707
+      spriteID: eff202c0b81044f9091850f30ebd051a
+      internalID: 970121125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muffin_idle_15
+      name: muffin_special_8
       rect:
         serializedVersion: 2
         x: 585
-        y: 0
+        y: 658.75
         width: 585.1429
-        height: 329
+        height: 329.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,20 +292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d358c606e3b534b0a80ac15af46d7d81
-      internalID: 1463606130
+      spriteID: b5a59319721ce4eccab3b7f103143111
+      internalID: 287371220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muffin_idle_16
+      name: muffin_special_9
       rect:
         serializedVersion: 2
         x: 1170
-        y: 0
+        y: 658.75
         width: 585.1429
-        height: 329
+        height: 329.25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,8 +313,281 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 164121451b7ec4aa585b2d3b62051272
-      internalID: -1909574349
+      spriteID: 43fc089bb23084217bb77d49478f5841
+      internalID: 1163045264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_10
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 658.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2530e4ed9489445e196c0b7240f35580
+      internalID: -2026801126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_11
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 658.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557e4308575444529a49e0dc6eebf257
+      internalID: 754852799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_12
+      rect:
+        serializedVersion: 2
+        x: 2925
+        y: 658.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d864a566bfd664bc8a28a8e0b6eb55a5
+      internalID: 347938289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_13
+      rect:
+        serializedVersion: 2
+        x: 3510
+        y: 658.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e6675ca151e4d10a29aafd31699755
+      internalID: 765637329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 329.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f38e77a37549401ab524cbb766de14b
+      internalID: -1273713058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_15
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 329.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82208cfc6629348539a18e89af1896b6
+      internalID: -1539636165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_16
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 329.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e628b771102f544d9887c7ef9bbbe070
+      internalID: 226668675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_17
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 329.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0b23c4cf68c4aa9824bb7f3c005cba
+      internalID: -1286865225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_18
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 329.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd978d52c321642679c87c346ba5a41a
+      internalID: -2047889235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_19
+      rect:
+        serializedVersion: 2
+        x: 2925
+        y: 329.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a50f14f86ea2480a91b57f1ceb5ce46
+      internalID: 1045993161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_20
+      rect:
+        serializedVersion: 2
+        x: 3510
+        y: 329.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ceb93c09a9d47d5b6a30e7736250e7
+      internalID: -320114109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0aa97e20374548228c9a4d19c87cbc4
+      internalID: -654763566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_22
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 0.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0676235dde4f41d293c41af2d8b8b80
+      internalID: 845064351
       vertices: []
       indices: 
       edges: []
@@ -516,23 +603,29 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      muffin_idle_0: 367210676
-      muffin_idle_1: -878167947
-      muffin_idle_10: -1815442614
-      muffin_idle_11: 1032384963
-      muffin_idle_12: -1779204646
-      muffin_idle_13: -1157092870
-      muffin_idle_14: 759571707
-      muffin_idle_15: 1463606130
-      muffin_idle_16: -1909574349
-      muffin_idle_2: -1992646094
-      muffin_idle_3: -272179857
-      muffin_idle_4: -1026639491
-      muffin_idle_5: 4685306
-      muffin_idle_6: -1378171825
-      muffin_idle_7: -1033697941
-      muffin_idle_8: 490598265
-      muffin_idle_9: -1758460228
+      muffin_special_0: 489018933
+      muffin_special_1: 551586606
+      muffin_special_10: -2026801126
+      muffin_special_11: 754852799
+      muffin_special_12: 347938289
+      muffin_special_13: 765637329
+      muffin_special_14: -1273713058
+      muffin_special_15: -1539636165
+      muffin_special_16: 226668675
+      muffin_special_17: -1286865225
+      muffin_special_18: -2047889235
+      muffin_special_19: 1045993161
+      muffin_special_2: -71071666
+      muffin_special_20: -320114109
+      muffin_special_21: -654763566
+      muffin_special_22: 845064351
+      muffin_special_3: 1013543728
+      muffin_special_4: -1175106263
+      muffin_special_5: 408706194
+      muffin_special_6: 1468997001
+      muffin_special_7: 970121125
+      muffin_special_8: 287371220
+      muffin_special_9: 1163045264
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
