@@ -113,12 +113,12 @@ TextureImporter:
       name: buff_defense_0
       rect:
         serializedVersion: 2
-        x: 15
+        x: 0
         y: 432
-        width: 246
-        height: 175
+        width: 449
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: buff_defense_1
       rect:
         serializedVersion: 2
-        x: 466
+        x: 449
         y: 432
-        width: 245
-        height: 175
+        width: 449
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +155,12 @@ TextureImporter:
       name: buff_defense_2
       rect:
         serializedVersion: 2
-        x: 917
+        x: 898
         y: 432
-        width: 255
-        height: 175
+        width: 449
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,12 +176,12 @@ TextureImporter:
       name: buff_defense_3
       rect:
         serializedVersion: 2
-        x: 1367
+        x: 1347
         y: 432
-        width: 303
-        height: 175
+        width: 449
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: buff_defense_4
       rect:
         serializedVersion: 2
-        x: 1814
+        x: 1796
         y: 432
-        width: 324
-        height: 175
+        width: 449
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,12 +218,12 @@ TextureImporter:
       name: buff_defense_11
       rect:
         serializedVersion: 2
-        x: 1814
+        x: 1796
         y: 0
-        width: 390
-        height: 365
+        width: 449
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,12 +239,12 @@ TextureImporter:
       name: buff_defense_5
       rect:
         serializedVersion: 2
-        x: 2262
+        x: 2245
         y: 432
-        width: 351
-        height: 175
+        width: 449
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -260,12 +260,12 @@ TextureImporter:
       name: buff_defense_12
       rect:
         serializedVersion: 2
-        x: 2262
+        x: 2245
         y: 0
-        width: 390
-        height: 365
+        width: 449
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -281,12 +281,12 @@ TextureImporter:
       name: buff_defense_6
       rect:
         serializedVersion: 2
-        x: 2712
+        x: 2694
         y: 432
-        width: 351
-        height: 229
+        width: 449
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -302,12 +302,12 @@ TextureImporter:
       name: buff_defense_13
       rect:
         serializedVersion: 2
-        x: 2712
+        x: 2694
         y: 0
-        width: 390
-        height: 410
+        width: 449
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -323,12 +323,12 @@ TextureImporter:
       name: buff_defense_9
       rect:
         serializedVersion: 2
-        x: 917
+        x: 898
         y: 0
-        width: 380
-        height: 315
+        width: 449
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -344,12 +344,12 @@ TextureImporter:
       name: buff_defense_10
       rect:
         serializedVersion: 2
-        x: 1367
+        x: 1347
         y: 0
-        width: 380
-        height: 315
+        width: 449
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -365,12 +365,12 @@ TextureImporter:
       name: buff_defense_7
       rect:
         serializedVersion: 2
-        x: 15
+        x: 0
         y: 0
-        width: 370
-        height: 235
+        width: 449
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -386,12 +386,12 @@ TextureImporter:
       name: buff_defense_8
       rect:
         serializedVersion: 2
-        x: 466
+        x: 449
         y: 0
-        width: 380
-        height: 270
+        width: 449
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -417,142 +417,17 @@ TextureImporter:
       buff_defense_0: 304669934
       buff_defense_1: 468081747
       buff_defense_10: 1872932030
-      buff_defense_100: 2130914410
-      buff_defense_101: -741879036
-      buff_defense_102: -231222713
-      buff_defense_103: 75457170
-      buff_defense_104: 373401070
-      buff_defense_105: 412751209
-      buff_defense_106: 209053608
-      buff_defense_107: 1308893119
-      buff_defense_108: 30015001
-      buff_defense_109: 477606186
       buff_defense_11: 1202067946
-      buff_defense_110: 1583364851
-      buff_defense_111: 2039208771
-      buff_defense_112: 896465034
-      buff_defense_113: 115742486
-      buff_defense_114: 1457122356
-      buff_defense_115: 223273353
-      buff_defense_116: 263156331
-      buff_defense_117: 1712331442
-      buff_defense_118: 309680045
-      buff_defense_119: -1870666641
       buff_defense_12: -1906024424
-      buff_defense_120: 1605504857
-      buff_defense_121: 1698643715
-      buff_defense_122: 1781062472
-      buff_defense_123: -858747914
-      buff_defense_124: -1366397705
-      buff_defense_125: -1709227555
-      buff_defense_126: -2003103060
-      buff_defense_127: -80269835
-      buff_defense_128: -1027546815
-      buff_defense_129: 497054574
       buff_defense_13: 1735536847
-      buff_defense_130: -1338307453
-      buff_defense_131: -567897864
-      buff_defense_132: 1184327332
-      buff_defense_133: -34242378
-      buff_defense_134: -1494377445
-      buff_defense_135: -1819121044
-      buff_defense_136: 908112837
-      buff_defense_137: 101689003
-      buff_defense_138: 659154517
-      buff_defense_139: 919001491
-      buff_defense_14: -842484473
-      buff_defense_140: -1024620972
-      buff_defense_141: -644417801
-      buff_defense_142: -1063087765
-      buff_defense_143: 949601425
-      buff_defense_144: 442342508
-      buff_defense_145: 275664454
-      buff_defense_146: -1670694479
-      buff_defense_147: -19490144
-      buff_defense_148: -470639034
-      buff_defense_149: 846248413
-      buff_defense_15: 1237190049
-      buff_defense_150: -1372152330
-      buff_defense_16: -1438605112
-      buff_defense_18: 182829882
-      buff_defense_19: 1798237678
       buff_defense_2: 784291850
-      buff_defense_20: 1112032393
-      buff_defense_22: 1458726965
-      buff_defense_23: -2134641996
-      buff_defense_24: -547344464
-      buff_defense_25: 803585189
-      buff_defense_28: -177643643
-      buff_defense_29: -1106570863
       buff_defense_3: -1175343526
-      buff_defense_30: -495595550
-      buff_defense_31: 1674066687
-      buff_defense_32: -480543135
-      buff_defense_33: 1863489302
-      buff_defense_34: -1935190988
-      buff_defense_35: -1613344582
-      buff_defense_36: -701855893
-      buff_defense_37: -484308643
-      buff_defense_38: 2116135209
-      buff_defense_39: -1815809008
       buff_defense_4: -1053674647
-      buff_defense_40: -620319522
-      buff_defense_41: 1075226331
-      buff_defense_42: 749578577
-      buff_defense_43: -806950795
-      buff_defense_46: 1266800065
-      buff_defense_47: 1579533504
-      buff_defense_48: -946441944
-      buff_defense_49: -583747727
       buff_defense_5: 984642906
-      buff_defense_50: 429637287
-      buff_defense_53: -1385690152
-      buff_defense_54: 672862256
-      buff_defense_55: -1827004836
-      buff_defense_56: -947053395
-      buff_defense_57: -883418819
-      buff_defense_58: 1448331
-      buff_defense_59: 2130614205
       buff_defense_6: 275355527
-      buff_defense_60: 1136155657
-      buff_defense_61: -1351743812
-      buff_defense_63: 287361252
-      buff_defense_64: -1395129444
-      buff_defense_65: 841833747
-      buff_defense_66: 1763204666
-      buff_defense_67: -417210926
-      buff_defense_68: -132232034
       buff_defense_7: -1216853677
-      buff_defense_70: -76544955
-      buff_defense_71: 580242828
-      buff_defense_72: -1819419382
-      buff_defense_73: -1375091340
-      buff_defense_74: -1812382596
-      buff_defense_75: -1224259574
-      buff_defense_76: 1717944425
-      buff_defense_77: 1138307588
-      buff_defense_79: 1027490317
       buff_defense_8: 1622189623
-      buff_defense_81: 908459951
-      buff_defense_82: -1791063663
-      buff_defense_83: -810585939
-      buff_defense_84: -188829956
-      buff_defense_85: 857560211
-      buff_defense_86: 1140354305
-      buff_defense_87: 118358269
-      buff_defense_88: 77672993
-      buff_defense_89: -1884306471
       buff_defense_9: -170509619
-      buff_defense_90: 954758913
-      buff_defense_91: 1639848378
-      buff_defense_92: -190639
-      buff_defense_93: 467420515
-      buff_defense_94: -406370932
-      buff_defense_95: -125114864
-      buff_defense_96: 987403240
-      buff_defense_97: -933821299
-      buff_defense_98: -529701874
-      buff_defense_99: 1299058069
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
