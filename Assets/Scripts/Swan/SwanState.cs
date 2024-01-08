@@ -365,7 +365,7 @@ public class SwanState : MonoBehaviour, OnBreadHandler
         foreach (Transform img in swanUI.BasicArrowsActionInput.transform)
         {
             Image currentObj = img.GetComponent<Image>();
-            currentObj.color = Color.black;
+            //currentObj.color = Color.black;
         }
 
         foreach (Transform item in swanUI.BasicArrowsActionInput.transform)
@@ -420,8 +420,8 @@ public class SwanState : MonoBehaviour, OnBreadHandler
                 canRightMash = true;
                 canLeftMash = false;
 
-                swanUI.HeavyArrowsActionInput.transform.GetChild(0).GetComponent<Image>().color = Color.yellow;
-                swanUI.HeavyArrowsActionInput.transform.GetChild(1).GetComponent<Image>().color = Color.black;
+                //swanUI.HeavyArrowsActionInput.transform.GetChild(0).GetComponent<Image>().color = Color.yellow;
+                //swanUI.HeavyArrowsActionInput.transform.GetChild(1).GetComponent<Image>().color = Color.black;
             }
 
             if (Input.GetKeyDown(rightKeyCode) && !canLeftMash)
@@ -430,8 +430,8 @@ public class SwanState : MonoBehaviour, OnBreadHandler
                 canRightMash = false;
                 canLeftMash = true;
 
-                swanUI.HeavyArrowsActionInput.transform.GetChild(0).GetComponent<Image>().color = Color.black;
-                swanUI.HeavyArrowsActionInput.transform.GetChild(1).GetComponent<Image>().color = Color.yellow;
+                //swanUI.HeavyArrowsActionInput.transform.GetChild(0).GetComponent<Image>().color = Color.black;
+                //swanUI.HeavyArrowsActionInput.transform.GetChild(1).GetComponent<Image>().color = Color.yellow;
             }
 
             getHeavyMashTimer -= Time.deltaTime;
@@ -453,7 +453,7 @@ public class SwanState : MonoBehaviour, OnBreadHandler
         foreach (Transform img in swanUI.HeavyArrowsActionInput.transform)
         {
             Image currentObj = img.GetComponent<Image>();
-            currentObj.color = Color.black;
+            //currentObj.color = Color.black;
         }
 
         state.OnSuccess(bread);
