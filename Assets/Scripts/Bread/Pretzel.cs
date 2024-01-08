@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Pretzel : Bread
 {
+    [SerializeField] private Animator cheesSplashAnim, volcanoUpAnim, volcanoDownAnim;
+
     public override void OnAttack(FightType fightType)
     {
         switch (fightType)
@@ -86,12 +88,24 @@ public class Pretzel : Bread
         {
             switch (fightType)
             {
+                case FightType.BasicState:
+                    DamageFromCurrentAttack = basicAttackDamage;
+                    swan.IncomingDamage = DamageFromCurrentAttack;
+                    OnAttack(fightType);
+                    break;
+                case FightType.HeavyState:
+                    DamageFromCurrentAttack = heavyAttackDamage;
+                    swan.IncomingDamage = DamageFromCurrentAttack;
+                    OnAttack(FightType.HeavyState);
+                    break;
                 case FightType.SpecialSkillOne:
+                    StartCoroutine(Volcano());
                     DamageFromCurrentAttack = specialAttack1Damage;
                     swan.IncomingDamage = DamageFromCurrentAttack;
                     SoundManager.Instance.OnPlayPretzelSkillOne();
                     break;
                 case FightType.SpecialSkillTwo:
+                    cheesSplashAnim.SetTrigger("activate");
                     DamageFromCurrentAttack = specialAttack2Damage;
                     swan.IncomingDamage = DamageFromCurrentAttack;
                     SoundManager.Instance.OnPlayPretzelSkillTwo();
@@ -100,6 +114,12 @@ public class Pretzel : Bread
         }
     }
 
+    private IEnumerator Volcano()
+    {
+        volcanoUpAnim.SetTrigger("activate");
+        yield return new WaitForSeconds(0.5f);
+        volcanoDownAnim.SetTrigger("activate");
+    }
 
     // Start is called before the first frame update
     void Start()

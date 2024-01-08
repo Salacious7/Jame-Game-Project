@@ -10,6 +10,8 @@ public class Sandwich : Bread
     [SerializeField] private float throwTomatoSpeed;
     [SerializeField] private bool throwTomato;
 
+    [SerializeField] private Animator mayoAnim, ketchupAnim;
+
     private void Update()
     {
         if(throwTomato)
@@ -100,12 +102,25 @@ public class Sandwich : Bread
         {
             switch (fightType)
             {
+                case FightType.BasicState:
+                    DamageFromCurrentAttack = basicAttackDamage;
+                    swan.IncomingDamage = DamageFromCurrentAttack;
+                    throwTomato = true;
+                    OnAttack(fightType);
+                    break;
+                case FightType.HeavyState:
+                    DamageFromCurrentAttack = heavyAttackDamage;
+                    swan.IncomingDamage = DamageFromCurrentAttack;
+                    OnAttack(FightType.HeavyState);
+                    break;
                 case FightType.SpecialSkillOne:
+                    ketchupAnim.SetTrigger("activate");
                     SoundManager.Instance.OnPlaySandwichSkillOne();
                     DamageFromCurrentAttack = specialAttack1Damage;
                     swan.IncomingDamage = DamageFromCurrentAttack;
                     break;
                 case FightType.SpecialSkillTwo:
+                    mayoAnim.SetTrigger("activate");
                     SoundManager.Instance.OnPlaySandwichSkillTwo();
                     DamageFromCurrentAttack = specialAttack2Damage;
                     swan.IncomingDamage = DamageFromCurrentAttack;
