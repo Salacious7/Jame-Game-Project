@@ -149,6 +149,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         UIManager.Instance.currentTextCurrentTurn.text = "Defense increased";
 
         yield return new WaitForSeconds(2f);
+
         DefenseAnimator.SetTrigger("activate");
 
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
@@ -183,7 +184,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         switch (fightType)
         {
             case FightType.DefendState:
-                // StartCoroutine(DefendAttackFromEnemy());
+                StartCoroutine(DefendAttackFromEnemy());
                 break;   
         }
     }
@@ -195,6 +196,8 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         anim.SetTrigger("isBlock");
         swanItemChance.GetShinyFeatherChance();
         SoundManager.Instance.OnPlaySwanBlock();
+
+        BreadManager.Instance.FinishAction();
     }
 
     public IEnumerator BasicAttack(Bread bread)
@@ -205,7 +208,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         UIManager.Instance.currentTextCurrentTurn.text = "Basic Attack";
         target = bread;
 
-        yield return new WaitForSeconds(0f);
+        yield return new WaitForSeconds(2f);
 
         SoundManager.Instance.OnPlaySwanMainPeckAttack();
         anim.SetTrigger("basicAttack");
@@ -319,7 +322,11 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
                 break;
         }
 
+
         anim.SetTrigger("isDamage");
+        yield return new WaitForSeconds(0.2f);
+        BreadManager.Instance.FinishAction();
+
         SoundManager.Instance.OnPlaySwanHurt();
 
         UpdateHealthUI(swanData.health);
@@ -333,8 +340,8 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         {
             anim.SetTrigger("isBlock");
             gameManager.InitializeLoseScreen();
+            yield break;
         }
-
     }
 
     public void UpdateHealthUI(float value)

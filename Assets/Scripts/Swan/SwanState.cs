@@ -203,7 +203,7 @@ public class SwanState : MonoBehaviour, OnBreadHandler
             item.gameObject.SetActive(true);
         }
 
-        // state.OnSuccess();
+        state.OnSuccess();
     }
 
     public void PlayDefendBasicArrowKey(KeyCode keyCode, OnEventHandler state, ref bool condition, ref int index)

@@ -40,48 +40,75 @@ public class Muffin : Bread
         SoundManager.Instance.OnPlayMuffinDeath();
     }
 
-    public override void SpecialPower()
+    public override IEnumerator SpecialPower()
     {
         if(Random.Range(0, 2) == 0)
         {
-            if(breadMana <= special1Cost || breadManager.breadOrders.All(x => x.breadHealth / x.maxHealth >= 0.75f))
+            if (breadMana <= special1Cost || breadManager.breadOrders.All(x => x.breadHealth / x.maxHealth >= 0.75f))
             {
-                SoundManager.Instance.OnPlayMuffinSkillOne();
-                Fight();
-                return;
+                StartCoroutine(Fight());
+                yield break;
             }
 
             Debug.Log(name + " used heal");
-            var bread = breadManager.breadOrders[Random.Range(0, breadManager.breadOrders.Count)];
-            bread.Heal(healAmount);
-            bread.HealAnimator.SetTrigger("activate");
-            UseMana(special1Cost);
+            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+            UIManager.Instance.currentTextCurrentTurn.text = name + " used heal";
 
-            //trigger animation
+            yield return new WaitForSeconds(2f);
+            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+            UIManager.Instance.currentTextCurrentTurn.text = "";
+
+            fightType = FightType.SpecialSkillOne;
+
             animTrigger = "special1";
         }
         else
         {
-            if(breadMana <= special2Cost || breadManager.breadOrders.All(x => x.breadHealth / x.maxHealth >= 0.85f))
+            if (breadMana <= special2Cost || breadManager.breadOrders.All(x => x.breadHealth / x.maxHealth >= 0.85f))
             {
-                SoundManager.Instance.OnPlayMuffinSkillTwo();
-                Fight();
-                return;
+                StartCoroutine(Fight());
+                yield break;
             }
 
+            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+            UIManager.Instance.currentTextCurrentTurn.text = name + " used group heal";
             Debug.Log(name + " used group heal");
-            breadManager.breadOrders.ForEach(x => 
-            {
-                x.Heal(groupHealAmount);
-                x.HealAnimator.SetTrigger("activate");
-            });
-            UseMana(special2Cost);
 
-            //trigger animation
+            yield return new WaitForSeconds(2f);
+            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+            UIManager.Instance.currentTextCurrentTurn.text = "";
+
+            fightType = FightType.SpecialSkillTwo;
+
             animTrigger = "special2";
         }
     }
 
+    public override void DoAction()
+    {
+        if (GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
+        {
+            switch (fightType)
+            {
+                case FightType.SpecialSkillOne:
+                    SoundManager.Instance.OnPlayMuffinSkillOne();
+                    var bread = breadManager.breadOrders[Random.Range(0, breadManager.breadOrders.Count)];
+                    bread.Heal(healAmount);
+                    bread.HealAnimator.SetTrigger("activate");
+                    UseMana(special1Cost);
+                    break;
+                case FightType.SpecialSkillTwo:
+                    SoundManager.Instance.OnPlayMuffinSkillTwo();
+                    breadManager.breadOrders.ForEach(x =>
+                    {
+                        x.Heal(groupHealAmount);
+                        x.HealAnimator.SetTrigger("activate");
+                    });
+                    UseMana(special2Cost);
+                    break;
+            }
+        }
+    }
 
     // Start is called before the first frame update
     void Start()

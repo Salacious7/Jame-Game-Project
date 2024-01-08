@@ -36,42 +36,68 @@ public class Baguette : Bread
         SoundManager.Instance.OnPlayBaguetteDeath();
     }
 
-    public override void SpecialPower()
+    public override IEnumerator SpecialPower()
     {
         if(Random.Range(0, 2) == 0)
         {
-            if(breadMana <= special1Cost)
+            if (breadMana <= special1Cost)
             {
-                SoundManager.Instance.OnPlayBaguetteSkillOne();
-                Fight();
-                return;
+                StartCoroutine(Fight());
+                yield break;
             }
 
+            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+            UIManager.Instance.currentTextCurrentTurn.text = name + " used roll";
             Debug.Log(name + " used roll");
-            DamageFromCurrentAttack = specialAttack1Damage;
-            if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
-                swan.IncomingDamage = DamageFromCurrentAttack;
-            //trigger animation
+
+            yield return new WaitForSeconds(2f);
+            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+            UIManager.Instance.currentTextCurrentTurn.text = "";
+
+            fightType = FightType.SpecialSkillOne;
+
             animTrigger = "special1";
         }
         else
         {
-            if(breadMana <= special2Cost)
+            if (breadMana <= special2Cost)
             {
-                SoundManager.Instance.OnPlayBaguetteSkillTwo();
-                Fight();
-                return;
+                StartCoroutine(Fight());
+                yield break;
             }
 
+            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
+            UIManager.Instance.currentTextCurrentTurn.text = name + " used barrage";
             Debug.Log(name + " used barrage");
-            DamageFromCurrentAttack = specialAttack2Damage;
-            if(GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
-                swan.IncomingDamage = DamageFromCurrentAttack;
-            //trigger animation
+
+            yield return new WaitForSeconds(2f);
+            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+            UIManager.Instance.currentTextCurrentTurn.text = "";
+
+            fightType = FightType.SpecialSkillTwo;
+
             animTrigger = "special2";
         }
+    }
 
-        Attack();
+    public override void DoAction()
+    {
+        if (GameObject.FindWithTag("Swan").TryGetComponent(out Swan swan))
+        {
+            switch (fightType)
+            {
+                case FightType.SpecialSkillOne:
+                    SoundManager.Instance.OnPlayBaguetteSkillOne();
+                    DamageFromCurrentAttack = specialAttack1Damage;
+                    swan.IncomingDamage = DamageFromCurrentAttack;
+                    break;
+                case FightType.SpecialSkillTwo:
+                    SoundManager.Instance.OnPlayBaguetteSkillTwo();
+                    DamageFromCurrentAttack = specialAttack2Damage;
+                    swan.IncomingDamage = DamageFromCurrentAttack;
+                    break;
+            }
+        }
     }
 
 
