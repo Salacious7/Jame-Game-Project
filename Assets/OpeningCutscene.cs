@@ -11,13 +11,27 @@ public class OpeningCutscene : MonoBehaviour
 {
     [SerializeField] Animator anim;
     [SerializeField] List<GameObject> slides;
+    [SerializeField] private GameObject nextTextObj;
 
     [SerializeField] private Animator transitionAnim;
     [SerializeField] private Image transitionImage;
 
     private int slide;
 
-    private IEnumerator Start()
+    private void Start()
+    {
+        StartCoroutine(ShowNextText());
+        StartCoroutine(StartCutscene());
+    }
+
+    private IEnumerator ShowNextText()
+    {
+        yield return new WaitForSeconds(8f);
+
+        nextTextObj.SetActive(true);
+    }
+
+    private IEnumerator StartCutscene()
     {
         transitionAnim.SetTrigger("isEndTransition");
         CutsceneVoiceState(slide);
@@ -34,7 +48,6 @@ public class OpeningCutscene : MonoBehaviour
                 {
                     break;
                 }
-
 
                 yield return null;
             }
