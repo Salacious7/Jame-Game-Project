@@ -47,6 +47,7 @@ public class Muffin : Bread
             UseMana(special1Cost);
 
             //trigger animation
+            animTrigger = "special1";
         }
         else
         {
@@ -62,6 +63,7 @@ public class Muffin : Bread
             UseMana(special2Cost);
 
             //trigger animation
+            animTrigger = "special2";
         }
     }
 

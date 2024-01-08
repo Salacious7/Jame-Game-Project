@@ -153,11 +153,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 4320
-        width: 1920
-        height: 1080
+        y: 1316.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,12 +173,12 @@ TextureImporter:
       name: bag_idle_1
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 4320
-        width: 1920
-        height: 1080
+        x: 585
+        y: 1316.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: bag_idle_2
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 4320
-        width: 1920
-        height: 1080
+        x: 1170
+        y: 1316.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: bag_idle_3
       rect:
         serializedVersion: 2
-        x: 5760
-        y: 4320
-        width: 1920
-        height: 1080
+        x: 1755
+        y: 1316.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -236,12 +236,12 @@ TextureImporter:
       name: bag_idle_4
       rect:
         serializedVersion: 2
-        x: 7680
-        y: 4320
-        width: 1920
-        height: 1080
+        x: 2340
+        y: 1316.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,12 +257,12 @@ TextureImporter:
       name: bag_idle_5
       rect:
         serializedVersion: 2
-        x: 9600
-        y: 4320
-        width: 1920
-        height: 1080
+        x: 2925
+        y: 1316.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,12 +278,12 @@ TextureImporter:
       name: bag_idle_6
       rect:
         serializedVersion: 2
-        x: 11520
-        y: 4320
-        width: 1920
-        height: 1080
+        x: 3510
+        y: 1316.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -300,11 +300,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 3240
-        width: 1920
-        height: 1080
+        y: 987.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -320,12 +320,12 @@ TextureImporter:
       name: bag_idle_8
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 3240
-        width: 1920
-        height: 1080
+        x: 585
+        y: 987.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,12 +341,12 @@ TextureImporter:
       name: bag_idle_9
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 3240
-        width: 1920
-        height: 1080
+        x: 1170
+        y: 987.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -362,12 +362,12 @@ TextureImporter:
       name: bag_idle_10
       rect:
         serializedVersion: 2
-        x: 5760
-        y: 3240
-        width: 1920
-        height: 1080
+        x: 1755
+        y: 987.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -383,12 +383,12 @@ TextureImporter:
       name: bag_idle_11
       rect:
         serializedVersion: 2
-        x: 7680
-        y: 3240
-        width: 1920
-        height: 1080
+        x: 2340
+        y: 987.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -404,12 +404,12 @@ TextureImporter:
       name: bag_idle_12
       rect:
         serializedVersion: 2
-        x: 9600
-        y: 3240
-        width: 1920
-        height: 1080
+        x: 2925
+        y: 987.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -425,12 +425,12 @@ TextureImporter:
       name: bag_idle_13
       rect:
         serializedVersion: 2
-        x: 11520
-        y: 3240
-        width: 1920
-        height: 1080
+        x: 3510
+        y: 987.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -447,11 +447,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2160
-        width: 1920
-        height: 1080
+        y: 658.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -467,12 +467,12 @@ TextureImporter:
       name: bag_idle_15
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 2160
-        width: 1920
-        height: 1080
+        x: 585
+        y: 658.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -488,12 +488,12 @@ TextureImporter:
       name: bag_idle_16
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 2160
-        width: 1920
-        height: 1080
+        x: 1170
+        y: 658.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -509,12 +509,12 @@ TextureImporter:
       name: bag_idle_17
       rect:
         serializedVersion: 2
-        x: 5760
-        y: 2160
-        width: 1920
-        height: 1080
+        x: 1755
+        y: 658.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -530,12 +530,12 @@ TextureImporter:
       name: bag_idle_18
       rect:
         serializedVersion: 2
-        x: 7680
-        y: 2160
-        width: 1920
-        height: 1080
+        x: 2340
+        y: 658.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -551,12 +551,12 @@ TextureImporter:
       name: bag_idle_19
       rect:
         serializedVersion: 2
-        x: 9600
-        y: 2160
-        width: 1920
-        height: 1080
+        x: 2925
+        y: 658.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -572,12 +572,12 @@ TextureImporter:
       name: bag_idle_20
       rect:
         serializedVersion: 2
-        x: 11520
-        y: 2160
-        width: 1920
-        height: 1080
+        x: 3510
+        y: 658.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -594,11 +594,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1080
-        width: 1920
-        height: 1080
+        y: 329.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -614,12 +614,12 @@ TextureImporter:
       name: bag_idle_22
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 1080
-        width: 1920
-        height: 1080
+        x: 585
+        y: 329.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -635,12 +635,12 @@ TextureImporter:
       name: bag_idle_23
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 1080
-        width: 1920
-        height: 1080
+        x: 1170
+        y: 329.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -656,12 +656,12 @@ TextureImporter:
       name: bag_idle_24
       rect:
         serializedVersion: 2
-        x: 5760
-        y: 1080
-        width: 1920
-        height: 1080
+        x: 1755
+        y: 329.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -677,12 +677,12 @@ TextureImporter:
       name: bag_idle_25
       rect:
         serializedVersion: 2
-        x: 7680
-        y: 1087
-        width: 1920
-        height: 1073
+        x: 2340
+        y: 329.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -698,12 +698,12 @@ TextureImporter:
       name: bag_idle_26
       rect:
         serializedVersion: 2
-        x: 9600
-        y: 1087
-        width: 1920
-        height: 1073
+        x: 2925
+        y: 329.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -719,12 +719,12 @@ TextureImporter:
       name: bag_idle_27
       rect:
         serializedVersion: 2
-        x: 11520
-        y: 1087
-        width: 1920
-        height: 1073
+        x: 3510
+        y: 329.8
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -741,11 +741,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        y: 0.7999878
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -761,12 +761,12 @@ TextureImporter:
       name: bag_idle_29
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 0
-        width: 1920
-        height: 1080
+        x: 585
+        y: 0.7999878
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -782,12 +782,12 @@ TextureImporter:
       name: bag_idle_30
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 0
-        width: 1920
-        height: 1080
+        x: 1170
+        y: 0.7999878
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -803,12 +803,12 @@ TextureImporter:
       name: bag_idle_31
       rect:
         serializedVersion: 2
-        x: 5760
-        y: 0
-        width: 1920
-        height: 1080
+        x: 1755
+        y: 0.7999878
+        width: 585.1429
+        height: 329.2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -857,9 +857,6 @@ TextureImporter:
       bag_idle_3: 2025859967
       bag_idle_30: 1627627126
       bag_idle_31: 1696824568
-      bag_idle_32: 2096304157
-      bag_idle_33: 1796745714
-      bag_idle_34: -182654582
       bag_idle_4: -969550794
       bag_idle_5: -1707681476
       bag_idle_6: 157319146

@@ -1,0 +1,633 @@
+fileFormatVersion: 2
+guid: d403e045b9e504999848ea363d2a7dde
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: muffin_special_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 987.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e23e018d5de64184b3cfccd8b95eb84
+      internalID: 489018933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_1
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 987.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd5be3db6b7b4ba3be1b3091e5ade2d
+      internalID: 551586606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_2
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 987.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf921ae3cd28c43f8abb4ca4d2e57c09
+      internalID: -71071666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_3
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 987.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f741d00b3f7415781220d82421f671
+      internalID: 1013543728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_4
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 987.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b5dd304213c4dcd9d8734085183c61
+      internalID: -1175106263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_5
+      rect:
+        serializedVersion: 2
+        x: 2925
+        y: 987.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd2ef1c4cbef4283ad95054f84f9cff
+      internalID: 408706194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_6
+      rect:
+        serializedVersion: 2
+        x: 3510
+        y: 987.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ecfa727906140b288f8bb86db74ab9
+      internalID: 1468997001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 658.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff202c0b81044f9091850f30ebd051a
+      internalID: 970121125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_8
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 658.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a59319721ce4eccab3b7f103143111
+      internalID: 287371220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_9
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 658.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43fc089bb23084217bb77d49478f5841
+      internalID: 1163045264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_10
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 658.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2530e4ed9489445e196c0b7240f35580
+      internalID: -2026801126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_11
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 658.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557e4308575444529a49e0dc6eebf257
+      internalID: 754852799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_12
+      rect:
+        serializedVersion: 2
+        x: 2925
+        y: 658.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d864a566bfd664bc8a28a8e0b6eb55a5
+      internalID: 347938289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_13
+      rect:
+        serializedVersion: 2
+        x: 3510
+        y: 658.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e6675ca151e4d10a29aafd31699755
+      internalID: 765637329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 329.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f38e77a37549401ab524cbb766de14b
+      internalID: -1273713058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_15
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 329.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82208cfc6629348539a18e89af1896b6
+      internalID: -1539636165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_16
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 329.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e628b771102f544d9887c7ef9bbbe070
+      internalID: 226668675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_17
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 329.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0b23c4cf68c4aa9824bb7f3c005cba
+      internalID: -1286865225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_18
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 329.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd978d52c321642679c87c346ba5a41a
+      internalID: -2047889235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_19
+      rect:
+        serializedVersion: 2
+        x: 2925
+        y: 329.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a50f14f86ea2480a91b57f1ceb5ce46
+      internalID: 1045993161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_20
+      rect:
+        serializedVersion: 2
+        x: 3510
+        y: 329.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ceb93c09a9d47d5b6a30e7736250e7
+      internalID: -320114109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0aa97e20374548228c9a4d19c87cbc4
+      internalID: -654763566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muffin_special_22
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 0.75
+        width: 585.1429
+        height: 329.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0676235dde4f41d293c41af2d8b8b80
+      internalID: 845064351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      muffin_special_0: 489018933
+      muffin_special_1: 551586606
+      muffin_special_10: -2026801126
+      muffin_special_11: 754852799
+      muffin_special_12: 347938289
+      muffin_special_13: 765637329
+      muffin_special_14: -1273713058
+      muffin_special_15: -1539636165
+      muffin_special_16: 226668675
+      muffin_special_17: -1286865225
+      muffin_special_18: -2047889235
+      muffin_special_19: 1045993161
+      muffin_special_2: -71071666
+      muffin_special_20: -320114109
+      muffin_special_21: -654763566
+      muffin_special_22: 845064351
+      muffin_special_3: 1013543728
+      muffin_special_4: -1175106263
+      muffin_special_5: 408706194
+      muffin_special_6: 1468997001
+      muffin_special_7: 970121125
+      muffin_special_8: 287371220
+      muffin_special_9: 1163045264
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

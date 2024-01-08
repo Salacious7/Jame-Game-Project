@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class BreadManager : MonoBehaviour
@@ -22,16 +23,11 @@ public class BreadManager : MonoBehaviour
 
     void Update()
     {
-        if(breadOrders == null || winCondition)
+        if(breads == null || winCondition)
             return;
 
-        breadOrders.RemoveAll(x => x.Dead);
-
-        if(breadOrders.Count < 1)
-        {
-            // Has a bug: The win ui initializes even if the game is not yet compeleted
-            // gameManager.InitializeWinScreen();
-        }
+        if(breads.All(x => x.Dead))
+            gameManager.InitializeWinScreen();
     }
 
     public IEnumerator StartBreadsTurn()

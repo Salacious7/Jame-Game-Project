@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -114,9 +114,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1580
-        width: 1405
-        height: 790
+        y: 2410
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: pretzel_attack_1
       rect:
         serializedVersion: 2
-        x: 1405
-        y: 1580
-        width: 1405
-        height: 790
+        x: 2142
+        y: 2410
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: pretzel_attack_2
       rect:
         serializedVersion: 2
-        x: 2810
-        y: 1580
-        width: 1405
-        height: 790
+        x: 4284
+        y: 2410
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: pretzel_attack_3
       rect:
         serializedVersion: 2
-        x: 4215
-        y: 1580
-        width: 1405
-        height: 790
+        x: 6426
+        y: 2410
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: pretzel_attack_4
       rect:
         serializedVersion: 2
-        x: 5620
-        y: 1580
-        width: 1405
-        height: 790
+        x: 8568
+        y: 2410
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: pretzel_attack_5
       rect:
         serializedVersion: 2
-        x: 7025
-        y: 1580
-        width: 1405
-        height: 790
+        x: 10710
+        y: 2410
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: pretzel_attack_6
       rect:
         serializedVersion: 2
-        x: 8430
-        y: 1580
-        width: 1405
-        height: 790
+        x: 12852
+        y: 2410
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,9 +261,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 790
-        width: 1405
-        height: 790
+        y: 1205
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: pretzel_attack_8
       rect:
         serializedVersion: 2
-        x: 1405
-        y: 790
-        width: 1405
-        height: 790
+        x: 2142
+        y: 1205
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: pretzel_attack_9
       rect:
         serializedVersion: 2
-        x: 2810
-        y: 790
-        width: 1405
-        height: 790
+        x: 4284
+        y: 1205
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +323,10 @@ TextureImporter:
       name: pretzel_attack_10
       rect:
         serializedVersion: 2
-        x: 4215
-        y: 790
-        width: 1405
-        height: 790
+        x: 6426
+        y: 1205
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +344,10 @@ TextureImporter:
       name: pretzel_attack_11
       rect:
         serializedVersion: 2
-        x: 5620
-        y: 790
-        width: 1405
-        height: 790
+        x: 8568
+        y: 1205
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +365,10 @@ TextureImporter:
       name: pretzel_attack_12
       rect:
         serializedVersion: 2
-        x: 7025
-        y: 790
-        width: 1405
-        height: 790
+        x: 10710
+        y: 1205
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +386,10 @@ TextureImporter:
       name: pretzel_attack_13
       rect:
         serializedVersion: 2
-        x: 8430
-        y: 790
-        width: 1405
-        height: 790
+        x: 12852
+        y: 1205
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -409,8 +409,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1405
-        height: 790
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +428,10 @@ TextureImporter:
       name: pretzel_attack_15
       rect:
         serializedVersion: 2
-        x: 1405
+        x: 2142
         y: 0
-        width: 1405
-        height: 790
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,10 +449,10 @@ TextureImporter:
       name: pretzel_attack_16
       rect:
         serializedVersion: 2
-        x: 2810
+        x: 4284
         y: 0
-        width: 1405
-        height: 790
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,10 +470,10 @@ TextureImporter:
       name: pretzel_attack_17
       rect:
         serializedVersion: 2
-        x: 4215
+        x: 6426
         y: 0
-        width: 1405
-        height: 790
+        width: 2142.8572
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

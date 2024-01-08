@@ -183,7 +183,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
                 Debug.Log("Defended attack!");
                 anim.SetTrigger("isBlock");
                 swanItemChance.GetShinyFeatherChance();
-                breadManager.EndTurn();
+                //breadManager.EndTurn();
                 SoundManager.Instance.OnPlaySwanBlock();
                 break;   
         }
