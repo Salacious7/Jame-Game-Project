@@ -289,7 +289,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 1200
   m_Sprite: {fileID: 1281118822, guid: a680c4d705d37ff4884e36ec45c4f80d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1784,7 +1784,7 @@ GameObject:
   - component: {fileID: 187115655}
   - component: {fileID: 187115654}
   m_Layer: 0
-  m_Name: Grass4
+  m_Name: LittleGrass3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1851,7 +1851,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 1200
   m_Sprite: {fileID: 158517115, guid: a680c4d705d37ff4884e36ec45c4f80d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9891,7 +9891,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 1200
   m_Sprite: {fileID: 1281118822, guid: a680c4d705d37ff4884e36ec45c4f80d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17385,7 +17385,7 @@ MonoBehaviour:
   swanPos: {fileID: 3299903428631510521}
   tomatoObj: {fileID: 3354452651539629537}
   throwTomatoSpeed: 17
-  throwTomato: 1
+  throwTomato: 0
 --- !u!95 &1929451458
 Animator:
   serializedVersion: 5
@@ -20467,10 +20467,10 @@ SceneRoots:
   - {fileID: 1252552802}
   - {fileID: 29935417}
   - {fileID: 1088034077}
+  - {fileID: 187115656}
   - {fileID: 57556336}
   - {fileID: 1755576448}
   - {fileID: 148169870}
-  - {fileID: 187115656}
   - {fileID: 1906167179}
   - {fileID: 1822635608}
   - {fileID: 1049102743}
