@@ -38,6 +38,7 @@
 		</relationship>
 		<relationship name="parameters">
 			<destination>{40b66232-ed92-43b2-bc3d-6e118934f78e}</destination>
+			<destination>{3dfe41b4-bb89-46ff-b9a8-0ca12049ed0c}</destination>
 		</relationship>
 		<relationship name="banks">
 			<destination>{18087b92-ae63-4ed2-9920-ebec06446198}</destination>
@@ -49,6 +50,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{7813d7a9-24ce-4319-928f-f3b9d8b140e4}">
+		<relationship name="modules">
+			<destination>{602a81c3-0260-4fee-9433-03dd203cbf34}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{46a600ff-00cc-44b3-9da7-096aba013964}</destination>
 		</relationship>
@@ -157,6 +161,11 @@
 			<destination>{c91c49ee-20c7-4d18-92fd-7358217437c1}</destination>
 		</relationship>
 	</object>
+	<object class="ActionSheet" id="{3dfe41b4-bb89-46ff-b9a8-0ca12049ed0c}">
+		<relationship name="modules">
+			<destination>{602a81c3-0260-4fee-9433-03dd203cbf34}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{46a600ff-00cc-44b3-9da7-096aba013964}">
 		<relationship name="effectChain">
 			<destination>{b88c0f95-223b-4e50-a453-4c8e13c75a22}</destination>
@@ -166,6 +175,11 @@
 		</relationship>
 		<relationship name="mixer">
 			<destination>{6a5e5b8c-e3ca-4bc4-aa56-2498216daf43}</destination>
+		</relationship>
+	</object>
+	<object class="MultiSound" id="{602a81c3-0260-4fee-9433-03dd203cbf34}">
+		<relationship name="sounds">
+			<destination>{2f1a9196-a8b9-4a8c-b38f-333d98b19f13}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{a9487614-b8b8-4ad3-bd8e-9555ceeb4df0}">
@@ -999,6 +1013,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{08ed6628-f376-41cb-8148-23e6672d9390}" />
+	<object class="SingleSound" id="{2f1a9196-a8b9-4a8c-b38f-333d98b19f13}">
+		<relationship name="audioFile">
+			<destination>{97543335-c148-44f6-9f8e-d605928db228}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{81a87e13-c164-4a2d-8eca-7b32fd52565b}" />
 	<object class="Automator" id="{916b24bd-b596-4d7f-a2fe-e1dadb038509}">
 		<property name="nameOfPropertyBeingAutomated">

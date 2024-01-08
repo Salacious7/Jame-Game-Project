@@ -50,8 +50,6 @@ public class SwanItemChance : MonoBehaviour
 
     public void GetCaffeinatedDrinkOrMilkChance()
     {
-        Debug.Log(CheckForChance());
-
         if (CheckForChance())
         {
             int randomIndex = Random.Range(0, 1);

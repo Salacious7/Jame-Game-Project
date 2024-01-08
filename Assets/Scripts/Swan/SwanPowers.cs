@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
 {
+    private Swan swan;
     private SwanState swanState;
     private SwanUI swanUI;
     private SwanItemChance swanItemChance;
@@ -32,6 +34,7 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
         swanState = GetComponent<SwanState>();
         swanUI = GetComponent<SwanUI>();
         swanItemChance = GetComponent<SwanItemChance>();
+        swan = GetComponent<Swan>();
         anim = GetComponent<Animator>();
     }
 
@@ -74,15 +77,19 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
 
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
         UIManager.Instance.currentTextCurrentTurn.text = "Swan used Swan Scream!";
+
+        yield return new WaitForSeconds(2f);
+
+        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.currentTextCurrentTurn.text = "";
+
         SoundManager.Instance.OnPlaySwanSkillOne();
 
         anim.SetTrigger("specialScream");
 
-        yield return new WaitForSeconds(2f);
-        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-        UIManager.Instance.currentTextCurrentTurn.text = "";
+        swan.swanData.mana -= 10f;
+        swanUI.manaText.text = swan.swanData.mana.ToString();
 
-        swanUI.specialPowerBarSlider.value -= 10f;
         bread.ReduceBreadHealth(20f);
         swanItemChance.GetClearBlueCrystalChance();
 
@@ -99,14 +106,16 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
         UIManager.Instance.currentTextCurrentTurn.text = "Swan used Ground Pummel!";
 
-        SoundManager.Instance.OnPlaySwanSkillTwo();
-        anim.SetTrigger("specialStomp");
-
         yield return new WaitForSeconds(2f);
         UIManager.Instance.panelCurrentTurnObj.SetActive(false);
         UIManager.Instance.currentTextCurrentTurn.text = "";
 
-        swanUI.specialPowerBarSlider.value -= 20f;
+
+        SoundManager.Instance.OnPlaySwanSkillTwo();
+        anim.SetTrigger("specialStomp");
+        swan.swanData.mana -= 20f;
+        swanUI.manaText.text = swan.swanData.mana.ToString();
+
         bread.ReduceBreadHealth(30f);
         swanItemChance.GetCaffeinatedDrinkOrMilkChance();
 
@@ -120,7 +129,7 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
         swanUI.ActionStateButtonUninteractable();
         swanUI.ActionStateNoAllAccessible();
 
-        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
+        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
         UIManager.Instance.currentTextCurrentTurn.text = "Failed to Special Power!";
 
         yield return new WaitForSeconds(2f);

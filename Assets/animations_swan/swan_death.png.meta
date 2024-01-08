@@ -106,6 +106,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -113,10 +152,10 @@ TextureImporter:
       name: swan_death_0
       rect:
         serializedVersion: 2
-        x: 560
-        y: 4450
-        width: 696
-        height: 810
+        x: 0
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +173,10 @@ TextureImporter:
       name: swan_death_1
       rect:
         serializedVersion: 2
-        x: 2480
-        y: 4463
-        width: 617
-        height: 817
+        x: 1920
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +194,10 @@ TextureImporter:
       name: swan_death_2
       rect:
         serializedVersion: 2
-        x: 4427
-        y: 4499
-        width: 577
-        height: 794
+        x: 3840
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +215,10 @@ TextureImporter:
       name: swan_death_3
       rect:
         serializedVersion: 2
-        x: 6370
-        y: 4516
-        width: 567
-        height: 764
+        x: 5760
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +236,10 @@ TextureImporter:
       name: swan_death_4
       rect:
         serializedVersion: 2
-        x: 8225
-        y: 4469
-        width: 639
-        height: 821
+        x: 7680
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +257,10 @@ TextureImporter:
       name: swan_death_5
       rect:
         serializedVersion: 2
-        x: 10036
-        y: 4410
-        width: 745
-        height: 906
+        x: 9600
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +278,10 @@ TextureImporter:
       name: swan_death_6
       rect:
         serializedVersion: 2
-        x: 11907
-        y: 4387
-        width: 794
-        height: 936
+        x: 11520
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +299,10 @@ TextureImporter:
       name: swan_death_7
       rect:
         serializedVersion: 2
-        x: 350
-        y: 3298
-        width: 817
-        height: 932
+        x: 0
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +320,10 @@ TextureImporter:
       name: swan_death_8
       rect:
         serializedVersion: 2
-        x: 2253
-        y: 3311
-        width: 811
-        height: 902
+        x: 1920
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +341,10 @@ TextureImporter:
       name: swan_death_9
       rect:
         serializedVersion: 2
-        x: 4174
-        y: 3337
-        width: 784
-        height: 850
+        x: 3840
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +362,10 @@ TextureImporter:
       name: swan_death_10
       rect:
         serializedVersion: 2
-        x: 6104
-        y: 3353
-        width: 758
-        height: 807
+        x: 5760
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +383,10 @@ TextureImporter:
       name: swan_death_11
       rect:
         serializedVersion: 2
-        x: 8024
-        y: 3353
-        width: 758
-        height: 807
+        x: 7680
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +404,10 @@ TextureImporter:
       name: swan_death_12
       rect:
         serializedVersion: 2
-        x: 9944
-        y: 3353
-        width: 758
-        height: 807
+        x: 9600
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +425,10 @@ TextureImporter:
       name: swan_death_13
       rect:
         serializedVersion: 2
-        x: 11865
-        y: 3353
-        width: 758
-        height: 807
+        x: 11520
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,10 +446,10 @@ TextureImporter:
       name: swan_death_14
       rect:
         serializedVersion: 2
-        x: 343
-        y: 2273
-        width: 755
-        height: 807
+        x: 0
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +467,10 @@ TextureImporter:
       name: swan_death_15
       rect:
         serializedVersion: 2
-        x: 2263
-        y: 2273
-        width: 758
-        height: 807
+        x: 1920
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,10 +488,10 @@ TextureImporter:
       name: swan_death_16
       rect:
         serializedVersion: 2
-        x: 4184
-        y: 2273
-        width: 757
-        height: 807
+        x: 3840
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,10 +509,10 @@ TextureImporter:
       name: swan_death_17
       rect:
         serializedVersion: 2
-        x: 6104
-        y: 2273
-        width: 758
-        height: 807
+        x: 5760
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,10 +530,10 @@ TextureImporter:
       name: swan_death_18
       rect:
         serializedVersion: 2
-        x: 8024
-        y: 2273
-        width: 758
-        height: 807
+        x: 7680
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,10 +551,10 @@ TextureImporter:
       name: swan_death_19
       rect:
         serializedVersion: 2
-        x: 9944
-        y: 2273
-        width: 758
-        height: 807
+        x: 9600
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,10 +572,10 @@ TextureImporter:
       name: swan_death_20
       rect:
         serializedVersion: 2
-        x: 11865
-        y: 2273
-        width: 758
-        height: 807
+        x: 11520
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,10 +593,10 @@ TextureImporter:
       name: swan_death_21
       rect:
         serializedVersion: 2
-        x: 343
-        y: 1193
-        width: 755
-        height: 807
+        x: 0
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,10 +614,10 @@ TextureImporter:
       name: swan_death_22
       rect:
         serializedVersion: 2
-        x: 2263
-        y: 1193
-        width: 758
-        height: 807
+        x: 1920
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,10 +635,10 @@ TextureImporter:
       name: swan_death_23
       rect:
         serializedVersion: 2
-        x: 4184
-        y: 1193
-        width: 757
-        height: 807
+        x: 3840
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,10 +656,10 @@ TextureImporter:
       name: swan_death_24
       rect:
         serializedVersion: 2
-        x: 6104
-        y: 1193
-        width: 758
-        height: 807
+        x: 5760
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,10 +677,10 @@ TextureImporter:
       name: swan_death_25
       rect:
         serializedVersion: 2
-        x: 8024
-        y: 1193
-        width: 758
-        height: 807
+        x: 7680
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,10 +698,10 @@ TextureImporter:
       name: swan_death_26
       rect:
         serializedVersion: 2
-        x: 9944
-        y: 1193
-        width: 758
-        height: 807
+        x: 9600
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,10 +719,10 @@ TextureImporter:
       name: swan_death_27
       rect:
         serializedVersion: 2
-        x: 11865
-        y: 1193
-        width: 758
-        height: 807
+        x: 11520
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -701,10 +740,10 @@ TextureImporter:
       name: swan_death_28
       rect:
         serializedVersion: 2
-        x: 343
-        y: 113
-        width: 755
-        height: 807
+        x: 0
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -722,10 +761,10 @@ TextureImporter:
       name: swan_death_29
       rect:
         serializedVersion: 2
-        x: 2263
-        y: 113
-        width: 758
-        height: 807
+        x: 1920
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -743,10 +782,10 @@ TextureImporter:
       name: swan_death_30
       rect:
         serializedVersion: 2
-        x: 4184
-        y: 113
-        width: 757
-        height: 807
+        x: 3840
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -764,10 +803,10 @@ TextureImporter:
       name: swan_death_31
       rect:
         serializedVersion: 2
-        x: 6104
-        y: 113
-        width: 758
-        height: 807
+        x: 5760
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -785,10 +824,10 @@ TextureImporter:
       name: swan_death_32
       rect:
         serializedVersion: 2
-        x: 8024
-        y: 113
-        width: 758
-        height: 807
+        x: 7680
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -806,10 +845,10 @@ TextureImporter:
       name: swan_death_33
       rect:
         serializedVersion: 2
-        x: 9944
-        y: 113
-        width: 758
-        height: 807
+        x: 9600
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -1,24 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SwanManager : MonoBehaviour
 {
-    public List<Bread> breads = new List<Bread>();
     private bool selectedBread;
     public int selectedCharacterIndex { get; set; }
 
+    private List<Bread> activeBreads = new List<Bread>();
+
     private void EnableSelectedArrow()
     {
-        for (int i = 0; i < breads.Count; i++)
+        activeBreads = new List<Bread>(BreadManager.Instance.breads);
+        activeBreads.RemoveAll(x => x.Dead);
+
+        for (int i = 0; i < activeBreads.Count; i++)
         {
             if (i == selectedCharacterIndex)
             {
-                breads[i].selectedArrow.SetActive(true);
+                activeBreads[i].selectedArrow.SetActive(true);
             }
             else
             {
-                breads[i].selectedArrow.SetActive(false);
+                activeBreads[i].selectedArrow.SetActive(false);
             }
         }
     }
@@ -41,7 +46,7 @@ public class SwanManager : MonoBehaviour
                 selectedCharacterIndex--;
 
                 if (selectedCharacterIndex < 0)
-                    selectedCharacterIndex = breads.Count - 1;
+                    selectedCharacterIndex = activeBreads.Count - 1;
 
                 EnableSelectedArrow();
             }
@@ -50,7 +55,7 @@ public class SwanManager : MonoBehaviour
             {
                 selectedCharacterIndex++;
 
-                if (selectedCharacterIndex > breads.Count - 1)
+                if (selectedCharacterIndex > activeBreads.Count - 1)
                     selectedCharacterIndex = 0;
 
                 EnableSelectedArrow();
@@ -59,7 +64,7 @@ public class SwanManager : MonoBehaviour
 
         yield return new WaitUntil(() => selectedBread);
 
-        state.OnSuccess(breads[selectedCharacterIndex]);
+        state.OnSuccess(activeBreads[selectedCharacterIndex]);
         selectedBread = false;
     }
 }

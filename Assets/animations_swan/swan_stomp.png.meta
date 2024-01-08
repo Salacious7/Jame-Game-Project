@@ -152,10 +152,10 @@ TextureImporter:
       name: swan_stomp_0
       rect:
         serializedVersion: 2
-        x: 573
-        y: 4447
-        width: 751
-        height: 779
+        x: 0
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: swan_stomp_1
       rect:
         serializedVersion: 2
-        x: 2493
-        y: 4463
-        width: 752
-        height: 777
+        x: 1920
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +194,10 @@ TextureImporter:
       name: swan_stomp_2
       rect:
         serializedVersion: 2
-        x: 4414
-        y: 4479
-        width: 751
-        height: 773
+        x: 3840
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: swan_stomp_3
       rect:
         serializedVersion: 2
-        x: 6334
-        y: 4506
-        width: 751
-        height: 764
+        x: 5760
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: swan_stomp_4
       rect:
         serializedVersion: 2
-        x: 8257
-        y: 4522
-        width: 748
-        height: 761
+        x: 7680
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +257,10 @@ TextureImporter:
       name: swan_stomp_5
       rect:
         serializedVersion: 2
-        x: 10177
-        y: 4538
-        width: 750
-        height: 759
+        x: 9600
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: swan_stomp_6
       rect:
         serializedVersion: 2
-        x: 12098
-        y: 4562
-        width: 748
-        height: 757
+        x: 11520
+        y: 4320
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,10 +299,10 @@ TextureImporter:
       name: swan_stomp_7
       rect:
         serializedVersion: 2
-        x: 573
-        y: 3501
-        width: 751
-        height: 752
+        x: 0
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +320,10 @@ TextureImporter:
       name: swan_stomp_8
       rect:
         serializedVersion: 2
-        x: 2493
-        y: 3527
-        width: 752
-        height: 745
+        x: 1920
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,10 +341,10 @@ TextureImporter:
       name: swan_stomp_9
       rect:
         serializedVersion: 2
-        x: 4413
-        y: 3541
-        width: 752
-        height: 744
+        x: 3840
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,10 +362,10 @@ TextureImporter:
       name: swan_stomp_10
       rect:
         serializedVersion: 2
-        x: 6337
-        y: 3560
-        width: 748
-        height: 739
+        x: 5760
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,10 +383,10 @@ TextureImporter:
       name: swan_stomp_11
       rect:
         serializedVersion: 2
-        x: 8257
-        y: 3585
-        width: 748
-        height: 733
+        x: 7680
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,10 +404,10 @@ TextureImporter:
       name: swan_stomp_12
       rect:
         serializedVersion: 2
-        x: 10177
-        y: 3531
-        width: 750
-        height: 745
+        x: 9600
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,10 +425,10 @@ TextureImporter:
       name: swan_stomp_13
       rect:
         serializedVersion: 2
-        x: 12098
-        y: 3448
-        width: 748
-        height: 762
+        x: 11520
+        y: 3240
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -446,10 +446,10 @@ TextureImporter:
       name: swan_stomp_14
       rect:
         serializedVersion: 2
-        x: 573
-        y: 2316
-        width: 751
-        height: 771
+        x: 0
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -467,10 +467,10 @@ TextureImporter:
       name: swan_stomp_15
       rect:
         serializedVersion: 2
-        x: 2493
-        y: 2287
-        width: 752
-        height: 779
+        x: 1920
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -488,10 +488,10 @@ TextureImporter:
       name: swan_stomp_16
       rect:
         serializedVersion: 2
-        x: 4413
-        y: 2286
-        width: 752
-        height: 778
+        x: 3840
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -509,10 +509,10 @@ TextureImporter:
       name: swan_stomp_17
       rect:
         serializedVersion: 2
-        x: 6334
-        y: 2287
-        width: 751
-        height: 777
+        x: 5760
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -530,10 +530,10 @@ TextureImporter:
       name: swan_stomp_18
       rect:
         serializedVersion: 2
-        x: 8257
-        y: 2287
-        width: 748
-        height: 779
+        x: 7680
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -551,10 +551,10 @@ TextureImporter:
       name: swan_stomp_19
       rect:
         serializedVersion: 2
-        x: 10177
-        y: 2286
-        width: 750
-        height: 778
+        x: 9600
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -572,10 +572,10 @@ TextureImporter:
       name: swan_stomp_20
       rect:
         serializedVersion: 2
-        x: 12098
-        y: 2287
-        width: 748
-        height: 777
+        x: 11520
+        y: 2160
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,10 +593,10 @@ TextureImporter:
       name: swan_stomp_21
       rect:
         serializedVersion: 2
-        x: 573
-        y: 1207
-        width: 751
-        height: 779
+        x: 0
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -614,10 +614,10 @@ TextureImporter:
       name: swan_stomp_22
       rect:
         serializedVersion: 2
-        x: 2493
-        y: 1207
-        width: 752
-        height: 779
+        x: 1920
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -635,10 +635,10 @@ TextureImporter:
       name: swan_stomp_23
       rect:
         serializedVersion: 2
-        x: 4413
-        y: 1206
-        width: 752
-        height: 778
+        x: 3840
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -656,10 +656,10 @@ TextureImporter:
       name: swan_stomp_24
       rect:
         serializedVersion: 2
-        x: 6334
-        y: 1207
-        width: 751
-        height: 777
+        x: 5760
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -677,10 +677,10 @@ TextureImporter:
       name: swan_stomp_25
       rect:
         serializedVersion: 2
-        x: 8257
-        y: 1207
-        width: 748
-        height: 779
+        x: 7680
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -698,10 +698,10 @@ TextureImporter:
       name: swan_stomp_26
       rect:
         serializedVersion: 2
-        x: 10177
-        y: 1206
-        width: 750
-        height: 778
+        x: 9600
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -719,10 +719,10 @@ TextureImporter:
       name: swan_stomp_27
       rect:
         serializedVersion: 2
-        x: 12098
-        y: 1207
-        width: 748
-        height: 777
+        x: 11520
+        y: 1080
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -740,10 +740,10 @@ TextureImporter:
       name: swan_stomp_28
       rect:
         serializedVersion: 2
-        x: 573
-        y: 127
-        width: 751
-        height: 779
+        x: 0
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -761,10 +761,10 @@ TextureImporter:
       name: swan_stomp_29
       rect:
         serializedVersion: 2
-        x: 2493
-        y: 127
-        width: 752
-        height: 779
+        x: 1920
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -782,10 +782,10 @@ TextureImporter:
       name: swan_stomp_30
       rect:
         serializedVersion: 2
-        x: 4413
-        y: 126
-        width: 752
-        height: 778
+        x: 3840
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -803,10 +803,10 @@ TextureImporter:
       name: swan_stomp_31
       rect:
         serializedVersion: 2
-        x: 6334
-        y: 127
-        width: 751
-        height: 777
+        x: 5760
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -824,10 +824,10 @@ TextureImporter:
       name: swan_stomp_32
       rect:
         serializedVersion: 2
-        x: 8257
-        y: 127
-        width: 748
-        height: 779
+        x: 7680
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -845,10 +845,10 @@ TextureImporter:
       name: swan_stomp_33
       rect:
         serializedVersion: 2
-        x: 10177
-        y: 126
-        width: 750
-        height: 778
+        x: 9600
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -866,10 +866,10 @@ TextureImporter:
       name: swan_stomp_34
       rect:
         serializedVersion: 2
-        x: 12098
-        y: 127
-        width: 748
-        height: 777
+        x: 11520
+        y: 0
+        width: 1920.7142
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
