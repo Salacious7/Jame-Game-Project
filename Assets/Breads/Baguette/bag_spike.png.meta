@@ -113,12 +113,12 @@ TextureImporter:
       name: bag_spike_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 678.75
+        x: 804
+        y: 904.6666
         width: 804.5714
-        height: 339.25
+        height: 452.33334
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: bag_spike_2
       rect:
         serializedVersion: 2
-        x: 804
-        y: 678.75
+        x: 1608
+        y: 904.6666
         width: 804.5714
-        height: 339.25
+        height: 452.33334
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +155,12 @@ TextureImporter:
       name: bag_spike_3
       rect:
         serializedVersion: 2
-        x: 1608
-        y: 678.75
+        x: 2412
+        y: 904.6666
         width: 804.5714
-        height: 339.25
+        height: 452.33334
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,12 +176,12 @@ TextureImporter:
       name: bag_spike_4
       rect:
         serializedVersion: 2
-        x: 2412
-        y: 678.75
+        x: 3216
+        y: 904.6666
         width: 804.5714
-        height: 339.25
+        height: 452.33334
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: bag_spike_5
       rect:
         serializedVersion: 2
-        x: 3216
-        y: 678.75
+        x: 4020
+        y: 904.6666
         width: 804.5714
-        height: 339.25
+        height: 452.33334
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,12 +218,12 @@ TextureImporter:
       name: bag_spike_6
       rect:
         serializedVersion: 2
-        x: 4020
-        y: 678.75
+        x: 4824
+        y: 904.6666
         width: 804.5714
-        height: 339.25
+        height: 452.33334
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,12 +239,12 @@ TextureImporter:
       name: bag_spike_7
       rect:
         serializedVersion: 2
-        x: 4824
-        y: 678.75
+        x: 0
+        y: 452.66666
         width: 804.5714
-        height: 339.25
+        height: 452.33334
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -260,12 +260,12 @@ TextureImporter:
       name: bag_spike_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 339.75
+        x: 804
+        y: 452.66666
         width: 804.5714
-        height: 339.25
+        height: 452.33334
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -281,12 +281,12 @@ TextureImporter:
       name: bag_spike_9
       rect:
         serializedVersion: 2
-        x: 804
-        y: 339.75
+        x: 1608
+        y: 452.66666
         width: 804.5714
-        height: 339.25
+        height: 452.33334
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -302,12 +302,12 @@ TextureImporter:
       name: bag_spike_10
       rect:
         serializedVersion: 2
-        x: 1608
-        y: 339.75
+        x: 2412
+        y: 452.66666
         width: 804.5714
-        height: 339.25
+        height: 452.33334
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -323,12 +323,12 @@ TextureImporter:
       name: bag_spike_11
       rect:
         serializedVersion: 2
-        x: 2412
-        y: 339.75
+        x: 3216
+        y: 452.66666
         width: 804.5714
-        height: 339.25
+        height: 452.33334
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -344,12 +344,12 @@ TextureImporter:
       name: bag_spike_12
       rect:
         serializedVersion: 2
-        x: 3216
-        y: 339.75
+        x: 4020
+        y: 452.66666
         width: 804.5714
-        height: 339.25
+        height: 452.33334
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -365,12 +365,12 @@ TextureImporter:
       name: bag_spike_13
       rect:
         serializedVersion: 2
-        x: 4020
-        y: 339.75
+        x: 4824
+        y: 452.66666
         width: 804.5714
-        height: 339.25
+        height: 452.33334
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -383,21 +383,42 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bag_spike_14
+      name: bag_spike_0
       rect:
         serializedVersion: 2
-        x: 4824
-        y: 339.75
+        x: 0
+        y: 904.6666
         width: 804.5714
-        height: 339.25
+        height: 452.33334
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59e343fed72fa4cbc8c9114339103f0f
+      spriteID: ea3191d0701c542d7b9f68eb312f37ca
+      internalID: 498747972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bag_spike_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.6666565
+        width: 804.5714
+        height: 452.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2038f589ea54d4cf8b0974f839de4e00
       internalID: 262423459
       vertices: []
       indices: 
@@ -407,19 +428,124 @@ TextureImporter:
       name: bag_spike_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0.75
+        x: 804
+        y: 0.6666565
         width: 804.5714
-        height: 339.25
+        height: 452.33334
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecc60c4b6a41e420c8506b987b0713e8
+      spriteID: df2d1aa0a0f8f4396807fb1390d2fe88
       internalID: -124699685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bag_spike_16
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 0.6666565
+        width: 804.5714
+        height: 452.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70528adb0c7fd4a0b8d20df73081f3cd
+      internalID: -694009273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bag_spike_17
+      rect:
+        serializedVersion: 2
+        x: 2412
+        y: 0.6666565
+        width: 804.5714
+        height: 452.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b44b186267c4c4a8bda832dce878e3
+      internalID: -1572001188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bag_spike_18
+      rect:
+        serializedVersion: 2
+        x: 3216
+        y: 0.6666565
+        width: 804.5714
+        height: 452.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bab71d390d34054a465e016c21e828
+      internalID: -1587157608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bag_spike_19
+      rect:
+        serializedVersion: 2
+        x: 4020
+        y: 0.6666565
+        width: 804.5714
+        height: 452.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e497001d0b54e4543942af2ca92c6100
+      internalID: 136785507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bag_spike_20
+      rect:
+        serializedVersion: 2
+        x: 4824
+        y: 0.6666565
+        width: 804.5714
+        height: 452.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0262c1f8a3f46c6b3d7ff18362b5ad
+      internalID: -1180574370
       vertices: []
       indices: 
       edges: []
@@ -443,7 +569,12 @@ TextureImporter:
       bag_spike_13: -341988357
       bag_spike_14: 262423459
       bag_spike_15: -124699685
+      bag_spike_16: -694009273
+      bag_spike_17: -1572001188
+      bag_spike_18: -1587157608
+      bag_spike_19: 136785507
       bag_spike_2: -1282704343
+      bag_spike_20: -1180574370
       bag_spike_3: -1488997811
       bag_spike_4: 496055769
       bag_spike_5: -510743969
