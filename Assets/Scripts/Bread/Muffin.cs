@@ -40,23 +40,14 @@ public class Muffin : Bread
         SoundManager.Instance.OnPlayMuffinDeath();
     }
 
-    public override IEnumerator SpecialPower()
+    public override void SpecialPower()
     {
         if(Random.Range(0, 2) == 0)
         {
             if (breadMana <= special1Cost || breadManager.breadOrders.All(x => x.breadHealth / x.maxHealth >= 0.75f))
             {
-                StartCoroutine(Fight());
-                yield break;
+                Fight();
             }
-
-            Debug.Log(name + " used heal");
-            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-            UIManager.Instance.currentTextCurrentTurn.text = name + " used heal";
-
-            yield return new WaitForSeconds(2f);
-            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-            UIManager.Instance.currentTextCurrentTurn.text = "";
 
             fightType = FightType.SpecialSkillOne;
 
@@ -66,17 +57,8 @@ public class Muffin : Bread
         {
             if (breadMana <= special2Cost || breadManager.breadOrders.All(x => x.breadHealth / x.maxHealth >= 0.85f))
             {
-                StartCoroutine(Fight());
-                yield break;
+                Fight();
             }
-
-            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-            UIManager.Instance.currentTextCurrentTurn.text = name + " used group heal";
-            Debug.Log(name + " used group heal");
-
-            yield return new WaitForSeconds(2f);
-            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-            UIManager.Instance.currentTextCurrentTurn.text = "";
 
             fightType = FightType.SpecialSkillTwo;
 

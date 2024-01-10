@@ -43,6 +43,20 @@ public class UIManager : MonoBehaviour
         pauseMenuObj.SetActive(false);
     }
 
+    public void OnRestartBtn()
+    {
+        StartCoroutine(RestartGame());
+    }
+
+    private IEnumerator RestartGame()
+    {
+        transitionImage.raycastTarget = true;
+        transitionAnim.SetTrigger("isTransition");
+        yield return new WaitForSecondsRealtime(1.5f);
+        SoundManager.Instance.OnMusicStop();
+        SceneManager.LoadScene(1);
+    }
+
     public void OnBackToMenuBtn()
     {
         StartCoroutine(BackToMenu());

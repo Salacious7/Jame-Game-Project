@@ -33,8 +33,6 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
     public float damageIndex;
     private bool hasHeavyDamaged;
-    [SerializeField] private float setWaitTimer;
-    private float getWaitTimer;
     [SerializeField] private float setDamageTimer;
     private float getDamageTimer;
     private Bread target;
@@ -64,7 +62,6 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
         anim = GetComponent<Animator>();
 
         getDamageTimer = setDamageTimer;
-        getWaitTimer = setWaitTimer;
     }
 
     public void Fight()
@@ -89,52 +86,23 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
     public void UseBasicAttack()
     {
-        StartCoroutine(InitBasicAttack());
-    }
-
-    public IEnumerator InitBasicAttack()
-    {
-        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-        UIManager.Instance.currentTextCurrentTurn.text = "Select enemy to Attack";
+        swanUI.ActionStateContainer.SetActive(false);
         swanUI.ActionStateNoAllAccessible();
         swanUI.ActionStateButtonUninteractable();
 
-        getWaitTimer -= Time.deltaTime;
-
-        yield return new WaitForSeconds(getWaitTimer);
-
-        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-        UIManager.Instance.currentTextCurrentTurn.text = "";
-
-        getWaitTimer = setWaitTimer;
         swanState.FightState(FightType.BasicState, this);
         fightType = FightType.BasicState;
     }
 
     public void UseHeavyAttack()
     {
-        StartCoroutine(InitHeavyAttack());
-    }
-
-    public IEnumerator InitHeavyAttack()
-    {
-        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-        UIManager.Instance.currentTextCurrentTurn.text = "Select enemy to Attack";
+        swanUI.ActionStateContainer.SetActive(false);
         swanUI.ActionStateNoAllAccessible();
         swanUI.ActionStateButtonUninteractable();
 
-        getWaitTimer -= Time.deltaTime;
-
-        yield return new WaitForSeconds(getWaitTimer);
-
-        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-        UIManager.Instance.currentTextCurrentTurn.text = "";
-
-        getWaitTimer = setWaitTimer;
         swanState.FightState(FightType.HeavyState, this);
         fightType = FightType.HeavyState;
     }
-
     public void UseDefendBtn()
     {
         StartCoroutine(UseDefend());
@@ -142,6 +110,7 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
     private IEnumerator UseDefend()
     {
+        swanUI.ActionStateContainer.SetActive(false);
         swanUI.ActionStateNoAllAccessible();
         swanUI.ActionStateButtonUninteractable();
 
@@ -204,17 +173,10 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
     {
         swanUI.ActionStateNoAllAccessible();
         swanUI.ActionStateButtonUninteractable();
-        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-        UIManager.Instance.currentTextCurrentTurn.text = "Basic Attack";
         target = bread;
-
-        yield return new WaitForSeconds(2f);
 
         SoundManager.Instance.OnPlaySwanMainPeckAttack();
         anim.SetTrigger("basicAttack");
-
-        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-        UIManager.Instance.currentTextCurrentTurn.text = "";
 
         switch (damageIndex)
         {
@@ -242,14 +204,9 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
     public IEnumerator HeavyAttack(Bread bread)
     {
         swanUI.ActionStateNoAllAccessible();
-        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-        UIManager.Instance.currentTextCurrentTurn.text = "Heavy Attack";
+        swanUI.ActionStateButtonUninteractable();
         target = bread;
 
-        yield return new WaitForSeconds(2f);
-
-        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-        UIManager.Instance.currentTextCurrentTurn.text = "";
         SoundManager.Instance.OnPlaySwanMainHeavy();
 
         yield return new WaitForSeconds(2f);
@@ -397,14 +354,8 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
     public IEnumerator StartHealSwan(BreadCrumbs breadCrumbs)
     {
+        swanUI.ActionStateContainer.SetActive(false);
         swanUI.ActionStateNoAllAccessible();
-        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-        UIManager.Instance.currentTextCurrentTurn.text = "Swan used Bread Crumbs Item";
-
-        yield return new WaitForSeconds(2f);
-
-        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-        UIManager.Instance.currentTextCurrentTurn.text = "";
 
         SoundManager.Instance.OnPlaySwanHealing();
         swanData.health += breadCrumbs.IncreaseHealth();
@@ -424,13 +375,8 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
     public IEnumerator StartItemDamage(ShinyFeather shinyFeather)
     {
+        swanUI.ActionStateContainer.SetActive(false);
         swanUI.ActionStateNoAllAccessible();
-        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-        UIManager.Instance.currentTextCurrentTurn.text = "Swan used Shiny Feather Item";
-
-        yield return new WaitForSeconds(2f);
-        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-        UIManager.Instance.currentTextCurrentTurn.text = "";
 
         DefenseAnimator.SetTrigger("activate");
         swanData.damageBoost += shinyFeather.IncreaseDamage();
@@ -451,13 +397,8 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
     public IEnumerator StartItemMana(ClearBlueCrystal clearBlueCrystal)
     {
+        swanUI.ActionStateContainer.SetActive(false);
         swanUI.ActionStateNoAllAccessible();
-        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-        UIManager.Instance.currentTextCurrentTurn.text = "Swan used Clear Blue Crystal Item";
-
-        yield return new WaitForSeconds(2f);
-        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-        UIManager.Instance.currentTextCurrentTurn.text = "";
 
         DefenseAnimator.SetTrigger("activate");
         swanData.mana += clearBlueCrystal.IncreaseMana();
@@ -477,13 +418,8 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
     public IEnumerator StartItemPassive(CaffeinatedDrink caffeinatedDrink)
     {
+        swanUI.ActionStateContainer.SetActive(false);
         swanUI.ActionStateNoAllAccessible();
-        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-        UIManager.Instance.currentTextCurrentTurn.text = "Swan used Caffeinated Drink Item";
-
-        yield return new WaitForSeconds(2f);
-        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-        UIManager.Instance.currentTextCurrentTurn.text = "";
 
         DefenseAnimator.SetTrigger("activate");
         swanData.passiveBoost += caffeinatedDrink.IncreasePassive();
@@ -501,13 +437,8 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
     public IEnumerator StartItemRemoveNegativeStatus(Milk milk)
     {
+        swanUI.ActionStateContainer.SetActive(false);
         swanUI.ActionStateNoAllAccessible();
-        UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-        UIManager.Instance.currentTextCurrentTurn.text = "Swan used Jam Item";
-
-        yield return new WaitForSeconds(2f);
-        UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-        UIManager.Instance.currentTextCurrentTurn.text = "";
 
         DefenseAnimator.SetTrigger("activate");
         swanData.negativeStatus.Clear();
@@ -534,17 +465,15 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
     IEnumerator MoveToBreadCo()
     {
-        float timer = 0;
+        float speed = 20f;
 
-        float duration = 0.25f;
-        var startingPos = transform.position;
-        while(timer < duration)
+        while (Vector3.Distance(transform.position, target.AttackPosition.position) != 0)
         {
-            transform.position = Vector3.Lerp(startingPos, target.AttackPosition.position, timer / duration);
-            timer += Time.deltaTime;
-            Debug.Log(Vector3.Lerp(startingPos, target.AttackPosition.position, timer / duration));
             yield return null;
+            transform.position = Vector3.MoveTowards(transform.position, target.AttackPosition.position, speed * Time.deltaTime);
         }
+
+        yield return new WaitUntil(() => Vector3.Distance(transform.position, target.AttackPosition.position) == 0);
     }
 
     public void MoveToStartingPosition()
@@ -554,16 +483,15 @@ public class Swan : MonoBehaviour, IActionState, OnEventHandler, OnBreadHandler
 
     IEnumerator MoveToStartingPositionCo()
     {
-        float timer = 0;
+        float speed = 20f;
 
-        float duration = 0.25f;
-        var startingPos = target.AttackPosition.position;
-        while(timer < duration)
+        while (Vector3.Distance(transform.position, startingPosition.position) != 0)
         {
-            transform.position = Vector3.Lerp(target.AttackPosition.position, startingPosition.position, timer / duration);
-            timer += Time.deltaTime;
             yield return null;
+            transform.position = Vector3.MoveTowards(transform.position, startingPosition.position, speed * Time.deltaTime);
         }
+
+        yield return new WaitUntil(() => Vector3.Distance(transform.position, startingPosition.position) == 0);
     }
 
     #endregion

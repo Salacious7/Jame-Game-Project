@@ -108,33 +108,16 @@ public abstract class Bread : MonoBehaviour, IActionState
 
     }
 
-    public IEnumerator Fight()
+    public void Fight()
     {
         if (Random.Range(0, 2) == 0)
         {
-            Debug.Log(name + " used basic attack");
-            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-            UIManager.Instance.currentTextCurrentTurn.text = name + " used basic attack";
-
-            yield return new WaitForSeconds(2f);
-            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-            UIManager.Instance.currentTextCurrentTurn.text = "";
-
             fightType = FightType.BasicState;
             animTrigger = "basicAttack";
         }
         else
         {
-            Debug.Log(name + " used heavy attack");
-            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-            UIManager.Instance.currentTextCurrentTurn.text = name + " used heavy attack";
-
-            yield return new WaitForSeconds(2f);
-            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-            UIManager.Instance.currentTextCurrentTurn.text = "";
-
             fightType = FightType.HeavyState;
-
             animTrigger = "heavyAttack";
         }
     }
@@ -157,7 +140,7 @@ public abstract class Bread : MonoBehaviour, IActionState
         }
     }
 
-    public abstract IEnumerator SpecialPower();
+    public abstract void SpecialPower();
 
     public void UseItem()
     {
@@ -238,7 +221,7 @@ public abstract class Bread : MonoBehaviour, IActionState
     IEnumerator TakeTurn()
     {
         actionFinished = false;
-        selectedArrow.SetActive(false);
+        OnArrowSelectionUIState(false);
         yield return new WaitForSeconds(breadManager.TakeActionDelay);
         breadManager.SetTransparency(breadManager.unfocusedTransparency);
         Debug.Log(name + " taking action");
@@ -252,9 +235,6 @@ public abstract class Bread : MonoBehaviour, IActionState
         UIManager.Instance.currentTextCurrentTurn.text = "";
 
         ChooseAction();
-
-        yield return new WaitForSeconds(2f);
-
         Attack();
 
         yield return new WaitUntil(() => actionFinished);
@@ -262,7 +242,7 @@ public abstract class Bread : MonoBehaviour, IActionState
         DoAction();
         anim.SetTrigger(animTrigger);
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f);
 
         Debug.Log(name + " end turn");
         breadManager.SetTransparency(1);
@@ -270,14 +250,19 @@ public abstract class Bread : MonoBehaviour, IActionState
         breadManager.EndTurn();
     }
 
+    public void OnArrowSelectionUIState(bool state)
+    {
+        selectedArrow.SetActive(state);
+    }
+
     void ChooseAction()
     {
         switch(Random.Range(0, 2))
         {
             case 0:
-                StartCoroutine(Fight());
+                Fight();
                 break;
-            case 1: StartCoroutine(SpecialPower());
+            case 1: SpecialPower();
                 break;
             // case 2: UseItem();
             //     break;
@@ -295,16 +280,15 @@ public abstract class Bread : MonoBehaviour, IActionState
 
     IEnumerator MoveToSwanCo()
     {
-        float timer = 0;
+        float speed = 20f;
 
-        float duration = 0.25f;
-
-        while(timer < duration)
+        while (Vector3.Distance(transform.position, SwanAttackPosition.position) != 0)
         {
-            transform.position = Vector3.Lerp(startingPosition, SwanAttackPosition.position, timer / duration);
-            timer += Time.deltaTime;
             yield return null;
+            transform.position = Vector3.MoveTowards(transform.position, SwanAttackPosition.position, speed * Time.deltaTime);
         }
+
+        yield return new WaitUntil(() => Vector3.Distance(transform.position, SwanAttackPosition.position) == 0);
     }
 
     public void MoveToStartingPosition()
@@ -314,15 +298,15 @@ public abstract class Bread : MonoBehaviour, IActionState
 
     IEnumerator MoveToStartingPositionCo()
     {
-        float timer = 0;
+        float speed = 20f;
 
-        float duration = 0.25f;
-        while(timer < duration)
+        while(Vector3.Distance(transform.position, startingPosition) != 0)
         {
-            transform.position = Vector3.Lerp(SwanAttackPosition.position, startingPosition, timer / duration);
-            timer += Time.deltaTime;
             yield return null;
+            transform.position = Vector3.MoveTowards(transform.position, startingPosition, speed * Time.deltaTime);
         }
+
+        yield return new WaitUntil(() => Vector3.Distance(transform.position, startingPosition) == 0);
     }
 
     void IActionState.SpecialPower()

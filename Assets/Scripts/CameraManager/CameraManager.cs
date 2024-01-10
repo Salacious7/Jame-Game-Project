@@ -44,7 +44,7 @@ public class CameraManager : MonoBehaviour
         {
             yield return null;
 
-            cameraTransform.position = Vector3.Lerp(cameraTransform.position, initialCamPos.position, camSpeed * Time.deltaTime);
+            cameraTransform.position = Vector3.LerpUnclamped(cameraTransform.position, initialCamPos.position, camSpeed * Time.deltaTime);
         }
 
         yield return new WaitUntil(() => !Distance(cameraTransform.position, initialCamPos.position));
@@ -71,7 +71,7 @@ public class CameraManager : MonoBehaviour
         {
             yield return null;
 
-            cameraTransform.position = Vector3.Lerp(cameraTransform.position, breadCamPos.position, camSpeed * Time.deltaTime);
+            cameraTransform.position = Vector3.LerpUnclamped(cameraTransform.position, breadCamPos.position, camSpeed * Time.deltaTime);
         }
 
         yield return new WaitUntil(() => !Distance(cameraTransform.position, breadCamPos.position));

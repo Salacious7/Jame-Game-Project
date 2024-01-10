@@ -59,7 +59,7 @@ public class SwanUI : MonoBehaviour, OnEventHandler
 
     private void Update()
     {
-        if(swan.swanData.mana > 10f)
+        if(swan.swanData.mana >= 10f)
         {
             SwanLeapBtn.interactable = true;
         }
@@ -68,7 +68,7 @@ public class SwanUI : MonoBehaviour, OnEventHandler
             SwanLeapBtn.interactable = false;
         }
 
-        if(swan.swanData.mana > 20f)
+        if(swan.swanData.mana >= 20f)
         {
             GroundPummelBtn.interactable = true;
         }

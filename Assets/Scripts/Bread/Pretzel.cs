@@ -38,23 +38,14 @@ public class Pretzel : Bread
         SoundManager.Instance.OnPlayPretzelHeal();
     }
 
-    public override IEnumerator SpecialPower()
+    public override void SpecialPower()
     {
         if (Random.Range(0, 2) == 0)
         {
             if (breadMana <= special1Cost)
             {
-                StartCoroutine(Fight());
-                yield break;
+                Fight();
             }
-
-            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-            UIManager.Instance.currentTextCurrentTurn.text = name + " used twister";
-            Debug.Log(name + " used twister");
-
-            yield return new WaitForSeconds(2f);
-            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-            UIManager.Instance.currentTextCurrentTurn.text = "";
 
             fightType = FightType.SpecialSkillOne;
 
@@ -64,17 +55,8 @@ public class Pretzel : Bread
         {
             if (breadMana <= special2Cost)
             {
-                StartCoroutine(Fight());
-                yield break;
+                Fight();
             }
-
-            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-            UIManager.Instance.currentTextCurrentTurn.text = name + " used rain cheese";
-            Debug.Log(name + " used rain cheese");
-
-            yield return new WaitForSeconds(2f);
-            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-            UIManager.Instance.currentTextCurrentTurn.text = "";
 
             fightType = FightType.SpecialSkillTwo;
 

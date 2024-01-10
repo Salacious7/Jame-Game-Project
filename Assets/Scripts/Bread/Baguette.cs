@@ -66,23 +66,14 @@ public class Baguette : Bread
         SoundManager.Instance.OnPlayBaguetteDeath();
     }
 
-    public override IEnumerator SpecialPower()
+    public override void SpecialPower()
     {
         if(Random.Range(0, 2) == 0)
         {
             if (breadMana <= special1Cost)
             {
-                StartCoroutine(Fight());
-                yield break;
+                Fight();
             }
-
-            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-            UIManager.Instance.currentTextCurrentTurn.text = name + " used roll";
-            Debug.Log(name + " used roll");
-
-            yield return new WaitForSeconds(2f);
-            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-            UIManager.Instance.currentTextCurrentTurn.text = "";
 
             fightType = FightType.SpecialSkillOne;
 
@@ -92,17 +83,8 @@ public class Baguette : Bread
         {
             if (breadMana <= special2Cost)
             {
-                StartCoroutine(Fight());
-                yield break;
+                Fight();
             }
-
-            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-            UIManager.Instance.currentTextCurrentTurn.text = name + " used barrage";
-            Debug.Log(name + " used barrage");
-
-            yield return new WaitForSeconds(2f);
-            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-            UIManager.Instance.currentTextCurrentTurn.text = "";
 
             fightType = FightType.SpecialSkillTwo;
 
