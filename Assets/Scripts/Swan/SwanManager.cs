@@ -30,6 +30,8 @@ public class SwanManager : MonoBehaviour
 
     public IEnumerator SelectBread(OnBreadHandler state)
     {
+        selectedCharacterIndex = 0;
+
         EnableSelectedArrow();
 
         while (!selectedBread)

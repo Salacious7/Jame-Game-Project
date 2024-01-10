@@ -52,23 +52,14 @@ public class Sandwich : Bread
         SoundManager.Instance.OnPlaySandwichDeath();
     }
 
-    public override IEnumerator SpecialPower()
+    public override void SpecialPower()
     {
         if(Random.Range(0, 2) == 0)
         {
             if (breadMana <= special1Cost)
             {
-                StartCoroutine(Fight());
-                yield break;
+                Fight();
             }
-
-            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-            UIManager.Instance.currentTextCurrentTurn.text = name + " used hot sauce";
-            Debug.Log(name + " used hot sauce");
-
-            yield return new WaitForSeconds(2f);
-            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-            UIManager.Instance.currentTextCurrentTurn.text = "";
 
             fightType = FightType.SpecialSkillOne;
 
@@ -78,17 +69,8 @@ public class Sandwich : Bread
         {
             if (breadMana <= special2Cost)
             {
-                StartCoroutine(Fight());
-                yield break;
+                Fight();
             }
-
-            UIManager.Instance.panelCurrentTurnObj.SetActive(true);
-            UIManager.Instance.currentTextCurrentTurn.text = name + " used mayo";
-            Debug.Log(name + " used mayo");
-
-            yield return new WaitForSeconds(2f);
-            UIManager.Instance.panelCurrentTurnObj.SetActive(false);
-            UIManager.Instance.currentTextCurrentTurn.text = "";
 
             fightType = FightType.SpecialSkillTwo;
 

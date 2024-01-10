@@ -13,6 +13,8 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
 
     [Header("Data")]
     private string currentSpecialPower;
+    [SerializeField] private float setWaitTimer;
+    private float getWaitTimer;
 
     [Header("Special Power")]
     public SwanLeap swanLeap;
@@ -40,18 +42,22 @@ public class SwanPowers : MonoBehaviour, OnBreadHandler, OnEventHandler
 
     public void UseSwanLeap()
     {
-        swanState.FightState(Swan.FightType.SpecialPowerState, this);
-        specialPowerType = SpecialPowerType.SwanLeap;
+        swanUI.ActionStateContainer.SetActive(false);
         swanUI.ActionStateNoAllAccessible();
         swanUI.ActionStateButtonUninteractable();
+
+        swanState.FightState(Swan.FightType.SpecialPowerState, this);
+        specialPowerType = SpecialPowerType.SwanLeap;
     }
 
     public void UseGroundPummel()
     {
-        swanState.FightState(Swan.FightType.SpecialPowerState, this);
-        specialPowerType = SpecialPowerType.GroundPummel;
+        swanUI.ActionStateContainer.SetActive(false);
         swanUI.ActionStateNoAllAccessible();
         swanUI.ActionStateButtonUninteractable();
+
+        swanState.FightState(Swan.FightType.SpecialPowerState, this);
+        specialPowerType = SpecialPowerType.GroundPummel;
     }
 
     public void OnSuccess(Bread bread)

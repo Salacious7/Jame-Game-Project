@@ -65,6 +65,11 @@ public class BreadManager : MonoBehaviour
 
     public IEnumerator StartBreadsTurn()
     {
+        foreach (Bread bread in breads)
+        {
+            bread.OnArrowSelectionUIState(false);
+        }
+
         if (breads.All(x => x.Dead))
             yield break;
 
@@ -157,13 +162,13 @@ public class BreadManager : MonoBehaviour
     private IEnumerator StartInitEndBreadsTurn()
     {
         swanUI.ActionStateContainer.SetActive(false);
-        yield return new WaitForSeconds(1.25f);
+        yield return new WaitForSeconds(1f);
         StartCoroutine(StartEndBreadsTurn());
     }
 
     private IEnumerator InitEndBreadsTurn()
     {
-        yield return new WaitForSeconds(1.25f);
+        yield return new WaitForSeconds(1.3f);
         StartCoroutine(EndBreadsTurn());
     }
 }
